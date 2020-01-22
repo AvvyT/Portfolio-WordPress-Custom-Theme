@@ -3,7 +3,7 @@
 
 # Projektbeskrivning
 
-**Personlig portfolio med WordPress** skapat av Radoslava Todorova  FEU18
+**Personlig portfolio med WordPress** skapat av Radoslava Todorova [AvvyT](https://github.com/AvvyT) FEU18.
 
 ## Beskrivning
 
@@ -12,6 +12,12 @@ Projektet består av att bygga min portföljsida med WordPress, där jag skapar 
 ## Installation
 
 Download WordPress here [WordPress](https://wordpress.org/download/).
+
+## Eget Theme
+
+```python
+ wp-content/themes/avvystheme
+ ```
 
 ## Verktyg
 
