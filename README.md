@@ -2,16 +2,16 @@
 <!--- Senast uppdaterad: 2020-01-22       @ AvvyT -->
 
 # Projektbeskrivning
-**Personlig portfolio med WordPress:** Radoslava Todorova  FEU18
 
-- **Beskrivning** -
+**Personlig portfolio med WordPress** skapat av Radoslava Todorova  FEU18
+
+## Beskrivning
 
 Projektet består av att bygga min portföljsida med WordPress, där jag skapar eget theme och lära mig advända WordPress. Det kommer att innehålla minst en Home-sida, en Biography-sida och Kontakt sida. Applikationen utvecklas med LAMP-stacken.
----
 
 ## Installation
 
-Download WordPress here[WordPress](https://wordpress.org/download/).
+Download WordPress here [WordPress](https://wordpress.org/download/).
 
 ## Verktyg
 
@@ -22,4 +22,3 @@ Download WordPress here[WordPress](https://wordpress.org/download/).
 - **Webpack** för att kompilera sass till css.
 - **Deploy** ska undersöka hur jag kan publicera sidan.
 - Projektet versionshanteras i git via **GitHub**.
----
