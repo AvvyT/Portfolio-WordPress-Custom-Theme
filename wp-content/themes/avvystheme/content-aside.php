@@ -1,0 +1,1 @@
+<h1>Aside post: <?php the_title();?></h1>

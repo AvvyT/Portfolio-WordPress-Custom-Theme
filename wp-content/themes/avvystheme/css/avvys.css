@@ -1,0 +1,163 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    color: #fff;
+    background: rgb(224, 222, 222);
+    font-family: freight-display-pro;
+}
+
+body {
+    position: relative;
+    padding: 0;
+}
+
+header {
+    box-sizing: border-box;
+    position: absolute;
+    color: #fff;
+    top: 0;
+    left: 0;
+    background: #1a1a1a;
+    z-index: 1000;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+    padding: 11px;
+    border-bottom: 1px solid white;
+}
+
+.header-inner {
+    box-sizing: border-box;
+    max-width: 1600px;
+    margin: 0 5vw;
+    padding: 2vh 6vw;
+}
+
+#menu-avvys-menu {
+    padding: 10px 10px;
+    white-space: nowrap;
+    list-style-type: none;
+    line-height: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+#menu-avvys-menu>li>a, #menu-footer-navigation>li>a {
+    display: inline-flex;
+    text-decoration: none;
+    margin-right: 25px;
+    -webkit-box-flex: 1;
+    color: #fff;
+    padding: .618em 0;
+    font-family: proxima-nova;
+    font-style: normal;
+    font-size: 1.2em;
+    letter-spacing: .16em;
+    font-weight: bold;
+}
+
+#menu-avvys-menu>li>a:hover, #menu-footer-navigation>li>a:hover {
+    color: #e1a87a;
+    text-shadow: 1px 1px 2px black, 0 0 1em grey, 0 0 0.2em;
+}
+
+.block {
+    box-sizing: border-box;
+    width: 100%;
+    margin-right: auto;
+    margin-left: 40px;
+}
+
+.block-content {
+    outline: none;
+}
+
+.block-content>h1 {
+    white-space: pre-line;
+    font-family: freight-display-pro;
+    font-size: 7.51vw;
+    margin-top: 0;
+    color: #fff;
+}
+
+font {
+    vertical-align: inherit;
+}
+
+footer {
+    margin: 0;
+    color: #fff;
+    background-color: #1a1a1a;
+    -webkit-font-smoothing: antialiased;
+    white-space: pre-wrap;
+    text-align: center;
+}
+
+footer>h3 {
+    font-size: 4.25vw;
+}
+
+#menu-footer-navigation {
+    display: flex;
+    white-space: nowrap;
+    list-style-type: none;
+    text-align: center;
+    justify-content: center;
+    padding: 40px 0;
+    margin-right: -1em;
+}
+
+footer>p {
+    color: #7a7d7f;
+}
+
+/* About-page */
+
+.wp-block-media-text {
+    box-sizing: border-box;
+    padding: 20vh 6vw;
+    background-color: #f5f5f5;
+    color: #121212;
+    font-family: proxima-nova;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 19px;
+    letter-spacing: 0em;
+    line-height: 2em;
+}
+
+.wp-block-media-text>p>a>em {
+    color: #e1a87a;
+}
+
+.is-vertically-aligned-center {
+    background-color: #f0f0f0;
+}
+
+.has-background-dim {
+    height: 80vh;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20vh 6vw;
+    font-family: proxima-nova;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 19px;
+    letter-spacing: 0em;
+    line-height: 2em;
+    text-decoration: none;
+    outline: none;
+}
+
+em, a {
+    color: #fff;
+}
+
+em:hover, a:hover {
+    color: #e1a87a;
+}
+
+.wp-block-button__link:hover {
+    color: #e1a87a;
+    border: solid 1px #e1a87a ;
+}

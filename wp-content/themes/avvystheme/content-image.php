@@ -1,0 +1,1 @@
+<h1>Image post: <?php the_title();?></h1>
