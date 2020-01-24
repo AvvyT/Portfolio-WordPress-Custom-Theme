@@ -13,7 +13,7 @@ Projektet består av att bygga min portföljsida med WordPress, där jag skapar 
 
 ## Installation
 
-Download [WordPress](https://wordpress.org/download/)here.
+Download [WordPress](https://wordpress.org/download/) here.
 
 ## Eget Theme
 
