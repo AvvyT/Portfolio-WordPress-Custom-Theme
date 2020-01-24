@@ -18,6 +18,7 @@ else:
     $avvy_classes = array('no-avvys-class');
 endif;
 ?>
+
 <!-- implement the body_class template tag into a theme. -->
 <body <?php body_class($avvy_classes);?>>
     <header>
@@ -27,40 +28,20 @@ endif;
             </nav>
        </div>
     </header>
+
 <div class='block'>
-    <div class='block-content'>
-    <?php
-// Custom body class
-if (is_front_page()):
-    $avvy_classes = array('avvys-class', 'my-class');?>
-	        <h1>
-	            <font>
-	                <font>Frontend</font>
-	                <font>Developer</font>
-	            </font>
-	        </h1>
-	        <?php elseif ($avvy_classes = array('page-id-6', 'no-avvys-class')): ?>
-        <h1>
-            <font>
-                <font>My Passions &</font>
-                <font>Personality</font>
-            </font>
-        </h1>
-        <?php elseif ($avvy_classes = array('page-id-51', 'no-avvys-class')): ?>
-         <h1>
-            <font>
-                <font>Dig a little</font>
-                <font>deeper</font>
-            </font>
-        </h1>
-        <?php else: 
-            $avvy_classes = array('page-id-7', 'no-avvys-class'); ?>
-        <h1>
-            <font>
-                <font>Connect with</font>
-                <font>me today</font>
-            </font>
-        </h1>
-        <?php endif;?>
+    <div class='block-header'>
+<?php
+if (have_rows('banner_section')):
+    while (have_rows('banner_section')): the_row();?>
+    <h1>
+        <font>
+            <font><?php the_sub_field('banner_heading_1');?> </font>
+            <font><?php the_sub_field('banner_heading_2');?> </font>
+        </font>
+    </h1>
+    <?php endwhile;
+endif;
+?>
     </div>
 </div>

@@ -37,3 +37,12 @@ add_action('init', 'avvys_theme_setup');
 add_theme_support('custom-background');
 //add_theme_support('post-thumbnails');
 add_theme_support('post-formats', array('aside', 'image', 'video'));
+
+/* 
+    ==============================================
+      Sidebar funtion
+    ==============================================
+ */
+
+
+add_image_size( 'content image', 550, 400); // för att ändra storlek: ändra här efter det regenerate thumbails
