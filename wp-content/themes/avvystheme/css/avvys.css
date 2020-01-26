@@ -94,10 +94,16 @@ font {
     -webkit-font-smoothing: antialiased;
     white-space: pre-wrap;
     text-align: center;
+    align-items: center;
 }
 
 .block-footer-content>h3 {
     font-size: 4.25vw;
+}
+
+.block-footer-content>p {
+    color: #7a7d7f;
+    letter-spacing: .05em;
 }
 
 #menu-footer-navigation {
@@ -112,14 +118,14 @@ font {
 
 .link {
     text-decoration: none;
-    color: #7a7d7f;
-    letter-spacing: .05em;
 }
 
-.link:hover {
-    color: #e1a87a;
-    font-size: medium;
-    text-decoration: underline;
+svg>circle:hover {
+    stroke: #e1a87a;
+}
+
+svg:hover {
+    fill: #e1a87a;
 }
 
 /* Pages style */
@@ -128,7 +134,7 @@ font {
     background-color: #f5f5f5;
     box-sizing: border-box;
     display: flex;
-    padding: 20vh 6vw;
+    padding: 20vh 3vw;
 }
 
 .title {
@@ -148,6 +154,15 @@ font {
     line-height: 2em;
 }
 
+.text-gray {
+    margin-top: inherit;
+    font-family: proxima-nova;
+    font-style: normal;
+    letter-spacing: .08em;
+    font-size: large;
+    line-height: 2em;
+}
+
 .block-media-text-right {
     background-color: #f0f0f0;
     box-sizing: border-box;
@@ -155,24 +170,52 @@ font {
     padding: 20vh 6vw;
 }
 
+.block-gallery {
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+}
+
+.block-gallery-media-text {
+    box-sizing: border-box;
+    display: flex;
+    padding: 5vw;
+}
+
 .block-grey-text {
     background-color: #313131;
     color: #fff;
     box-sizing: border-box;
     text-align: center;
-    padding: 20vh 6vw;
+    padding: 10vh 6vw;
 }
 
-.block-media-text-left-content, .block-media-text-right-content, .block-media-text-content {
+.block-media-text-left-content, .block-media-text-right-content {
     box-sizing: border-box;
     text-align: center;
     color: #121212;
-    padding: 10vh 5vw;
+    margin: auto 4%;
+}
+
+.block-media-text-content {
+    text-align: center;
+    color: #121212;
+    margin: auto 4%;
+}
+
+.block-contact-content, .block-gallery-content {
+    text-align: center;
+    color: #121212;
+    margin: auto 9%;
+}
+
+.block-gallery-media {
+    display: flex;
+    justify-content: center;
 }
 
 .block-grey-text-content {
     box-sizing: border-box;
-    padding: 6vh;
+    margin: 6%;
 }
 
 button {

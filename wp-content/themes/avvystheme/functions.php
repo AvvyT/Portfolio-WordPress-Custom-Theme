@@ -40,9 +40,7 @@ add_theme_support('post-formats', array('aside', 'image', 'video'));
 
 /* 
     ==============================================
-      Sidebar funtion
+      Images funtion
     ==============================================
  */
-
-
-add_image_size( 'content image', 550, 400); // för att ändra storlek: ändra här efter det regenerate thumbails
+add_image_size( 'content image', 400); // för att ändra storlek: ändra här efter det regenerate thumbails
