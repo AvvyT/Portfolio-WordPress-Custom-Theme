@@ -43,4 +43,49 @@ add_theme_support('post-formats', array('aside', 'image', 'video'));
       Images funtion
     ==============================================
  */
-add_image_size( 'content image', 400); // för att ändra storlek: ändra här efter det regenerate thumbails
+add_image_size( 'content image', 400); // för att ändra storlek: ändra här & efter det regenerate thumbails
+
+/* 
+    ==============================================
+      Custom Post Type
+    ==============================================
+ */
+function avvys_custom_post_type()
+{
+  $labels = array(
+    'name' => 'Resume',
+    'singular_name' => 'Resume',
+    'add_new_item' => 'Add Item',
+    'all_items' => 'All Items',
+    'edit_item' => 'Edit Item',
+    'new_item' => 'New Item',
+    'view_item' => 'View Item',
+    'search_item' => 'Search Resume',
+    'not_found' => 'No items found',
+    'not_found_in_trash' => 'No items found in trash',
+    'parent_item_colon' => 'Parent Item'
+  );
+  $args = array(
+    'labels' => $labels,
+    'public' => true,
+    'has_archive' => false,
+    'publicly_queryable' => true,
+    'query_var' => true,
+    'rewrite' => true,
+    'capability_type' => 'post',
+    'hierarchical' => false,
+    'supports' => array(
+      'title',
+      'editor',
+      'excerpt',
+      'thumbnail',
+      'revisions',
+    ),
+    'taxonomies' => array('category', 'post_tag'),
+    'menu_position' => 5,
+    'exclude_from_search' => false,
+  );
+  // create post-type with Hook = register_post_type
+  register_post_type('resume', $args);
+}
+add_action('init', 'avvys_custom_post_type');
