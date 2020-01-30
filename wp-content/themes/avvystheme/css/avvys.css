@@ -42,7 +42,7 @@ header {
     justify-content: center;
 }
 
-.menu-item-type-post_type>a, #menu-footer-navigation>li>a {
+.menu-item-type-post_type>a, #menu-footer-navigation>li>a, link {
     cursor: pointer;
     display: inline-flex;
     text-decoration: none;
@@ -120,12 +120,12 @@ font {
     text-decoration: none;
 }
 
-svg>circle:hover {
+#Layer_1>circle:hover, #image0 {
     stroke: #e1a87a;
     cursor: pointer;
 }
 
-svg:hover {
+#Layer_1:hover {
     fill: #e1a87a;
 }
 
@@ -168,12 +168,11 @@ svg:hover {
 }
 
 .text-gray {
-    margin-top: inherit;
-    font-family: proxima-nova;
+    font-family: 'Lucida Sans Regular', sans-serif;
     font-style: normal;
-    letter-spacing: .08em;
+    letter-spacing: .04em;
     font-size: large;
-    line-height: 2em;
+    line-height: 1.5em;
 }
 
 .block-media-text-right {
@@ -193,6 +192,15 @@ svg:hover {
     box-sizing: border-box;
     display: flex;
     padding: 5vw;
+}
+
+.block-contact-grey-text {
+    width: 100%;
+    background-color: #313131;
+    color: #fff;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10vh 6vw;
 }
 
 .block-grey-text {
@@ -216,7 +224,7 @@ svg:hover {
     margin: auto 4%;
 }
 
-.block-contact-content, .block-gallery-content {
+.block-gallery-content {
     text-align: center;
     color: #121212;
     margin: auto 9%;
@@ -302,14 +310,15 @@ button:hover {
     text-decoration: none;
 }
 
-.s1>a, strong>a {
+.s1>a, strong>a, .block-CV-resume-text>ul>li>a, .block-CV-resume-text>p>a {
     text-decoration: underline #e1a87a;
+    color: #e1a87a;
     cursor: pointer;
 }
 
-.s1>a:hover, strong>a:hover {
+.s1>a:hover, strong>a:hover, .block-CV-resume-text>ul>li>a:hover, .block-CV-resume-text>p>a:hover {
     text-decoration: underline rgb(126, 129, 122);
-    color: #e1a87a;
+    opacity: inherit;
 }
 
 .resume-title {
@@ -328,7 +337,12 @@ button:hover {
     width: 45%;
     flex-direction: column;
     background-color: #fff;
-    margin-left: 1%;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    letter-spacing: .03em;
+    font-size: large;
+    line-height: 1.5em;
+    margin: 1%;
     box-sizing: border-box;
     color: #121212;
     flex-grow: 1;
@@ -337,4 +351,51 @@ button:hover {
     -webkit-box-shadow: 10px 10px 26px -18px rgba(150, 150, 150, 0.81);
     -moz-box-shadow: 10px 10px 26px -18px rgba(150, 150, 150, 0.81);
     box-shadow: 10px 10px 26px -18px rgba(150, 150, 150, 0.81);
+}
+
+.block-CV-resume-text>h3 {
+    font-family: 'Lucida Sans Regular', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    letter-spacing: .025em;
+    text-transform: none;
+    line-height: 1.1em;
+}
+
+/* Contact pages style */
+
+.block-contact-media-text {
+    background-color: #f5f5f5;
+    max-width: 100%;
+    box-sizing: border-box;
+    flex-grow: 1;
+    display: flex;
+    padding: 10vh 3vw;
+}
+
+.block-contact-content {
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    color: #121212;
+    margin-top: 10%;
+    -webkit-box-shadow: 10px 10px 26px -18px rgba(150, 150, 150, 0.81);
+    -moz-box-shadow: 10px 10px 26px -18px rgba(150, 150, 150, 0.81);
+    box-shadow: 10px 10px 26px -18px rgba(150, 150, 150, 0.81);
+}
+
+.img-element {
+    -webkit-box-shadow: 10px 10px 26px -18px rgba(150, 150, 150, 0.81);
+    -moz-box-shadow: 10px 10px 26px -18px rgba(150, 150, 150, 0.81);
+    box-shadow: 10px 10px 26px -18px rgba(150, 150, 150, 0.81);
+}
+
+.contact-img {
+    flex-grow: 1;
+}
+
+.box-contact {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
