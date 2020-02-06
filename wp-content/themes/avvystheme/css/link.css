@@ -1,0 +1,44 @@
+.menu-item-type-post_type>a, #menu-footer-navigation>li>a, link {
+    cursor: pointer;
+    display: inline-flex;
+    margin-right: 25px;
+    color: #fff;
+    padding: .618em 0;
+    font-size: 1.2em;
+    letter-spacing: .16em;
+}
+
+#menu-avvys-menu>li>a:hover, #menu-footer-navigation>li>a:hover {
+    color: #e1a87a;
+}
+
+/**  Footer links style  **/
+
+#Layer_1>circle:hover, #image0 {
+    stroke: #e1a87a;
+    cursor: pointer;
+}
+
+#Layer_1:hover {
+    fill: #e1a87a;
+}
+
+/**  CV-resume links style  **/
+
+.post-categories>li, a {
+    cursor: text;
+    color: #121212;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.s1>a, strong>a, .block-CV-resume-text>ul>li>a, .block-CV-resume-text>p>a {
+    text-decoration: underline #e1a87a;
+    color: #e1a87a;
+    cursor: pointer;
+}
+
+.s1>a:hover, strong>a:hover, .block-CV-resume-text>ul>li>a:hover, .block-CV-resume-text>p>a:hover {
+    text-decoration: underline rgb(126, 129, 122);
+    opacity: inherit;
+}

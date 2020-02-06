@@ -1,0 +1,52 @@
+.font-nova {
+    font-family: proxima-nova;
+    font-style: normal;
+    font-size: 1.2em;
+    letter-spacing: .16em;
+    font-weight: bold;
+}
+
+.font-nova-text {
+    font-family: proxima-nova;
+    font-style: normal;
+    letter-spacing: .05em;
+    font-size: large;
+    line-height: 2em;
+}
+
+.font-sans-serif-text {
+    font-family: 'Lucida Sans Regular', sans-serif;
+    font-style: normal;
+    letter-spacing: .04em;
+    font-size: large;
+    line-height: 1.5em;
+}
+
+.font-pro {
+    white-space: pre-line;
+    font-family: freight-display-pro;
+    font-size: 7.51vw;
+}
+
+.font-title {
+    font-family: 'Lucida Sans Regular', sans-serif;
+    font-weight: 100;
+    letter-spacing: .025em;
+}
+
+.font-title-bold {
+    font-family: 'Lucida Sans Regular', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.font-resume-title {
+    width: 100%;
+    margin: 3%;
+    text-align: center;
+    font-family: 'Lucida Sans Regular', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    letter-spacing: .025em;
+    line-height: 1.1em;
+}

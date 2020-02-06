@@ -2,15 +2,15 @@
 <?php get_header();?>
 
 <!-- Facts Section -->
-<div class="block-media-text">
+<div class="block-page-media-text box-text bg-white">
 <?php
 if (have_rows('facts_section')):
     while (have_rows('facts_section')): the_row();?>
       <?php $img = get_sub_field('facts_section_image'); ?>
         <img src="<?php echo $img["sizes"]["content image"]; ?>" alt="">
-        <div class="block-media-text-content">
-            <h1 class="title"><?php the_sub_field('facts_section_heading');?></h1>
-            <p class="text"><?php the_sub_field('facts_section_content');?></p>
+        <div class="block-grey-text-content col-black">
+            <h1 class="font-title"><?php the_sub_field('facts_section_heading');?></h1>
+            <p class="font-nova-text"><?php the_sub_field('facts_section_content');?></p>
         </div>
     <?php endwhile;
 endif;
@@ -18,43 +18,34 @@ endif;
 </div>
 
 <!-- Gray Section -->
-<div class="block-grey-text">
+<div class="box-text-md bg-darkgray col-white">
     <div class="block-grey-text-content">
-        <h1 class="title"><?php the_field('gray_section_heading');?></h1>
-        <p class="text"><?php the_field('gray_section_content');?></p>
+        <h1 class="font-title"><?php the_field('gray_section_heading');?></h1>
+        <p class="font-nova-text"><?php the_field('gray_section_content');?></p>
     </div>
     <div>
         <a href="<?php the_field('gray_section_button_url');?>">
-        <button><?php the_field('gray_section_button_text');?></button></a>
+        <button class="dark-button"><?php the_field('gray_section_button_text');?></button></a>
     </div>
 </div>
 
 <!-- Gallery Section -->
-<div class="block-gallery">
+<div class="block-gallery bg-lightgray-b">
 <?php
 if (have_rows('gallery_section')):
     while (have_rows('gallery_section')): the_row();?>
         <div class="block-gallery-media">
             <?php $img1 = get_sub_field('img_1'); ?>
-            <div class="img_small">
-                <img src="<?php echo $img1["sizes"]["content image"]; ?>" alt="">
-            </div>
+                <img class="img_small" src="<?php echo $img1["sizes"]["content image"]; ?>" alt="">
             <?php $img2 = get_sub_field('img_2'); ?>
-            <div class="img_small">
-                <img src="<?php echo $img2["sizes"]["content image"]; ?>" alt="">
-            </div> <?php $img3 = get_sub_field('img_3'); ?>
-            <div class="img_small">
-                <img src="<?php echo $img3["sizes"]["content image"]; ?>" alt="">
-            </div>
-            <?php $img4 = get_sub_field('img_4'); ?>
-            <div class="img_small">
-                <img src="<?php echo $img4["sizes"]["content image"]; ?>" alt="">
-            </div>
+                <img class="img_small" src="<?php echo $img2["sizes"]["content image"]; ?>" alt="">
+            <?php $img3 = get_sub_field('img_3'); ?>
+                <img class="img_small" src="<?php echo $img3["sizes"]["content image"]; ?>" alt="">
         </div>
         <div class="block-gallery-media-text">
-            <div class="block-gallery-content">
-                <h1 class="title"><?php the_sub_field('heading');?></h1>
-                <p class="text"><?php the_sub_field('content');?></p>
+            <div class="block-gallery-content col-black">
+                <h1 class="font-title"><?php the_sub_field('heading');?></h1>
+                <p class="font-nova-text"><?php the_sub_field('content');?></p>
             </div>
             <div class="block-gallery-right-img">
                 <?php $img = get_sub_field('side_img'); ?>

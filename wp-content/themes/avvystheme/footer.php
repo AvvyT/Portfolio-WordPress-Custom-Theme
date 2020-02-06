@@ -1,6 +1,6 @@
    <footer>
-     <div class="block-footer-content">
-        <h3>Let me build the website you need.</h3>
+     <div class="block-footer-content col-white bg-black">
+        <h3 class="block-footer-content-heading">Let me build the website you need.</h3>
         <?php wp_nav_menu(array('theme_location' => 'secondary'));?>
         <div id="menu-footer-navigation">
         <!-- SVG LinkedIn -->
@@ -39,7 +39,7 @@
               </svg>
             </a>
           </div>
-        <p>© 2020 Created by Radoslava Todorova.</p>
+        <p class="block-footer-content-last col-grey">© 2020 Created by Radoslava Todorova.</p>
      </div>
    </footer>
    <?php wp_footer();?>
