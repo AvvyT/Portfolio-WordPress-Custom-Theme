@@ -17,10 +17,11 @@
 
 .box-header {
     width: 100%;
+    min-height: 100vh;
     box-sizing: border-box;
     white-space: pre-wrap;
     margin-right: auto;
-    margin-left: 6%;
+    border-bottom: 1px solid white;
 }
 
 .box-text-md {

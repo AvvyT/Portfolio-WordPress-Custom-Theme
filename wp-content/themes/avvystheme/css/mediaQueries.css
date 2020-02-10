@@ -4,6 +4,15 @@
     ============================================
  */
 
+/** EXTRA large devices (large laptops and desktops, 1300px and UP) **/
+
+@media only screen and (min-width: 1300px) {
+    .downArrow {
+        position: absolute;
+        top: 830px;
+    }
+}
+
 /** LARGE devices (laptops/desktops, 950px to 1050px) **/
 
 @media (min-width: 950px) and (max-width: 1050px) {
@@ -99,5 +108,13 @@
     }
     .contact-img {
         text-align: center;
+    }
+    .box-header {
+        min-height: 70vh;
+    }
+    .downArrow {
+        position: absolute;
+        top: 450px;
+        left: 33%;
     }
 }
