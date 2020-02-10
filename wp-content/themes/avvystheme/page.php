@@ -7,7 +7,7 @@
 if (have_rows('facts_section')):
     while (have_rows('facts_section')): the_row();?>
       <?php $img = get_sub_field('facts_section_image'); ?>
-        <img src="<?php echo $img["sizes"]["content image"]; ?>" alt="">
+        <img class="responsive" src="<?php echo $img["sizes"]["content image"]; ?>" alt="">
         <div class="block-grey-text-content col-black">
             <h1 class="font-title"><?php the_sub_field('facts_section_heading');?></h1>
             <p class="font-nova-text"><?php the_sub_field('facts_section_content');?></p>
@@ -47,12 +47,8 @@ if (have_rows('gallery_section')):
                 <h1 class="font-title"><?php the_sub_field('heading');?></h1>
                 <p class="font-nova-text"><?php the_sub_field('content');?></p>
             </div>
-            <div class="block-gallery-right-img">
-                <?php $img = get_sub_field('side_img'); ?>
-                <div class="img_medium">
-                    <img src="<?php echo $img["sizes"]["content image"]; ?>" alt="">
-                </div>
-            </div>
+            <?php $img = get_sub_field('side_img'); ?>
+                <img class="responsive" src="<?php echo $img["sizes"]["content image"]; ?>" alt="">
         </div>
     <?php endwhile;
 endif;

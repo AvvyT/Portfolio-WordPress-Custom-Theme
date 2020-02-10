@@ -1,0 +1,103 @@
+/*  
+    ============================================
+        Responsive Web Design 
+    ============================================
+ */
+
+/** LARGE devices (laptops/desktops, 950px to 1050px) **/
+
+@media (min-width: 950px) and (max-width: 1050px) {
+    .box-header-heading {
+        margin-top: 8%;
+    }
+    .sm {
+        max-width: 90%;
+    }
+    .responsive {
+        max-width: 50%;
+    }
+    .box-contact {
+        max-width: 60%;
+    }
+    .block-grey-text-content {
+        margin: 5%;
+    }
+    .box-header {
+        max-width: 100%;
+        min-height: 100vh;
+    }
+}
+
+/** SMALL devices (portrait, tablets and large phones, from 600px up to 950px) **/
+
+@media (min-width: 600px) and (max-width: 950px) {
+    .box-header-heading {
+        margin-top: 10%;
+    }
+    .block-home-gallery, .block-gallery-media-text, .box-contact-media-text {
+        flex-direction: column;
+        padding: 0;
+    }
+    .box-text {
+        flex-direction: column;
+        padding: 10vh 6vw;
+    }
+    .box-text img, .block-gallery-media-text img {
+        padding: 10vh 18vw;
+    }
+    .box-CV-content-shadow {
+        width: 100%;
+    }
+    .contact-img {
+        text-align: center;
+    }
+    .responsive {
+        min-height: 70vh;
+    }
+    .block-grey-text-content {
+        margin: 0;
+    }
+    .block-page-media-text {
+        padding: 10vh 6vw;
+    }
+}
+
+/** EXTRA Small (phones, 750px or smaller) **/
+
+@media only screen and (max-width: 750px) {
+    html {
+        margin: 0 !important;
+    }
+    .box-header-heading {
+        margin-top: 50%;
+    }
+    .box-text {
+        flex-direction: column;
+        padding: 6vh;
+    }
+    .box-CV-content-shadow {
+        width: 100%;
+    }
+    .block-home-gallery, .block-gallery-media-text, .box-contact-media-text {
+        flex-direction: column;
+        padding: 0;
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .box-content {
+        margin-bottom: 3%;
+    }
+    .block-page-media-text, .box-CV-content-shadow {
+        padding: 2vh;
+        margin: 0;
+    }
+    .custom-background {
+        background-color: darkslategrey;
+    }
+    .contact-img {
+        text-align: center;
+    }
+}

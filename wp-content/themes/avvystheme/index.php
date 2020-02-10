@@ -8,7 +8,7 @@
 if (have_rows('left_img_section')):
     while (have_rows('left_img_section')): the_row();?>
         <?php $img = get_sub_field('left_img_section_image');?>
-          <img src="<?php echo $img["sizes"]["content image"]; ?>" alt="">
+          <img class="responsive" src="<?php echo $img["sizes"]["content image"]; ?>" alt="">
           <div class="box-content col-black">
             <h1 class="font-title"><?php the_sub_field('left_img_section_heading');?></h1>
             <p class="font-nova-text"><?php the_sub_field('left_img_section_content');?></p>
@@ -32,10 +32,8 @@ if (have_rows('home_gallery_section')):
             </div>
             <?php $img1 = get_sub_field('img_1');?>
             <?php $img1a = get_sub_field('img_1a');?>
-            <div>
                 <img class="home-img" src="<?php echo $img1["sizes"]["content image"]; ?>" alt="">
                 <img class="home-img" src="<?php echo $img1a["sizes"]["content image"]; ?>" alt="">
-            </div>
             <div class="gallery-button">
                 <a href="<?php the_sub_field('img_1_button_url');?>">
                 <button class="white-button"><?php the_sub_field('img_1_button_text');?></button></a>
@@ -52,10 +50,8 @@ if (have_rows('home_gallery_section')):
             </div>
             <?php $img2 = get_sub_field('img_2');?>
             <?php $img2a = get_sub_field('img_2a');?>
-            <div>
                 <img class="home-img" src="<?php echo $img2["sizes"]["content image"]; ?>" alt="">
                 <img class="home-img" src="<?php echo $img2a["sizes"]["content image"]; ?>" alt="">
-            </div>
             <div class="gallery-button">
                 <a href="<?php the_sub_field('img_2_button_url');?>">
                 <button class="white-button"><?php the_sub_field('img_2_button_text');?></button></a>
@@ -70,10 +66,8 @@ if (have_rows('home_gallery_section')):
             </div>
             <?php $img3 = get_sub_field('img_3');?>
             <?php $img3a = get_sub_field('img_3a');?>
-            <div>
                 <img class="home-img" src="<?php echo $img3["sizes"]["content image"]; ?>" alt="">
                 <img class="home-img" src="<?php echo $img3a["sizes"]["content image"]; ?>" alt="">
-            </div>
             <div class="gallery-button">
                 <a href="<?php the_sub_field('img_3_button_url');?>">
                 <button class="white-button"><?php the_sub_field('img_3_button_text');?></button></a>
@@ -88,10 +82,8 @@ if (have_rows('home_gallery_section')):
             </div>
             <?php $img4 = get_sub_field('img_4');?>
             <?php $img4a = get_sub_field('img_4a');?>
-            <div>
                 <img class="home-img" src="<?php echo $img4["sizes"]["content image"]; ?>" alt="">
                 <img class="home-img" src="<?php echo $img4a["sizes"]["content image"]; ?>" alt="">
-            </div>
             <div class="gallery-button">
                 <a href="<?php the_sub_field('img_4_button_url');?>">
                 <button class="white-button"><?php the_sub_field('img_4_button_text');?></button></a>
@@ -117,7 +109,7 @@ if (have_rows('right_img_section')):
             </div>
         </div>
         <?php $img = get_sub_field('right_img_section_img');?>
-        <div><img src="<?php echo $img["sizes"]["content image"]; ?>" alt=""></div>
+        <img class="responsive" src="<?php echo $img["sizes"]["content image"]; ?>" alt="">
     <?php endwhile;
 endif;
 ?>

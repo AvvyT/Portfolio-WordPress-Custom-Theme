@@ -9,7 +9,7 @@ if (have_rows('facts_section')):
     while (have_rows('facts_section')): the_row();?>
     <div class="contact-img">
       <?php $img = get_sub_field('facts_section_image'); ?>
-        <img class="img-element" src="<?php echo $img["sizes"]["content image"]; ?>" alt="">
+        <img class="img-element sm" src="<?php echo $img["sizes"]["content image"]; ?>" alt="">
      </div>
         <!-- Gray Section -->
         <div class="box-contact">

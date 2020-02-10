@@ -23,10 +23,8 @@ Download [WordPress](https://wordpress.org/download/) here.
 
 ## Verktyg
 
-- **Lamp-stacken**(MySql och php), eftersom WordPress bygger på det.
 - **WordPress** för att det är en av de mest använda CMS på företag.
 - **WordPress Plugins** som hjälpmedel. 
-- **Sass** för att styla sidan.
-- **Webpack** för att kompilera sass till css.
+- **Responsive Web Design** anpassa för movil.
 - **Deploy** ska undersöka hur jag kan publicera sidan.
 - Projektet versionshanteras i git via **GitHub**.
