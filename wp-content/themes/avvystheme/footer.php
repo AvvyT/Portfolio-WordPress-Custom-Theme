@@ -1,6 +1,6 @@
    <footer>
      <div class="block-footer-content col-white bg-black">
-        <h3 class="block-footer-content-heading">Let me build the website you need.</h3>
+        <h3 class="block-footer-content-heading">I make your ideas come to life.</h3>
         <?php wp_nav_menu(array('theme_location' => 'secondary'));?>
         <div id="menu-footer-navigation">
         <!-- SVG LinkedIn -->

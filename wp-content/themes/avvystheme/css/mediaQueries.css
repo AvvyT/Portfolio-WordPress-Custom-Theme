@@ -22,8 +22,8 @@
     .sm {
         max-width: 90%;
     }
-    .responsive {
-        max-width: 50%;
+    .media {
+        overflow: inherit;
     }
     .box-contact {
         max-width: 60%;
@@ -33,7 +33,14 @@
     }
     .box-header {
         max-width: 100%;
-        min-height: 100vh;
+        min-height: auto;
+    }
+    .box-text {
+        padding: 5vh 3vw;
+    }
+    .downArrow {
+        position: absolute;
+        top: 600px;
     }
 }
 
@@ -78,7 +85,13 @@
         margin: 0 !important;
     }
     .box-header-heading {
-        margin-top: 50%;
+        margin-top: 70%;
+        text-align: center;
+    }
+    .font-pro {
+        font-size: 9vw;
+        letter-spacing: .06em;
+        line-height: 1em;
     }
     .box-text {
         flex-direction: column;
@@ -89,7 +102,7 @@
     }
     .block-home-gallery, .block-gallery-media-text, .box-contact-media-text {
         flex-direction: column;
-        padding: 0;
+        padding: 2vh;
     }
     .menu {
         display: flex;
@@ -101,10 +114,16 @@
     }
     .block-page-media-text, .box-CV-content-shadow {
         padding: 2vh;
+        overflow: auto;
         margin: 0;
     }
-    .custom-background {
-        background-color: darkslategrey;
+    .font-nova-text {
+        letter-spacing: .04em;
+        font-size: 16px;
+        line-height: 1.5em;
+    }
+    .block-footer-content-heading {
+        font-size: 6vw;
     }
     .contact-img {
         text-align: center;
@@ -112,9 +131,26 @@
     .box-header {
         min-height: 70vh;
     }
+    .responsive {
+        max-width: 100%;
+    }
+    .downArrow {
+        position: absolute;
+        top: 490px;
+        left: 33%;
+    }
+}
+
+/** XXSmall (phones, 375px or smaller) **/
+
+@media only screen and (max-width: 375px) {
     .downArrow {
         position: absolute;
         top: 450px;
-        left: 33%;
+        left: 30%;
+    }
+    .box-CV-content-shadow {
+        width: 100%;
+        overflow: auto;
     }
 }

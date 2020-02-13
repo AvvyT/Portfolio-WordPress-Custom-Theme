@@ -77,6 +77,7 @@ body {
 }
 
 .home-img {
+    max-width: -webkit-fill-available;
     transition: transform .4s;
     transform-origin: center center;
 }
@@ -100,6 +101,7 @@ body {
 /* Contact pages style */
 
 .img-element {
+    max-width: -webkit-fill-available;
     -webkit-box-shadow: 10px 10px 26px -18px rgba(150, 150, 150, 0.81);
     -moz-box-shadow: 10px 10px 26px -18px rgba(150, 150, 150, 0.81);
     box-shadow: 10px 10px 26px -18px rgba(150, 150, 150, 0.81);

@@ -7,7 +7,15 @@
 if (have_rows('facts_section')):
     while (have_rows('facts_section')): the_row();?>
       <?php $img = get_sub_field('facts_section_image'); ?>
-        <img class="responsive" src="<?php echo $img["sizes"]["content image"]; ?>" alt="">
+      <picture class="media">
+      <img class="responsive" src="<?php echo $img["sizes"]["content image"]; ?>" alt=""/>
+        <!-- 300 pixlar eller mer -->
+        <source media="(min-width: 300px)" srcset="<?php $img ?>250w.jpg">
+        <!-- 799 pixlar eller mindre -->
+        <source media="(max-width: 799px)" srcset="<?php $img ?>480w.jpg">
+        <!-- 800 pixlar eller mer -->
+        <source media="(min-width: 800px)" srcset="<?php $img ?>800w.jpg">
+     </picture>
         <div class="block-grey-text-content col-black">
             <h1 class="font-title"><?php the_sub_field('facts_section_heading');?></h1>
             <p class="font-nova-text"><?php the_sub_field('facts_section_content');?></p>
@@ -19,14 +27,20 @@ endif;
 
 <!-- Gray Section -->
 <div class="box-text-md bg-darkgray col-white">
-    <div class="block-grey-text-content">
-        <h1 class="font-title"><?php the_field('gray_section_heading');?></h1>
-        <p class="font-nova-text"><?php the_field('gray_section_content');?></p>
-    </div>
-    <div>
-        <a href="<?php the_field('gray_section_button_url');?>">
-        <button class="dark-button"><?php the_field('gray_section_button_text');?></button></a>
-    </div>
+<?php
+if (have_rows('gray_section')):
+    while (have_rows('gray_section')): the_row();?>
+        <div class="block-grey-text-content">
+            <h1 class="font-title"><?php the_sub_field('gray_section_heading');?></h1>
+            <p class="font-nova-text"><?php the_sub_field('gray_section_content');?></p>
+        </div>
+        <div>
+            <a href="<?php the_field('gray_section_button_url');?>">
+            <button class="dark-button"><?php the_field('gray_section_button_text');?></button></a>
+       </div>
+    <?php endwhile;
+endif;
+?>
 </div>
 
 <!-- Gallery Section -->
@@ -48,7 +62,15 @@ if (have_rows('gallery_section')):
                 <p class="font-nova-text"><?php the_sub_field('content');?></p>
             </div>
             <?php $img = get_sub_field('side_img'); ?>
-                <img class="responsive" src="<?php echo $img["sizes"]["content image"]; ?>" alt="">
+            <picture class="media">
+              <img class="responsive" src="<?php echo $img["sizes"]["content image"]; ?>" alt=""/>
+                <!-- 300 pixlar eller mer -->
+                <source media="(min-width: 300px)" srcset="<?php $img ?>250w.jpg">
+                <!-- 799 pixlar eller mindre -->
+                <source media="(max-width: 799px)" srcset="<?php $img ?>480w.jpg">
+                <!-- 800 pixlar eller mer -->
+                <source media="(min-width: 800px)" srcset="<?php $img ?>800w.jpg">
+            </picture>
         </div>
     <?php endwhile;
 endif;
