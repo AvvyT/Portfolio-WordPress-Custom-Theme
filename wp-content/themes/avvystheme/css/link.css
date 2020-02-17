@@ -12,11 +12,15 @@
     color: #e1a87a;
 }
 
+#menu-avvys-menu .current-menu-item>a, #menu-footer-navigation .current-menu-item>a {
+    border-bottom: solid 1px #e1a87a; /* active */
+}
+
 /**  SVG chevron style  **/
 
 .downArrow {
     position: absolute;
-    top: 650px;
+    top: 600px;
     left: 43%;
     fill: #fff;
 }

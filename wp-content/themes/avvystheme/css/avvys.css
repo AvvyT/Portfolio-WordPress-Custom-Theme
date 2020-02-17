@@ -108,5 +108,6 @@ body {
 }
 
 .contact-img {
-    flex-grow: 1;
+    text-align: center;
+    flex-grow: 3;
 }

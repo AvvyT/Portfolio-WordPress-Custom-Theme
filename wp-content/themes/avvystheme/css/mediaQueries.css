@@ -4,9 +4,9 @@
     ============================================
  */
 
-/** EXTRA large devices (large laptops and desktops, 1300px and UP) **/
+/** EXTRA large devices (large laptops and desktops, 1250px and UP) **/
 
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 12500px) {
     .downArrow {
         position: absolute;
         top: 830px;
@@ -20,13 +20,14 @@
         margin-top: 8%;
     }
     .sm {
-        max-width: 90%;
+        max-width: 100%;
+        padding: 2vh;
     }
     .media {
         overflow: inherit;
     }
     .box-contact {
-        max-width: 60%;
+        padding: 2vh;
     }
     .block-grey-text-content {
         margin: 5%;
