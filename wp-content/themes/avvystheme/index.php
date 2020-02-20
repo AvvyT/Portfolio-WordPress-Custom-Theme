@@ -35,9 +35,9 @@ if (have_rows('home_gallery_section')):
                 <img class="home-img" src="<?php echo $img1["sizes"]["content image"]; ?>" alt="">
                 <img class="home-img" src="<?php echo $img1a["sizes"]["content image"]; ?>" alt="">
             <div class="gallery-button">
-                <a href="<?php the_sub_field('img_1_button_url');?>">
+                <a href="<?php the_sub_field('img_1_button_url');?>" target="blank">
                 <button class="white-button"><?php the_sub_field('img_1_button_text');?></button></a>
-                <a href="<?php the_sub_field('img_1_button_url_2');?>">
+                <a href="<?php the_sub_field('img_1_button_url_2');?>" target="blank">
                 <button class="white-button"><?php the_sub_field('img_1_button_text_2');?></button></a>
             </div>
         </div>
@@ -53,7 +53,7 @@ if (have_rows('home_gallery_section')):
                 <img class="home-img" src="<?php echo $img2["sizes"]["content image"]; ?>" alt="">
                 <img class="home-img" src="<?php echo $img2a["sizes"]["content image"]; ?>" alt="">
             <div class="gallery-button">
-                <a href="<?php the_sub_field('img_2_button_url');?>">
+                <a href="<?php the_sub_field('img_2_button_url');?>" target="blank">
                 <button class="white-button"><?php the_sub_field('img_2_button_text');?></button></a>
             </div>
         </div>
@@ -69,7 +69,7 @@ if (have_rows('home_gallery_section')):
                 <img class="home-img" src="<?php echo $img3["sizes"]["content image"]; ?>" alt="">
                 <img class="home-img" src="<?php echo $img3a["sizes"]["content image"]; ?>" alt="">
             <div class="gallery-button">
-                <a href="<?php the_sub_field('img_3_button_url');?>">
+                <a href="<?php the_sub_field('img_3_button_url');?>" target="blank">
                 <button class="white-button"><?php the_sub_field('img_3_button_text');?></button></a>
             </div>
         </div>
@@ -85,7 +85,7 @@ if (have_rows('home_gallery_section')):
                 <img class="home-img" src="<?php echo $img4["sizes"]["content image"]; ?>" alt="">
                 <img class="home-img" src="<?php echo $img4a["sizes"]["content image"]; ?>" alt="">
             <div class="gallery-button">
-                <a href="<?php the_sub_field('img_4_button_url');?>">
+                <a href="<?php the_sub_field('img_4_button_url');?>" target="blank">
                 <button class="white-button"><?php the_sub_field('img_4_button_text');?></button></a>
             </div>
         </div>
@@ -103,7 +103,7 @@ if (have_rows('right_img_section')):
             <h1 class="font-title"><?php the_sub_field('right_img_section_heading');?></h1>
             <p class="font-nova-text"><?php the_sub_field('right_img_section_content');?></p>
             <div>
-                <a href="<?php the_sub_field('right_img_section_button_url');?>">
+                <a href="<?php the_sub_field('right_img_section_button_url');?>" target="blank">
                     <button class="dark-button"><?php the_sub_field('right_img_section_button_text');?></button>
                 </a>
             </div>

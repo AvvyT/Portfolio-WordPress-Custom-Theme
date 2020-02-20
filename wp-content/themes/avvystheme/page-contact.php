@@ -22,7 +22,7 @@ if (have_rows('facts_section')):
                         <p class="font-sans-serif-text"><?php the_sub_field('gray_section_content');?></p>
                     </div>
                     <div>
-                        <a href="<?php the_sub_field('gray_section_button_url');?>">
+                        <a href="<?php the_sub_field('gray_section_button_url');?>" target="blank">
                         <button class="dark-button"><?php the_sub_field('gray_section_button_text');?></button></a>
                     </div>
                 <?php endwhile;

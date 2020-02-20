@@ -109,5 +109,6 @@ body {
 
 .contact-img {
     text-align: center;
-    flex-grow: 3;
+    flex-grow: 4;
+    margin-right: 5%;
 }
