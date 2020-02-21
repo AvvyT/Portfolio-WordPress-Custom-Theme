@@ -14,6 +14,8 @@ Projektet har bestått av att bygga min portfölj sida med WordPress, där jag h
 Jag har använt mig av Visual Studio Code med PHP och MySQL. Mycket är byggt i boxes med Flexbox med massa sections. Sidan är  Responsive Web Design anpassad med Media Queries. Projektet versionshanteras i git via GitHub.
 
 <img width="1257" alt="Skärmavbild 2020-02-19 kl  12 05 54" src="https://user-images.githubusercontent.com/43029591/75040721-7bbfb400-54bb-11ea-8272-7901697ef034.png">
+<img width="1241" alt="Skärmavbild 2020-02-21 kl  15 28 28" src="https://user-images.githubusercontent.com/43029591/75042624-fdfda780-54be-11ea-8ec7-9a7a89064e5e.png">
+
 
 ## Installation
 
