@@ -13,7 +13,7 @@ skapat av **Radoslava Todorova** [AvvyT](https://github.com/AvvyT) FEU18.
 Projektet har bestått av att bygga min portfölj sida med WordPress, där jag har skapat ett eget theme och lärt mig bygga enkla sidmallar. Siten innehåller en Startsida, Biografisida, CV sida och Kontakt sida.
 Jag har använt mig av Visual Studio Code med PHP och MySQL. Mycket är byggt i boxes med Flexbox med massa sections. Sidan är  Responsive Web Design anpassad med Media Queries. Projektet versionshanteras i git via GitHub.
 
-<img width="1036" alt="About-header" src="https://user-images.githubusercontent.com/43029591/75040253-9fcec580-54ba-11ea-9de8-fbbba20d72b0.png">
+<img width="1257" alt="Skärmavbild 2020-02-19 kl  12 05 54" src="https://user-images.githubusercontent.com/43029591/75040721-7bbfb400-54bb-11ea-8272-7901697ef034.png">
 
 ## Installation
 
