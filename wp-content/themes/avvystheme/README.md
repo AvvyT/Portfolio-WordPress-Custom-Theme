@@ -5,6 +5,8 @@
 **Personlig sida med WordPress** 
 *Portfölj med Biografi och Personlig backgrund*
 
+<img width="718" alt="eget theme" src="https://user-images.githubusercontent.com/43029591/75043440-613c0980-54c0-11ea-85f5-73dfb646ee3c.png">
+
 skapat av Radoslava Todorova [AvvyT](https://github.com/AvvyT) FEU18.
 
 ## Beskrivning
