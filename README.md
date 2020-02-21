@@ -3,13 +3,15 @@
 # Projektbeskrivning
 
 ## Namn
-### Personlig Portfolio med WordPress
+### Personlig sida med WordPress
+*Portfölj med Biografi och Personlig backgrund*
 
 skapat av **Radoslava Todorova** [AvvyT](https://github.com/AvvyT) FEU18.
 
 ## Beskrivning
 
-Projektet består av att bygga min portföljsida med WordPress, där jag skapar eget theme och lära mig advända WordPress. Det kommer att innehålla minst en Home-sida, en Biography-sida och Kontakt sida. Applikationen utvecklas med LAMP-stacken.
+Projektet har bestått av att bygga min portfölj sida med WordPress, där jag har skapat ett eget theme och lärt mig bygga enkla sidmallar. Siten innehåller en Startsida, Biografisida, CV sida och Kontakt sida.
+Jag har använt mig av Visual Studio Code med PHP och MySQL. Mycket är byggt i boxes med Flexbox med massa sections. Sidan är  Responsive Web Design anpassad med Media Queries. Projektet versionshanteras i git via GitHub.
 
 ## Installation
 
