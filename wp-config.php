@@ -20,13 +20,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'wordPress' );
+define( 'DB_NAME', 'avvy_portfolio' );
 
 /** MySQL database username */
-define( 'DB_USER', 'wpuser' );
+define( 'DB_USER', 'root' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'wppass' );
+define( 'DB_PASSWORD', '' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );
@@ -46,14 +46,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         '!G|+AI{{beSj(kym5Le 0U#)w<l|QSvK+ TuBg<xaqQ C%Cb]+WNLvj8LQMaW+y_' );
-define( 'SECURE_AUTH_KEY',  '2?Nq!.HsD(o{dwyTUUb-#HSydl/4%j4Dyc46W{ij=p^_UlE#1))}d:-*|9*9agp>' );
-define( 'LOGGED_IN_KEY',    '@+N[gnd~;(A&28jS/9_<c,6dY-@p6z3k=n2L5Kg/&ZQ2 gwCjhpUa}Kl-_n$q-Ad' );
-define( 'NONCE_KEY',        'P1gYELcPoaB|<QzN.4UmZISw6JB6O%;u|MN2RKdCH5zwr SqrXnl=]x$n-,JRz%h' );
-define( 'AUTH_SALT',        '9c.7:=:),ir}ggQHbn5fpf+dd<<0**R`SB8?a^1^u}JC~Fs!Qh }*!)47LUM8M`x' );
-define( 'SECURE_AUTH_SALT', '1?]ZM5UIY9e~j0669nJl(U%=@l+YZ5]mn}iq3*GFidu]g423RUptFJg!ul]M[9(f' );
-define( 'LOGGED_IN_SALT',   'g#.9vEK]o9^$ f_%DCU4yl<)1B>DcdoUvqV]s*nd7~`fl!YeM,#:7)$u~|7lRlr%' );
-define( 'NONCE_SALT',       'ZL7uEiLY7]+BkSep53|##,lC{u9~>h<0T:b),`fMKJ3_Q2]2QF%Ydez|)ETYkIVY' );
+define( 'AUTH_KEY',         'PMHfRq[z|Z4S%>*qEHR{T5JM]VE]mk/N9L7ZL@n/k.4WIjk_`AJerb^fi)x42 7}' );
+define( 'SECURE_AUTH_KEY',  ')$TuL9Ay~j9hB,IBia*J4tE|=EVBK?Rs6(ceyl%ZDm?n578.j=$mk}?Pf}.IAa:o' );
+define( 'LOGGED_IN_KEY',    '^%;V>`c 9c1Rf-y</v&=@PXpyPpp(9~MF xc+I<Ew5n&T>nR@1LunvX+K.B7[%$p' );
+define( 'NONCE_KEY',        '&W>#OT}^eGLM6h/Z&d?,hPy6<s-W9>[:Lg<~!TSw<!}NZC5,AF@2v#wQ(^i;WXq2' );
+define( 'AUTH_SALT',        'g^2.Xj:S?Z=xM3xVaZ9>u^nU!_hXL4gIHj.6o[~.56i4GJCQxn55IS;|E]3JiA,?' );
+define( 'SECURE_AUTH_SALT', '=s}lun,,U-sq>`^:#70TMf5TV#,7RtE!{D5kxRyl8M[W)M~lY|WYGb(j))s*sYcB' );
+define( 'LOGGED_IN_SALT',   'rQ]fuWaUH8MD_yWo7<l!`M{!:9Z^v2D[KCO#=YB98g@1=<s(:J+JL<<L|dS>5?d-' );
+define( 'NONCE_SALT',       'JDB;vp[>Y;I_xitDmmb|M>- `joUn~R.Skw37K$?PC_+=faXp3.z4}gt9rRx4}%U' );
 
 /**#@-*/
 
@@ -77,7 +77,7 @@ $table_prefix = 'wp_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define( 'WP_DEBUG', true );
+define( 'WP_DEBUG', false );
 
 /* That's all, stop editing! Happy publishing. */
 

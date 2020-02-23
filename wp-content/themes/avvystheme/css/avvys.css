@@ -50,6 +50,7 @@ body {
     display: flex;
     list-style-type: none;
     justify-content: center;
+    text-decoration: none;
 }
 
 /**  Pages style  **/

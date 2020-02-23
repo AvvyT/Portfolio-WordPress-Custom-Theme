@@ -6,10 +6,13 @@
 
 /** EXTRA large devices (large laptops and desktops, 1250px and UP) **/
 
-@media only screen and (min-width: 12500px) {
+@media only screen and (min-width: 1250px) {
     .downArrow {
         position: absolute;
         top: 830px;
+    }
+    .contact-img{
+        margin: 0;
     }
 }
 
@@ -148,11 +151,26 @@
 @media only screen and (max-width: 375px) {
     .downArrow {
         position: absolute;
-        top: 400px;
+        top: 450px;
         left: 30%;
+        fill:#121212;
+    }
+    .block-gallery-media{
+        flex-direction: column;
+        padding: 2vh;
+    }
+    .img_small{
+        min-width:inherit;
     }
     .box-CV-content-shadow {
         width: 100%;
         overflow: auto;
+    }
+    .custom-background{
+        background-image: none !important;
+        background-color: #f0f0f0;
+    }
+    .font-pro{
+        color:#121212;
     }
 }
