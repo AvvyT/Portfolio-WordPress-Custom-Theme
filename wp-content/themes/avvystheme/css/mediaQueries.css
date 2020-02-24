@@ -4,21 +4,38 @@
     ============================================
  */
 
-/** EXTRA large devices (large laptops and desktops, 1250px and UP) **/
+ /** XXLarge devices (large laptops and desktops, 1350px and UP) **/
 
-@media only screen and (min-width: 1250px) {
+ @media only screen and (min-width: 1350px) {
     .downArrow {
         position: absolute;
-        top: 830px;
+        top: 19%;
+        margin-top: -50px;
     }
     .contact-img{
         margin: 0;
     }
 }
 
-/** LARGE devices (laptops/desktops, 950px to 1050px) **/
+/** EXTRA large devices (large laptops and desktops, 1350px and down) **/
 
-@media (min-width: 950px) and (max-width: 1050px) {
+@media only screen and (max-width: 1350px) {
+    .downArrow {
+        position: absolute;
+        top: 15%;
+        margin-top: -50px;
+    }
+    .contact-img{
+        margin: 0;
+    }
+    .box-header{
+        min-height: initial;
+    }
+}
+
+/** LARGE devices (laptops/desktops 1050px & down) **/
+
+@media only screen and (max-width: 1050px) {
     .box-header-heading {
         margin-top: 8%;
     }
@@ -44,7 +61,8 @@
     }
     .downArrow {
         position: absolute;
-        top: 600px;
+        top: 17%;
+        margin-top: -50px;
     }
 }
 
@@ -57,6 +75,9 @@
     .block-home-gallery, .block-gallery-media-text, .box-contact-media-text {
         flex-direction: column;
         padding: 0;
+    }
+    .box-header{
+        min-height: initial;
     }
     .box-text {
         flex-direction: column;
@@ -89,13 +110,14 @@
         margin: 0 !important;
     }
     .box-header-heading {
-        margin-top: 70%;
+        margin-top: 60%;
         text-align: center;
     }
     .font-pro {
         font-size: 9vw;
         letter-spacing: .06em;
         line-height: 1em;
+        margin-left: 0;
     }
     .box-text {
         flex-direction: column;
@@ -133,16 +155,14 @@
         text-align: center;
         margin-right: 0;
     }
-    .box-header {
-        min-height: 70vh;
-    }
     .responsive {
         max-width: 100%;
     }
     .downArrow {
         position: absolute;
-        top: 490px;
-        left: 33%;
+        top: 15%;
+        margin-top: -50px;
+        left: 45%;
     }
 }
 
@@ -151,8 +171,9 @@
 @media only screen and (max-width: 375px) {
     .downArrow {
         position: absolute;
-        top: 450px;
-        left: 30%;
+        top: 10%;
+        margin-top: -50px;
+        left: 45%;
         fill:#121212;
     }
     .block-gallery-media{
@@ -172,5 +193,6 @@
     }
     .font-pro{
         color:#121212;
+        margin-left: 0;
     }
 }

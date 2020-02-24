@@ -8,6 +8,11 @@
     letter-spacing: .16em;
 }
 
+ .link {
+    max-width: 60px;
+    margin-right: 25px;
+}
+
 #menu-avvys-menu>li>a:hover, #menu-footer-navigation>li>a:hover {
     color: #e1a87a;
 }
@@ -21,8 +26,10 @@
 
 .downArrow {
     position: absolute;
-    top: 600px;
-    left: 43%;
+    top: 13%;
+    margin-top: -50px;
+    left: 50%;
+    margin-left: -50px;
     fill: #fff;
 }
 

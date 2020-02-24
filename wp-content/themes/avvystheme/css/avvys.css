@@ -50,7 +50,7 @@ body {
     display: flex;
     list-style-type: none;
     justify-content: center;
-    text-decoration: none;
+    padding-left: inherit;
 }
 
 /**  Pages style  **/
