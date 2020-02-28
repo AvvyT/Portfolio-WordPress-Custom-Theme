@@ -9,7 +9,7 @@
 @media only screen and (min-width: 1350px) {
     .downArrow {
         position: absolute;
-        top: 19%;
+        top: 850px;
     }
     .contact-img {
         margin: 0;
@@ -152,10 +152,7 @@
         max-width: 100%;
     }
     .downArrow {
-        position: absolute;
-        top: 19%;
-        left: 50%;
-        margin-left: -65px;
+      display: none;
     }
 }
 
