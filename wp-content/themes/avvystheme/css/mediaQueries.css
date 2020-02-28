@@ -4,15 +4,14 @@
     ============================================
  */
 
- /** XXLarge devices (large laptops and desktops, 1350px and UP) **/
+/** XXLarge devices (large laptops and desktops, 1350px and UP) **/
 
- @media only screen and (min-width: 1350px) {
+@media only screen and (min-width: 1350px) {
     .downArrow {
         position: absolute;
         top: 19%;
-        margin-top: -50px;
     }
-    .contact-img{
+    .contact-img {
         margin: 0;
     }
 }
@@ -22,13 +21,12 @@
 @media only screen and (max-width: 1350px) {
     .downArrow {
         position: absolute;
-        top: 15%;
-        margin-top: -50px;
+        top: 600px;
     }
-    .contact-img{
+    .contact-img {
         margin: 0;
     }
-    .box-header{
+    .box-header {
         min-height: initial;
     }
 }
@@ -59,11 +57,6 @@
     .box-text {
         padding: 5vh 3vw;
     }
-    .downArrow {
-        position: absolute;
-        top: 17%;
-        margin-top: -50px;
-    }
 }
 
 /** SMALL devices (portrait, tablets and large phones, from 600px up to 950px) **/
@@ -76,7 +69,7 @@
         flex-direction: column;
         padding: 0;
     }
-    .box-header{
+    .box-header {
         min-height: initial;
     }
     .box-text {
@@ -160,9 +153,9 @@
     }
     .downArrow {
         position: absolute;
-        top: 15%;
-        margin-top: -50px;
-        left: 45%;
+        top: 19%;
+        left: 50%;
+        margin-left: -65px;
     }
 }
 
@@ -170,29 +163,25 @@
 
 @media only screen and (max-width: 375px) {
     .downArrow {
-        position: absolute;
-        top: 10%;
-        margin-top: -50px;
-        left: 45%;
-        fill:#121212;
+        display: none;
     }
-    .block-gallery-media{
+    .block-gallery-media {
         flex-direction: column;
         padding: 2vh;
     }
-    .img_small{
-        min-width:inherit;
+    .img_small {
+        min-width: inherit;
     }
     .box-CV-content-shadow {
         width: 100%;
         overflow: auto;
     }
-    .custom-background{
+    .custom-background {
         background-image: none !important;
         background-color: #f0f0f0;
     }
-    .font-pro{
-        color:#121212;
+    .font-pro {
+        color: #121212;
         margin-left: 0;
     }
 }

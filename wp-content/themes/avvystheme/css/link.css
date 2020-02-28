@@ -26,8 +26,6 @@
 
 .downArrow {
     position: absolute;
-    top: 13%;
-    margin-top: -50px;
     left: 50%;
     margin-left: -50px;
     fill: #fff;

@@ -8,10 +8,6 @@
     border-bottom: 1px solid white;
 }
 
-.container-header-inner {
-    box-sizing: border-box;
-}
-
 .box-header {
     width: 100%;
     min-height: 100vh;
@@ -19,6 +15,10 @@
     white-space: pre-wrap;
     margin-right: auto;
     border-bottom: 1px solid white;
+}
+
+.container-header-inner {
+    box-sizing: border-box;
 }
 
 .box-text-md {
