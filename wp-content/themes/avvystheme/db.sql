@@ -1,23 +1,23 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 4.9.3
 -- https://www.phpmyadmin.net/
 --
--- Värd: localhost:8889
--- Tid vid skapande: 21 feb 2020 kl 13:29
--- Serverversion: 5.7.26
--- PHP-version: 7.3.8
+-- Host: localhost:8889
+-- Generation Time: Jun 15, 2020 at 02:28 PM
+-- Server version: 5.7.26
+-- PHP Version: 7.4.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 --
--- Databas: `wordPress`
+-- Database: `avvy_portfolio`
 --
 
 -- --------------------------------------------------------
 
 --
--- Tabellstruktur `wp_commentmeta`
+-- Table structure for table `wp_commentmeta`
 --
 
 CREATE TABLE `wp_commentmeta` (
@@ -30,7 +30,7 @@ CREATE TABLE `wp_commentmeta` (
 -- --------------------------------------------------------
 
 --
--- Tabellstruktur `wp_comments`
+-- Table structure for table `wp_comments`
 --
 
 CREATE TABLE `wp_comments` (
@@ -52,7 +52,7 @@ CREATE TABLE `wp_comments` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
--- Dumpning av Data i tabell `wp_comments`
+-- Dumping data for table `wp_comments`
 --
 
 INSERT INTO `wp_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `comment_author_email`, `comment_author_url`, `comment_author_IP`, `comment_date`, `comment_date_gmt`, `comment_content`, `comment_karma`, `comment_approved`, `comment_agent`, `comment_type`, `comment_parent`, `user_id`) VALUES
@@ -61,7 +61,7 @@ INSERT INTO `wp_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `c
 -- --------------------------------------------------------
 
 --
--- Tabellstruktur `wp_links`
+-- Table structure for table `wp_links`
 --
 
 CREATE TABLE `wp_links` (
@@ -83,7 +83,7 @@ CREATE TABLE `wp_links` (
 -- --------------------------------------------------------
 
 --
--- Tabellstruktur `wp_options`
+-- Table structure for table `wp_options`
 --
 
 CREATE TABLE `wp_options` (
@@ -94,7 +94,7 @@ CREATE TABLE `wp_options` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
--- Dumpning av Data i tabell `wp_options`
+-- Dumping data for table `wp_options`
 --
 
 INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
@@ -130,13 +130,13 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (30, 'hack_file', '0', 'yes'),
 (31, 'blog_charset', 'UTF-8', 'yes'),
 (32, 'moderation_keys', '', 'no'),
-(33, 'active_plugins', 'a:2:{i:0;s:30:\"advanced-custom-fields/acf.php\";i:1;s:47:\"regenerate-thumbnails/regenerate-thumbnails.php\";}', 'yes'),
+(33, 'active_plugins', 'a:3:{i:0;s:30:\"advanced-custom-fields/acf.php\";i:1;s:37:\"post-types-order/post-types-order.php\";i:2;s:47:\"regenerate-thumbnails/regenerate-thumbnails.php\";}', 'yes'),
 (34, 'category_base', '', 'yes'),
 (35, 'ping_sites', 'http://rpc.pingomatic.com/', 'yes'),
 (36, 'comment_max_links', '2', 'yes'),
 (37, 'gmt_offset', '0', 'yes'),
 (38, 'default_email_category', '1', 'yes'),
-(39, 'recently_edited', '', 'no'),
+(39, 'recently_edited', 'a:2:{i:0;s:100:\"/Users/radoslavatodorova/Desktop/Projekts_20/Avvy_Portfolio20/wp-content/themes/avvystheme/style.css\";i:1;s:0:\"\";}', 'no'),
 (40, 'template', 'avvystheme', 'yes'),
 (41, 'stylesheet', 'avvystheme', 'yes'),
 (42, 'comment_whitelist', '1', 'yes'),
@@ -200,7 +200,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (100, 'widget_archives', 'a:2:{i:2;a:3:{s:5:\"title\";s:0:\"\";s:5:\"count\";i:0;s:8:\"dropdown\";i:0;}s:12:\"_multiwidget\";i:1;}', 'yes'),
 (101, 'widget_meta', 'a:2:{i:2;a:1:{s:5:\"title\";s:0:\"\";}s:12:\"_multiwidget\";i:1;}', 'yes'),
 (102, 'sidebars_widgets', 'a:4:{s:19:\"wp_inactive_widgets\";a:0:{}s:9:\"sidebar-1\";a:3:{i:0;s:8:\"search-2\";i:1;s:14:\"recent-posts-2\";i:2;s:17:\"recent-comments-2\";}s:9:\"sidebar-2\";a:3:{i:0;s:10:\"archives-2\";i:1;s:12:\"categories-2\";i:2;s:6:\"meta-2\";}s:13:\"array_version\";i:3;}', 'yes'),
-(103, 'cron', 'a:6:{i:1582294940;a:1:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1582330940;a:3:{s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1582374139;a:1:{s:32:\"recovery_mode_clean_expired_keys\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1582374159;a:2:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1582374160;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}s:7:\"version\";i:2;}', 'yes'),
+(103, 'cron', 'a:6:{i:1592234540;a:1:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}}i:1592266940;a:3:{s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1592310139;a:1:{s:32:\"recovery_mode_clean_expired_keys\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1592310159;a:2:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1592310160;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}s:7:\"version\";i:2;}', 'yes'),
 (104, 'widget_pages', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (105, 'widget_calendar', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (106, 'widget_media_audio', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
@@ -211,34 +211,40 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (111, 'widget_nav_menu', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (112, 'widget_custom_html', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 (114, 'recovery_keys', 'a:0:{}', 'yes'),
-(115, '_site_transient_update_core', 'O:8:\"stdClass\":4:{s:7:\"updates\";a:1:{i:0;O:8:\"stdClass\":10:{s:8:\"response\";s:6:\"latest\";s:8:\"download\";s:59:\"https://downloads.wordpress.org/release/wordpress-5.3.2.zip\";s:6:\"locale\";s:5:\"en_US\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:59:\"https://downloads.wordpress.org/release/wordpress-5.3.2.zip\";s:10:\"no_content\";s:70:\"https://downloads.wordpress.org/release/wordpress-5.3.2-no-content.zip\";s:11:\"new_bundled\";s:71:\"https://downloads.wordpress.org/release/wordpress-5.3.2-new-bundled.zip\";s:7:\"partial\";b:0;s:8:\"rollback\";b:0;}s:7:\"current\";s:5:\"5.3.2\";s:7:\"version\";s:5:\"5.3.2\";s:11:\"php_version\";s:6:\"5.6.20\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"5.3\";s:15:\"partial_version\";s:0:\"\";}}s:12:\"last_checked\";i:1582288238;s:15:\"version_checked\";s:5:\"5.3.2\";s:12:\"translations\";a:0:{}}', 'no'),
+(115, '_site_transient_update_core', 'O:8:\"stdClass\":4:{s:7:\"updates\";a:3:{i:0;O:8:\"stdClass\":10:{s:8:\"response\";s:7:\"upgrade\";s:8:\"download\";s:59:\"https://downloads.wordpress.org/release/wordpress-5.4.2.zip\";s:6:\"locale\";s:5:\"en_US\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:59:\"https://downloads.wordpress.org/release/wordpress-5.4.2.zip\";s:10:\"no_content\";s:70:\"https://downloads.wordpress.org/release/wordpress-5.4.2-no-content.zip\";s:11:\"new_bundled\";s:71:\"https://downloads.wordpress.org/release/wordpress-5.4.2-new-bundled.zip\";s:7:\"partial\";b:0;s:8:\"rollback\";b:0;}s:7:\"current\";s:5:\"5.4.2\";s:7:\"version\";s:5:\"5.4.2\";s:11:\"php_version\";s:6:\"5.6.20\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"5.3\";s:15:\"partial_version\";s:0:\"\";}i:1;O:8:\"stdClass\":11:{s:8:\"response\";s:10:\"autoupdate\";s:8:\"download\";s:59:\"https://downloads.wordpress.org/release/wordpress-5.4.2.zip\";s:6:\"locale\";s:5:\"en_US\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:59:\"https://downloads.wordpress.org/release/wordpress-5.4.2.zip\";s:10:\"no_content\";s:70:\"https://downloads.wordpress.org/release/wordpress-5.4.2-no-content.zip\";s:11:\"new_bundled\";s:71:\"https://downloads.wordpress.org/release/wordpress-5.4.2-new-bundled.zip\";s:7:\"partial\";b:0;s:8:\"rollback\";b:0;}s:7:\"current\";s:5:\"5.4.2\";s:7:\"version\";s:5:\"5.4.2\";s:11:\"php_version\";s:6:\"5.6.20\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"5.3\";s:15:\"partial_version\";s:0:\"\";s:9:\"new_files\";s:1:\"1\";}i:2;O:8:\"stdClass\":11:{s:8:\"response\";s:10:\"autoupdate\";s:8:\"download\";s:59:\"https://downloads.wordpress.org/release/wordpress-5.3.4.zip\";s:6:\"locale\";s:5:\"en_US\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:59:\"https://downloads.wordpress.org/release/wordpress-5.3.4.zip\";s:10:\"no_content\";s:70:\"https://downloads.wordpress.org/release/wordpress-5.3.4-no-content.zip\";s:11:\"new_bundled\";s:71:\"https://downloads.wordpress.org/release/wordpress-5.3.4-new-bundled.zip\";s:7:\"partial\";s:69:\"https://downloads.wordpress.org/release/wordpress-5.3.4-partial-2.zip\";s:8:\"rollback\";s:70:\"https://downloads.wordpress.org/release/wordpress-5.3.4-rollback-2.zip\";}s:7:\"current\";s:5:\"5.3.4\";s:7:\"version\";s:5:\"5.3.4\";s:11:\"php_version\";s:6:\"5.6.20\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"5.3\";s:15:\"partial_version\";s:5:\"5.3.2\";s:9:\"new_files\";s:0:\"\";}}s:12:\"last_checked\";i:1592228309;s:15:\"version_checked\";s:5:\"5.3.2\";s:12:\"translations\";a:0:{}}', 'no'),
 (116, 'theme_mods_twentytwenty', 'a:2:{s:18:\"custom_css_post_id\";i:-1;s:16:\"sidebars_widgets\";a:2:{s:4:\"time\";i:1579175323;s:4:\"data\";a:3:{s:19:\"wp_inactive_widgets\";a:0:{}s:9:\"sidebar-1\";a:3:{i:0;s:8:\"search-2\";i:1;s:14:\"recent-posts-2\";i:2;s:17:\"recent-comments-2\";}s:9:\"sidebar-2\";a:3:{i:0;s:10:\"archives-2\";i:1;s:12:\"categories-2\";i:2;s:6:\"meta-2\";}}}}', 'yes'),
-(121, '_site_transient_update_themes', 'O:8:\"stdClass\":4:{s:12:\"last_checked\";i:1582288239;s:7:\"checked\";a:2:{s:10:\"avvystheme\";s:9:\"0.1 alpha\";s:15:\"twentyseventeen\";s:3:\"2.2\";}s:8:\"response\";a:0:{}s:12:\"translations\";a:0:{}}', 'no'),
 (129, 'can_compress_scripts', '1', 'no'),
-(152, 'theme_mods_avvystheme', 'a:9:{s:18:\"custom_css_post_id\";i:-1;s:18:\"nav_menu_locations\";a:2:{s:7:\"primary\";i:2;s:9:\"secondary\";i:3;}s:16:\"background_image\";s:76:\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/love-scaled.jpg\";s:17:\"background_repeat\";s:9:\"no-repeat\";s:21:\"background_attachment\";s:5:\"fixed\";s:17:\"background_preset\";s:4:\"fill\";s:15:\"background_size\";s:5:\"cover\";s:21:\"background_position_x\";s:6:\"center\";s:21:\"background_position_y\";s:6:\"center\";}', 'yes'),
+(152, 'theme_mods_avvystheme', 'a:9:{s:18:\"custom_css_post_id\";i:-1;s:16:\"background_image\";s:110:\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/06/nils-lindner-drba0TzbCGA-unsplash-scaled.jpg\";s:17:\"background_preset\";s:4:\"fill\";s:21:\"background_position_x\";s:4:\"left\";s:21:\"background_position_y\";s:6:\"bottom\";s:15:\"background_size\";s:5:\"cover\";s:17:\"background_repeat\";s:9:\"no-repeat\";s:21:\"background_attachment\";s:5:\"fixed\";s:18:\"nav_menu_locations\";a:2:{s:7:\"primary\";i:2;s:9:\"secondary\";i:3;}}', 'yes'),
 (162, 'current_theme', 'Avvys Theme', 'yes'),
 (163, 'theme_switched', '', 'yes'),
 (164, 'theme_switched_via_customizer', '', 'yes'),
 (165, 'nav_menu_options', 'a:1:{s:8:\"auto_add\";a:0:{}}', 'yes'),
 (166, 'customize_stashed_theme_mods', 'a:0:{}', 'no'),
 (275, 'recently_activated', 'a:0:{}', 'yes'),
-(282, 'acf_version', '5.8.7', 'yes'),
+(282, 'acf_version', '5.8.12', 'yes'),
 (389, 'category_children', 'a:0:{}', 'yes'),
 (450, 'WPLANG', '', 'yes'),
 (451, 'new_admin_email', 'radoslavatsankova@gmail.com', 'yes'),
 (476, 'recovery_mode_email_last_sent', '1580829102', 'yes'),
-(632, '_site_transient_update_plugins', 'O:8:\"stdClass\":5:{s:12:\"last_checked\";i:1582288239;s:7:\"checked\";a:4:{s:30:\"advanced-custom-fields/acf.php\";s:5:\"5.8.7\";s:19:\"akismet/akismet.php\";s:5:\"4.1.3\";s:9:\"hello.php\";s:5:\"1.7.2\";s:47:\"regenerate-thumbnails/regenerate-thumbnails.php\";s:5:\"3.1.3\";}s:8:\"response\";a:0:{}s:12:\"translations\";a:0:{}s:9:\"no_update\";a:4:{s:30:\"advanced-custom-fields/acf.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:36:\"w.org/plugins/advanced-custom-fields\";s:4:\"slug\";s:22:\"advanced-custom-fields\";s:6:\"plugin\";s:30:\"advanced-custom-fields/acf.php\";s:11:\"new_version\";s:5:\"5.8.7\";s:3:\"url\";s:53:\"https://wordpress.org/plugins/advanced-custom-fields/\";s:7:\"package\";s:71:\"https://downloads.wordpress.org/plugin/advanced-custom-fields.5.8.7.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:75:\"https://ps.w.org/advanced-custom-fields/assets/icon-256x256.png?rev=1082746\";s:2:\"1x\";s:75:\"https://ps.w.org/advanced-custom-fields/assets/icon-128x128.png?rev=1082746\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:78:\"https://ps.w.org/advanced-custom-fields/assets/banner-1544x500.jpg?rev=1729099\";s:2:\"1x\";s:77:\"https://ps.w.org/advanced-custom-fields/assets/banner-772x250.jpg?rev=1729102\";}s:11:\"banners_rtl\";a:0:{}}s:19:\"akismet/akismet.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:21:\"w.org/plugins/akismet\";s:4:\"slug\";s:7:\"akismet\";s:6:\"plugin\";s:19:\"akismet/akismet.php\";s:11:\"new_version\";s:5:\"4.1.3\";s:3:\"url\";s:38:\"https://wordpress.org/plugins/akismet/\";s:7:\"package\";s:56:\"https://downloads.wordpress.org/plugin/akismet.4.1.3.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:59:\"https://ps.w.org/akismet/assets/icon-256x256.png?rev=969272\";s:2:\"1x\";s:59:\"https://ps.w.org/akismet/assets/icon-128x128.png?rev=969272\";}s:7:\"banners\";a:1:{s:2:\"1x\";s:61:\"https://ps.w.org/akismet/assets/banner-772x250.jpg?rev=479904\";}s:11:\"banners_rtl\";a:0:{}}s:9:\"hello.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:25:\"w.org/plugins/hello-dolly\";s:4:\"slug\";s:11:\"hello-dolly\";s:6:\"plugin\";s:9:\"hello.php\";s:11:\"new_version\";s:5:\"1.7.2\";s:3:\"url\";s:42:\"https://wordpress.org/plugins/hello-dolly/\";s:7:\"package\";s:60:\"https://downloads.wordpress.org/plugin/hello-dolly.1.7.2.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:64:\"https://ps.w.org/hello-dolly/assets/icon-256x256.jpg?rev=2052855\";s:2:\"1x\";s:64:\"https://ps.w.org/hello-dolly/assets/icon-128x128.jpg?rev=2052855\";}s:7:\"banners\";a:1:{s:2:\"1x\";s:66:\"https://ps.w.org/hello-dolly/assets/banner-772x250.jpg?rev=2052855\";}s:11:\"banners_rtl\";a:0:{}}s:47:\"regenerate-thumbnails/regenerate-thumbnails.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:35:\"w.org/plugins/regenerate-thumbnails\";s:4:\"slug\";s:21:\"regenerate-thumbnails\";s:6:\"plugin\";s:47:\"regenerate-thumbnails/regenerate-thumbnails.php\";s:11:\"new_version\";s:5:\"3.1.3\";s:3:\"url\";s:52:\"https://wordpress.org/plugins/regenerate-thumbnails/\";s:7:\"package\";s:70:\"https://downloads.wordpress.org/plugin/regenerate-thumbnails.3.1.3.zip\";s:5:\"icons\";a:1:{s:2:\"1x\";s:74:\"https://ps.w.org/regenerate-thumbnails/assets/icon-128x128.png?rev=1753390\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:77:\"https://ps.w.org/regenerate-thumbnails/assets/banner-1544x500.jpg?rev=1753390\";s:2:\"1x\";s:76:\"https://ps.w.org/regenerate-thumbnails/assets/banner-772x250.jpg?rev=1753390\";}s:11:\"banners_rtl\";a:0:{}}}}', 'no'),
-(635, '_site_transient_timeout_browser_0754d9a609f914d395978379eda0dc49', '1582713820', 'no'),
-(636, '_site_transient_browser_0754d9a609f914d395978379eda0dc49', 'a:10:{s:4:\"name\";s:6:\"Chrome\";s:7:\"version\";s:12:\"80.0.3987.87\";s:8:\"platform\";s:9:\"Macintosh\";s:10:\"update_url\";s:29:\"https://www.google.com/chrome\";s:7:\"img_src\";s:43:\"http://s.w.org/images/browsers/chrome.png?1\";s:11:\"img_src_ssl\";s:44:\"https://s.w.org/images/browsers/chrome.png?1\";s:15:\"current_version\";s:2:\"18\";s:7:\"upgrade\";b:0;s:8:\"insecure\";b:0;s:6:\"mobile\";b:0;}', 'no'),
-(637, '_site_transient_timeout_php_check_78e1776a2900a8656cebe7d7ea2a07cc', '1582713821', 'no'),
-(638, '_site_transient_php_check_78e1776a2900a8656cebe7d7ea2a07cc', 'a:5:{s:19:\"recommended_version\";s:3:\"7.3\";s:15:\"minimum_version\";s:6:\"5.6.20\";s:12:\"is_supported\";b:1;s:9:\"is_secure\";b:1;s:13:\"is_acceptable\";b:1;}', 'no'),
-(672, '_site_transient_timeout_theme_roots', '1582290039', 'no'),
-(673, '_site_transient_theme_roots', 'a:2:{s:10:\"avvystheme\";s:7:\"/themes\";s:15:\"twentyseventeen\";s:7:\"/themes\";}', 'no');
+(681, '_site_transient_timeout_browser_1880f050ca30a08eb08fe4883e373856', '1592471783', 'no'),
+(682, '_site_transient_browser_1880f050ca30a08eb08fe4883e373856', 'a:10:{s:4:\"name\";s:6:\"Chrome\";s:7:\"version\";s:12:\"83.0.4103.97\";s:8:\"platform\";s:9:\"Macintosh\";s:10:\"update_url\";s:29:\"https://www.google.com/chrome\";s:7:\"img_src\";s:43:\"http://s.w.org/images/browsers/chrome.png?1\";s:11:\"img_src_ssl\";s:44:\"https://s.w.org/images/browsers/chrome.png?1\";s:15:\"current_version\";s:2:\"18\";s:7:\"upgrade\";b:0;s:8:\"insecure\";b:0;s:6:\"mobile\";b:0;}', 'no'),
+(683, '_site_transient_timeout_php_check_fb6df547cfb7d95cb9b49b8301cad3ab', '1592471783', 'no'),
+(684, '_site_transient_php_check_fb6df547cfb7d95cb9b49b8301cad3ab', 'a:5:{s:19:\"recommended_version\";s:3:\"7.3\";s:15:\"minimum_version\";s:6:\"5.6.20\";s:12:\"is_supported\";b:1;s:9:\"is_secure\";b:1;s:13:\"is_acceptable\";b:1;}', 'no'),
+(751, '_site_transient_update_themes', 'O:8:\"stdClass\":4:{s:12:\"last_checked\";i:1592228311;s:7:\"checked\";a:2:{s:10:\"avvystheme\";s:9:\"0.1 alpha\";s:15:\"twentyseventeen\";s:3:\"2.2\";}s:8:\"response\";a:1:{s:15:\"twentyseventeen\";a:6:{s:5:\"theme\";s:15:\"twentyseventeen\";s:11:\"new_version\";s:3:\"2.3\";s:3:\"url\";s:45:\"https://wordpress.org/themes/twentyseventeen/\";s:7:\"package\";s:61:\"https://downloads.wordpress.org/theme/twentyseventeen.2.3.zip\";s:8:\"requires\";s:3:\"4.7\";s:12:\"requires_php\";s:5:\"5.2.4\";}}s:12:\"translations\";a:0:{}}', 'no'),
+(754, '_transient_timeout_plugin_slugs', '1592314715', 'no'),
+(755, '_transient_plugin_slugs', 'a:6:{i:0;s:32:\"advanced-custom-fields/acf 2.php\";i:1;s:30:\"advanced-custom-fields/acf.php\";i:2;s:19:\"akismet/akismet.php\";i:3;s:9:\"hello.php\";i:4;s:37:\"post-types-order/post-types-order.php\";i:5;s:47:\"regenerate-thumbnails/regenerate-thumbnails.php\";}', 'no'),
+(756, '_site_transient_timeout_poptags_40cd750bba9870f18aada2478b24840a', '1592239087', 'no'),
+(757, '_site_transient_poptags_40cd750bba9870f18aada2478b24840a', 'O:8:\"stdClass\":100:{s:6:\"widget\";a:3:{s:4:\"name\";s:6:\"widget\";s:4:\"slug\";s:6:\"widget\";s:5:\"count\";i:4700;}s:11:\"woocommerce\";a:3:{s:4:\"name\";s:11:\"woocommerce\";s:4:\"slug\";s:11:\"woocommerce\";s:5:\"count\";i:4158;}s:4:\"post\";a:3:{s:4:\"name\";s:4:\"post\";s:4:\"slug\";s:4:\"post\";s:5:\"count\";i:2674;}s:5:\"admin\";a:3:{s:4:\"name\";s:5:\"admin\";s:4:\"slug\";s:5:\"admin\";s:5:\"count\";i:2558;}s:5:\"posts\";a:3:{s:4:\"name\";s:5:\"posts\";s:4:\"slug\";s:5:\"posts\";s:5:\"count\";i:1964;}s:9:\"shortcode\";a:3:{s:4:\"name\";s:9:\"shortcode\";s:4:\"slug\";s:9:\"shortcode\";s:5:\"count\";i:1810;}s:8:\"comments\";a:3:{s:4:\"name\";s:8:\"comments\";s:4:\"slug\";s:8:\"comments\";s:5:\"count\";i:1794;}s:7:\"twitter\";a:3:{s:4:\"name\";s:7:\"twitter\";s:4:\"slug\";s:7:\"twitter\";s:5:\"count\";i:1487;}s:6:\"images\";a:3:{s:4:\"name\";s:6:\"images\";s:4:\"slug\";s:6:\"images\";s:5:\"count\";i:1478;}s:6:\"google\";a:3:{s:4:\"name\";s:6:\"google\";s:4:\"slug\";s:6:\"google\";s:5:\"count\";i:1477;}s:8:\"facebook\";a:3:{s:4:\"name\";s:8:\"facebook\";s:4:\"slug\";s:8:\"facebook\";s:5:\"count\";i:1454;}s:5:\"image\";a:3:{s:4:\"name\";s:5:\"image\";s:4:\"slug\";s:5:\"image\";s:5:\"count\";i:1430;}s:3:\"seo\";a:3:{s:4:\"name\";s:3:\"seo\";s:4:\"slug\";s:3:\"seo\";s:5:\"count\";i:1423;}s:7:\"sidebar\";a:3:{s:4:\"name\";s:7:\"sidebar\";s:4:\"slug\";s:7:\"sidebar\";s:5:\"count\";i:1304;}s:5:\"email\";a:3:{s:4:\"name\";s:5:\"email\";s:4:\"slug\";s:5:\"email\";s:5:\"count\";i:1201;}s:7:\"gallery\";a:3:{s:4:\"name\";s:7:\"gallery\";s:4:\"slug\";s:7:\"gallery\";s:5:\"count\";i:1193;}s:4:\"page\";a:3:{s:4:\"name\";s:4:\"page\";s:4:\"slug\";s:4:\"page\";s:5:\"count\";i:1126;}s:9:\"ecommerce\";a:3:{s:4:\"name\";s:9:\"ecommerce\";s:4:\"slug\";s:9:\"ecommerce\";s:5:\"count\";i:1124;}s:6:\"social\";a:3:{s:4:\"name\";s:6:\"social\";s:4:\"slug\";s:6:\"social\";s:5:\"count\";i:1098;}s:5:\"login\";a:3:{s:4:\"name\";s:5:\"login\";s:4:\"slug\";s:5:\"login\";s:5:\"count\";i:998;}s:5:\"video\";a:3:{s:4:\"name\";s:5:\"video\";s:4:\"slug\";s:5:\"video\";s:5:\"count\";i:883;}s:5:\"links\";a:3:{s:4:\"name\";s:5:\"links\";s:4:\"slug\";s:5:\"links\";s:5:\"count\";i:875;}s:7:\"widgets\";a:3:{s:4:\"name\";s:7:\"widgets\";s:4:\"slug\";s:7:\"widgets\";s:5:\"count\";i:875;}s:8:\"security\";a:3:{s:4:\"name\";s:8:\"security\";s:4:\"slug\";s:8:\"security\";s:5:\"count\";i:868;}s:4:\"spam\";a:3:{s:4:\"name\";s:4:\"spam\";s:4:\"slug\";s:4:\"spam\";s:5:\"count\";i:793;}s:6:\"slider\";a:3:{s:4:\"name\";s:6:\"slider\";s:4:\"slug\";s:6:\"slider\";s:5:\"count\";i:777;}s:10:\"e-commerce\";a:3:{s:4:\"name\";s:10:\"e-commerce\";s:4:\"slug\";s:10:\"e-commerce\";s:5:\"count\";i:774;}s:7:\"content\";a:3:{s:4:\"name\";s:7:\"content\";s:4:\"slug\";s:7:\"content\";s:5:\"count\";i:771;}s:9:\"analytics\";a:3:{s:4:\"name\";s:9:\"analytics\";s:4:\"slug\";s:9:\"analytics\";s:5:\"count\";i:763;}s:10:\"buddypress\";a:3:{s:4:\"name\";s:10:\"buddypress\";s:4:\"slug\";s:10:\"buddypress\";s:5:\"count\";i:749;}s:4:\"form\";a:3:{s:4:\"name\";s:4:\"form\";s:4:\"slug\";s:4:\"form\";s:5:\"count\";i:727;}s:3:\"rss\";a:3:{s:4:\"name\";s:3:\"rss\";s:4:\"slug\";s:3:\"rss\";s:5:\"count\";i:717;}s:5:\"media\";a:3:{s:4:\"name\";s:5:\"media\";s:4:\"slug\";s:5:\"media\";s:5:\"count\";i:717;}s:5:\"pages\";a:3:{s:4:\"name\";s:5:\"pages\";s:4:\"slug\";s:5:\"pages\";s:5:\"count\";i:699;}s:6:\"search\";a:3:{s:4:\"name\";s:6:\"search\";s:4:\"slug\";s:6:\"search\";s:5:\"count\";i:692;}s:6:\"jquery\";a:3:{s:4:\"name\";s:6:\"jquery\";s:4:\"slug\";s:6:\"jquery\";s:5:\"count\";i:658;}s:4:\"menu\";a:3:{s:4:\"name\";s:4:\"menu\";s:4:\"slug\";s:4:\"menu\";s:5:\"count\";i:654;}s:4:\"feed\";a:3:{s:4:\"name\";s:4:\"feed\";s:4:\"slug\";s:4:\"feed\";s:5:\"count\";i:654;}s:6:\"editor\";a:3:{s:4:\"name\";s:6:\"editor\";s:4:\"slug\";s:6:\"editor\";s:5:\"count\";i:653;}s:8:\"category\";a:3:{s:4:\"name\";s:8:\"category\";s:4:\"slug\";s:8:\"category\";s:5:\"count\";i:645;}s:4:\"ajax\";a:3:{s:4:\"name\";s:4:\"ajax\";s:4:\"slug\";s:4:\"ajax\";s:5:\"count\";i:630;}s:5:\"embed\";a:3:{s:4:\"name\";s:5:\"embed\";s:4:\"slug\";s:5:\"embed\";s:5:\"count\";i:626;}s:12:\"contact-form\";a:3:{s:4:\"name\";s:12:\"contact form\";s:4:\"slug\";s:12:\"contact-form\";s:5:\"count\";i:592;}s:3:\"css\";a:3:{s:4:\"name\";s:3:\"css\";s:4:\"slug\";s:3:\"css\";s:5:\"count\";i:584;}s:10:\"javascript\";a:3:{s:4:\"name\";s:10:\"javascript\";s:4:\"slug\";s:10:\"javascript\";s:5:\"count\";i:577;}s:7:\"youtube\";a:3:{s:4:\"name\";s:7:\"youtube\";s:4:\"slug\";s:7:\"youtube\";s:5:\"count\";i:576;}s:7:\"payment\";a:3:{s:4:\"name\";s:7:\"payment\";s:4:\"slug\";s:7:\"payment\";s:5:\"count\";i:574;}s:4:\"link\";a:3:{s:4:\"name\";s:4:\"link\";s:4:\"slug\";s:4:\"link\";s:5:\"count\";i:573;}s:5:\"share\";a:3:{s:4:\"name\";s:5:\"share\";s:4:\"slug\";s:5:\"share\";s:5:\"count\";i:556;}s:5:\"theme\";a:3:{s:4:\"name\";s:5:\"theme\";s:4:\"slug\";s:5:\"theme\";s:5:\"count\";i:548;}s:7:\"comment\";a:3:{s:4:\"name\";s:7:\"comment\";s:4:\"slug\";s:7:\"comment\";s:5:\"count\";i:548;}s:9:\"affiliate\";a:3:{s:4:\"name\";s:9:\"affiliate\";s:4:\"slug\";s:9:\"affiliate\";s:5:\"count\";i:547;}s:10:\"responsive\";a:3:{s:4:\"name\";s:10:\"responsive\";s:4:\"slug\";s:10:\"responsive\";s:5:\"count\";i:538;}s:9:\"dashboard\";a:3:{s:4:\"name\";s:9:\"dashboard\";s:4:\"slug\";s:9:\"dashboard\";s:5:\"count\";i:536;}s:6:\"custom\";a:3:{s:4:\"name\";s:6:\"custom\";s:4:\"slug\";s:6:\"custom\";s:5:\"count\";i:529;}s:3:\"ads\";a:3:{s:4:\"name\";s:3:\"ads\";s:4:\"slug\";s:3:\"ads\";s:5:\"count\";i:523;}s:10:\"categories\";a:3:{s:4:\"name\";s:10:\"categories\";s:4:\"slug\";s:10:\"categories\";s:5:\"count\";i:517;}s:15:\"payment-gateway\";a:3:{s:4:\"name\";s:15:\"payment gateway\";s:4:\"slug\";s:15:\"payment-gateway\";s:5:\"count\";i:508;}s:3:\"api\";a:3:{s:4:\"name\";s:3:\"api\";s:4:\"slug\";s:3:\"api\";s:5:\"count\";i:506;}s:7:\"contact\";a:3:{s:4:\"name\";s:7:\"contact\";s:4:\"slug\";s:7:\"contact\";s:5:\"count\";i:503;}s:4:\"user\";a:3:{s:4:\"name\";s:4:\"user\";s:4:\"slug\";s:4:\"user\";s:5:\"count\";i:503;}s:9:\"gutenberg\";a:3:{s:4:\"name\";s:9:\"gutenberg\";s:4:\"slug\";s:9:\"gutenberg\";s:5:\"count\";i:501;}s:4:\"tags\";a:3:{s:4:\"name\";s:4:\"tags\";s:4:\"slug\";s:4:\"tags\";s:5:\"count\";i:494;}s:6:\"button\";a:3:{s:4:\"name\";s:6:\"button\";s:4:\"slug\";s:6:\"button\";s:5:\"count\";i:490;}s:6:\"mobile\";a:3:{s:4:\"name\";s:6:\"mobile\";s:4:\"slug\";s:6:\"mobile\";s:5:\"count\";i:479;}s:5:\"users\";a:3:{s:4:\"name\";s:5:\"users\";s:4:\"slug\";s:5:\"users\";s:5:\"count\";i:477;}s:6:\"events\";a:3:{s:4:\"name\";s:6:\"events\";s:4:\"slug\";s:6:\"events\";s:5:\"count\";i:469;}s:9:\"marketing\";a:3:{s:4:\"name\";s:9:\"marketing\";s:4:\"slug\";s:9:\"marketing\";s:5:\"count\";i:444;}s:4:\"chat\";a:3:{s:4:\"name\";s:4:\"chat\";s:4:\"slug\";s:4:\"chat\";s:5:\"count\";i:439;}s:5:\"photo\";a:3:{s:4:\"name\";s:5:\"photo\";s:4:\"slug\";s:5:\"photo\";s:5:\"count\";i:438;}s:10:\"navigation\";a:3:{s:4:\"name\";s:10:\"navigation\";s:4:\"slug\";s:10:\"navigation\";s:5:\"count\";i:433;}s:9:\"slideshow\";a:3:{s:4:\"name\";s:9:\"slideshow\";s:4:\"slug\";s:9:\"slideshow\";s:5:\"count\";i:428;}s:5:\"popup\";a:3:{s:4:\"name\";s:5:\"popup\";s:4:\"slug\";s:5:\"popup\";s:5:\"count\";i:428;}s:8:\"calendar\";a:3:{s:4:\"name\";s:8:\"calendar\";s:4:\"slug\";s:8:\"calendar\";s:5:\"count\";i:426;}s:5:\"stats\";a:3:{s:4:\"name\";s:5:\"stats\";s:4:\"slug\";s:5:\"stats\";s:5:\"count\";i:423;}s:6:\"photos\";a:3:{s:4:\"name\";s:6:\"photos\";s:4:\"slug\";s:6:\"photos\";s:5:\"count\";i:422;}s:10:\"statistics\";a:3:{s:4:\"name\";s:10:\"statistics\";s:4:\"slug\";s:10:\"statistics\";s:5:\"count\";i:408;}s:10:\"newsletter\";a:3:{s:4:\"name\";s:10:\"newsletter\";s:4:\"slug\";s:10:\"newsletter\";s:5:\"count\";i:408;}s:5:\"forms\";a:3:{s:4:\"name\";s:5:\"forms\";s:4:\"slug\";s:5:\"forms\";s:5:\"count\";i:407;}s:4:\"news\";a:3:{s:4:\"name\";s:4:\"news\";s:4:\"slug\";s:4:\"news\";s:5:\"count\";i:398;}s:10:\"shortcodes\";a:3:{s:4:\"name\";s:10:\"shortcodes\";s:4:\"slug\";s:10:\"shortcodes\";s:5:\"count\";i:397;}s:14:\"contact-form-7\";a:3:{s:4:\"name\";s:14:\"contact form 7\";s:4:\"slug\";s:14:\"contact-form-7\";s:5:\"count\";i:397;}s:12:\"social-media\";a:3:{s:4:\"name\";s:12:\"social media\";s:4:\"slug\";s:12:\"social-media\";s:5:\"count\";i:390;}s:8:\"redirect\";a:3:{s:4:\"name\";s:8:\"redirect\";s:4:\"slug\";s:8:\"redirect\";s:5:\"count\";i:386;}s:4:\"code\";a:3:{s:4:\"name\";s:4:\"code\";s:4:\"slug\";s:4:\"code\";s:5:\"count\";i:378;}s:7:\"plugins\";a:3:{s:4:\"name\";s:7:\"plugins\";s:4:\"slug\";s:7:\"plugins\";s:5:\"count\";i:377;}s:9:\"multisite\";a:3:{s:4:\"name\";s:9:\"multisite\";s:4:\"slug\";s:9:\"multisite\";s:5:\"count\";i:377;}s:11:\"performance\";a:3:{s:4:\"name\";s:11:\"performance\";s:4:\"slug\";s:11:\"performance\";s:5:\"count\";i:374;}s:3:\"url\";a:3:{s:4:\"name\";s:3:\"url\";s:4:\"slug\";s:3:\"url\";s:5:\"count\";i:371;}s:12:\"notification\";a:3:{s:4:\"name\";s:12:\"notification\";s:4:\"slug\";s:12:\"notification\";s:5:\"count\";i:367;}s:4:\"meta\";a:3:{s:4:\"name\";s:4:\"meta\";s:4:\"slug\";s:4:\"meta\";s:5:\"count\";i:362;}s:4:\"list\";a:3:{s:4:\"name\";s:4:\"list\";s:4:\"slug\";s:4:\"list\";s:5:\"count\";i:359;}s:5:\"block\";a:3:{s:4:\"name\";s:5:\"block\";s:4:\"slug\";s:5:\"block\";s:5:\"count\";i:358;}s:9:\"elementor\";a:3:{s:4:\"name\";s:9:\"elementor\";s:4:\"slug\";s:9:\"elementor\";s:5:\"count\";i:356;}s:8:\"shipping\";a:3:{s:4:\"name\";s:8:\"shipping\";s:4:\"slug\";s:8:\"shipping\";s:5:\"count\";i:352;}s:8:\"tracking\";a:3:{s:4:\"name\";s:8:\"tracking\";s:4:\"slug\";s:8:\"tracking\";s:5:\"count\";i:349;}s:16:\"google-analytics\";a:3:{s:4:\"name\";s:16:\"google analytics\";s:4:\"slug\";s:16:\"google-analytics\";s:5:\"count\";i:343;}s:16:\"custom-post-type\";a:3:{s:4:\"name\";s:16:\"custom post type\";s:4:\"slug\";s:16:\"custom-post-type\";s:5:\"count\";i:341;}s:11:\"advertising\";a:3:{s:4:\"name\";s:11:\"advertising\";s:4:\"slug\";s:11:\"advertising\";s:5:\"count\";i:336;}s:5:\"cache\";a:3:{s:4:\"name\";s:5:\"cache\";s:4:\"slug\";s:5:\"cache\";s:5:\"count\";i:335;}}', 'no'),
+(759, '_site_transient_timeout_theme_roots', '1592230110', 'no'),
+(760, '_site_transient_theme_roots', 'a:2:{s:10:\"avvystheme\";s:7:\"/themes\";s:15:\"twentyseventeen\";s:7:\"/themes\";}', 'no'),
+(761, '_site_transient_update_plugins', 'O:8:\"stdClass\":5:{s:12:\"last_checked\";i:1592228314;s:7:\"checked\";a:6:{s:32:\"advanced-custom-fields/acf 2.php\";s:5:\"5.8.7\";s:30:\"advanced-custom-fields/acf.php\";s:6:\"5.8.12\";s:19:\"akismet/akismet.php\";s:5:\"4.1.3\";s:9:\"hello.php\";s:5:\"1.7.2\";s:37:\"post-types-order/post-types-order.php\";s:7:\"1.9.4.3\";s:47:\"regenerate-thumbnails/regenerate-thumbnails.php\";s:5:\"3.1.3\";}s:8:\"response\";a:2:{s:32:\"advanced-custom-fields/acf 2.php\";O:8:\"stdClass\":12:{s:2:\"id\";s:36:\"w.org/plugins/advanced-custom-fields\";s:4:\"slug\";s:22:\"advanced-custom-fields\";s:6:\"plugin\";s:32:\"advanced-custom-fields/acf 2.php\";s:11:\"new_version\";s:6:\"5.8.12\";s:3:\"url\";s:53:\"https://wordpress.org/plugins/advanced-custom-fields/\";s:7:\"package\";s:72:\"https://downloads.wordpress.org/plugin/advanced-custom-fields.5.8.12.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:75:\"https://ps.w.org/advanced-custom-fields/assets/icon-256x256.png?rev=1082746\";s:2:\"1x\";s:75:\"https://ps.w.org/advanced-custom-fields/assets/icon-128x128.png?rev=1082746\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:78:\"https://ps.w.org/advanced-custom-fields/assets/banner-1544x500.jpg?rev=1729099\";s:2:\"1x\";s:77:\"https://ps.w.org/advanced-custom-fields/assets/banner-772x250.jpg?rev=1729102\";}s:11:\"banners_rtl\";a:0:{}s:6:\"tested\";s:5:\"5.4.2\";s:12:\"requires_php\";s:3:\"5.4\";s:13:\"compatibility\";O:8:\"stdClass\":0:{}}s:19:\"akismet/akismet.php\";O:8:\"stdClass\":12:{s:2:\"id\";s:21:\"w.org/plugins/akismet\";s:4:\"slug\";s:7:\"akismet\";s:6:\"plugin\";s:19:\"akismet/akismet.php\";s:11:\"new_version\";s:5:\"4.1.6\";s:3:\"url\";s:38:\"https://wordpress.org/plugins/akismet/\";s:7:\"package\";s:56:\"https://downloads.wordpress.org/plugin/akismet.4.1.6.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:59:\"https://ps.w.org/akismet/assets/icon-256x256.png?rev=969272\";s:2:\"1x\";s:59:\"https://ps.w.org/akismet/assets/icon-128x128.png?rev=969272\";}s:7:\"banners\";a:1:{s:2:\"1x\";s:61:\"https://ps.w.org/akismet/assets/banner-772x250.jpg?rev=479904\";}s:11:\"banners_rtl\";a:0:{}s:6:\"tested\";s:5:\"5.4.2\";s:12:\"requires_php\";b:0;s:13:\"compatibility\";O:8:\"stdClass\":0:{}}}s:12:\"translations\";a:0:{}s:9:\"no_update\";a:4:{s:30:\"advanced-custom-fields/acf.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:36:\"w.org/plugins/advanced-custom-fields\";s:4:\"slug\";s:22:\"advanced-custom-fields\";s:6:\"plugin\";s:30:\"advanced-custom-fields/acf.php\";s:11:\"new_version\";s:6:\"5.8.12\";s:3:\"url\";s:53:\"https://wordpress.org/plugins/advanced-custom-fields/\";s:7:\"package\";s:72:\"https://downloads.wordpress.org/plugin/advanced-custom-fields.5.8.12.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:75:\"https://ps.w.org/advanced-custom-fields/assets/icon-256x256.png?rev=1082746\";s:2:\"1x\";s:75:\"https://ps.w.org/advanced-custom-fields/assets/icon-128x128.png?rev=1082746\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:78:\"https://ps.w.org/advanced-custom-fields/assets/banner-1544x500.jpg?rev=1729099\";s:2:\"1x\";s:77:\"https://ps.w.org/advanced-custom-fields/assets/banner-772x250.jpg?rev=1729102\";}s:11:\"banners_rtl\";a:0:{}}s:9:\"hello.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:25:\"w.org/plugins/hello-dolly\";s:4:\"slug\";s:11:\"hello-dolly\";s:6:\"plugin\";s:9:\"hello.php\";s:11:\"new_version\";s:5:\"1.7.2\";s:3:\"url\";s:42:\"https://wordpress.org/plugins/hello-dolly/\";s:7:\"package\";s:60:\"https://downloads.wordpress.org/plugin/hello-dolly.1.7.2.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:64:\"https://ps.w.org/hello-dolly/assets/icon-256x256.jpg?rev=2052855\";s:2:\"1x\";s:64:\"https://ps.w.org/hello-dolly/assets/icon-128x128.jpg?rev=2052855\";}s:7:\"banners\";a:1:{s:2:\"1x\";s:66:\"https://ps.w.org/hello-dolly/assets/banner-772x250.jpg?rev=2052855\";}s:11:\"banners_rtl\";a:0:{}}s:37:\"post-types-order/post-types-order.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:30:\"w.org/plugins/post-types-order\";s:4:\"slug\";s:16:\"post-types-order\";s:6:\"plugin\";s:37:\"post-types-order/post-types-order.php\";s:11:\"new_version\";s:7:\"1.9.4.3\";s:3:\"url\";s:47:\"https://wordpress.org/plugins/post-types-order/\";s:7:\"package\";s:67:\"https://downloads.wordpress.org/plugin/post-types-order.1.9.4.3.zip\";s:5:\"icons\";a:1:{s:2:\"1x\";s:69:\"https://ps.w.org/post-types-order/assets/icon-128x128.png?rev=1226428\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:72:\"https://ps.w.org/post-types-order/assets/banner-1544x500.png?rev=1675574\";s:2:\"1x\";s:71:\"https://ps.w.org/post-types-order/assets/banner-772x250.png?rev=1429949\";}s:11:\"banners_rtl\";a:0:{}}s:47:\"regenerate-thumbnails/regenerate-thumbnails.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:35:\"w.org/plugins/regenerate-thumbnails\";s:4:\"slug\";s:21:\"regenerate-thumbnails\";s:6:\"plugin\";s:47:\"regenerate-thumbnails/regenerate-thumbnails.php\";s:11:\"new_version\";s:5:\"3.1.3\";s:3:\"url\";s:52:\"https://wordpress.org/plugins/regenerate-thumbnails/\";s:7:\"package\";s:70:\"https://downloads.wordpress.org/plugin/regenerate-thumbnails.3.1.3.zip\";s:5:\"icons\";a:1:{s:2:\"1x\";s:74:\"https://ps.w.org/regenerate-thumbnails/assets/icon-128x128.png?rev=1753390\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:77:\"https://ps.w.org/regenerate-thumbnails/assets/banner-1544x500.jpg?rev=1753390\";s:2:\"1x\";s:76:\"https://ps.w.org/regenerate-thumbnails/assets/banner-772x250.jpg?rev=1753390\";}s:11:\"banners_rtl\";a:0:{}}}}', 'no'),
+(762, 'cpto_options', 'a:7:{s:23:\"show_reorder_interfaces\";a:4:{s:4:\"post\";s:4:\"show\";s:10:\"attachment\";s:4:\"show\";s:8:\"wp_block\";s:4:\"show\";s:6:\"resume\";s:4:\"show\";}s:8:\"autosort\";i:1;s:9:\"adminsort\";i:1;s:18:\"use_query_ASC_DESC\";s:0:\"\";s:17:\"archive_drag_drop\";i:1;s:10:\"capability\";s:14:\"manage_options\";s:21:\"navigation_sort_apply\";i:1;}', 'yes'),
+(763, 'CPT_configured', 'TRUE', 'yes');
 
 -- --------------------------------------------------------
 
 --
--- Tabellstruktur `wp_postmeta`
+-- Table structure for table `wp_postmeta`
 --
 
 CREATE TABLE `wp_postmeta` (
@@ -249,7 +255,7 @@ CREATE TABLE `wp_postmeta` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
--- Dumpning av Data i tabell `wp_postmeta`
+-- Dumping data for table `wp_postmeta`
 --
 
 INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
@@ -288,9 +294,9 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (77, 23, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
 (78, 23, '_menu_item_xfn', ''),
 (79, 23, '_menu_item_url', ''),
-(81, 18, '_edit_lock', '1582050698:1'),
+(81, 18, '_edit_lock', '1592226981:1'),
 (82, 7, '_edit_lock', '1582291739:1'),
-(84, 6, '_edit_lock', '1582051135:1'),
+(84, 6, '_edit_lock', '1592227895:1'),
 (85, 27, '_wp_attached_file', '2020/01/299682754-e1579261951227.jpg'),
 (86, 27, '_wp_attachment_metadata', 'a:5:{s:5:\"width\";i:1000;s:6:\"height\";i:819;s:4:\"file\";s:36:\"2020/01/299682754-e1579261951227.jpg\";s:5:\"sizes\";a:10:{s:6:\"medium\";a:4:{s:4:\"file\";s:36:\"299682754-e1579261951227-300x246.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:246;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"thumbnail\";a:4:{s:4:\"file\";s:36:\"299682754-e1579261951227-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"medium_large\";a:4:{s:4:\"file\";s:36:\"299682754-e1579261951227-768x629.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:629;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:13:\"content image\";a:4:{s:4:\"file\";s:36:\"299682754-e1579261951227-400x328.jpg\";s:5:\"width\";i:400;s:6:\"height\";i:328;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:25:\"content image_old_550x450\";a:4:{s:4:\"file\";s:36:\"299682754-e1579261951227-550x450.jpg\";s:5:\"width\";i:550;s:6:\"height\";i:450;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:25:\"content image_old_549x450\";a:4:{s:4:\"file\";s:36:\"299682754-e1579261951227-549x450.jpg\";s:5:\"width\";i:549;s:6:\"height\";i:450;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:25:\"content image_old_405x332\";a:4:{s:4:\"file\";s:36:\"299682754-e1579261951227-405x332.jpg\";s:5:\"width\";i:405;s:6:\"height\";i:332;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:25:\"content image_old_495x405\";a:4:{s:4:\"file\";s:36:\"299682754-e1579261951227-495x405.jpg\";s:5:\"width\";i:495;s:6:\"height\";i:405;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:25:\"content image_old_427x350\";a:4:{s:4:\"file\";s:36:\"299682754-e1579261951227-427x350.jpg\";s:5:\"width\";i:427;s:6:\"height\";i:350;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:5:\"large\";a:4:{s:4:\"file\";s:22:\"299682754-1024x838.jpg\";s:5:\"width\";i:1024;s:6:\"height\";i:838;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}'),
 (87, 27, '_edit_lock', '1579261677:1'),
@@ -314,15 +320,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (112, 47, '_wp_attachment_metadata', 'a:6:{s:5:\"width\";i:1920;s:6:\"height\";i:2560;s:4:\"file\";s:27:\"2020/01/IMG_3286-scaled.jpg\";s:5:\"sizes\";a:12:{s:6:\"medium\";a:4:{s:4:\"file\";s:20:\"IMG_3286-225x300.jpg\";s:5:\"width\";i:225;s:6:\"height\";i:300;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:5:\"large\";a:4:{s:4:\"file\";s:21:\"IMG_3286-768x1024.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:1024;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"thumbnail\";a:4:{s:4:\"file\";s:20:\"IMG_3286-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"medium_large\";a:4:{s:4:\"file\";s:21:\"IMG_3286-768x1024.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:1024;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"1536x1536\";a:4:{s:4:\"file\";s:22:\"IMG_3286-1152x1536.jpg\";s:5:\"width\";i:1152;s:6:\"height\";i:1536;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"2048x2048\";a:4:{s:4:\"file\";s:22:\"IMG_3286-1536x2048.jpg\";s:5:\"width\";i:1536;s:6:\"height\";i:2048;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:13:\"content image\";a:4:{s:4:\"file\";s:20:\"IMG_3286-400x533.jpg\";s:5:\"width\";i:400;s:6:\"height\";i:533;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:25:\"content image_old_550x733\";a:4:{s:4:\"file\";s:20:\"IMG_3286-550x733.jpg\";s:5:\"width\";i:550;s:6:\"height\";i:733;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:25:\"content image_old_338x450\";a:4:{s:4:\"file\";s:20:\"IMG_3286-338x450.jpg\";s:5:\"width\";i:338;s:6:\"height\";i:450;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:25:\"content image_old_405x540\";a:4:{s:4:\"file\";s:20:\"IMG_3286-405x540.jpg\";s:5:\"width\";i:405;s:6:\"height\";i:540;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:25:\"content image_old_304x405\";a:4:{s:4:\"file\";s:20:\"IMG_3286-304x405.jpg\";s:5:\"width\";i:304;s:6:\"height\";i:405;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:25:\"content image_old_263x350\";a:4:{s:4:\"file\";s:20:\"IMG_3286-263x350.jpg\";s:5:\"width\";i:263;s:6:\"height\";i:350;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:3:\"2.2\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:8:\"iPhone 6\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:10:\"1522613352\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:4:\"4.15\";s:3:\"iso\";s:3:\"250\";s:13:\"shutter_speed\";s:17:\"0.058823529411765\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"1\";s:8:\"keywords\";a:0:{}}s:14:\"original_image\";s:12:\"IMG_3286.jpg\";}'),
 (113, 49, '_wp_attached_file', '2020/01/IMG_4189-scaled.jpg'),
 (114, 49, '_wp_attachment_metadata', 'a:6:{s:5:\"width\";i:1920;s:6:\"height\";i:2560;s:4:\"file\";s:27:\"2020/01/IMG_4189-scaled.jpg\";s:5:\"sizes\";a:12:{s:6:\"medium\";a:4:{s:4:\"file\";s:20:\"IMG_4189-225x300.jpg\";s:5:\"width\";i:225;s:6:\"height\";i:300;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:5:\"large\";a:4:{s:4:\"file\";s:21:\"IMG_4189-768x1024.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:1024;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"thumbnail\";a:4:{s:4:\"file\";s:20:\"IMG_4189-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"medium_large\";a:4:{s:4:\"file\";s:21:\"IMG_4189-768x1024.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:1024;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"1536x1536\";a:4:{s:4:\"file\";s:22:\"IMG_4189-1152x1536.jpg\";s:5:\"width\";i:1152;s:6:\"height\";i:1536;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"2048x2048\";a:4:{s:4:\"file\";s:22:\"IMG_4189-1536x2048.jpg\";s:5:\"width\";i:1536;s:6:\"height\";i:2048;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:13:\"content image\";a:4:{s:4:\"file\";s:20:\"IMG_4189-400x533.jpg\";s:5:\"width\";i:400;s:6:\"height\";i:533;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:25:\"content image_old_550x733\";a:4:{s:4:\"file\";s:20:\"IMG_4189-550x733.jpg\";s:5:\"width\";i:550;s:6:\"height\";i:733;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:25:\"content image_old_338x450\";a:4:{s:4:\"file\";s:20:\"IMG_4189-338x450.jpg\";s:5:\"width\";i:338;s:6:\"height\";i:450;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:25:\"content image_old_405x540\";a:4:{s:4:\"file\";s:20:\"IMG_4189-405x540.jpg\";s:5:\"width\";i:405;s:6:\"height\";i:540;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:25:\"content image_old_304x405\";a:4:{s:4:\"file\";s:20:\"IMG_4189-304x405.jpg\";s:5:\"width\";i:304;s:6:\"height\";i:405;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:25:\"content image_old_263x350\";a:4:{s:4:\"file\";s:20:\"IMG_4189-263x350.jpg\";s:5:\"width\";i:263;s:6:\"height\";i:350;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:3:\"2.2\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:8:\"iPhone 6\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:10:\"1465073502\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:4:\"4.15\";s:3:\"iso\";s:2:\"50\";s:13:\"shutter_speed\";s:16:\"0.03030303030303\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"1\";s:8:\"keywords\";a:0:{}}s:14:\"original_image\";s:12:\"IMG_4189.jpg\";}'),
-(115, 51, '_edit_lock', '1582051454:1'),
-(134, 55, '_menu_item_type', 'post_type'),
-(135, 55, '_menu_item_menu_item_parent', '0'),
-(136, 55, '_menu_item_object_id', '18'),
-(137, 55, '_menu_item_object', 'page'),
-(138, 55, '_menu_item_target', ''),
-(139, 55, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
-(140, 55, '_menu_item_xfn', ''),
-(141, 55, '_menu_item_url', ''),
+(115, 51, '_edit_lock', '1592228041:1'),
 (143, 57, '_wp_attached_file', '2020/01/Image-from-iOS-8-scaled.jpg'),
 (144, 57, '_wp_attachment_metadata', 'a:6:{s:5:\"width\";i:2560;s:6:\"height\";i:1920;s:4:\"file\";s:35:\"2020/01/Image-from-iOS-8-scaled.jpg\";s:5:\"sizes\";a:12:{s:6:\"medium\";a:4:{s:4:\"file\";s:28:\"Image-from-iOS-8-300x225.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:225;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:5:\"large\";a:4:{s:4:\"file\";s:29:\"Image-from-iOS-8-1024x768.jpg\";s:5:\"width\";i:1024;s:6:\"height\";i:768;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"thumbnail\";a:4:{s:4:\"file\";s:28:\"Image-from-iOS-8-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"medium_large\";a:4:{s:4:\"file\";s:28:\"Image-from-iOS-8-768x576.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:576;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"1536x1536\";a:4:{s:4:\"file\";s:30:\"Image-from-iOS-8-1536x1152.jpg\";s:5:\"width\";i:1536;s:6:\"height\";i:1152;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"2048x2048\";a:4:{s:4:\"file\";s:30:\"Image-from-iOS-8-2048x1536.jpg\";s:5:\"width\";i:2048;s:6:\"height\";i:1536;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:13:\"content image\";a:4:{s:4:\"file\";s:28:\"Image-from-iOS-8-400x300.jpg\";s:5:\"width\";i:400;s:6:\"height\";i:300;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:25:\"content image_old_550x413\";a:4:{s:4:\"file\";s:28:\"Image-from-iOS-8-550x413.jpg\";s:5:\"width\";i:550;s:6:\"height\";i:413;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:25:\"content image_old_600x450\";a:4:{s:4:\"file\";s:28:\"Image-from-iOS-8-600x450.jpg\";s:5:\"width\";i:600;s:6:\"height\";i:450;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:25:\"content image_old_405x304\";a:4:{s:4:\"file\";s:28:\"Image-from-iOS-8-405x304.jpg\";s:5:\"width\";i:405;s:6:\"height\";i:304;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:25:\"content image_old_540x405\";a:4:{s:4:\"file\";s:28:\"Image-from-iOS-8-540x405.jpg\";s:5:\"width\";i:540;s:6:\"height\";i:405;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:25:\"content image_old_467x350\";a:4:{s:4:\"file\";s:28:\"Image-from-iOS-8-467x350.jpg\";s:5:\"width\";i:467;s:6:\"height\";i:350;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:3:\"1.8\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:8:\"iPhone X\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:10:\"1579520075\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"4\";s:3:\"iso\";s:2:\"50\";s:13:\"shutter_speed\";s:17:\"0.058823529411765\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}s:14:\"original_image\";s:20:\"Image-from-iOS-8.jpg\";}'),
 (145, 58, '_wp_attached_file', '2020/01/Image-from-iOS-7-scaled.jpg'),
@@ -356,14 +354,6 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (173, 101, '_wp_attached_file', '2020/01/love-scaled.jpg'),
 (174, 101, '_wp_attachment_metadata', 'a:6:{s:5:\"width\";i:2560;s:6:\"height\";i:1920;s:4:\"file\";s:23:\"2020/01/love-scaled.jpg\";s:5:\"sizes\";a:11:{s:6:\"medium\";a:4:{s:4:\"file\";s:16:\"love-300x225.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:225;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:5:\"large\";a:4:{s:4:\"file\";s:17:\"love-1024x768.jpg\";s:5:\"width\";i:1024;s:6:\"height\";i:768;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"thumbnail\";a:4:{s:4:\"file\";s:16:\"love-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"medium_large\";a:4:{s:4:\"file\";s:16:\"love-768x576.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:576;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"1536x1536\";a:4:{s:4:\"file\";s:18:\"love-1536x1152.jpg\";s:5:\"width\";i:1536;s:6:\"height\";i:1152;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"2048x2048\";a:4:{s:4:\"file\";s:18:\"love-2048x1536.jpg\";s:5:\"width\";i:2048;s:6:\"height\";i:1536;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:13:\"content image\";a:4:{s:4:\"file\";s:16:\"love-400x300.jpg\";s:5:\"width\";i:400;s:6:\"height\";i:300;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:25:\"content image_old_550x413\";a:4:{s:4:\"file\";s:16:\"love-550x413.jpg\";s:5:\"width\";i:550;s:6:\"height\";i:413;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:25:\"content image_old_600x450\";a:4:{s:4:\"file\";s:16:\"love-600x450.jpg\";s:5:\"width\";i:600;s:6:\"height\";i:450;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:25:\"content image_old_405x304\";a:4:{s:4:\"file\";s:16:\"love-405x304.jpg\";s:5:\"width\";i:405;s:6:\"height\";i:304;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:25:\"content image_old_467x350\";a:4:{s:4:\"file\";s:16:\"love-467x350.jpg\";s:5:\"width\";i:467;s:6:\"height\";i:350;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:3:\"1.8\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:8:\"iPhone X\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:10:\"1579437981\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"4\";s:3:\"iso\";s:2:\"25\";s:13:\"shutter_speed\";s:18:\"8.3001328021248E-5\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}s:14:\"original_image\";s:8:\"love.jpg\";}'),
 (175, 101, '_wp_attachment_is_custom_background', 'avvystheme'),
-(180, 103, '_menu_item_type', 'post_type'),
-(181, 103, '_menu_item_menu_item_parent', '0'),
-(182, 103, '_menu_item_object_id', '18'),
-(183, 103, '_menu_item_object', 'page'),
-(184, 103, '_menu_item_target', ''),
-(185, 103, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
-(186, 103, '_menu_item_xfn', ''),
-(187, 103, '_menu_item_url', ''),
 (207, 112, '_edit_last', '1'),
 (208, 112, '_edit_lock', '1580470366:1'),
 (209, 115, '_edit_last', '1'),
@@ -515,7 +505,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (355, 6, '_gallery_section_img_3', 'field_5e28a51cba351'),
 (356, 6, 'gallery_section_heading', 'My background.'),
 (357, 6, '_gallery_section_heading', 'field_5e28a530ba352'),
-(358, 6, 'gallery_section_content', 'Originally I come from Bulgaria, but when I was eighteen, I moved to Spain where I lived and worked for ten years until i finally moved to Sweden around eight years ago. Now I live with my son and my partner In Glumslöv, Landskrona. '),
+(358, 6, 'gallery_section_content', 'Originally I come from Bulgaria, but when I was eighteen, I moved to Spain where I lived and worked for ten years until I finally moved to Sweden around eight years ago. Now I live with my son and my partner In Glumslöv, Landskrona. '),
 (359, 6, '_gallery_section_content', 'field_5e28a55dba353'),
 (360, 6, 'gallery_section_side_img', '36'),
 (361, 6, '_gallery_section_side_img', 'field_5e28a58aba354'),
@@ -595,7 +585,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (435, 150, '_gallery_section', 'field_5e28a3e4ba34d'),
 (436, 6, 'facts_section_facts_section_heading', 'A little about me.'),
 (437, 6, '_facts_section_facts_section_heading', 'field_5e29745792fcf'),
-(438, 6, 'facts_section_facts_section_content', 'I am a thirty-five year old girl. Yes is say girl, because that is what I feel like I am still. I have a twelve year old son.\r\nMy favorite part of the day is the morning, thats when I am the most creative and productive. I am very service minded and thrive when I work with other people. \r\n'),
+(438, 6, 'facts_section_facts_section_content', 'I am a thirty-five-year-old girl. Yes, I\'m saying girl, because that is what I feel like I still am. I have a twelve-year-old son.\r\nMy favorite part of the day is the morning, that\'s when I am the most creative and productive. Other facts are that I am very service-minded and thrive when I work with other people. \r\n'),
 (439, 6, '_facts_section_facts_section_content', 'field_5e2974b392fd0'),
 (440, 6, 'facts_section_facts_section_image', '34'),
 (441, 6, '_facts_section_facts_section_image', 'field_5e29750f92fd1'),
@@ -607,7 +597,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (447, 6, '_gray_section_gray_section_button_text', 'field_5e2975ec92fd3'),
 (448, 6, 'gray_section_gray_section_button_url', ' http://localhost:8888/Avvy_Portfolio20/resume/'),
 (449, 6, '_gray_section_gray_section_button_url', 'field_5e29761492fd4'),
-(450, 6, 'gray_section_gray_section_content', 'If you want to know more of my professional background and get a better idea of my career so far, please feel free to have a look at my resumé. '),
+(450, 6, 'gray_section_gray_section_content', 'If you want to know more about my professional background and get a better idea of my career so far, please feel free to have a look at my resumé. '),
 (451, 6, '_gray_section_gray_section_content', 'field_5e29766d92fd5'),
 (452, 6, 'gray_section', ''),
 (453, 6, '_gray_section', 'field_5e288d2f0f329'),
@@ -911,11 +901,11 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (751, 168, '_gallery_section_img_1', 'field_5e28a495ba34f'),
 (752, 168, 'gallery_section_img_2', '47'),
 (753, 168, '_gallery_section_img_2', 'field_5e28a50aba350'),
-(754, 168, 'gallery_section_img_3', '49');
-INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
+(754, 168, 'gallery_section_img_3', '49'),
 (755, 168, '_gallery_section_img_3', 'field_5e28a51cba351'),
 (756, 168, 'gallery_section_heading', 'My family'),
-(757, 168, '_gallery_section_heading', 'field_5e28a530ba352'),
+(757, 168, '_gallery_section_heading', 'field_5e28a530ba352');
+INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
 (758, 168, 'gallery_section_content', 'Ursprungligen kommer jag från Bulgarien, men jag flyttade därifrån när jag var 18 till Spanien där jag bodde och arbetade i 10 år tills jag flyttade till Sverige för ca. åtta år sedan. Nu jag bor med min sambo och son i Glumslöv, Lanskrona kommun.'),
 (759, 168, '_gallery_section_content', 'field_5e28a55dba353'),
 (760, 168, 'gallery_section_side_img', '36'),
@@ -1011,19 +1001,19 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (850, 18, '_left_img_section_left_img_section_heading', 'field_5e298e8cee7a7'),
 (851, 18, 'left_img_section_left_img_section_content', 'When you are looking for a developer for your project, I guess that you want a developer that is ambitious and driven and most of all, able to understand what your end goal is. That is me. I am open and curious to hear about your ideas and make them come to life.'),
 (852, 18, '_left_img_section_left_img_section_content', 'field_5e298ee6ee7a8'),
-(853, 18, 'left_img_section_left_img_section_image', '63'),
+(853, 18, 'left_img_section_left_img_section_image', '397'),
 (854, 18, '_left_img_section_left_img_section_image', 'field_5e298f17ee7a9'),
 (855, 18, 'left_img_section', ''),
 (856, 18, '_left_img_section', 'field_5e298dcbee7a6'),
 (857, 18, 'right_img_section_right_img_section_heading', 'My work.'),
 (858, 18, '_right_img_section_right_img_section_heading', 'field_5e2998b0a9399'),
-(859, 18, 'right_img_section_right_img_section_content', 'I love working mostly with React.JS and lately I have picked up some Wordpress skills. If you want to see my projects in more detail, feel free to visit me at Github.'),
+(859, 18, 'right_img_section_right_img_section_content', 'I love working mostly with React.JS and lately, I have picked up some Wordpress skills. If you want to see my projects in more detail, feel free to visit me at Github.'),
 (860, 18, '_right_img_section_right_img_section_content', 'field_5e299966a939a'),
 (861, 18, 'right_img_section_right_img_section_button_text', 'My GitHub'),
 (862, 18, '_right_img_section_right_img_section_button_text', 'field_5e299a72a939b'),
 (863, 18, 'right_img_section_right_img_section_button_url', 'https://github.com/AvvyT'),
 (864, 18, '_right_img_section_right_img_section_button_url', 'field_5e299ad2a939c'),
-(865, 18, 'right_img_section_right_img_section_img', '58'),
+(865, 18, 'right_img_section_right_img_section_img', '399'),
 (866, 18, '_right_img_section_right_img_section_img', 'field_5e299b0ba939d'),
 (867, 18, 'right_img_section', ''),
 (868, 18, '_right_img_section', 'field_5e29981ea9398'),
@@ -1454,7 +1444,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (1299, 51, '_resume_gray_section_resume_gray_section_button_text', 'field_5e2eb7d66e35a'),
 (1300, 51, 'resume_gray_section_resume_gray_section_button_url', 'http://localhost:8888/Avvy_Portfolio20/contact/'),
 (1301, 51, '_resume_gray_section_resume_gray_section_button_url', 'field_5e2eb7d66e35b'),
-(1302, 51, 'resume_gray_section_resume_gray_section_content', 'If want to know more about me or have any questions, do not hesitate to contact me. I am always happy to hear about your ideas and help find the best solution for you.'),
+(1302, 51, 'resume_gray_section_resume_gray_section_content', 'If you want to know more about me or have any questions, do not hesitate to contact me. I am always happy to hear about your ideas and help find the best solution for you.'),
 (1303, 51, '_resume_gray_section_resume_gray_section_content', 'field_5e2eb7d66e35c'),
 (1304, 51, 'resume_gray_section', ''),
 (1305, 51, '_resume_gray_section', 'field_5e2eb7d66e358'),
@@ -1580,23 +1570,14 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (1425, 206, '_resume_gray_section_resume_gray_section_button_text', 'field_5e2eb7d66e35a'),
 (1426, 206, 'resume_gray_section_resume_gray_section_button_url', 'http://localhost:8888/Avvy_Portfolio20/contact/'),
 (1427, 206, '_resume_gray_section_resume_gray_section_button_url', 'field_5e2eb7d66e35b'),
-(1428, 206, 'resume_gray_section_resume_gray_section_content', 'Now that you know what I\'ve done and what I could do for you, feel free to reach out and start a conversation. I always enjoy speaking with passionate business owners about their needs.');
-INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
+(1428, 206, 'resume_gray_section_resume_gray_section_content', 'Now that you know what I\'ve done and what I could do for you, feel free to reach out and start a conversation. I always enjoy speaking with passionate business owners about their needs.'),
 (1429, 206, '_resume_gray_section_resume_gray_section_content', 'field_5e2eb7d66e35c'),
 (1430, 206, 'resume_gray_section', ''),
-(1431, 206, '_resume_gray_section', 'field_5e2eb7d66e358'),
-(1432, 207, '_edit_lock', '1580128893:1'),
+(1431, 206, '_resume_gray_section', 'field_5e2eb7d66e358');
+INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
 (1433, 208, '_wp_attached_file', '2020/01/IMG_0145-scaled.jpg'),
 (1434, 208, '_wp_attachment_metadata', 'a:6:{s:5:\"width\";i:2560;s:6:\"height\";i:1920;s:4:\"file\";s:27:\"2020/01/IMG_0145-scaled.jpg\";s:5:\"sizes\";a:7:{s:6:\"medium\";a:4:{s:4:\"file\";s:20:\"IMG_0145-300x225.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:225;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:5:\"large\";a:4:{s:4:\"file\";s:21:\"IMG_0145-1024x768.jpg\";s:5:\"width\";i:1024;s:6:\"height\";i:768;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"thumbnail\";a:4:{s:4:\"file\";s:20:\"IMG_0145-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"medium_large\";a:4:{s:4:\"file\";s:20:\"IMG_0145-768x576.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:576;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"1536x1536\";a:4:{s:4:\"file\";s:22:\"IMG_0145-1536x1152.jpg\";s:5:\"width\";i:1536;s:6:\"height\";i:1152;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"2048x2048\";a:4:{s:4:\"file\";s:22:\"IMG_0145-2048x1536.jpg\";s:5:\"width\";i:2048;s:6:\"height\";i:1536;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:13:\"content image\";a:4:{s:4:\"file\";s:20:\"IMG_0145-400x300.jpg\";s:5:\"width\";i:400;s:6:\"height\";i:300;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:3:\"2.4\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:8:\"iPhone X\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:10:\"1538915625\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"6\";s:3:\"iso\";s:2:\"16\";s:13:\"shutter_speed\";s:19:\"0.00072886297376093\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"1\";s:8:\"keywords\";a:0:{}}s:14:\"original_image\";s:12:\"IMG_0145.jpg\";}'),
 (1435, 208, '_wp_attachment_is_custom_background', 'avvystheme'),
-(1436, 207, '_wp_trash_meta_status', 'publish'),
-(1437, 207, '_wp_trash_meta_time', '1580128904'),
-(1438, 209, '_wp_trash_meta_status', 'publish'),
-(1439, 209, '_wp_trash_meta_time', '1580128994'),
-(1440, 210, '_wp_trash_meta_status', 'publish'),
-(1441, 210, '_wp_trash_meta_time', '1580129034'),
-(1442, 211, '_wp_trash_meta_status', 'publish'),
-(1443, 211, '_wp_trash_meta_time', '1580129081'),
 (1444, 212, '_edit_last', '1'),
 (1445, 212, '_edit_lock', '1582137979:1'),
 (1446, 212, 'heading', ''),
@@ -1617,29 +1598,11 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (1461, 218, '_heading', 'field_5e2889edb2a9f'),
 (1462, 218, 'content', ''),
 (1463, 218, '_content', 'field_5e288b0bb2aa0'),
-(1464, 219, '_menu_item_type', 'post_type'),
-(1465, 219, '_menu_item_menu_item_parent', '0'),
-(1466, 219, '_menu_item_object_id', '216'),
-(1467, 219, '_menu_item_object', 'resume'),
-(1468, 219, '_menu_item_target', ''),
-(1469, 219, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
-(1470, 219, '_menu_item_xfn', ''),
-(1471, 219, '_menu_item_url', ''),
-(1472, 219, '_menu_item_orphaned', '1580146127'),
-(1473, 220, '_menu_item_type', 'post_type'),
-(1474, 220, '_menu_item_menu_item_parent', '0'),
-(1475, 220, '_menu_item_object_id', '212'),
-(1476, 220, '_menu_item_object', 'resume'),
-(1477, 220, '_menu_item_target', ''),
-(1478, 220, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
-(1479, 220, '_menu_item_xfn', ''),
-(1480, 220, '_menu_item_url', ''),
-(1481, 220, '_menu_item_orphaned', '1580146127'),
 (1484, 223, '_edit_last', '1'),
-(1485, 223, '_edit_lock', '1582136369:1'),
+(1485, 223, '_edit_lock', '1592228440:1'),
 (1486, 223, '_', 'field_5e2f37ff9ca69'),
 (1487, 225, '_edit_last', '1'),
-(1488, 225, '_edit_lock', '1582137519:1'),
+(1488, 225, '_edit_lock', '1592228430:1'),
 (1489, 225, '_', 'field_5e2f37ff9ca69'),
 (1490, 227, 'facts_section_facts_section_heading', ''),
 (1491, 227, '_facts_section_facts_section_heading', 'field_5e29745792fcf'),
@@ -1755,7 +1718,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (1601, 51, '_resume_dark_gray_section_resume_dark_gray_section_button_text', 'field_5e301ba9c1235'),
 (1602, 51, 'resume_dark_gray_section_resume_dark_gray_section_button_url', ''),
 (1603, 51, '_resume_dark_gray_section_resume_dark_gray_section_button_url', 'field_5e301ba9c1236'),
-(1604, 51, 'resume_dark_gray_section_resume_dark_gray_section_content', 'I´m a very driven and ambitious Front-end Developer also a happy and hardworking girl.\r\nI am looking for an exciting company where I can continue to grow and continue learning.\r\nFor the most part of my working life, I\'ve worked as a waitress with much responsibility both for myself and my others which suits me well. My most prominent features are my drive to keep growing and move forward. I work structured and organized, also I am stress resistant and like to work in teams. I am fond of languages and I speak Bulgarian(native tongue), Spanish, Romanian, Swedish and decent English.'),
+(1604, 51, 'resume_dark_gray_section_resume_dark_gray_section_content', 'I\'m a very driven and ambitious Front-end Developer and also a happy and hardworking girl.\r\nNow, I am looking for an exciting company where I can continue to grow and continue learning.\r\nFor the most part of my working life, I\'ve worked as a waitress with much responsibility both for myself and other employees which suits me well. My most prominent features are my drive to keep growing and move forward. I work structured and organized, also I am stress-resistant and like to work in teams. I am fond of languages and I speak Bulgarian(native tongue), Spanish, Romanian, Swedish, and decent English.'),
 (1605, 51, '_resume_dark_gray_section_resume_dark_gray_section_content', 'field_5e301ba9c1237'),
 (1606, 51, 'resume_dark_gray_section', ''),
 (1607, 51, '_resume_dark_gray_section', 'field_5e301ba9c1233'),
@@ -1921,7 +1884,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (1767, 51, '_resume_dark_gray_section_two_resume_dark_gray_section_button_text', 'field_5e32eb2b59074'),
 (1768, 51, 'resume_dark_gray_section_two_resume_dark_gray_section_button_url', ''),
 (1769, 51, '_resume_dark_gray_section_two_resume_dark_gray_section_button_url', 'field_5e32eb2b59075'),
-(1770, 51, 'resume_dark_gray_section_two_resume_dark_gray_section_content', 'In my spare time I like to hang out with friends and family, travel, read and workout regularly.\r\nPeople close to me says I rock at spreading good, happy energy around me and also that I am very reliable. I love laughing.'),
+(1770, 51, 'resume_dark_gray_section_two_resume_dark_gray_section_content', 'In my spare time, I like to hang out with friends and family, travel, read, and workout regularly.\r\nPeople close to me say I rock at spreading good, happy energy around me and also that I am very reliable. I love laughing.'),
 (1771, 51, '_resume_dark_gray_section_two_resume_dark_gray_section_content', 'field_5e32eb2b59076'),
 (1772, 51, 'resume_dark_gray_section_two', ''),
 (1773, 51, '_resume_dark_gray_section_two', 'field_5e32eb2b59072'),
@@ -2231,8 +2194,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (2077, 286, '_facts_section', 'field_5e288cf50f328'),
 (2078, 286, 'gray_section_gray_section_heading', ''),
 (2079, 286, '_gray_section_gray_section_heading', 'field_5e2975b992fd2'),
-(2080, 286, 'gray_section_gray_section_button_text', '');
-INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
+(2080, 286, 'gray_section_gray_section_button_text', ''),
 (2081, 286, '_gray_section_gray_section_button_text', 'field_5e2975ec92fd3'),
 (2082, 286, 'gray_section_gray_section_button_url', ''),
 (2083, 286, '_gray_section_gray_section_button_url', 'field_5e29761492fd4'),
@@ -2257,7 +2219,8 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (2102, 286, 'banner_heading', 'Dig a little deeper'),
 (2103, 286, '_banner_heading', 'field_5e289e7f5a3e8'),
 (2104, 286, 'banner_image', ''),
-(2105, 286, '_banner_image', 'field_5e289e945a3e9'),
+(2105, 286, '_banner_image', 'field_5e289e945a3e9');
+INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
 (2106, 286, 'banner_section_banner_heading_1', 'Dig a little'),
 (2107, 286, '_banner_section_banner_heading_1', 'field_5e2983004bc30'),
 (2108, 286, 'banner_section_banner_heading_2', 'deeper'),
@@ -2826,8 +2789,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (2677, 315, '_gallery_section_img_1_button_url', 'field_5e34146246c0b'),
 (2678, 315, 'gallery_section_img_2a', ''),
 (2679, 315, '_gallery_section_img_2a', 'field_5e341874121d0'),
-(2680, 315, 'gallery_section_img_2_heading', '');
-INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
+(2680, 315, 'gallery_section_img_2_heading', ''),
 (2681, 315, '_gallery_section_img_2_heading', 'field_5e341264d93ed'),
 (2682, 315, 'gallery_section_img_2_button_text', ''),
 (2683, 315, '_gallery_section_img_2_button_text', 'field_5e3415e346c0c'),
@@ -2847,7 +2809,8 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (2697, 18, '_gallery_section_img_1_button_text_2', 'field_5e341ae1e93c6'),
 (2698, 18, 'gallery_section_img_1_button_url_2', 'https://github.com/AvvyT/Magento2-Module-Owl-Carousel/tree/master/AvvyTest/FirstAvvysModule'),
 (2699, 18, '_gallery_section_img_1_button_url_2', 'field_5e341b07e93c7'),
-(2700, 318, 'banner_heading', 'Frontend Developer'),
+(2700, 318, 'banner_heading', 'Frontend Developer');
+INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
 (2701, 318, '_banner_heading', 'field_5e289e7f5a3e8'),
 (2702, 318, 'banner_image', ''),
 (2703, 318, '_banner_image', 'field_5e289e945a3e9'),
@@ -3433,8 +3396,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (3283, 332, '_banner_section_banner_image', 'field_5e29832b4bc31'),
 (3284, 332, 'banner_section', ''),
 (3285, 332, '_banner_section', 'field_5e2982984bc2f'),
-(3286, 332, 'left_img_section_left_img_section_heading', ' My passion and focus is Frontend development.');
-INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
+(3286, 332, 'left_img_section_left_img_section_heading', ' My passion and focus is Frontend development.'),
 (3287, 332, '_left_img_section_left_img_section_heading', 'field_5e298e8cee7a7'),
 (3288, 332, 'left_img_section_left_img_section_content', ' Let\'s be honest and cut through the marketing fluff. You need a website that looks amazing and actually works, that\'s what I do. And if you want to learn more about working with me, pick up the phone and give me a call (or email). '),
 (3289, 332, '_left_img_section_left_img_section_content', 'field_5e298ee6ee7a8'),
@@ -3447,7 +3409,8 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (3296, 332, 'right_img_section_right_img_section_content', 'Work with React and WordPress has become an amazing opportunity that I don\'t take for granted. Take a look at my latest projects that I’ve been busy working on. '),
 (3297, 332, '_right_img_section_right_img_section_content', 'field_5e299966a939a'),
 (3298, 332, 'right_img_section_right_img_section_button_text', 'My GitHub'),
-(3299, 332, '_right_img_section_right_img_section_button_text', 'field_5e299a72a939b'),
+(3299, 332, '_right_img_section_right_img_section_button_text', 'field_5e299a72a939b');
+INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
 (3300, 332, 'right_img_section_right_img_section_button_url', 'https://github.com/AvvyT'),
 (3301, 332, '_right_img_section_right_img_section_button_url', 'field_5e299ad2a939c'),
 (3302, 332, 'right_img_section_right_img_section_img', '58'),
@@ -3530,8 +3493,6 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (3379, 332, '_home_gallery_section_img_4_button_text', 'field_5e3919437e36f'),
 (3380, 332, 'home_gallery_section_img_4_button_url', 'https://github.com/AvvyT/Connect-Four-game-with-React.JS_mandatory-advanced-js4'),
 (3381, 332, '_home_gallery_section_img_4_button_url', 'field_5e3919687e370'),
-(3382, 334, '_wp_trash_meta_status', 'publish'),
-(3383, 334, '_wp_trash_meta_time', '1581024794'),
 (3384, 335, 'banner_heading', 'Frontend Developer'),
 (3385, 335, '_banner_heading', 'field_5e289e7f5a3e8'),
 (3386, 335, 'banner_image', ''),
@@ -4129,8 +4090,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (3978, 340, 'home_gallery_section_img_3', '322'),
 (3979, 340, '_home_gallery_section_img_3', 'field_5e3411421aa1b'),
 (3980, 340, 'home_gallery_section_img_3a', '323'),
-(3981, 340, '_home_gallery_section_img_3a', 'field_5e341895121d1');
-INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
+(3981, 340, '_home_gallery_section_img_3a', 'field_5e341895121d1'),
 (3982, 340, 'home_gallery_section_img_3_heading', 'Chat application(support for emojis), with React.JS & Socket.io server'),
 (3983, 340, '_home_gallery_section_img_3_heading', 'field_5e3412b6d93ee'),
 (3984, 340, 'home_gallery_section_img_3_button_text', 'View Chat'),
@@ -4149,7 +4109,8 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (3997, 340, '_home_gallery_section_img_4_button_text', 'field_5e3919437e36f'),
 (3998, 340, 'home_gallery_section_img_4_button_url', 'https://github.com/AvvyT/Connect-Four-game-with-React.JS_mandatory-advanced-js4'),
 (3999, 340, '_home_gallery_section_img_4_button_url', 'field_5e3919687e370'),
-(4000, 341, 'banner_heading', 'Frontend Developer'),
+(4000, 341, 'banner_heading', 'Frontend Developer');
+INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
 (4001, 341, '_banner_heading', 'field_5e289e7f5a3e8'),
 (4002, 341, 'banner_image', ''),
 (4003, 341, '_banner_image', 'field_5e289e945a3e9'),
@@ -4748,8 +4709,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (4596, 349, 'gallery_section_side_img', '36'),
 (4597, 349, '_gallery_section_side_img', 'field_5e28a58aba354'),
 (4598, 349, 'gallery_section', ''),
-(4599, 349, '_gallery_section', 'field_5e28a3e4ba34d');
-INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
+(4599, 349, '_gallery_section', 'field_5e28a3e4ba34d'),
 (4600, 349, 'facts_section_facts_section_heading', 'A little about me.'),
 (4601, 349, '_facts_section_facts_section_heading', 'field_5e29745792fcf'),
 (4602, 349, 'facts_section_facts_section_content', 'I am a thirty-five year old girl. Yes is say girl, because that is what I feel like I am still. I have a twelve year old son.\r\nMy favorite part of the day is the morning, thats when I am the most creative and productive. I am very service minded and thrive when I work with other people. \r\nIn my spare time I like to hang out with friends and family, travel, read and workout regularly.\r\nPeople close to me says I rock at spreading good, happy energy around me and also that I am very reliable. I love laughing.'),
@@ -4762,7 +4722,8 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (4609, 349, '_gray_section_gray_section_heading', 'field_5e2975b992fd2'),
 (4610, 349, 'gray_section_gray_section_button_text', 'Resume'),
 (4611, 349, '_gray_section_gray_section_button_text', 'field_5e2975ec92fd3'),
-(4612, 349, 'gray_section_gray_section_button_url', ' http://localhost:8888/Avvy_Portfolio20/resume/'),
+(4612, 349, 'gray_section_gray_section_button_url', ' http://localhost:8888/Avvy_Portfolio20/resume/');
+INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
 (4613, 349, '_gray_section_gray_section_button_url', 'field_5e29761492fd4'),
 (4614, 349, 'gray_section_gray_section_content', 'If you want to know more of my professional background and get a better idea of my career so far, please feel free to have a look at my resumé. '),
 (4615, 349, '_gray_section_gray_section_content', 'field_5e29766d92fd5'),
@@ -5351,8 +5312,7 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (5198, 357, 'gallery_section_img_2_button_url', 'https://github.com/malinclarsson/mandatory-project-agile1-'),
 (5199, 357, '_gallery_section_img_2_button_url', 'field_5e34160b46c0d'),
 (5200, 357, 'gallery_section_img_3a', '323'),
-(5201, 357, '_gallery_section_img_3a', 'field_5e341895121d1');
-INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
+(5201, 357, '_gallery_section_img_3a', 'field_5e341895121d1'),
 (5202, 357, 'gallery_section_img_3_heading', 'Chat application(support for emojis), with React.JS & Socket.io server (real-time library)'),
 (5203, 357, '_gallery_section_img_3_heading', 'field_5e3412b6d93ee'),
 (5204, 357, 'gallery_section_img_3_button_text', 'View Chat'),
@@ -5370,7 +5330,8 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (5216, 357, 'home_gallery_section_img_1a', '314'),
 (5217, 357, '_home_gallery_section_img_1a', 'field_5e341856121cf'),
 (5218, 357, 'home_gallery_section_img_1_heading', 'Magento 2 Theme Development / Design'),
-(5219, 357, '_home_gallery_section_img_1_heading', 'field_5e3411ded93ec'),
+(5219, 357, '_home_gallery_section_img_1_heading', 'field_5e3411ded93ec');
+INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
 (5220, 357, 'home_gallery_section_img_1_button_text', 'View Theme'),
 (5221, 357, '_home_gallery_section_img_1_button_text', 'field_5e34140e46c0a'),
 (5222, 357, 'home_gallery_section_img_1_button_text_2', 'View Module'),
@@ -5884,12 +5845,1075 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (5730, 389, 'gallery_section', ''),
 (5731, 389, '_gallery_section', 'field_5e28a3e4ba34d'),
 (5732, 389, 'gallery_section_img_4', ''),
-(5733, 389, '_gallery_section_img_4', 'field_5e2da95350564');
+(5733, 389, '_gallery_section_img_4', 'field_5e2da95350564'),
+(5734, 391, '_edit_lock', '1591868927:1'),
+(5735, 391, '_wp_trash_meta_status', 'publish'),
+(5736, 391, '_wp_trash_meta_time', '1591868935'),
+(5737, 392, '_wp_trash_meta_status', 'publish'),
+(5738, 392, '_wp_trash_meta_time', '1591869013'),
+(5739, 393, '_wp_trash_meta_status', 'publish'),
+(5740, 393, '_wp_trash_meta_time', '1591872840'),
+(5742, 394, '_customize_restore_dismissed', '1'),
+(5743, 395, '_menu_item_type', 'post_type'),
+(5744, 395, '_menu_item_menu_item_parent', '0'),
+(5745, 395, '_menu_item_object_id', '51'),
+(5746, 395, '_menu_item_object', 'page'),
+(5747, 395, '_menu_item_target', ''),
+(5748, 395, '_menu_item_classes', 'a:1:{i:0;s:0:\"\";}'),
+(5749, 395, '_menu_item_xfn', ''),
+(5750, 395, '_menu_item_url', ''),
+(5752, 396, '_wp_attached_file', '2020/06/avvy_work-scaled-e1592213049797.jpg'),
+(5753, 396, '_wp_attachment_metadata', 'a:6:{s:5:\"width\";i:560;s:6:\"height\";i:373;s:4:\"file\";s:43:\"2020/06/avvy_work-scaled-e1592213049797.jpg\";s:5:\"sizes\";a:7:{s:6:\"medium\";a:4:{s:4:\"file\";s:21:\"avvy_work-300x200.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:200;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:5:\"large\";a:4:{s:4:\"file\";s:22:\"avvy_work-1024x683.jpg\";s:5:\"width\";i:1024;s:6:\"height\";i:683;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"thumbnail\";a:4:{s:4:\"file\";s:21:\"avvy_work-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"medium_large\";a:4:{s:4:\"file\";s:21:\"avvy_work-768x512.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:512;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"1536x1536\";a:4:{s:4:\"file\";s:23:\"avvy_work-1536x1024.jpg\";s:5:\"width\";i:1536;s:6:\"height\";i:1024;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"2048x2048\";a:4:{s:4:\"file\";s:23:\"avvy_work-2048x1365.jpg\";s:5:\"width\";i:2048;s:6:\"height\";i:1365;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:13:\"content image\";a:4:{s:4:\"file\";s:21:\"avvy_work-400x267.jpg\";s:5:\"width\";i:400;s:6:\"height\";i:267;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}s:14:\"original_image\";s:13:\"avvy_work.jpg\";}'),
+(5754, 397, '_wp_attached_file', '2020/06/avvy_work-1-scaled.jpg'),
+(5755, 397, '_wp_attachment_metadata', 'a:6:{s:5:\"width\";i:2560;s:6:\"height\";i:1707;s:4:\"file\";s:30:\"2020/06/avvy_work-1-scaled.jpg\";s:5:\"sizes\";a:7:{s:6:\"medium\";a:4:{s:4:\"file\";s:23:\"avvy_work-1-300x200.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:200;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:5:\"large\";a:4:{s:4:\"file\";s:24:\"avvy_work-1-1024x683.jpg\";s:5:\"width\";i:1024;s:6:\"height\";i:683;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"thumbnail\";a:4:{s:4:\"file\";s:23:\"avvy_work-1-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"medium_large\";a:4:{s:4:\"file\";s:23:\"avvy_work-1-768x512.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:512;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"1536x1536\";a:4:{s:4:\"file\";s:25:\"avvy_work-1-1536x1024.jpg\";s:5:\"width\";i:1536;s:6:\"height\";i:1024;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"2048x2048\";a:4:{s:4:\"file\";s:25:\"avvy_work-1-2048x1365.jpg\";s:5:\"width\";i:2048;s:6:\"height\";i:1365;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:13:\"content image\";a:4:{s:4:\"file\";s:23:\"avvy_work-1-400x267.jpg\";s:5:\"width\";i:400;s:6:\"height\";i:267;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}s:14:\"original_image\";s:15:\"avvy_work-1.jpg\";}'),
+(5756, 396, '_wp_attachment_backup_sizes', 'a:1:{s:9:\"full-orig\";a:3:{s:5:\"width\";i:2560;s:6:\"height\";i:1707;s:4:\"file\";s:20:\"avvy_work-scaled.jpg\";}}'),
+(5757, 398, '_wp_attached_file', '2020/06/avvy_work1-scaled.jpg'),
+(5758, 398, '_wp_attachment_metadata', 'a:6:{s:5:\"width\";i:2560;s:6:\"height\";i:1704;s:4:\"file\";s:29:\"2020/06/avvy_work1-scaled.jpg\";s:5:\"sizes\";a:7:{s:6:\"medium\";a:4:{s:4:\"file\";s:22:\"avvy_work1-300x200.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:200;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:5:\"large\";a:4:{s:4:\"file\";s:23:\"avvy_work1-1024x682.jpg\";s:5:\"width\";i:1024;s:6:\"height\";i:682;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"thumbnail\";a:4:{s:4:\"file\";s:22:\"avvy_work1-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"medium_large\";a:4:{s:4:\"file\";s:22:\"avvy_work1-768x511.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:511;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"1536x1536\";a:4:{s:4:\"file\";s:24:\"avvy_work1-1536x1022.jpg\";s:5:\"width\";i:1536;s:6:\"height\";i:1022;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"2048x2048\";a:4:{s:4:\"file\";s:24:\"avvy_work1-2048x1363.jpg\";s:5:\"width\";i:2048;s:6:\"height\";i:1363;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:13:\"content image\";a:4:{s:4:\"file\";s:22:\"avvy_work1-400x266.jpg\";s:5:\"width\";i:400;s:6:\"height\";i:266;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}s:14:\"original_image\";s:14:\"avvy_work1.jpg\";}'),
+(5759, 399, '_wp_attached_file', '2020/06/avvy2-scaled.jpg'),
+(5760, 399, '_wp_attachment_metadata', 'a:6:{s:5:\"width\";i:2560;s:6:\"height\";i:1700;s:4:\"file\";s:24:\"2020/06/avvy2-scaled.jpg\";s:5:\"sizes\";a:7:{s:6:\"medium\";a:4:{s:4:\"file\";s:17:\"avvy2-300x199.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:199;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:5:\"large\";a:4:{s:4:\"file\";s:18:\"avvy2-1024x680.jpg\";s:5:\"width\";i:1024;s:6:\"height\";i:680;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"thumbnail\";a:4:{s:4:\"file\";s:17:\"avvy2-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"medium_large\";a:4:{s:4:\"file\";s:17:\"avvy2-768x510.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:510;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"1536x1536\";a:4:{s:4:\"file\";s:19:\"avvy2-1536x1020.jpg\";s:5:\"width\";i:1536;s:6:\"height\";i:1020;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"2048x2048\";a:4:{s:4:\"file\";s:19:\"avvy2-2048x1360.jpg\";s:5:\"width\";i:2048;s:6:\"height\";i:1360;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:13:\"content image\";a:4:{s:4:\"file\";s:17:\"avvy2-400x266.jpg\";s:5:\"width\";i:400;s:6:\"height\";i:266;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}s:14:\"original_image\";s:9:\"avvy2.jpg\";}'),
+(5761, 400, '_wp_attached_file', '2020/06/avvy1-scaled.jpg'),
+(5762, 400, '_wp_attachment_metadata', 'a:6:{s:5:\"width\";i:2560;s:6:\"height\";i:1686;s:4:\"file\";s:24:\"2020/06/avvy1-scaled.jpg\";s:5:\"sizes\";a:7:{s:6:\"medium\";a:4:{s:4:\"file\";s:17:\"avvy1-300x198.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:198;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:5:\"large\";a:4:{s:4:\"file\";s:18:\"avvy1-1024x674.jpg\";s:5:\"width\";i:1024;s:6:\"height\";i:674;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"thumbnail\";a:4:{s:4:\"file\";s:17:\"avvy1-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"medium_large\";a:4:{s:4:\"file\";s:17:\"avvy1-768x506.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:506;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"1536x1536\";a:4:{s:4:\"file\";s:19:\"avvy1-1536x1012.jpg\";s:5:\"width\";i:1536;s:6:\"height\";i:1012;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"2048x2048\";a:4:{s:4:\"file\";s:19:\"avvy1-2048x1349.jpg\";s:5:\"width\";i:2048;s:6:\"height\";i:1349;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:13:\"content image\";a:4:{s:4:\"file\";s:17:\"avvy1-400x263.jpg\";s:5:\"width\";i:400;s:6:\"height\";i:263;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}s:14:\"original_image\";s:9:\"avvy1.jpg\";}'),
+(5763, 401, 'banner_heading', 'Frontend Developer'),
+(5764, 401, '_banner_heading', 'field_5e289e7f5a3e8'),
+(5765, 401, 'banner_image', ''),
+(5766, 401, '_banner_image', 'field_5e289e945a3e9'),
+(5767, 401, 'facts_section_heading', ''),
+(5768, 401, '_facts_section_heading', 'field_5e288c129611e'),
+(5769, 401, 'facts_section_content', ''),
+(5770, 401, '_facts_section_content', 'field_5e288c269611f'),
+(5771, 401, 'facts_section_image', ''),
+(5772, 401, '_facts_section_image', 'field_5e288ccc0f327'),
+(5773, 401, 'gray_section_heading', ''),
+(5774, 401, '_gray_section_heading', 'field_5e2894a66f3dc'),
+(5775, 401, 'gray_section_button_text', ''),
+(5776, 401, '_gray_section_button_text', 'field_5e28956a6f3dd'),
+(5777, 401, 'gray_section_button_url', ''),
+(5778, 401, '_gray_section_button_url', 'field_5e28957d6f3de'),
+(5779, 401, 'gray_section_content', ''),
+(5780, 401, '_gray_section_content', 'field_5e2895a16f3df'),
+(5781, 401, 'facts_section_facts_section_heading', 'My passion and focus is Frontend development.'),
+(5782, 401, '_facts_section_facts_section_heading', 'field_5e29745792fcf'),
+(5783, 401, 'facts_section_facts_section_content', ' Let\'s be honest and cut through the marketing fluff. You need a website that looks amazing and actually works, that\'s what I do. And if you want to learn more about working with me, pick up the phone and give me a call (or email). '),
+(5784, 401, '_facts_section_facts_section_content', 'field_5e2974b392fd0'),
+(5785, 401, 'facts_section_facts_section_image', '59'),
+(5786, 401, '_facts_section_facts_section_image', 'field_5e29750f92fd1'),
+(5787, 401, 'facts_section', ''),
+(5788, 401, '_facts_section', 'field_5e288cf50f328'),
+(5789, 401, 'gray_section_gray_section_heading', ''),
+(5790, 401, '_gray_section_gray_section_heading', 'field_5e2975b992fd2'),
+(5791, 401, 'gray_section_gray_section_button_text', ''),
+(5792, 401, '_gray_section_gray_section_button_text', 'field_5e2975ec92fd3'),
+(5793, 401, 'gray_section_gray_section_button_url', ''),
+(5794, 401, '_gray_section_gray_section_button_url', 'field_5e29761492fd4'),
+(5795, 401, 'gray_section_gray_section_content', ''),
+(5796, 401, '_gray_section_gray_section_content', 'field_5e29766d92fd5'),
+(5797, 401, 'gray_section', ''),
+(5798, 401, '_gray_section', 'field_5e288d2f0f329'),
+(5799, 401, 'gallery_section_img_1', '313'),
+(5800, 401, '_gallery_section_img_1', 'field_5e3411421aa19'),
+(5801, 401, 'gallery_section_img_2', '319'),
+(5802, 401, '_gallery_section_img_2', 'field_5e3411421aa1a'),
+(5803, 401, 'gallery_section_img_3', '322'),
+(5804, 401, '_gallery_section_img_3', 'field_5e3411421aa1b'),
+(5805, 401, 'gallery_section_heading', ''),
+(5806, 401, '_gallery_section_heading', 'field_5e28a530ba352'),
+(5807, 401, 'gallery_section_content', ''),
+(5808, 401, '_gallery_section_content', 'field_5e28a55dba353'),
+(5809, 401, 'gallery_section_side_img', ''),
+(5810, 401, '_gallery_section_side_img', 'field_5e28a58aba354'),
+(5811, 401, 'gallery_section', ''),
+(5812, 401, '_gallery_section', 'field_5e3411411aa18'),
+(5813, 401, 'banner_section_banner_heading_1', 'Frontend'),
+(5814, 401, '_banner_section_banner_heading_1', 'field_5e2983004bc30'),
+(5815, 401, 'banner_section_banner_heading_2', 'Developer'),
+(5816, 401, '_banner_section_banner_heading_2', 'field_5e2983c6312f6'),
+(5817, 401, 'banner_section_banner_image', ''),
+(5818, 401, '_banner_section_banner_image', 'field_5e29832b4bc31'),
+(5819, 401, 'banner_section', ''),
+(5820, 401, '_banner_section', 'field_5e2982984bc2f'),
+(5821, 401, 'left_img_section_left_img_section_heading', 'Why hire me?'),
+(5822, 401, '_left_img_section_left_img_section_heading', 'field_5e298e8cee7a7'),
+(5823, 401, 'left_img_section_left_img_section_content', 'When you are looking for a developer for your project, I guess that you want a developer that is ambitious and driven and most of all, able to understand what your end goal is. That is me. I am open and curious to hear about your ideas and make them come to life.'),
+(5824, 401, '_left_img_section_left_img_section_content', 'field_5e298ee6ee7a8'),
+(5825, 401, 'left_img_section_left_img_section_image', '397'),
+(5826, 401, '_left_img_section_left_img_section_image', 'field_5e298f17ee7a9'),
+(5827, 401, 'left_img_section', ''),
+(5828, 401, '_left_img_section', 'field_5e298dcbee7a6'),
+(5829, 401, 'right_img_section_right_img_section_heading', 'My work.'),
+(5830, 401, '_right_img_section_right_img_section_heading', 'field_5e2998b0a9399'),
+(5831, 401, 'right_img_section_right_img_section_content', 'I love working mostly with React.JS and lately I have picked up some Wordpress skills. If you want to see my projects in more detail, feel free to visit me at Github.'),
+(5832, 401, '_right_img_section_right_img_section_content', 'field_5e299966a939a'),
+(5833, 401, 'right_img_section_right_img_section_button_text', 'My GitHub'),
+(5834, 401, '_right_img_section_right_img_section_button_text', 'field_5e299a72a939b'),
+(5835, 401, 'right_img_section_right_img_section_button_url', 'https://github.com/AvvyT'),
+(5836, 401, '_right_img_section_right_img_section_button_url', 'field_5e299ad2a939c'),
+(5837, 401, 'right_img_section_right_img_section_img', '58'),
+(5838, 401, '_right_img_section_right_img_section_img', 'field_5e299b0ba939d'),
+(5839, 401, 'right_img_section', '');
+INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
+(5840, 401, '_right_img_section', 'field_5e29981ea9398'),
+(5841, 401, 'gallery_section_img_1a', '314'),
+(5842, 401, '_gallery_section_img_1a', 'field_5e341856121cf'),
+(5843, 401, 'gallery_section_img_1_heading', 'Magento 2 Theme Development / Design'),
+(5844, 401, '_gallery_section_img_1_heading', 'field_5e3411ded93ec'),
+(5845, 401, 'gallery_section_img_1_button_text', 'View Theme'),
+(5846, 401, '_gallery_section_img_1_button_text', 'field_5e34140e46c0a'),
+(5847, 401, 'gallery_section_img_1_button_url', 'https://github.com/AvvyT/Magento2-Custom-Theme/tree/master/Avvytheme'),
+(5848, 401, '_gallery_section_img_1_button_url', 'field_5e34146246c0b'),
+(5849, 401, 'gallery_section_img_2a', '320'),
+(5850, 401, '_gallery_section_img_2a', 'field_5e341874121d0'),
+(5851, 401, 'gallery_section_img_2_heading', ' Agil(Scrum) Development, React.JS -  Teamwork: Schack'),
+(5852, 401, '_gallery_section_img_2_heading', 'field_5e341264d93ed'),
+(5853, 401, 'gallery_section_img_2_button_text', 'View Game'),
+(5854, 401, '_gallery_section_img_2_button_text', 'field_5e3415e346c0c'),
+(5855, 401, 'gallery_section_img_2_button_url', 'https://github.com/malinclarsson/mandatory-project-agile1-'),
+(5856, 401, '_gallery_section_img_2_button_url', 'field_5e34160b46c0d'),
+(5857, 401, 'gallery_section_img_3a', '323'),
+(5858, 401, '_gallery_section_img_3a', 'field_5e341895121d1'),
+(5859, 401, 'gallery_section_img_3_heading', 'Chat application(support for emojis), with React.JS & Socket.io server (real-time library)'),
+(5860, 401, '_gallery_section_img_3_heading', 'field_5e3412b6d93ee'),
+(5861, 401, 'gallery_section_img_3_button_text', 'View Chat'),
+(5862, 401, '_gallery_section_img_3_button_text', 'field_5e34165746c0e'),
+(5863, 401, 'gallery_section_img_3_button_url', 'https://github.com/AvvyT/Simple-Chat-application_mandatory-advanced-js1'),
+(5864, 401, '_gallery_section_img_3_button_url', 'field_5e34168446c0f'),
+(5865, 401, 'gallery_section_img_4', ''),
+(5866, 401, '_gallery_section_img_4', 'field_5e3411421aa1c'),
+(5867, 401, 'gallery_section_img_1_button_text_2', 'View Module'),
+(5868, 401, '_gallery_section_img_1_button_text_2', 'field_5e341ae1e93c6'),
+(5869, 401, 'gallery_section_img_1_button_url_2', 'https://github.com/AvvyT/Magento2-Module-Owl-Carousel/tree/master/AvvyTest/FirstAvvysModule'),
+(5870, 401, '_gallery_section_img_1_button_url_2', 'field_5e341b07e93c7'),
+(5871, 401, 'home_gallery_section_img_1', '313'),
+(5872, 401, '_home_gallery_section_img_1', 'field_5e3411421aa19'),
+(5873, 401, 'home_gallery_section_img_1a', '314'),
+(5874, 401, '_home_gallery_section_img_1a', 'field_5e341856121cf'),
+(5875, 401, 'home_gallery_section_img_1_heading', 'Magento 2 Theme Development / Design'),
+(5876, 401, '_home_gallery_section_img_1_heading', 'field_5e3411ded93ec'),
+(5877, 401, 'home_gallery_section_img_1_button_text', 'View Theme'),
+(5878, 401, '_home_gallery_section_img_1_button_text', 'field_5e34140e46c0a'),
+(5879, 401, 'home_gallery_section_img_1_button_text_2', 'View Module'),
+(5880, 401, '_home_gallery_section_img_1_button_text_2', 'field_5e341ae1e93c6'),
+(5881, 401, 'home_gallery_section_img_1_button_url', 'https://github.com/AvvyT/Magento2-Custom-Theme/tree/master/Avvytheme'),
+(5882, 401, '_home_gallery_section_img_1_button_url', 'field_5e34146246c0b'),
+(5883, 401, 'home_gallery_section_img_1_button_url_2', 'https://github.com/AvvyT/Magento2-Module-Owl-Carousel/tree/master/AvvyTest/FirstAvvysModule'),
+(5884, 401, '_home_gallery_section_img_1_button_url_2', 'field_5e341b07e93c7'),
+(5885, 401, 'home_gallery_section_img_2', '319'),
+(5886, 401, '_home_gallery_section_img_2', 'field_5e3411421aa1a'),
+(5887, 401, 'home_gallery_section_img_2a', '320'),
+(5888, 401, '_home_gallery_section_img_2a', 'field_5e341874121d0'),
+(5889, 401, 'home_gallery_section_img_2_heading', 'Agil(Scrum) Development with React.JS -  Teamwork: Chess'),
+(5890, 401, '_home_gallery_section_img_2_heading', 'field_5e341264d93ed'),
+(5891, 401, 'home_gallery_section_img_2_button_text', 'View Game'),
+(5892, 401, '_home_gallery_section_img_2_button_text', 'field_5e3415e346c0c'),
+(5893, 401, 'home_gallery_section_img_2_button_url', 'https://github.com/malinclarsson/mandatory-project-agile1-'),
+(5894, 401, '_home_gallery_section_img_2_button_url', 'field_5e34160b46c0d'),
+(5895, 401, 'home_gallery_section_img_3', '322'),
+(5896, 401, '_home_gallery_section_img_3', 'field_5e3411421aa1b'),
+(5897, 401, 'home_gallery_section_img_3a', '323'),
+(5898, 401, '_home_gallery_section_img_3a', 'field_5e341895121d1'),
+(5899, 401, 'home_gallery_section_img_3_heading', 'Chat application(support for emojis), with React.JS & Socket.io server'),
+(5900, 401, '_home_gallery_section_img_3_heading', 'field_5e3412b6d93ee'),
+(5901, 401, 'home_gallery_section_img_3_button_text', 'View Chat'),
+(5902, 401, '_home_gallery_section_img_3_button_text', 'field_5e34165746c0e'),
+(5903, 401, 'home_gallery_section_img_3_button_url', 'https://github.com/AvvyT/Simple-Chat-application_mandatory-advanced-js1'),
+(5904, 401, '_home_gallery_section_img_3_button_url', 'field_5e34168446c0f'),
+(5905, 401, 'home_gallery_section_img_4', '330'),
+(5906, 401, '_home_gallery_section_img_4', 'field_5e3411421aa1c'),
+(5907, 401, 'home_gallery_section', ''),
+(5908, 401, '_home_gallery_section', 'field_5e3411411aa18'),
+(5909, 401, 'home_gallery_section_img_4a', '331'),
+(5910, 401, '_home_gallery_section_img_4a', 'field_5e3919067e36d'),
+(5911, 401, 'home_gallery_section_img_4_heading', 'Connect Four Game with React.JS'),
+(5912, 401, '_home_gallery_section_img_4_heading', 'field_5e39191d7e36e'),
+(5913, 401, 'home_gallery_section_img_4_button_text', 'View Game'),
+(5914, 401, '_home_gallery_section_img_4_button_text', 'field_5e3919437e36f'),
+(5915, 401, 'home_gallery_section_img_4_button_url', 'https://github.com/AvvyT/Connect-Four-game-with-React.JS_mandatory-advanced-js4'),
+(5916, 401, '_home_gallery_section_img_4_button_url', 'field_5e3919687e370'),
+(5917, 402, 'banner_heading', 'Frontend Developer'),
+(5918, 402, '_banner_heading', 'field_5e289e7f5a3e8'),
+(5919, 402, 'banner_image', ''),
+(5920, 402, '_banner_image', 'field_5e289e945a3e9'),
+(5921, 402, 'facts_section_heading', ''),
+(5922, 402, '_facts_section_heading', 'field_5e288c129611e'),
+(5923, 402, 'facts_section_content', ''),
+(5924, 402, '_facts_section_content', 'field_5e288c269611f'),
+(5925, 402, 'facts_section_image', ''),
+(5926, 402, '_facts_section_image', 'field_5e288ccc0f327'),
+(5927, 402, 'gray_section_heading', ''),
+(5928, 402, '_gray_section_heading', 'field_5e2894a66f3dc'),
+(5929, 402, 'gray_section_button_text', ''),
+(5930, 402, '_gray_section_button_text', 'field_5e28956a6f3dd'),
+(5931, 402, 'gray_section_button_url', ''),
+(5932, 402, '_gray_section_button_url', 'field_5e28957d6f3de'),
+(5933, 402, 'gray_section_content', ''),
+(5934, 402, '_gray_section_content', 'field_5e2895a16f3df'),
+(5935, 402, 'facts_section_facts_section_heading', 'My passion and focus is Frontend development.'),
+(5936, 402, '_facts_section_facts_section_heading', 'field_5e29745792fcf'),
+(5937, 402, 'facts_section_facts_section_content', ' Let\'s be honest and cut through the marketing fluff. You need a website that looks amazing and actually works, that\'s what I do. And if you want to learn more about working with me, pick up the phone and give me a call (or email). '),
+(5938, 402, '_facts_section_facts_section_content', 'field_5e2974b392fd0'),
+(5939, 402, 'facts_section_facts_section_image', '59'),
+(5940, 402, '_facts_section_facts_section_image', 'field_5e29750f92fd1'),
+(5941, 402, 'facts_section', ''),
+(5942, 402, '_facts_section', 'field_5e288cf50f328'),
+(5943, 402, 'gray_section_gray_section_heading', ''),
+(5944, 402, '_gray_section_gray_section_heading', 'field_5e2975b992fd2'),
+(5945, 402, 'gray_section_gray_section_button_text', ''),
+(5946, 402, '_gray_section_gray_section_button_text', 'field_5e2975ec92fd3'),
+(5947, 402, 'gray_section_gray_section_button_url', ''),
+(5948, 402, '_gray_section_gray_section_button_url', 'field_5e29761492fd4'),
+(5949, 402, 'gray_section_gray_section_content', ''),
+(5950, 402, '_gray_section_gray_section_content', 'field_5e29766d92fd5'),
+(5951, 402, 'gray_section', ''),
+(5952, 402, '_gray_section', 'field_5e288d2f0f329'),
+(5953, 402, 'gallery_section_img_1', '313'),
+(5954, 402, '_gallery_section_img_1', 'field_5e3411421aa19'),
+(5955, 402, 'gallery_section_img_2', '319'),
+(5956, 402, '_gallery_section_img_2', 'field_5e3411421aa1a'),
+(5957, 402, 'gallery_section_img_3', '322'),
+(5958, 402, '_gallery_section_img_3', 'field_5e3411421aa1b'),
+(5959, 402, 'gallery_section_heading', ''),
+(5960, 402, '_gallery_section_heading', 'field_5e28a530ba352'),
+(5961, 402, 'gallery_section_content', ''),
+(5962, 402, '_gallery_section_content', 'field_5e28a55dba353'),
+(5963, 402, 'gallery_section_side_img', ''),
+(5964, 402, '_gallery_section_side_img', 'field_5e28a58aba354'),
+(5965, 402, 'gallery_section', ''),
+(5966, 402, '_gallery_section', 'field_5e3411411aa18'),
+(5967, 402, 'banner_section_banner_heading_1', 'Frontend'),
+(5968, 402, '_banner_section_banner_heading_1', 'field_5e2983004bc30'),
+(5969, 402, 'banner_section_banner_heading_2', 'Developer'),
+(5970, 402, '_banner_section_banner_heading_2', 'field_5e2983c6312f6'),
+(5971, 402, 'banner_section_banner_image', ''),
+(5972, 402, '_banner_section_banner_image', 'field_5e29832b4bc31'),
+(5973, 402, 'banner_section', ''),
+(5974, 402, '_banner_section', 'field_5e2982984bc2f'),
+(5975, 402, 'left_img_section_left_img_section_heading', 'Why hire me?'),
+(5976, 402, '_left_img_section_left_img_section_heading', 'field_5e298e8cee7a7'),
+(5977, 402, 'left_img_section_left_img_section_content', 'When you are looking for a developer for your project, I guess that you want a developer that is ambitious and driven and most of all, able to understand what your end goal is. That is me. I am open and curious to hear about your ideas and make them come to life.'),
+(5978, 402, '_left_img_section_left_img_section_content', 'field_5e298ee6ee7a8'),
+(5979, 402, 'left_img_section_left_img_section_image', '397'),
+(5980, 402, '_left_img_section_left_img_section_image', 'field_5e298f17ee7a9'),
+(5981, 402, 'left_img_section', ''),
+(5982, 402, '_left_img_section', 'field_5e298dcbee7a6'),
+(5983, 402, 'right_img_section_right_img_section_heading', 'My work.'),
+(5984, 402, '_right_img_section_right_img_section_heading', 'field_5e2998b0a9399'),
+(5985, 402, 'right_img_section_right_img_section_content', 'I love working mostly with React.JS and lately I have picked up some Wordpress skills. If you want to see my projects in more detail, feel free to visit me at Github.'),
+(5986, 402, '_right_img_section_right_img_section_content', 'field_5e299966a939a'),
+(5987, 402, 'right_img_section_right_img_section_button_text', 'My GitHub'),
+(5988, 402, '_right_img_section_right_img_section_button_text', 'field_5e299a72a939b'),
+(5989, 402, 'right_img_section_right_img_section_button_url', 'https://github.com/AvvyT'),
+(5990, 402, '_right_img_section_right_img_section_button_url', 'field_5e299ad2a939c'),
+(5991, 402, 'right_img_section_right_img_section_img', '399'),
+(5992, 402, '_right_img_section_right_img_section_img', 'field_5e299b0ba939d'),
+(5993, 402, 'right_img_section', ''),
+(5994, 402, '_right_img_section', 'field_5e29981ea9398'),
+(5995, 402, 'gallery_section_img_1a', '314'),
+(5996, 402, '_gallery_section_img_1a', 'field_5e341856121cf'),
+(5997, 402, 'gallery_section_img_1_heading', 'Magento 2 Theme Development / Design'),
+(5998, 402, '_gallery_section_img_1_heading', 'field_5e3411ded93ec'),
+(5999, 402, 'gallery_section_img_1_button_text', 'View Theme'),
+(6000, 402, '_gallery_section_img_1_button_text', 'field_5e34140e46c0a'),
+(6001, 402, 'gallery_section_img_1_button_url', 'https://github.com/AvvyT/Magento2-Custom-Theme/tree/master/Avvytheme'),
+(6002, 402, '_gallery_section_img_1_button_url', 'field_5e34146246c0b'),
+(6003, 402, 'gallery_section_img_2a', '320'),
+(6004, 402, '_gallery_section_img_2a', 'field_5e341874121d0'),
+(6005, 402, 'gallery_section_img_2_heading', ' Agil(Scrum) Development, React.JS -  Teamwork: Schack'),
+(6006, 402, '_gallery_section_img_2_heading', 'field_5e341264d93ed'),
+(6007, 402, 'gallery_section_img_2_button_text', 'View Game'),
+(6008, 402, '_gallery_section_img_2_button_text', 'field_5e3415e346c0c'),
+(6009, 402, 'gallery_section_img_2_button_url', 'https://github.com/malinclarsson/mandatory-project-agile1-'),
+(6010, 402, '_gallery_section_img_2_button_url', 'field_5e34160b46c0d'),
+(6011, 402, 'gallery_section_img_3a', '323'),
+(6012, 402, '_gallery_section_img_3a', 'field_5e341895121d1'),
+(6013, 402, 'gallery_section_img_3_heading', 'Chat application(support for emojis), with React.JS & Socket.io server (real-time library)'),
+(6014, 402, '_gallery_section_img_3_heading', 'field_5e3412b6d93ee'),
+(6015, 402, 'gallery_section_img_3_button_text', 'View Chat'),
+(6016, 402, '_gallery_section_img_3_button_text', 'field_5e34165746c0e'),
+(6017, 402, 'gallery_section_img_3_button_url', 'https://github.com/AvvyT/Simple-Chat-application_mandatory-advanced-js1'),
+(6018, 402, '_gallery_section_img_3_button_url', 'field_5e34168446c0f'),
+(6019, 402, 'gallery_section_img_4', ''),
+(6020, 402, '_gallery_section_img_4', 'field_5e3411421aa1c'),
+(6021, 402, 'gallery_section_img_1_button_text_2', 'View Module'),
+(6022, 402, '_gallery_section_img_1_button_text_2', 'field_5e341ae1e93c6'),
+(6023, 402, 'gallery_section_img_1_button_url_2', 'https://github.com/AvvyT/Magento2-Module-Owl-Carousel/tree/master/AvvyTest/FirstAvvysModule'),
+(6024, 402, '_gallery_section_img_1_button_url_2', 'field_5e341b07e93c7'),
+(6025, 402, 'home_gallery_section_img_1', '313'),
+(6026, 402, '_home_gallery_section_img_1', 'field_5e3411421aa19'),
+(6027, 402, 'home_gallery_section_img_1a', '314'),
+(6028, 402, '_home_gallery_section_img_1a', 'field_5e341856121cf'),
+(6029, 402, 'home_gallery_section_img_1_heading', 'Magento 2 Theme Development / Design'),
+(6030, 402, '_home_gallery_section_img_1_heading', 'field_5e3411ded93ec'),
+(6031, 402, 'home_gallery_section_img_1_button_text', 'View Theme'),
+(6032, 402, '_home_gallery_section_img_1_button_text', 'field_5e34140e46c0a'),
+(6033, 402, 'home_gallery_section_img_1_button_text_2', 'View Module'),
+(6034, 402, '_home_gallery_section_img_1_button_text_2', 'field_5e341ae1e93c6'),
+(6035, 402, 'home_gallery_section_img_1_button_url', 'https://github.com/AvvyT/Magento2-Custom-Theme/tree/master/Avvytheme'),
+(6036, 402, '_home_gallery_section_img_1_button_url', 'field_5e34146246c0b'),
+(6037, 402, 'home_gallery_section_img_1_button_url_2', 'https://github.com/AvvyT/Magento2-Module-Owl-Carousel/tree/master/AvvyTest/FirstAvvysModule'),
+(6038, 402, '_home_gallery_section_img_1_button_url_2', 'field_5e341b07e93c7'),
+(6039, 402, 'home_gallery_section_img_2', '319'),
+(6040, 402, '_home_gallery_section_img_2', 'field_5e3411421aa1a'),
+(6041, 402, 'home_gallery_section_img_2a', '320'),
+(6042, 402, '_home_gallery_section_img_2a', 'field_5e341874121d0'),
+(6043, 402, 'home_gallery_section_img_2_heading', 'Agil(Scrum) Development with React.JS -  Teamwork: Chess'),
+(6044, 402, '_home_gallery_section_img_2_heading', 'field_5e341264d93ed'),
+(6045, 402, 'home_gallery_section_img_2_button_text', 'View Game'),
+(6046, 402, '_home_gallery_section_img_2_button_text', 'field_5e3415e346c0c'),
+(6047, 402, 'home_gallery_section_img_2_button_url', 'https://github.com/malinclarsson/mandatory-project-agile1-'),
+(6048, 402, '_home_gallery_section_img_2_button_url', 'field_5e34160b46c0d'),
+(6049, 402, 'home_gallery_section_img_3', '322'),
+(6050, 402, '_home_gallery_section_img_3', 'field_5e3411421aa1b'),
+(6051, 402, 'home_gallery_section_img_3a', '323'),
+(6052, 402, '_home_gallery_section_img_3a', 'field_5e341895121d1'),
+(6053, 402, 'home_gallery_section_img_3_heading', 'Chat application(support for emojis), with React.JS & Socket.io server'),
+(6054, 402, '_home_gallery_section_img_3_heading', 'field_5e3412b6d93ee'),
+(6055, 402, 'home_gallery_section_img_3_button_text', 'View Chat'),
+(6056, 402, '_home_gallery_section_img_3_button_text', 'field_5e34165746c0e'),
+(6057, 402, 'home_gallery_section_img_3_button_url', 'https://github.com/AvvyT/Simple-Chat-application_mandatory-advanced-js1'),
+(6058, 402, '_home_gallery_section_img_3_button_url', 'field_5e34168446c0f'),
+(6059, 402, 'home_gallery_section_img_4', '330'),
+(6060, 402, '_home_gallery_section_img_4', 'field_5e3411421aa1c'),
+(6061, 402, 'home_gallery_section', ''),
+(6062, 402, '_home_gallery_section', 'field_5e3411411aa18'),
+(6063, 402, 'home_gallery_section_img_4a', '331'),
+(6064, 402, '_home_gallery_section_img_4a', 'field_5e3919067e36d'),
+(6065, 402, 'home_gallery_section_img_4_heading', 'Connect Four Game with React.JS'),
+(6066, 402, '_home_gallery_section_img_4_heading', 'field_5e39191d7e36e'),
+(6067, 402, 'home_gallery_section_img_4_button_text', 'View Game'),
+(6068, 402, '_home_gallery_section_img_4_button_text', 'field_5e3919437e36f'),
+(6069, 402, 'home_gallery_section_img_4_button_url', 'https://github.com/AvvyT/Connect-Four-game-with-React.JS_mandatory-advanced-js4'),
+(6070, 402, '_home_gallery_section_img_4_button_url', 'field_5e3919687e370'),
+(6071, 403, '_wp_attached_file', '2020/06/bram-naus-n8Qb1ZAkK88-unsplash-scaled.jpg'),
+(6072, 403, '_wp_attachment_metadata', 'a:6:{s:5:\"width\";i:2560;s:6:\"height\";i:1658;s:4:\"file\";s:49:\"2020/06/bram-naus-n8Qb1ZAkK88-unsplash-scaled.jpg\";s:5:\"sizes\";a:7:{s:6:\"medium\";a:4:{s:4:\"file\";s:42:\"bram-naus-n8Qb1ZAkK88-unsplash-300x194.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:194;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:5:\"large\";a:4:{s:4:\"file\";s:43:\"bram-naus-n8Qb1ZAkK88-unsplash-1024x663.jpg\";s:5:\"width\";i:1024;s:6:\"height\";i:663;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"thumbnail\";a:4:{s:4:\"file\";s:42:\"bram-naus-n8Qb1ZAkK88-unsplash-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"medium_large\";a:4:{s:4:\"file\";s:42:\"bram-naus-n8Qb1ZAkK88-unsplash-768x497.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:497;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"1536x1536\";a:4:{s:4:\"file\";s:43:\"bram-naus-n8Qb1ZAkK88-unsplash-1536x995.jpg\";s:5:\"width\";i:1536;s:6:\"height\";i:995;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"2048x2048\";a:4:{s:4:\"file\";s:44:\"bram-naus-n8Qb1ZAkK88-unsplash-2048x1327.jpg\";s:5:\"width\";i:2048;s:6:\"height\";i:1327;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:13:\"content image\";a:4:{s:4:\"file\";s:42:\"bram-naus-n8Qb1ZAkK88-unsplash-400x259.jpg\";s:5:\"width\";i:400;s:6:\"height\";i:259;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}s:14:\"original_image\";s:34:\"bram-naus-n8Qb1ZAkK88-unsplash.jpg\";}'),
+(6073, 403, '_wp_attachment_is_custom_background', 'avvystheme'),
+(6074, 400, '_wp_attachment_is_custom_background', 'avvystheme'),
+(6075, 398, '_wp_attachment_is_custom_background', 'avvystheme'),
+(6076, 404, '_edit_lock', '1592215101:1'),
+(6077, 405, '_wp_attached_file', '2020/06/marcus-lenk-Q_1KUf9qgSY-unsplash-scaled.jpg'),
+(6078, 405, '_wp_attachment_metadata', 'a:6:{s:5:\"width\";i:1920;s:6:\"height\";i:2560;s:4:\"file\";s:51:\"2020/06/marcus-lenk-Q_1KUf9qgSY-unsplash-scaled.jpg\";s:5:\"sizes\";a:7:{s:6:\"medium\";a:4:{s:4:\"file\";s:44:\"marcus-lenk-Q_1KUf9qgSY-unsplash-225x300.jpg\";s:5:\"width\";i:225;s:6:\"height\";i:300;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:5:\"large\";a:4:{s:4:\"file\";s:45:\"marcus-lenk-Q_1KUf9qgSY-unsplash-768x1024.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:1024;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"thumbnail\";a:4:{s:4:\"file\";s:44:\"marcus-lenk-Q_1KUf9qgSY-unsplash-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"medium_large\";a:4:{s:4:\"file\";s:45:\"marcus-lenk-Q_1KUf9qgSY-unsplash-768x1024.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:1024;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"1536x1536\";a:4:{s:4:\"file\";s:46:\"marcus-lenk-Q_1KUf9qgSY-unsplash-1152x1536.jpg\";s:5:\"width\";i:1152;s:6:\"height\";i:1536;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"2048x2048\";a:4:{s:4:\"file\";s:46:\"marcus-lenk-Q_1KUf9qgSY-unsplash-1536x2048.jpg\";s:5:\"width\";i:1536;s:6:\"height\";i:2048;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:13:\"content image\";a:4:{s:4:\"file\";s:44:\"marcus-lenk-Q_1KUf9qgSY-unsplash-400x533.jpg\";s:5:\"width\";i:400;s:6:\"height\";i:533;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}s:14:\"original_image\";s:36:\"marcus-lenk-Q_1KUf9qgSY-unsplash.jpg\";}'),
+(6079, 404, '_customize_restore_dismissed', '1'),
+(6080, 405, '_wp_attachment_is_custom_background', 'avvystheme'),
+(6081, 406, '_wp_trash_meta_status', 'publish'),
+(6082, 406, '_wp_trash_meta_time', '1592215191'),
+(6084, 408, '_wp_attached_file', '2020/06/nils-lindner-drba0TzbCGA-unsplash-scaled.jpg'),
+(6085, 408, '_wp_attachment_metadata', 'a:6:{s:5:\"width\";i:2560;s:6:\"height\";i:1707;s:4:\"file\";s:52:\"2020/06/nils-lindner-drba0TzbCGA-unsplash-scaled.jpg\";s:5:\"sizes\";a:7:{s:6:\"medium\";a:4:{s:4:\"file\";s:45:\"nils-lindner-drba0TzbCGA-unsplash-300x200.jpg\";s:5:\"width\";i:300;s:6:\"height\";i:200;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:5:\"large\";a:4:{s:4:\"file\";s:46:\"nils-lindner-drba0TzbCGA-unsplash-1024x683.jpg\";s:5:\"width\";i:1024;s:6:\"height\";i:683;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"thumbnail\";a:4:{s:4:\"file\";s:45:\"nils-lindner-drba0TzbCGA-unsplash-150x150.jpg\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:12:\"medium_large\";a:4:{s:4:\"file\";s:45:\"nils-lindner-drba0TzbCGA-unsplash-768x512.jpg\";s:5:\"width\";i:768;s:6:\"height\";i:512;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"1536x1536\";a:4:{s:4:\"file\";s:47:\"nils-lindner-drba0TzbCGA-unsplash-1536x1024.jpg\";s:5:\"width\";i:1536;s:6:\"height\";i:1024;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:9:\"2048x2048\";a:4:{s:4:\"file\";s:47:\"nils-lindner-drba0TzbCGA-unsplash-2048x1365.jpg\";s:5:\"width\";i:2048;s:6:\"height\";i:1365;s:9:\"mime-type\";s:10:\"image/jpeg\";}s:13:\"content image\";a:4:{s:4:\"file\";s:45:\"nils-lindner-drba0TzbCGA-unsplash-400x267.jpg\";s:5:\"width\";i:400;s:6:\"height\";i:267;s:9:\"mime-type\";s:10:\"image/jpeg\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}s:14:\"original_image\";s:37:\"nils-lindner-drba0TzbCGA-unsplash.jpg\";}'),
+(6086, 407, '_customize_restore_dismissed', '1'),
+(6087, 408, '_wp_attachment_is_custom_background', 'avvystheme'),
+(6088, 409, '_wp_trash_meta_status', 'publish'),
+(6089, 409, '_wp_trash_meta_time', '1592223864'),
+(6090, 410, 'banner_heading', 'Frontend Developer'),
+(6091, 410, '_banner_heading', 'field_5e289e7f5a3e8'),
+(6092, 410, 'banner_image', ''),
+(6093, 410, '_banner_image', 'field_5e289e945a3e9'),
+(6094, 410, 'facts_section_heading', ''),
+(6095, 410, '_facts_section_heading', 'field_5e288c129611e'),
+(6096, 410, 'facts_section_content', ''),
+(6097, 410, '_facts_section_content', 'field_5e288c269611f'),
+(6098, 410, 'facts_section_image', ''),
+(6099, 410, '_facts_section_image', 'field_5e288ccc0f327'),
+(6100, 410, 'gray_section_heading', ''),
+(6101, 410, '_gray_section_heading', 'field_5e2894a66f3dc'),
+(6102, 410, 'gray_section_button_text', ''),
+(6103, 410, '_gray_section_button_text', 'field_5e28956a6f3dd'),
+(6104, 410, 'gray_section_button_url', ''),
+(6105, 410, '_gray_section_button_url', 'field_5e28957d6f3de'),
+(6106, 410, 'gray_section_content', ''),
+(6107, 410, '_gray_section_content', 'field_5e2895a16f3df'),
+(6108, 410, 'facts_section_facts_section_heading', 'My passion and focus is Frontend development.'),
+(6109, 410, '_facts_section_facts_section_heading', 'field_5e29745792fcf'),
+(6110, 410, 'facts_section_facts_section_content', ' Let\'s be honest and cut through the marketing fluff. You need a website that looks amazing and actually works, that\'s what I do. And if you want to learn more about working with me, pick up the phone and give me a call (or email). '),
+(6111, 410, '_facts_section_facts_section_content', 'field_5e2974b392fd0'),
+(6112, 410, 'facts_section_facts_section_image', '59'),
+(6113, 410, '_facts_section_facts_section_image', 'field_5e29750f92fd1'),
+(6114, 410, 'facts_section', ''),
+(6115, 410, '_facts_section', 'field_5e288cf50f328'),
+(6116, 410, 'gray_section_gray_section_heading', ''),
+(6117, 410, '_gray_section_gray_section_heading', 'field_5e2975b992fd2'),
+(6118, 410, 'gray_section_gray_section_button_text', ''),
+(6119, 410, '_gray_section_gray_section_button_text', 'field_5e2975ec92fd3'),
+(6120, 410, 'gray_section_gray_section_button_url', ''),
+(6121, 410, '_gray_section_gray_section_button_url', 'field_5e29761492fd4'),
+(6122, 410, 'gray_section_gray_section_content', ''),
+(6123, 410, '_gray_section_gray_section_content', 'field_5e29766d92fd5'),
+(6124, 410, 'gray_section', ''),
+(6125, 410, '_gray_section', 'field_5e288d2f0f329'),
+(6126, 410, 'gallery_section_img_1', '313'),
+(6127, 410, '_gallery_section_img_1', 'field_5e3411421aa19'),
+(6128, 410, 'gallery_section_img_2', '319'),
+(6129, 410, '_gallery_section_img_2', 'field_5e3411421aa1a'),
+(6130, 410, 'gallery_section_img_3', '322'),
+(6131, 410, '_gallery_section_img_3', 'field_5e3411421aa1b'),
+(6132, 410, 'gallery_section_heading', ''),
+(6133, 410, '_gallery_section_heading', 'field_5e28a530ba352'),
+(6134, 410, 'gallery_section_content', ''),
+(6135, 410, '_gallery_section_content', 'field_5e28a55dba353'),
+(6136, 410, 'gallery_section_side_img', ''),
+(6137, 410, '_gallery_section_side_img', 'field_5e28a58aba354'),
+(6138, 410, 'gallery_section', ''),
+(6139, 410, '_gallery_section', 'field_5e3411411aa18'),
+(6140, 410, 'banner_section_banner_heading_1', 'Frontend'),
+(6141, 410, '_banner_section_banner_heading_1', 'field_5e2983004bc30'),
+(6142, 410, 'banner_section_banner_heading_2', 'Developer'),
+(6143, 410, '_banner_section_banner_heading_2', 'field_5e2983c6312f6'),
+(6144, 410, 'banner_section_banner_image', ''),
+(6145, 410, '_banner_section_banner_image', 'field_5e29832b4bc31'),
+(6146, 410, 'banner_section', ''),
+(6147, 410, '_banner_section', 'field_5e2982984bc2f'),
+(6148, 410, 'left_img_section_left_img_section_heading', 'Why hire me?'),
+(6149, 410, '_left_img_section_left_img_section_heading', 'field_5e298e8cee7a7'),
+(6150, 410, 'left_img_section_left_img_section_content', 'When you are looking for a developer for your project, I guess that you want a developer that is ambitious and driven and most of all, able to understand what your end goal is. That is me. I am open and curious to hear about your ideas and make them come to life.'),
+(6151, 410, '_left_img_section_left_img_section_content', 'field_5e298ee6ee7a8'),
+(6152, 410, 'left_img_section_left_img_section_image', '397'),
+(6153, 410, '_left_img_section_left_img_section_image', 'field_5e298f17ee7a9'),
+(6154, 410, 'left_img_section', ''),
+(6155, 410, '_left_img_section', 'field_5e298dcbee7a6'),
+(6156, 410, 'right_img_section_right_img_section_heading', 'My work.'),
+(6157, 410, '_right_img_section_right_img_section_heading', 'field_5e2998b0a9399'),
+(6158, 410, 'right_img_section_right_img_section_content', 'I love working mostly with React.JS and lately, I have picked up some Wordpress skills. If you want to see my projects in more detail, feel free to visit me at Github.'),
+(6159, 410, '_right_img_section_right_img_section_content', 'field_5e299966a939a'),
+(6160, 410, 'right_img_section_right_img_section_button_text', 'My GitHub'),
+(6161, 410, '_right_img_section_right_img_section_button_text', 'field_5e299a72a939b'),
+(6162, 410, 'right_img_section_right_img_section_button_url', 'https://github.com/AvvyT'),
+(6163, 410, '_right_img_section_right_img_section_button_url', 'field_5e299ad2a939c'),
+(6164, 410, 'right_img_section_right_img_section_img', '399'),
+(6165, 410, '_right_img_section_right_img_section_img', 'field_5e299b0ba939d'),
+(6166, 410, 'right_img_section', ''),
+(6167, 410, '_right_img_section', 'field_5e29981ea9398'),
+(6168, 410, 'gallery_section_img_1a', '314'),
+(6169, 410, '_gallery_section_img_1a', 'field_5e341856121cf'),
+(6170, 410, 'gallery_section_img_1_heading', 'Magento 2 Theme Development / Design'),
+(6171, 410, '_gallery_section_img_1_heading', 'field_5e3411ded93ec'),
+(6172, 410, 'gallery_section_img_1_button_text', 'View Theme'),
+(6173, 410, '_gallery_section_img_1_button_text', 'field_5e34140e46c0a'),
+(6174, 410, 'gallery_section_img_1_button_url', 'https://github.com/AvvyT/Magento2-Custom-Theme/tree/master/Avvytheme'),
+(6175, 410, '_gallery_section_img_1_button_url', 'field_5e34146246c0b'),
+(6176, 410, 'gallery_section_img_2a', '320'),
+(6177, 410, '_gallery_section_img_2a', 'field_5e341874121d0'),
+(6178, 410, 'gallery_section_img_2_heading', ' Agil(Scrum) Development, React.JS -  Teamwork: Schack'),
+(6179, 410, '_gallery_section_img_2_heading', 'field_5e341264d93ed'),
+(6180, 410, 'gallery_section_img_2_button_text', 'View Game'),
+(6181, 410, '_gallery_section_img_2_button_text', 'field_5e3415e346c0c'),
+(6182, 410, 'gallery_section_img_2_button_url', 'https://github.com/malinclarsson/mandatory-project-agile1-'),
+(6183, 410, '_gallery_section_img_2_button_url', 'field_5e34160b46c0d'),
+(6184, 410, 'gallery_section_img_3a', '323'),
+(6185, 410, '_gallery_section_img_3a', 'field_5e341895121d1'),
+(6186, 410, 'gallery_section_img_3_heading', 'Chat application(support for emojis), with React.JS & Socket.io server (real-time library)'),
+(6187, 410, '_gallery_section_img_3_heading', 'field_5e3412b6d93ee'),
+(6188, 410, 'gallery_section_img_3_button_text', 'View Chat'),
+(6189, 410, '_gallery_section_img_3_button_text', 'field_5e34165746c0e'),
+(6190, 410, 'gallery_section_img_3_button_url', 'https://github.com/AvvyT/Simple-Chat-application_mandatory-advanced-js1'),
+(6191, 410, '_gallery_section_img_3_button_url', 'field_5e34168446c0f'),
+(6192, 410, 'gallery_section_img_4', ''),
+(6193, 410, '_gallery_section_img_4', 'field_5e3411421aa1c'),
+(6194, 410, 'gallery_section_img_1_button_text_2', 'View Module'),
+(6195, 410, '_gallery_section_img_1_button_text_2', 'field_5e341ae1e93c6'),
+(6196, 410, 'gallery_section_img_1_button_url_2', 'https://github.com/AvvyT/Magento2-Module-Owl-Carousel/tree/master/AvvyTest/FirstAvvysModule'),
+(6197, 410, '_gallery_section_img_1_button_url_2', 'field_5e341b07e93c7'),
+(6198, 410, 'home_gallery_section_img_1', '313'),
+(6199, 410, '_home_gallery_section_img_1', 'field_5e3411421aa19'),
+(6200, 410, 'home_gallery_section_img_1a', '314'),
+(6201, 410, '_home_gallery_section_img_1a', 'field_5e341856121cf'),
+(6202, 410, 'home_gallery_section_img_1_heading', 'Magento 2 Theme Development / Design'),
+(6203, 410, '_home_gallery_section_img_1_heading', 'field_5e3411ded93ec'),
+(6204, 410, 'home_gallery_section_img_1_button_text', 'View Theme'),
+(6205, 410, '_home_gallery_section_img_1_button_text', 'field_5e34140e46c0a'),
+(6206, 410, 'home_gallery_section_img_1_button_text_2', 'View Module'),
+(6207, 410, '_home_gallery_section_img_1_button_text_2', 'field_5e341ae1e93c6'),
+(6208, 410, 'home_gallery_section_img_1_button_url', 'https://github.com/AvvyT/Magento2-Custom-Theme/tree/master/Avvytheme'),
+(6209, 410, '_home_gallery_section_img_1_button_url', 'field_5e34146246c0b'),
+(6210, 410, 'home_gallery_section_img_1_button_url_2', 'https://github.com/AvvyT/Magento2-Module-Owl-Carousel/tree/master/AvvyTest/FirstAvvysModule'),
+(6211, 410, '_home_gallery_section_img_1_button_url_2', 'field_5e341b07e93c7'),
+(6212, 410, 'home_gallery_section_img_2', '319'),
+(6213, 410, '_home_gallery_section_img_2', 'field_5e3411421aa1a'),
+(6214, 410, 'home_gallery_section_img_2a', '320'),
+(6215, 410, '_home_gallery_section_img_2a', 'field_5e341874121d0'),
+(6216, 410, 'home_gallery_section_img_2_heading', 'Agil(Scrum) Development with React.JS -  Teamwork: Chess'),
+(6217, 410, '_home_gallery_section_img_2_heading', 'field_5e341264d93ed'),
+(6218, 410, 'home_gallery_section_img_2_button_text', 'View Game'),
+(6219, 410, '_home_gallery_section_img_2_button_text', 'field_5e3415e346c0c'),
+(6220, 410, 'home_gallery_section_img_2_button_url', 'https://github.com/malinclarsson/mandatory-project-agile1-'),
+(6221, 410, '_home_gallery_section_img_2_button_url', 'field_5e34160b46c0d'),
+(6222, 410, 'home_gallery_section_img_3', '322'),
+(6223, 410, '_home_gallery_section_img_3', 'field_5e3411421aa1b'),
+(6224, 410, 'home_gallery_section_img_3a', '323'),
+(6225, 410, '_home_gallery_section_img_3a', 'field_5e341895121d1'),
+(6226, 410, 'home_gallery_section_img_3_heading', 'Chat application(support for emojis), with React.JS & Socket.io server'),
+(6227, 410, '_home_gallery_section_img_3_heading', 'field_5e3412b6d93ee'),
+(6228, 410, 'home_gallery_section_img_3_button_text', 'View Chat'),
+(6229, 410, '_home_gallery_section_img_3_button_text', 'field_5e34165746c0e'),
+(6230, 410, 'home_gallery_section_img_3_button_url', 'https://github.com/AvvyT/Simple-Chat-application_mandatory-advanced-js1'),
+(6231, 410, '_home_gallery_section_img_3_button_url', 'field_5e34168446c0f'),
+(6232, 410, 'home_gallery_section_img_4', '330'),
+(6233, 410, '_home_gallery_section_img_4', 'field_5e3411421aa1c'),
+(6234, 410, 'home_gallery_section', ''),
+(6235, 410, '_home_gallery_section', 'field_5e3411411aa18'),
+(6236, 410, 'home_gallery_section_img_4a', '331'),
+(6237, 410, '_home_gallery_section_img_4a', 'field_5e3919067e36d'),
+(6238, 410, 'home_gallery_section_img_4_heading', 'Connect Four Game with React.JS'),
+(6239, 410, '_home_gallery_section_img_4_heading', 'field_5e39191d7e36e'),
+(6240, 410, 'home_gallery_section_img_4_button_text', 'View Game'),
+(6241, 410, '_home_gallery_section_img_4_button_text', 'field_5e3919437e36f'),
+(6242, 410, 'home_gallery_section_img_4_button_url', 'https://github.com/AvvyT/Connect-Four-game-with-React.JS_mandatory-advanced-js4'),
+(6243, 410, '_home_gallery_section_img_4_button_url', 'field_5e3919687e370'),
+(6244, 411, 'heading', 'Några roliga fakta om mig själv.'),
+(6245, 411, '_heading', 'field_5e288c129611e'),
+(6246, 411, 'content', 'Jag är 35 år gammalt, har en 12 år son, mitt favoritnummer är 13 och min farorit del av dagen är morgonen. Jag är en väldigt serviceinriktad person och trivs som bäst när jag får jobba med människor. På fritiden älskar jag att umgås med familj och vänner, resa, läsa och att träna regelbundet. Folk i min närhet säger ofta att jag är bra på att sprida positiv och glad energi runt omkring mig, att jag är väldigt pålitlig och att jag altid har nära till ett skratt. '),
+(6247, 411, '_content', 'field_5e288c269611f'),
+(6248, 411, 'facts_section_heading', 'Några roliga fakta om mig själv'),
+(6249, 411, '_facts_section_heading', 'field_5e288c129611e'),
+(6250, 411, 'facts_section_content', 'Jag är 35 år gammalt, har en 12 år son, mitt favoritnummer är 13 och min farorit del av dagen är morgonen. Jag är en väldigt serviceinriktad person och trivs som bäst när jag får jobba med människor. På fritiden älskar jag att umgås med familj och vänner, resa, läsa och att träna regelbundet. Folk i min närhet säger ofta att jag är bra på att sprida positiv och glad energi runt omkring mig, att jag är väldigt pålitlig och att jag altid har nära till ett skratt.'),
+(6251, 411, '_facts_section_content', 'field_5e288c269611f'),
+(6252, 411, 'facts_section_image', '34'),
+(6253, 411, '_facts_section_image', 'field_5e288ccc0f327'),
+(6254, 411, 'gray_section_heading', 'What I\'ve done & what I can do'),
+(6255, 411, '_gray_section_heading', 'field_5e2894a66f3dc'),
+(6256, 411, 'gray_section_button_text', 'Resume'),
+(6257, 411, '_gray_section_button_text', 'field_5e28956a6f3dd'),
+(6258, 411, 'gray_section_button_url', ' http://localhost:8888/Avvy_Portfolio20/resume/'),
+(6259, 411, '_gray_section_button_url', 'field_5e28957d6f3de'),
+(6260, 411, 'gray_section_content', 'Feel free to take a deeper look at what I\'ve accomplished over the last year and what I\'m able to do for you and mor that you can see . My resume goes over the standard items, but please understand that I don\'t embellish my capabilities (no good ever comes out of that).     '),
+(6261, 411, '_gray_section_content', 'field_5e2895a16f3df'),
+(6262, 411, 'banner_heading', 'My Passions & Personality'),
+(6263, 411, '_banner_heading', 'field_5e289e7f5a3e8'),
+(6264, 411, 'banner_image', ''),
+(6265, 411, '_banner_image', 'field_5e289e945a3e9'),
+(6266, 411, 'gallery_section_img_1', '46'),
+(6267, 411, '_gallery_section_img_1', 'field_5e28a495ba34f'),
+(6268, 411, 'gallery_section_img_2', '47'),
+(6269, 411, '_gallery_section_img_2', 'field_5e28a50aba350'),
+(6270, 411, 'gallery_section_img_3', '49'),
+(6271, 411, '_gallery_section_img_3', 'field_5e28a51cba351'),
+(6272, 411, 'gallery_section_heading', 'My background.'),
+(6273, 411, '_gallery_section_heading', 'field_5e28a530ba352'),
+(6274, 411, 'gallery_section_content', 'Originally I come from Bulgaria, but when I was eighteen, I moved to Spain where I lived and worked for ten years until I finally moved to Sweden around eight years ago. Now I live with my son and my partner In Glumslöv, Landskrona. '),
+(6275, 411, '_gallery_section_content', 'field_5e28a55dba353'),
+(6276, 411, 'gallery_section_side_img', '36'),
+(6277, 411, '_gallery_section_side_img', 'field_5e28a58aba354'),
+(6278, 411, 'gallery_section', ''),
+(6279, 411, '_gallery_section', 'field_5e28a3e4ba34d'),
+(6280, 411, 'facts_section_facts_section_heading', 'A little about me.'),
+(6281, 411, '_facts_section_facts_section_heading', 'field_5e29745792fcf'),
+(6282, 411, 'facts_section_facts_section_content', 'I am a thirty-five-year-old girl. Yes says, girl, because that is what I feel like I am still. I have a twelve-year-old son.\r\nMy favorite part of the day is the morning, that\'s when I am the most creative and productive. I am very service-minded and thrive when I work with other people. \r\n'),
+(6283, 411, '_facts_section_facts_section_content', 'field_5e2974b392fd0'),
+(6284, 411, 'facts_section_facts_section_image', '34'),
+(6285, 411, '_facts_section_facts_section_image', 'field_5e29750f92fd1'),
+(6286, 411, 'facts_section', ''),
+(6287, 411, '_facts_section', 'field_5e288cf50f328'),
+(6288, 411, 'gray_section_gray_section_heading', 'My professional experiences.'),
+(6289, 411, '_gray_section_gray_section_heading', 'field_5e2975b992fd2'),
+(6290, 411, 'gray_section_gray_section_button_text', 'Resume'),
+(6291, 411, '_gray_section_gray_section_button_text', 'field_5e2975ec92fd3'),
+(6292, 411, 'gray_section_gray_section_button_url', ' http://localhost:8888/Avvy_Portfolio20/resume/'),
+(6293, 411, '_gray_section_gray_section_button_url', 'field_5e29761492fd4'),
+(6294, 411, 'gray_section_gray_section_content', 'If you want to know more about my professional background and get a better idea of my career so far, please feel free to have a look at my resumé. '),
+(6295, 411, '_gray_section_gray_section_content', 'field_5e29766d92fd5'),
+(6296, 411, 'gray_section', ''),
+(6297, 411, '_gray_section', 'field_5e288d2f0f329'),
+(6298, 411, 'banner_section_banner_heading_1', 'My life & '),
+(6299, 411, '_banner_section_banner_heading_1', 'field_5e2983004bc30'),
+(6300, 411, 'banner_section_banner_heading_2', 'Interests'),
+(6301, 411, '_banner_section_banner_heading_2', 'field_5e2983c6312f6'),
+(6302, 411, 'banner_section_banner_image', ''),
+(6303, 411, '_banner_section_banner_image', 'field_5e29832b4bc31'),
+(6304, 411, 'banner_section', ''),
+(6305, 411, '_banner_section', 'field_5e2982984bc2f'),
+(6306, 411, 'gallery_section_img_4', ''),
+(6307, 411, '_gallery_section_img_4', 'field_5e2da95350564'),
+(6308, 412, 'facts_section_facts_section_heading', ''),
+(6309, 412, '_facts_section_facts_section_heading', 'field_5e29745792fcf'),
+(6310, 412, 'facts_section_facts_section_content', ''),
+(6311, 412, '_facts_section_facts_section_content', 'field_5e2974b392fd0'),
+(6312, 412, 'facts_section_facts_section_image', ''),
+(6313, 412, '_facts_section_facts_section_image', 'field_5e29750f92fd1'),
+(6314, 412, 'facts_section', ''),
+(6315, 412, '_facts_section', 'field_5e288cf50f328'),
+(6316, 412, 'gray_section_gray_section_heading', ''),
+(6317, 412, '_gray_section_gray_section_heading', 'field_5e2975b992fd2'),
+(6318, 412, 'gray_section_gray_section_button_text', ''),
+(6319, 412, '_gray_section_gray_section_button_text', 'field_5e2975ec92fd3'),
+(6320, 412, 'gray_section_gray_section_button_url', ''),
+(6321, 412, '_gray_section_gray_section_button_url', 'field_5e29761492fd4'),
+(6322, 412, 'gray_section_gray_section_content', ''),
+(6323, 412, '_gray_section_gray_section_content', 'field_5e29766d92fd5'),
+(6324, 412, 'gray_section', ''),
+(6325, 412, '_gray_section', 'field_5e288d2f0f329'),
+(6326, 412, 'gallery_section_img_1', ''),
+(6327, 412, '_gallery_section_img_1', 'field_5e28a495ba34f'),
+(6328, 412, 'gallery_section_img_2', ''),
+(6329, 412, '_gallery_section_img_2', 'field_5e28a50aba350'),
+(6330, 412, 'gallery_section_img_3', ''),
+(6331, 412, '_gallery_section_img_3', 'field_5e28a51cba351'),
+(6332, 412, 'gallery_section_heading', ''),
+(6333, 412, '_gallery_section_heading', 'field_5e28a530ba352'),
+(6334, 412, 'gallery_section_content', ''),
+(6335, 412, '_gallery_section_content', 'field_5e28a55dba353'),
+(6336, 412, 'gallery_section_side_img', ''),
+(6337, 412, '_gallery_section_side_img', 'field_5e28a58aba354'),
+(6338, 412, 'gallery_section', ''),
+(6339, 412, '_gallery_section', 'field_5e28a3e4ba34d'),
+(6340, 412, 'banner_heading', 'Dig a little deeper'),
+(6341, 412, '_banner_heading', 'field_5e289e7f5a3e8'),
+(6342, 412, 'banner_image', ''),
+(6343, 412, '_banner_image', 'field_5e289e945a3e9'),
+(6344, 412, 'banner_section_banner_heading_1', 'Professional '),
+(6345, 412, '_banner_section_banner_heading_1', 'field_5e2983004bc30'),
+(6346, 412, 'banner_section_banner_heading_2', 'experiences'),
+(6347, 412, '_banner_section_banner_heading_2', 'field_5e2983c6312f6'),
+(6348, 412, 'banner_section_banner_image', ''),
+(6349, 412, '_banner_section_banner_image', 'field_5e29832b4bc31'),
+(6350, 412, 'banner_section', ''),
+(6351, 412, '_banner_section', 'field_5e2982984bc2f'),
+(6352, 412, 'resume_gray_section_resume_gray_section_heading', 'Hire a very driven and ambitious Front-end Developer today.'),
+(6353, 412, '_resume_gray_section_resume_gray_section_heading', 'field_5e2eb7d66e359'),
+(6354, 412, 'resume_gray_section_resume_gray_section_button_text', 'Contact me'),
+(6355, 412, '_resume_gray_section_resume_gray_section_button_text', 'field_5e2eb7d66e35a'),
+(6356, 412, 'resume_gray_section_resume_gray_section_button_url', 'http://localhost:8888/Avvy_Portfolio20/contact/'),
+(6357, 412, '_resume_gray_section_resume_gray_section_button_url', 'field_5e2eb7d66e35b'),
+(6358, 412, 'resume_gray_section_resume_gray_section_content', 'If you want to know more about me or have any questions, do not hesitate to contact me. I am always happy to hear about your ideas and help find the best solution for you.'),
+(6359, 412, '_resume_gray_section_resume_gray_section_content', 'field_5e2eb7d66e35c'),
+(6360, 412, 'resume_gray_section', ''),
+(6361, 412, '_resume_gray_section', 'field_5e2eb7d66e358'),
+(6362, 412, 'resume_dark_gray_section_resume_dark_gray_section_heading', 'Professional Summary'),
+(6363, 412, '_resume_dark_gray_section_resume_dark_gray_section_heading', 'field_5e301ba9c1234'),
+(6364, 412, 'resume_dark_gray_section_resume_dark_gray_section_button_text', ''),
+(6365, 412, '_resume_dark_gray_section_resume_dark_gray_section_button_text', 'field_5e301ba9c1235'),
+(6366, 412, 'resume_dark_gray_section_resume_dark_gray_section_button_url', ''),
+(6367, 412, '_resume_dark_gray_section_resume_dark_gray_section_button_url', 'field_5e301ba9c1236'),
+(6368, 412, 'resume_dark_gray_section_resume_dark_gray_section_content', 'I´m a very driven and ambitious Front-end Developer also a happy and hardworking girl.\r\nNow I am looking for an exciting company where I can continue to grow and continue learning.\r\nFor the most part of my working life, I\'ve worked as a waitress with much responsibility both for myself and my others which suits me well. My most prominent features are my drive to keep growing and move forward. I work structured and organized, also I am stress-resistant and like to work in teams. I am fond of languages and I speak Bulgarian(native tongue), Spanish, Romanian, Swedish, and decent English.'),
+(6369, 412, '_resume_dark_gray_section_resume_dark_gray_section_content', 'field_5e301ba9c1237'),
+(6370, 412, 'resume_dark_gray_section', ''),
+(6371, 412, '_resume_dark_gray_section', 'field_5e301ba9c1233'),
+(6372, 412, 'resume_dark_gray_section_two_resume_dark_gray_section_heading', 'When I\'m not working'),
+(6373, 412, '_resume_dark_gray_section_two_resume_dark_gray_section_heading', 'field_5e32eb2b59073'),
+(6374, 412, 'resume_dark_gray_section_two_resume_dark_gray_section_button_text', ''),
+(6375, 412, '_resume_dark_gray_section_two_resume_dark_gray_section_button_text', 'field_5e32eb2b59074'),
+(6376, 412, 'resume_dark_gray_section_two_resume_dark_gray_section_button_url', ''),
+(6377, 412, '_resume_dark_gray_section_two_resume_dark_gray_section_button_url', 'field_5e32eb2b59075'),
+(6378, 412, 'resume_dark_gray_section_two_resume_dark_gray_section_content', 'In my spare time I like to hang out with friends and family, travel, read and workout regularly.\r\nPeople close to me says I rock at spreading good, happy energy around me and also that I am very reliable. I love laughing.'),
+(6379, 412, '_resume_dark_gray_section_two_resume_dark_gray_section_content', 'field_5e32eb2b59076'),
+(6380, 412, 'resume_dark_gray_section_two', ''),
+(6381, 412, '_resume_dark_gray_section_two', 'field_5e32eb2b59072'),
+(6382, 413, 'facts_section_facts_section_heading', ''),
+(6383, 413, '_facts_section_facts_section_heading', 'field_5e29745792fcf'),
+(6384, 413, 'facts_section_facts_section_content', ''),
+(6385, 413, '_facts_section_facts_section_content', 'field_5e2974b392fd0'),
+(6386, 413, 'facts_section_facts_section_image', ''),
+(6387, 413, '_facts_section_facts_section_image', 'field_5e29750f92fd1'),
+(6388, 413, 'facts_section', ''),
+(6389, 413, '_facts_section', 'field_5e288cf50f328'),
+(6390, 413, 'gray_section_gray_section_heading', ''),
+(6391, 413, '_gray_section_gray_section_heading', 'field_5e2975b992fd2'),
+(6392, 413, 'gray_section_gray_section_button_text', ''),
+(6393, 413, '_gray_section_gray_section_button_text', 'field_5e2975ec92fd3'),
+(6394, 413, 'gray_section_gray_section_button_url', ''),
+(6395, 413, '_gray_section_gray_section_button_url', 'field_5e29761492fd4'),
+(6396, 413, 'gray_section_gray_section_content', ''),
+(6397, 413, '_gray_section_gray_section_content', 'field_5e29766d92fd5'),
+(6398, 413, 'gray_section', ''),
+(6399, 413, '_gray_section', 'field_5e288d2f0f329'),
+(6400, 413, 'gallery_section_img_1', ''),
+(6401, 413, '_gallery_section_img_1', 'field_5e28a495ba34f'),
+(6402, 413, 'gallery_section_img_2', ''),
+(6403, 413, '_gallery_section_img_2', 'field_5e28a50aba350'),
+(6404, 413, 'gallery_section_img_3', ''),
+(6405, 413, '_gallery_section_img_3', 'field_5e28a51cba351'),
+(6406, 413, 'gallery_section_heading', ''),
+(6407, 413, '_gallery_section_heading', 'field_5e28a530ba352'),
+(6408, 413, 'gallery_section_content', ''),
+(6409, 413, '_gallery_section_content', 'field_5e28a55dba353'),
+(6410, 413, 'gallery_section_side_img', ''),
+(6411, 413, '_gallery_section_side_img', 'field_5e28a58aba354'),
+(6412, 413, 'gallery_section', ''),
+(6413, 413, '_gallery_section', 'field_5e28a3e4ba34d'),
+(6414, 413, 'banner_heading', 'Dig a little deeper'),
+(6415, 413, '_banner_heading', 'field_5e289e7f5a3e8'),
+(6416, 413, 'banner_image', ''),
+(6417, 413, '_banner_image', 'field_5e289e945a3e9'),
+(6418, 413, 'banner_section_banner_heading_1', 'Professional '),
+(6419, 413, '_banner_section_banner_heading_1', 'field_5e2983004bc30'),
+(6420, 413, 'banner_section_banner_heading_2', 'experiences'),
+(6421, 413, '_banner_section_banner_heading_2', 'field_5e2983c6312f6'),
+(6422, 413, 'banner_section_banner_image', ''),
+(6423, 413, '_banner_section_banner_image', 'field_5e29832b4bc31'),
+(6424, 413, 'banner_section', ''),
+(6425, 413, '_banner_section', 'field_5e2982984bc2f'),
+(6426, 413, 'resume_gray_section_resume_gray_section_heading', 'Hire a very driven and ambitious Front-end Developer today.'),
+(6427, 413, '_resume_gray_section_resume_gray_section_heading', 'field_5e2eb7d66e359'),
+(6428, 413, 'resume_gray_section_resume_gray_section_button_text', 'Contact me'),
+(6429, 413, '_resume_gray_section_resume_gray_section_button_text', 'field_5e2eb7d66e35a'),
+(6430, 413, 'resume_gray_section_resume_gray_section_button_url', 'http://localhost:8888/Avvy_Portfolio20/contact/'),
+(6431, 413, '_resume_gray_section_resume_gray_section_button_url', 'field_5e2eb7d66e35b'),
+(6432, 413, 'resume_gray_section_resume_gray_section_content', 'If you want to know more about me or have any questions, do not hesitate to contact me. I am always happy to hear about your ideas and help find the best solution for you.'),
+(6433, 413, '_resume_gray_section_resume_gray_section_content', 'field_5e2eb7d66e35c'),
+(6434, 413, 'resume_gray_section', ''),
+(6435, 413, '_resume_gray_section', 'field_5e2eb7d66e358'),
+(6436, 413, 'resume_dark_gray_section_resume_dark_gray_section_heading', 'Professional Summary'),
+(6437, 413, '_resume_dark_gray_section_resume_dark_gray_section_heading', 'field_5e301ba9c1234'),
+(6438, 413, 'resume_dark_gray_section_resume_dark_gray_section_button_text', ''),
+(6439, 413, '_resume_dark_gray_section_resume_dark_gray_section_button_text', 'field_5e301ba9c1235'),
+(6440, 413, 'resume_dark_gray_section_resume_dark_gray_section_button_url', ''),
+(6441, 413, '_resume_dark_gray_section_resume_dark_gray_section_button_url', 'field_5e301ba9c1236');
+INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
+(6442, 413, 'resume_dark_gray_section_resume_dark_gray_section_content', 'I´m a very driven and ambitious Front-end Developer also a happy and hardworking girl.\r\nNow, I am looking for an exciting company where I can continue to grow and continue learning.\r\nFor the most part of my working life, I\'ve worked as a waitress with much responsibility both for myself and my others which suits me well. My most prominent features are my drive to keep growing and move forward. I work structured and organized, also I am stress-resistant and like to work in teams. I am fond of languages and I speak Bulgarian(native tongue), Spanish, Romanian, Swedish, and decent English.'),
+(6443, 413, '_resume_dark_gray_section_resume_dark_gray_section_content', 'field_5e301ba9c1237'),
+(6444, 413, 'resume_dark_gray_section', ''),
+(6445, 413, '_resume_dark_gray_section', 'field_5e301ba9c1233'),
+(6446, 413, 'resume_dark_gray_section_two_resume_dark_gray_section_heading', 'When I\'m not working'),
+(6447, 413, '_resume_dark_gray_section_two_resume_dark_gray_section_heading', 'field_5e32eb2b59073'),
+(6448, 413, 'resume_dark_gray_section_two_resume_dark_gray_section_button_text', ''),
+(6449, 413, '_resume_dark_gray_section_two_resume_dark_gray_section_button_text', 'field_5e32eb2b59074'),
+(6450, 413, 'resume_dark_gray_section_two_resume_dark_gray_section_button_url', ''),
+(6451, 413, '_resume_dark_gray_section_two_resume_dark_gray_section_button_url', 'field_5e32eb2b59075'),
+(6452, 413, 'resume_dark_gray_section_two_resume_dark_gray_section_content', 'In my spare time I like to hang out with friends and family, travel, read and workout regularly.\r\nPeople close to me says I rock at spreading good, happy energy around me and also that I am very reliable. I love laughing.'),
+(6453, 413, '_resume_dark_gray_section_two_resume_dark_gray_section_content', 'field_5e32eb2b59076'),
+(6454, 413, 'resume_dark_gray_section_two', ''),
+(6455, 413, '_resume_dark_gray_section_two', 'field_5e32eb2b59072'),
+(6456, 414, 'facts_section_facts_section_heading', ''),
+(6457, 414, '_facts_section_facts_section_heading', 'field_5e29745792fcf'),
+(6458, 414, 'facts_section_facts_section_content', ''),
+(6459, 414, '_facts_section_facts_section_content', 'field_5e2974b392fd0'),
+(6460, 414, 'facts_section_facts_section_image', ''),
+(6461, 414, '_facts_section_facts_section_image', 'field_5e29750f92fd1'),
+(6462, 414, 'facts_section', ''),
+(6463, 414, '_facts_section', 'field_5e288cf50f328'),
+(6464, 414, 'gray_section_gray_section_heading', ''),
+(6465, 414, '_gray_section_gray_section_heading', 'field_5e2975b992fd2'),
+(6466, 414, 'gray_section_gray_section_button_text', ''),
+(6467, 414, '_gray_section_gray_section_button_text', 'field_5e2975ec92fd3'),
+(6468, 414, 'gray_section_gray_section_button_url', ''),
+(6469, 414, '_gray_section_gray_section_button_url', 'field_5e29761492fd4'),
+(6470, 414, 'gray_section_gray_section_content', ''),
+(6471, 414, '_gray_section_gray_section_content', 'field_5e29766d92fd5'),
+(6472, 414, 'gray_section', ''),
+(6473, 414, '_gray_section', 'field_5e288d2f0f329'),
+(6474, 414, 'gallery_section_img_1', ''),
+(6475, 414, '_gallery_section_img_1', 'field_5e28a495ba34f'),
+(6476, 414, 'gallery_section_img_2', ''),
+(6477, 414, '_gallery_section_img_2', 'field_5e28a50aba350'),
+(6478, 414, 'gallery_section_img_3', ''),
+(6479, 414, '_gallery_section_img_3', 'field_5e28a51cba351'),
+(6480, 414, 'gallery_section_heading', ''),
+(6481, 414, '_gallery_section_heading', 'field_5e28a530ba352'),
+(6482, 414, 'gallery_section_content', ''),
+(6483, 414, '_gallery_section_content', 'field_5e28a55dba353'),
+(6484, 414, 'gallery_section_side_img', ''),
+(6485, 414, '_gallery_section_side_img', 'field_5e28a58aba354'),
+(6486, 414, 'gallery_section', ''),
+(6487, 414, '_gallery_section', 'field_5e28a3e4ba34d'),
+(6488, 414, 'banner_heading', 'Dig a little deeper'),
+(6489, 414, '_banner_heading', 'field_5e289e7f5a3e8'),
+(6490, 414, 'banner_image', ''),
+(6491, 414, '_banner_image', 'field_5e289e945a3e9'),
+(6492, 414, 'banner_section_banner_heading_1', 'Professional '),
+(6493, 414, '_banner_section_banner_heading_1', 'field_5e2983004bc30'),
+(6494, 414, 'banner_section_banner_heading_2', 'experiences'),
+(6495, 414, '_banner_section_banner_heading_2', 'field_5e2983c6312f6'),
+(6496, 414, 'banner_section_banner_image', ''),
+(6497, 414, '_banner_section_banner_image', 'field_5e29832b4bc31'),
+(6498, 414, 'banner_section', ''),
+(6499, 414, '_banner_section', 'field_5e2982984bc2f'),
+(6500, 414, 'resume_gray_section_resume_gray_section_heading', 'Hire a very driven and ambitious Front-end Developer today.'),
+(6501, 414, '_resume_gray_section_resume_gray_section_heading', 'field_5e2eb7d66e359'),
+(6502, 414, 'resume_gray_section_resume_gray_section_button_text', 'Contact me'),
+(6503, 414, '_resume_gray_section_resume_gray_section_button_text', 'field_5e2eb7d66e35a'),
+(6504, 414, 'resume_gray_section_resume_gray_section_button_url', 'http://localhost:8888/Avvy_Portfolio20/contact/'),
+(6505, 414, '_resume_gray_section_resume_gray_section_button_url', 'field_5e2eb7d66e35b'),
+(6506, 414, 'resume_gray_section_resume_gray_section_content', 'If you want to know more about me or have any questions, do not hesitate to contact me. I am always happy to hear about your ideas and help find the best solution for you.'),
+(6507, 414, '_resume_gray_section_resume_gray_section_content', 'field_5e2eb7d66e35c'),
+(6508, 414, 'resume_gray_section', ''),
+(6509, 414, '_resume_gray_section', 'field_5e2eb7d66e358'),
+(6510, 414, 'resume_dark_gray_section_resume_dark_gray_section_heading', 'Professional Summary'),
+(6511, 414, '_resume_dark_gray_section_resume_dark_gray_section_heading', 'field_5e301ba9c1234'),
+(6512, 414, 'resume_dark_gray_section_resume_dark_gray_section_button_text', ''),
+(6513, 414, '_resume_dark_gray_section_resume_dark_gray_section_button_text', 'field_5e301ba9c1235'),
+(6514, 414, 'resume_dark_gray_section_resume_dark_gray_section_button_url', ''),
+(6515, 414, '_resume_dark_gray_section_resume_dark_gray_section_button_url', 'field_5e301ba9c1236'),
+(6516, 414, 'resume_dark_gray_section_resume_dark_gray_section_content', 'I´m a very driven and ambitious Front-end Developer also a happy and hardworking girl.\r\nNow, I am looking for an exciting company where I can continue to grow and continue learning.\r\nFor the most part of my working life, I\'ve worked as a waitress with much responsibility both for myself and my others which suits me well. My most prominent features are my drive to keep growing and move forward. I work structured and organized, also I am stress-resistant and like to work in teams. I am fond of languages and I speak Bulgarian(native tongue), Spanish, Romanian, Swedish, and decent English.'),
+(6517, 414, '_resume_dark_gray_section_resume_dark_gray_section_content', 'field_5e301ba9c1237'),
+(6518, 414, 'resume_dark_gray_section', ''),
+(6519, 414, '_resume_dark_gray_section', 'field_5e301ba9c1233'),
+(6520, 414, 'resume_dark_gray_section_two_resume_dark_gray_section_heading', 'When I\'m not working'),
+(6521, 414, '_resume_dark_gray_section_two_resume_dark_gray_section_heading', 'field_5e32eb2b59073'),
+(6522, 414, 'resume_dark_gray_section_two_resume_dark_gray_section_button_text', ''),
+(6523, 414, '_resume_dark_gray_section_two_resume_dark_gray_section_button_text', 'field_5e32eb2b59074'),
+(6524, 414, 'resume_dark_gray_section_two_resume_dark_gray_section_button_url', ''),
+(6525, 414, '_resume_dark_gray_section_two_resume_dark_gray_section_button_url', 'field_5e32eb2b59075'),
+(6526, 414, 'resume_dark_gray_section_two_resume_dark_gray_section_content', 'In my spare time, I like to hang out with friends and family, travel, read, and workout regularly.\r\nPeople close to me say I rock at spreading good, happy energy around me and also that I am very reliable. I love laughing.'),
+(6527, 414, '_resume_dark_gray_section_two_resume_dark_gray_section_content', 'field_5e32eb2b59076'),
+(6528, 414, 'resume_dark_gray_section_two', ''),
+(6529, 414, '_resume_dark_gray_section_two', 'field_5e32eb2b59072'),
+(6530, 415, 'heading', 'Några roliga fakta om mig själv.'),
+(6531, 415, '_heading', 'field_5e288c129611e'),
+(6532, 415, 'content', 'Jag är 35 år gammalt, har en 12 år son, mitt favoritnummer är 13 och min farorit del av dagen är morgonen. Jag är en väldigt serviceinriktad person och trivs som bäst när jag får jobba med människor. På fritiden älskar jag att umgås med familj och vänner, resa, läsa och att träna regelbundet. Folk i min närhet säger ofta att jag är bra på att sprida positiv och glad energi runt omkring mig, att jag är väldigt pålitlig och att jag altid har nära till ett skratt. '),
+(6533, 415, '_content', 'field_5e288c269611f'),
+(6534, 415, 'facts_section_heading', 'Några roliga fakta om mig själv'),
+(6535, 415, '_facts_section_heading', 'field_5e288c129611e'),
+(6536, 415, 'facts_section_content', 'Jag är 35 år gammalt, har en 12 år son, mitt favoritnummer är 13 och min farorit del av dagen är morgonen. Jag är en väldigt serviceinriktad person och trivs som bäst när jag får jobba med människor. På fritiden älskar jag att umgås med familj och vänner, resa, läsa och att träna regelbundet. Folk i min närhet säger ofta att jag är bra på att sprida positiv och glad energi runt omkring mig, att jag är väldigt pålitlig och att jag altid har nära till ett skratt.'),
+(6537, 415, '_facts_section_content', 'field_5e288c269611f'),
+(6538, 415, 'facts_section_image', '34'),
+(6539, 415, '_facts_section_image', 'field_5e288ccc0f327'),
+(6540, 415, 'gray_section_heading', 'What I\'ve done & what I can do'),
+(6541, 415, '_gray_section_heading', 'field_5e2894a66f3dc'),
+(6542, 415, 'gray_section_button_text', 'Resume'),
+(6543, 415, '_gray_section_button_text', 'field_5e28956a6f3dd'),
+(6544, 415, 'gray_section_button_url', ' http://localhost:8888/Avvy_Portfolio20/resume/'),
+(6545, 415, '_gray_section_button_url', 'field_5e28957d6f3de'),
+(6546, 415, 'gray_section_content', 'Feel free to take a deeper look at what I\'ve accomplished over the last year and what I\'m able to do for you and mor that you can see . My resume goes over the standard items, but please understand that I don\'t embellish my capabilities (no good ever comes out of that).     '),
+(6547, 415, '_gray_section_content', 'field_5e2895a16f3df'),
+(6548, 415, 'banner_heading', 'My Passions & Personality'),
+(6549, 415, '_banner_heading', 'field_5e289e7f5a3e8'),
+(6550, 415, 'banner_image', ''),
+(6551, 415, '_banner_image', 'field_5e289e945a3e9'),
+(6552, 415, 'gallery_section_img_1', '46'),
+(6553, 415, '_gallery_section_img_1', 'field_5e28a495ba34f'),
+(6554, 415, 'gallery_section_img_2', '47'),
+(6555, 415, '_gallery_section_img_2', 'field_5e28a50aba350'),
+(6556, 415, 'gallery_section_img_3', '49'),
+(6557, 415, '_gallery_section_img_3', 'field_5e28a51cba351'),
+(6558, 415, 'gallery_section_heading', 'My background.'),
+(6559, 415, '_gallery_section_heading', 'field_5e28a530ba352'),
+(6560, 415, 'gallery_section_content', 'Originally I come from Bulgaria, but when I was eighteen, I moved to Spain where I lived and worked for ten years until I finally moved to Sweden around eight years ago. Now I live with my son and my partner In Glumslöv, Landskrona. '),
+(6561, 415, '_gallery_section_content', 'field_5e28a55dba353'),
+(6562, 415, 'gallery_section_side_img', '36'),
+(6563, 415, '_gallery_section_side_img', 'field_5e28a58aba354'),
+(6564, 415, 'gallery_section', ''),
+(6565, 415, '_gallery_section', 'field_5e28a3e4ba34d'),
+(6566, 415, 'facts_section_facts_section_heading', 'A little about me.'),
+(6567, 415, '_facts_section_facts_section_heading', 'field_5e29745792fcf'),
+(6568, 415, 'facts_section_facts_section_content', 'I am a thirty-five-year-old girl. Yes says, girl, because that is what I feel like I am still. I have a twelve-year-old son.\r\nMy favorite part of the day is the morning, that\'s when I am the most creative and productive. Other facts are that I am very service-minded and thrive when I work with other people. \r\n'),
+(6569, 415, '_facts_section_facts_section_content', 'field_5e2974b392fd0'),
+(6570, 415, 'facts_section_facts_section_image', '34'),
+(6571, 415, '_facts_section_facts_section_image', 'field_5e29750f92fd1'),
+(6572, 415, 'facts_section', ''),
+(6573, 415, '_facts_section', 'field_5e288cf50f328'),
+(6574, 415, 'gray_section_gray_section_heading', 'My professional experiences.'),
+(6575, 415, '_gray_section_gray_section_heading', 'field_5e2975b992fd2'),
+(6576, 415, 'gray_section_gray_section_button_text', 'Resume'),
+(6577, 415, '_gray_section_gray_section_button_text', 'field_5e2975ec92fd3'),
+(6578, 415, 'gray_section_gray_section_button_url', ' http://localhost:8888/Avvy_Portfolio20/resume/'),
+(6579, 415, '_gray_section_gray_section_button_url', 'field_5e29761492fd4'),
+(6580, 415, 'gray_section_gray_section_content', 'If you want to know more about my professional background and get a better idea of my career so far, please feel free to have a look at my resumé. '),
+(6581, 415, '_gray_section_gray_section_content', 'field_5e29766d92fd5'),
+(6582, 415, 'gray_section', ''),
+(6583, 415, '_gray_section', 'field_5e288d2f0f329'),
+(6584, 415, 'banner_section_banner_heading_1', 'My life & '),
+(6585, 415, '_banner_section_banner_heading_1', 'field_5e2983004bc30'),
+(6586, 415, 'banner_section_banner_heading_2', 'Interests'),
+(6587, 415, '_banner_section_banner_heading_2', 'field_5e2983c6312f6'),
+(6588, 415, 'banner_section_banner_image', ''),
+(6589, 415, '_banner_section_banner_image', 'field_5e29832b4bc31'),
+(6590, 415, 'banner_section', ''),
+(6591, 415, '_banner_section', 'field_5e2982984bc2f'),
+(6592, 415, 'gallery_section_img_4', ''),
+(6593, 415, '_gallery_section_img_4', 'field_5e2da95350564'),
+(6594, 416, 'heading', 'Några roliga fakta om mig själv.'),
+(6595, 416, '_heading', 'field_5e288c129611e'),
+(6596, 416, 'content', 'Jag är 35 år gammalt, har en 12 år son, mitt favoritnummer är 13 och min farorit del av dagen är morgonen. Jag är en väldigt serviceinriktad person och trivs som bäst när jag får jobba med människor. På fritiden älskar jag att umgås med familj och vänner, resa, läsa och att träna regelbundet. Folk i min närhet säger ofta att jag är bra på att sprida positiv och glad energi runt omkring mig, att jag är väldigt pålitlig och att jag altid har nära till ett skratt. '),
+(6597, 416, '_content', 'field_5e288c269611f'),
+(6598, 416, 'facts_section_heading', 'Några roliga fakta om mig själv'),
+(6599, 416, '_facts_section_heading', 'field_5e288c129611e'),
+(6600, 416, 'facts_section_content', 'Jag är 35 år gammalt, har en 12 år son, mitt favoritnummer är 13 och min farorit del av dagen är morgonen. Jag är en väldigt serviceinriktad person och trivs som bäst när jag får jobba med människor. På fritiden älskar jag att umgås med familj och vänner, resa, läsa och att träna regelbundet. Folk i min närhet säger ofta att jag är bra på att sprida positiv och glad energi runt omkring mig, att jag är väldigt pålitlig och att jag altid har nära till ett skratt.'),
+(6601, 416, '_facts_section_content', 'field_5e288c269611f'),
+(6602, 416, 'facts_section_image', '34'),
+(6603, 416, '_facts_section_image', 'field_5e288ccc0f327'),
+(6604, 416, 'gray_section_heading', 'What I\'ve done & what I can do'),
+(6605, 416, '_gray_section_heading', 'field_5e2894a66f3dc'),
+(6606, 416, 'gray_section_button_text', 'Resume'),
+(6607, 416, '_gray_section_button_text', 'field_5e28956a6f3dd'),
+(6608, 416, 'gray_section_button_url', ' http://localhost:8888/Avvy_Portfolio20/resume/'),
+(6609, 416, '_gray_section_button_url', 'field_5e28957d6f3de'),
+(6610, 416, 'gray_section_content', 'Feel free to take a deeper look at what I\'ve accomplished over the last year and what I\'m able to do for you and mor that you can see . My resume goes over the standard items, but please understand that I don\'t embellish my capabilities (no good ever comes out of that).     '),
+(6611, 416, '_gray_section_content', 'field_5e2895a16f3df'),
+(6612, 416, 'banner_heading', 'My Passions & Personality'),
+(6613, 416, '_banner_heading', 'field_5e289e7f5a3e8'),
+(6614, 416, 'banner_image', ''),
+(6615, 416, '_banner_image', 'field_5e289e945a3e9'),
+(6616, 416, 'gallery_section_img_1', '46'),
+(6617, 416, '_gallery_section_img_1', 'field_5e28a495ba34f'),
+(6618, 416, 'gallery_section_img_2', '47'),
+(6619, 416, '_gallery_section_img_2', 'field_5e28a50aba350'),
+(6620, 416, 'gallery_section_img_3', '49'),
+(6621, 416, '_gallery_section_img_3', 'field_5e28a51cba351'),
+(6622, 416, 'gallery_section_heading', 'My background.'),
+(6623, 416, '_gallery_section_heading', 'field_5e28a530ba352'),
+(6624, 416, 'gallery_section_content', 'Originally I come from Bulgaria, but when I was eighteen, I moved to Spain where I lived and worked for ten years until I finally moved to Sweden around eight years ago. Now I live with my son and my partner In Glumslöv, Landskrona. '),
+(6625, 416, '_gallery_section_content', 'field_5e28a55dba353'),
+(6626, 416, 'gallery_section_side_img', '36'),
+(6627, 416, '_gallery_section_side_img', 'field_5e28a58aba354'),
+(6628, 416, 'gallery_section', ''),
+(6629, 416, '_gallery_section', 'field_5e28a3e4ba34d'),
+(6630, 416, 'facts_section_facts_section_heading', 'A little about me.'),
+(6631, 416, '_facts_section_facts_section_heading', 'field_5e29745792fcf'),
+(6632, 416, 'facts_section_facts_section_content', 'I am a thirty-five-year-old girl. Yes, I\'m saying girl, because that is what I feel like I am still. I have a twelve-year-old son.\r\nMy favorite part of the day is the morning, that\'s when I am the most creative and productive. Other facts are that I am very service-minded and thrive when I work with other people. \r\n'),
+(6633, 416, '_facts_section_facts_section_content', 'field_5e2974b392fd0'),
+(6634, 416, 'facts_section_facts_section_image', '34'),
+(6635, 416, '_facts_section_facts_section_image', 'field_5e29750f92fd1'),
+(6636, 416, 'facts_section', ''),
+(6637, 416, '_facts_section', 'field_5e288cf50f328'),
+(6638, 416, 'gray_section_gray_section_heading', 'My professional experiences.'),
+(6639, 416, '_gray_section_gray_section_heading', 'field_5e2975b992fd2'),
+(6640, 416, 'gray_section_gray_section_button_text', 'Resume'),
+(6641, 416, '_gray_section_gray_section_button_text', 'field_5e2975ec92fd3'),
+(6642, 416, 'gray_section_gray_section_button_url', ' http://localhost:8888/Avvy_Portfolio20/resume/'),
+(6643, 416, '_gray_section_gray_section_button_url', 'field_5e29761492fd4'),
+(6644, 416, 'gray_section_gray_section_content', 'If you want to know more about my professional background and get a better idea of my career so far, please feel free to have a look at my resumé. '),
+(6645, 416, '_gray_section_gray_section_content', 'field_5e29766d92fd5'),
+(6646, 416, 'gray_section', ''),
+(6647, 416, '_gray_section', 'field_5e288d2f0f329'),
+(6648, 416, 'banner_section_banner_heading_1', 'My life & '),
+(6649, 416, '_banner_section_banner_heading_1', 'field_5e2983004bc30'),
+(6650, 416, 'banner_section_banner_heading_2', 'Interests'),
+(6651, 416, '_banner_section_banner_heading_2', 'field_5e2983c6312f6'),
+(6652, 416, 'banner_section_banner_image', ''),
+(6653, 416, '_banner_section_banner_image', 'field_5e29832b4bc31'),
+(6654, 416, 'banner_section', ''),
+(6655, 416, '_banner_section', 'field_5e2982984bc2f'),
+(6656, 416, 'gallery_section_img_4', ''),
+(6657, 416, '_gallery_section_img_4', 'field_5e2da95350564'),
+(6658, 417, 'heading', 'Några roliga fakta om mig själv.'),
+(6659, 417, '_heading', 'field_5e288c129611e'),
+(6660, 417, 'content', 'Jag är 35 år gammalt, har en 12 år son, mitt favoritnummer är 13 och min farorit del av dagen är morgonen. Jag är en väldigt serviceinriktad person och trivs som bäst när jag får jobba med människor. På fritiden älskar jag att umgås med familj och vänner, resa, läsa och att träna regelbundet. Folk i min närhet säger ofta att jag är bra på att sprida positiv och glad energi runt omkring mig, att jag är väldigt pålitlig och att jag altid har nära till ett skratt. '),
+(6661, 417, '_content', 'field_5e288c269611f'),
+(6662, 417, 'facts_section_heading', 'Några roliga fakta om mig själv'),
+(6663, 417, '_facts_section_heading', 'field_5e288c129611e'),
+(6664, 417, 'facts_section_content', 'Jag är 35 år gammalt, har en 12 år son, mitt favoritnummer är 13 och min farorit del av dagen är morgonen. Jag är en väldigt serviceinriktad person och trivs som bäst när jag får jobba med människor. På fritiden älskar jag att umgås med familj och vänner, resa, läsa och att träna regelbundet. Folk i min närhet säger ofta att jag är bra på att sprida positiv och glad energi runt omkring mig, att jag är väldigt pålitlig och att jag altid har nära till ett skratt.'),
+(6665, 417, '_facts_section_content', 'field_5e288c269611f'),
+(6666, 417, 'facts_section_image', '34'),
+(6667, 417, '_facts_section_image', 'field_5e288ccc0f327'),
+(6668, 417, 'gray_section_heading', 'What I\'ve done & what I can do'),
+(6669, 417, '_gray_section_heading', 'field_5e2894a66f3dc'),
+(6670, 417, 'gray_section_button_text', 'Resume'),
+(6671, 417, '_gray_section_button_text', 'field_5e28956a6f3dd'),
+(6672, 417, 'gray_section_button_url', ' http://localhost:8888/Avvy_Portfolio20/resume/'),
+(6673, 417, '_gray_section_button_url', 'field_5e28957d6f3de'),
+(6674, 417, 'gray_section_content', 'Feel free to take a deeper look at what I\'ve accomplished over the last year and what I\'m able to do for you and mor that you can see . My resume goes over the standard items, but please understand that I don\'t embellish my capabilities (no good ever comes out of that).     '),
+(6675, 417, '_gray_section_content', 'field_5e2895a16f3df'),
+(6676, 417, 'banner_heading', 'My Passions & Personality'),
+(6677, 417, '_banner_heading', 'field_5e289e7f5a3e8'),
+(6678, 417, 'banner_image', ''),
+(6679, 417, '_banner_image', 'field_5e289e945a3e9'),
+(6680, 417, 'gallery_section_img_1', '46'),
+(6681, 417, '_gallery_section_img_1', 'field_5e28a495ba34f'),
+(6682, 417, 'gallery_section_img_2', '47'),
+(6683, 417, '_gallery_section_img_2', 'field_5e28a50aba350'),
+(6684, 417, 'gallery_section_img_3', '49'),
+(6685, 417, '_gallery_section_img_3', 'field_5e28a51cba351'),
+(6686, 417, 'gallery_section_heading', 'My background.'),
+(6687, 417, '_gallery_section_heading', 'field_5e28a530ba352'),
+(6688, 417, 'gallery_section_content', 'Originally I come from Bulgaria, but when I was eighteen, I moved to Spain where I lived and worked for ten years until I finally moved to Sweden around eight years ago. Now I live with my son and my partner In Glumslöv, Landskrona. '),
+(6689, 417, '_gallery_section_content', 'field_5e28a55dba353'),
+(6690, 417, 'gallery_section_side_img', '36'),
+(6691, 417, '_gallery_section_side_img', 'field_5e28a58aba354'),
+(6692, 417, 'gallery_section', ''),
+(6693, 417, '_gallery_section', 'field_5e28a3e4ba34d'),
+(6694, 417, 'facts_section_facts_section_heading', 'A little about me.'),
+(6695, 417, '_facts_section_facts_section_heading', 'field_5e29745792fcf'),
+(6696, 417, 'facts_section_facts_section_content', 'I am a thirty-five-year-old girl. Yes, I\'m saying girl, because that is what I feel like I still am. I have a twelve-year-old son.\r\nMy favorite part of the day is the morning, that\'s when I am the most creative and productive. Other facts are that I am very service-minded and thrive when I work with other people. \r\n'),
+(6697, 417, '_facts_section_facts_section_content', 'field_5e2974b392fd0'),
+(6698, 417, 'facts_section_facts_section_image', '34'),
+(6699, 417, '_facts_section_facts_section_image', 'field_5e29750f92fd1'),
+(6700, 417, 'facts_section', ''),
+(6701, 417, '_facts_section', 'field_5e288cf50f328'),
+(6702, 417, 'gray_section_gray_section_heading', 'My professional experiences.'),
+(6703, 417, '_gray_section_gray_section_heading', 'field_5e2975b992fd2'),
+(6704, 417, 'gray_section_gray_section_button_text', 'Resume'),
+(6705, 417, '_gray_section_gray_section_button_text', 'field_5e2975ec92fd3'),
+(6706, 417, 'gray_section_gray_section_button_url', ' http://localhost:8888/Avvy_Portfolio20/resume/'),
+(6707, 417, '_gray_section_gray_section_button_url', 'field_5e29761492fd4'),
+(6708, 417, 'gray_section_gray_section_content', 'If you want to know more about my professional background and get a better idea of my career so far, please feel free to have a look at my resumé. '),
+(6709, 417, '_gray_section_gray_section_content', 'field_5e29766d92fd5'),
+(6710, 417, 'gray_section', ''),
+(6711, 417, '_gray_section', 'field_5e288d2f0f329'),
+(6712, 417, 'banner_section_banner_heading_1', 'My life & '),
+(6713, 417, '_banner_section_banner_heading_1', 'field_5e2983004bc30'),
+(6714, 417, 'banner_section_banner_heading_2', 'Interests'),
+(6715, 417, '_banner_section_banner_heading_2', 'field_5e2983c6312f6'),
+(6716, 417, 'banner_section_banner_image', ''),
+(6717, 417, '_banner_section_banner_image', 'field_5e29832b4bc31'),
+(6718, 417, 'banner_section', ''),
+(6719, 417, '_banner_section', 'field_5e2982984bc2f'),
+(6720, 417, 'gallery_section_img_4', ''),
+(6721, 417, '_gallery_section_img_4', 'field_5e2da95350564'),
+(6722, 418, 'facts_section_facts_section_heading', ''),
+(6723, 418, '_facts_section_facts_section_heading', 'field_5e29745792fcf'),
+(6724, 418, 'facts_section_facts_section_content', ''),
+(6725, 418, '_facts_section_facts_section_content', 'field_5e2974b392fd0'),
+(6726, 418, 'facts_section_facts_section_image', ''),
+(6727, 418, '_facts_section_facts_section_image', 'field_5e29750f92fd1'),
+(6728, 418, 'facts_section', ''),
+(6729, 418, '_facts_section', 'field_5e288cf50f328'),
+(6730, 418, 'gray_section_gray_section_heading', ''),
+(6731, 418, '_gray_section_gray_section_heading', 'field_5e2975b992fd2'),
+(6732, 418, 'gray_section_gray_section_button_text', ''),
+(6733, 418, '_gray_section_gray_section_button_text', 'field_5e2975ec92fd3'),
+(6734, 418, 'gray_section_gray_section_button_url', ''),
+(6735, 418, '_gray_section_gray_section_button_url', 'field_5e29761492fd4'),
+(6736, 418, 'gray_section_gray_section_content', ''),
+(6737, 418, '_gray_section_gray_section_content', 'field_5e29766d92fd5'),
+(6738, 418, 'gray_section', ''),
+(6739, 418, '_gray_section', 'field_5e288d2f0f329'),
+(6740, 418, 'gallery_section_img_1', ''),
+(6741, 418, '_gallery_section_img_1', 'field_5e28a495ba34f'),
+(6742, 418, 'gallery_section_img_2', ''),
+(6743, 418, '_gallery_section_img_2', 'field_5e28a50aba350'),
+(6744, 418, 'gallery_section_img_3', ''),
+(6745, 418, '_gallery_section_img_3', 'field_5e28a51cba351'),
+(6746, 418, 'gallery_section_heading', ''),
+(6747, 418, '_gallery_section_heading', 'field_5e28a530ba352'),
+(6748, 418, 'gallery_section_content', ''),
+(6749, 418, '_gallery_section_content', 'field_5e28a55dba353'),
+(6750, 418, 'gallery_section_side_img', ''),
+(6751, 418, '_gallery_section_side_img', 'field_5e28a58aba354'),
+(6752, 418, 'gallery_section', ''),
+(6753, 418, '_gallery_section', 'field_5e28a3e4ba34d'),
+(6754, 418, 'banner_heading', 'Dig a little deeper'),
+(6755, 418, '_banner_heading', 'field_5e289e7f5a3e8'),
+(6756, 418, 'banner_image', ''),
+(6757, 418, '_banner_image', 'field_5e289e945a3e9'),
+(6758, 418, 'banner_section_banner_heading_1', 'Professional '),
+(6759, 418, '_banner_section_banner_heading_1', 'field_5e2983004bc30'),
+(6760, 418, 'banner_section_banner_heading_2', 'experiences'),
+(6761, 418, '_banner_section_banner_heading_2', 'field_5e2983c6312f6'),
+(6762, 418, 'banner_section_banner_image', ''),
+(6763, 418, '_banner_section_banner_image', 'field_5e29832b4bc31'),
+(6764, 418, 'banner_section', ''),
+(6765, 418, '_banner_section', 'field_5e2982984bc2f'),
+(6766, 418, 'resume_gray_section_resume_gray_section_heading', 'Hire a very driven and ambitious Front-end Developer today.'),
+(6767, 418, '_resume_gray_section_resume_gray_section_heading', 'field_5e2eb7d66e359'),
+(6768, 418, 'resume_gray_section_resume_gray_section_button_text', 'Contact me'),
+(6769, 418, '_resume_gray_section_resume_gray_section_button_text', 'field_5e2eb7d66e35a'),
+(6770, 418, 'resume_gray_section_resume_gray_section_button_url', 'http://localhost:8888/Avvy_Portfolio20/contact/'),
+(6771, 418, '_resume_gray_section_resume_gray_section_button_url', 'field_5e2eb7d66e35b'),
+(6772, 418, 'resume_gray_section_resume_gray_section_content', 'If you want to know more about me or have any questions, do not hesitate to contact me. I am always happy to hear about your ideas and help find the best solution for you.'),
+(6773, 418, '_resume_gray_section_resume_gray_section_content', 'field_5e2eb7d66e35c'),
+(6774, 418, 'resume_gray_section', ''),
+(6775, 418, '_resume_gray_section', 'field_5e2eb7d66e358'),
+(6776, 418, 'resume_dark_gray_section_resume_dark_gray_section_heading', 'Professional Summary'),
+(6777, 418, '_resume_dark_gray_section_resume_dark_gray_section_heading', 'field_5e301ba9c1234'),
+(6778, 418, 'resume_dark_gray_section_resume_dark_gray_section_button_text', ''),
+(6779, 418, '_resume_dark_gray_section_resume_dark_gray_section_button_text', 'field_5e301ba9c1235'),
+(6780, 418, 'resume_dark_gray_section_resume_dark_gray_section_button_url', ''),
+(6781, 418, '_resume_dark_gray_section_resume_dark_gray_section_button_url', 'field_5e301ba9c1236'),
+(6782, 418, 'resume_dark_gray_section_resume_dark_gray_section_content', 'I\'m a very driven and ambitious Front-end Developer and also a happy and hardworking girl.\r\nNow, I am looking for an exciting company where I can continue to grow and continue learning.\r\nFor the most part of my working life, I\'ve worked as a waitress with much responsibility both for myself and other employees which suits me well. My most prominent features are my drive to keep growing and move forward. I work structured and organized, also I am stress-resistant and like to work in teams. I am fond of languages and I speak Bulgarian(native tongue), Spanish, Romanian, Swedish, and decent English.'),
+(6783, 418, '_resume_dark_gray_section_resume_dark_gray_section_content', 'field_5e301ba9c1237'),
+(6784, 418, 'resume_dark_gray_section', ''),
+(6785, 418, '_resume_dark_gray_section', 'field_5e301ba9c1233'),
+(6786, 418, 'resume_dark_gray_section_two_resume_dark_gray_section_heading', 'When I\'m not working'),
+(6787, 418, '_resume_dark_gray_section_two_resume_dark_gray_section_heading', 'field_5e32eb2b59073'),
+(6788, 418, 'resume_dark_gray_section_two_resume_dark_gray_section_button_text', ''),
+(6789, 418, '_resume_dark_gray_section_two_resume_dark_gray_section_button_text', 'field_5e32eb2b59074'),
+(6790, 418, 'resume_dark_gray_section_two_resume_dark_gray_section_button_url', ''),
+(6791, 418, '_resume_dark_gray_section_two_resume_dark_gray_section_button_url', 'field_5e32eb2b59075'),
+(6792, 418, 'resume_dark_gray_section_two_resume_dark_gray_section_content', 'In my spare time, I like to hang out with friends and family, travel, read, and workout regularly.\r\nPeople close to me say I rock at spreading good, happy energy around me and also that I am very reliable. I love laughing.'),
+(6793, 418, '_resume_dark_gray_section_two_resume_dark_gray_section_content', 'field_5e32eb2b59076'),
+(6794, 418, 'resume_dark_gray_section_two', ''),
+(6795, 418, '_resume_dark_gray_section_two', 'field_5e32eb2b59072'),
+(6796, 419, '_edit_last', '1'),
+(6797, 419, '_edit_lock', '1592229036:1');
 
 -- --------------------------------------------------------
 
 --
--- Tabellstruktur `wp_posts`
+-- Table structure for table `wp_posts`
 --
 
 CREATE TABLE `wp_posts` (
@@ -5919,21 +6943,21 @@ CREATE TABLE `wp_posts` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
--- Dumpning av Data i tabell `wp_posts`
+-- Dumping data for table `wp_posts`
 --
 
 INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
 (1, 1, '2020-01-15 12:22:19', '2020-01-15 12:22:19', '<!-- wp:paragraph -->\n<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>\n<!-- /wp:paragraph -->', 'Hello world!', '', 'publish', 'open', 'open', '', 'hello-world', '', '', '2020-01-15 12:22:19', '2020-01-15 12:22:19', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?p=1', 0, 'post', '', 1),
-(6, 1, '2020-01-16 11:48:44', '2020-01-16 11:48:44', '', 'About', '', 'publish', 'closed', 'closed', '', 'about', '', '', '2020-02-18 18:38:54', '2020-02-18 18:38:54', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?page_id=6', 0, 'page', '', 0),
+(6, 1, '2020-01-16 11:48:44', '2020-01-16 11:48:44', '', 'About', '', 'publish', 'closed', 'closed', '', 'about', '', '', '2020-06-15 13:33:06', '2020-06-15 13:33:06', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?page_id=6', 0, 'page', '', 0),
 (7, 1, '2020-01-16 11:48:44', '2020-01-16 11:48:44', '', 'Contact', '', 'publish', 'closed', 'closed', '', 'contact', '', '', '2020-02-19 18:54:14', '2020-02-19 18:54:14', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?page_id=7', 0, 'page', '', 0),
 (9, 1, '2020-01-16 11:48:44', '2020-01-16 11:48:44', '', 'About', '', 'inherit', 'closed', 'closed', '', '6-revision-v1', '', '', '2020-01-16 11:48:44', '2020-01-16 11:48:44', '', 6, 'http://localhost:8888/Avvy_Portfolio20/2020/01/16/6-revision-v1/', 0, 'revision', '', 0),
 (10, 1, '2020-01-16 11:48:44', '2020-01-16 11:48:44', '', 'Contact', '', 'inherit', 'closed', 'closed', '', '7-revision-v1', '', '', '2020-01-16 11:48:44', '2020-01-16 11:48:44', '', 7, 'http://localhost:8888/Avvy_Portfolio20/2020/01/16/7-revision-v1/', 0, 'revision', '', 0),
-(11, 1, '2020-01-16 11:48:44', '2020-01-16 11:48:44', ' ', '', '', 'publish', 'closed', 'closed', '', '11', '', '', '2020-01-27 10:07:37', '2020-01-27 10:07:37', '', 0, 'http://localhost:8888/Avvy_Portfolio20/2020/01/16/11/', 2, 'nav_menu_item', '', 0),
-(12, 1, '2020-01-16 11:48:44', '2020-01-16 11:48:44', ' ', '', '', 'publish', 'closed', 'closed', '', '12', '', '', '2020-01-27 10:07:37', '2020-01-27 10:07:37', '', 0, 'http://localhost:8888/Avvy_Portfolio20/2020/01/16/12/', 4, 'nav_menu_item', '', 0),
-(18, 1, '2020-01-16 11:57:30', '2020-01-16 11:57:30', '<!-- wp:media-text {\"mediaId\":59,\"mediaType\":\"image\",\"mediaWidth\":42,\"verticalAlignment\":\"center\"} -->\n<div class=\"wp-block-media-text alignwide is-vertically-aligned-center\" style=\"grid-template-columns:42% auto\"><figure class=\"wp-block-media-text__media\"><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/Image-from-iOS-8-1-1024x768.jpg\" alt=\"\" class=\"wp-image-59\"/></figure><div class=\"wp-block-media-text__content\"><!-- wp:heading {\"align\":\"center\"} -->\n<h2 class=\"has-text-align-center\"><strong> My passion and focus is Frontend development.</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"align\":\"center\"} -->\n<p class=\"has-text-align-center\"> Let\'s be honest and cut through the marketing fluff. You need a website that looks amazing and actually works, that\'s what I do. And if you want to learn more about working with me, pick up the phone and give me a call (or email). </p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p></p>\n<!-- /wp:paragraph --></div></div>\n<!-- /wp:media-text -->', 'Portfolio', '', 'publish', 'closed', 'closed', '', 'home', '', '', '2020-02-17 12:09:15', '2020-02-17 12:09:15', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?page_id=18', 0, 'page', '', 0),
+(11, 1, '2020-01-16 11:48:44', '2020-01-16 11:48:44', ' ', '', '', 'publish', 'closed', 'closed', '', '11', '', '', '2020-06-12 12:15:01', '2020-06-12 12:15:01', '', 0, 'http://localhost:8888/Avvy_Portfolio20/2020/01/16/11/', 1, 'nav_menu_item', '', 0),
+(12, 1, '2020-01-16 11:48:44', '2020-01-16 11:48:44', ' ', '', '', 'publish', 'closed', 'closed', '', '12', '', '', '2020-06-12 12:15:01', '2020-06-12 12:15:01', '', 0, 'http://localhost:8888/Avvy_Portfolio20/2020/01/16/12/', 3, 'nav_menu_item', '', 0),
+(18, 1, '2020-01-16 11:57:30', '2020-01-16 11:57:30', '<!-- wp:media-text {\"mediaId\":59,\"mediaType\":\"image\",\"mediaWidth\":42,\"verticalAlignment\":\"center\"} -->\n<div class=\"wp-block-media-text alignwide is-vertically-aligned-center\" style=\"grid-template-columns:42% auto\"><figure class=\"wp-block-media-text__media\"><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/Image-from-iOS-8-1-1024x768.jpg\" alt=\"\" class=\"wp-image-59\"/></figure><div class=\"wp-block-media-text__content\"><!-- wp:heading {\"align\":\"center\"} -->\n<h2 class=\"has-text-align-center\"><strong> My passion and focus is Frontend development.</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"align\":\"center\"} -->\n<p class=\"has-text-align-center\"> Let\'s be honest and cut through the marketing fluff. You need a website that looks amazing and actually works, that\'s what I do. And if you want to learn more about working with me, pick up the phone and give me a call (or email). </p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p></p>\n<!-- /wp:paragraph --></div></div>\n<!-- /wp:media-text -->', 'Portfolio', '', 'publish', 'closed', 'closed', '', 'home', '', '', '2020-06-15 13:14:51', '2020-06-15 13:14:51', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?page_id=18', 0, 'page', '', 0),
 (20, 1, '2020-01-16 11:57:30', '2020-01-16 11:57:30', '', 'Home', '', 'inherit', 'closed', 'closed', '', '18-revision-v1', '', '', '2020-01-16 11:57:30', '2020-01-16 11:57:30', '', 18, 'http://localhost:8888/Avvy_Portfolio20/2020/01/16/18-revision-v1/', 0, 'revision', '', 0),
-(22, 1, '2020-01-16 13:37:22', '2020-01-16 13:37:22', ' ', '', '', 'publish', 'closed', 'closed', '', '22', '', '', '2020-01-17 15:58:17', '2020-01-17 15:58:17', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?p=22', 3, 'nav_menu_item', '', 0),
-(23, 1, '2020-01-16 13:37:22', '2020-01-16 13:37:22', ' ', '', '', 'publish', 'closed', 'closed', '', '23', '', '', '2020-01-17 15:58:17', '2020-01-17 15:58:17', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?p=23', 2, 'nav_menu_item', '', 0),
+(22, 1, '2020-01-16 13:37:22', '2020-01-16 13:37:22', ' ', '', '', 'publish', 'closed', 'closed', '', '22', '', '', '2020-06-12 12:14:46', '2020-06-12 12:14:46', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?p=22', 3, 'nav_menu_item', '', 0),
+(23, 1, '2020-01-16 13:37:22', '2020-01-16 13:37:22', ' ', '', '', 'publish', 'closed', 'closed', '', '23', '', '', '2020-06-12 12:14:46', '2020-06-12 12:14:46', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?p=23', 1, 'nav_menu_item', '', 0),
 (24, 1, '2020-01-16 16:01:25', '2020-01-16 16:01:25', '<!-- wp:paragraph -->\n<p>Hej home</p>\n<!-- /wp:paragraph -->', 'Home', '', 'inherit', 'closed', 'closed', '', '18-revision-v1', '', '', '2020-01-16 16:01:25', '2020-01-16 16:01:25', '', 18, 'http://localhost:8888/Avvy_Portfolio20/2020/01/16/18-revision-v1/', 0, 'revision', '', 0),
 (27, 1, '2020-01-17 11:47:04', '2020-01-17 11:47:04', '', 'background', '', 'inherit', 'open', 'closed', '', '299682754', '', '', '2020-01-17 11:50:16', '2020-01-17 11:50:16', '', 0, 'http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/299682754.jpg', 0, 'attachment', 'image/jpeg', 0),
 (29, 1, '2020-01-17 11:53:50', '2020-01-17 11:53:50', '', 'Mojacar', '', 'inherit', 'open', 'closed', '', 'img_1499', '', '', '2020-01-17 11:54:15', '2020-01-17 11:54:15', '', 0, 'http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_1499.jpg', 0, 'attachment', 'image/jpeg', 0),
@@ -5951,9 +6975,8 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (47, 1, '2020-01-17 15:46:58', '2020-01-17 15:46:58', '', 'god_mat', '', 'inherit', 'open', 'closed', '', 'img_3286', '', '', '2020-01-22 19:45:56', '2020-01-22 19:45:56', '', 6, 'http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_3286.jpg', 0, 'attachment', 'image/jpeg', 0),
 (49, 1, '2020-01-17 15:47:22', '2020-01-17 15:47:22', '', 'drink', '', 'inherit', 'open', 'closed', '', 'img_4189', '', '', '2020-01-22 19:46:16', '2020-01-22 19:46:16', '', 6, 'http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_4189.jpg', 0, 'attachment', 'image/jpeg', 0),
 (50, 1, '2020-01-17 15:48:24', '2020-01-17 15:48:24', '<!-- wp:heading -->\n<h2><strong>My Passions &amp;<br>Personality.</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:media-text {\"mediaId\":34,\"mediaType\":\"image\",\"mediaWidth\":34} -->\n<div class=\"wp-block-media-text alignwide\" style=\"grid-template-columns:34% auto\"><figure class=\"wp-block-media-text__media\"><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_0073-1-225x300.jpg\" alt=\"\" class=\"wp-image-34\"/></figure><div class=\"wp-block-media-text__content\"><!-- wp:paragraph {\"align\":\"center\",\"placeholder\":\"Content…\",\"fontSize\":\"large\"} -->\n<p class=\"has-text-align-center has-large-font-size\">Några roliga fakta om mig själv.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Jag är 35 år gammalt, har en 12 år son, mitt favoritnummer är 13 och min farorit tid på dagen är frukost tiden.</p>\n<!-- /wp:paragraph --></div></div>\n<!-- /wp:media-text -->\n\n<!-- wp:media-text {\"mediaPosition\":\"right\",\"mediaId\":36,\"mediaType\":\"image\",\"mediaWidth\":34,\"verticalAlignment\":\"center\"} -->\n<div class=\"wp-block-media-text alignwide has-media-on-the-right is-vertically-aligned-center\" style=\"grid-template-columns:auto 34%\"><figure class=\"wp-block-media-text__media\"><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_0065.jpg\" alt=\"\" class=\"wp-image-36\"/></figure><div class=\"wp-block-media-text__content\"><!-- wp:gallery {\"ids\":[46,47,49]} -->\n<figure class=\"wp-block-gallery columns-3 is-cropped\"><ul class=\"blocks-gallery-grid\"><li class=\"blocks-gallery-item\"><figure><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_3778-768x1024.jpg\" alt=\"\" data-id=\"46\" data-full-url=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_3778-scaled.jpg\" data-link=\"http://localhost:8888/Avvy_Portfolio20/about/img_3778/\" class=\"wp-image-46\"/></figure></li><li class=\"blocks-gallery-item\"><figure><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_3286-768x1024.jpg\" alt=\"\" data-id=\"47\" data-full-url=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_3286-scaled.jpg\" data-link=\"http://localhost:8888/Avvy_Portfolio20/about/img_3286/\" class=\"wp-image-47\"/></figure></li><li class=\"blocks-gallery-item\"><figure><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_4189-768x1024.jpg\" alt=\"\" data-id=\"49\" data-full-url=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_4189-scaled.jpg\" data-link=\"http://localhost:8888/Avvy_Portfolio20/about/img_4189/\" class=\"wp-image-49\"/></figure></li></ul></figure>\n<!-- /wp:gallery -->\n\n<!-- wp:paragraph {\"placeholder\":\"Content…\",\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">My family..............................</p>\n<!-- /wp:paragraph --></div></div>\n<!-- /wp:media-text -->\n\n<!-- wp:heading -->\n<h2></h2>\n<!-- /wp:heading -->', 'About', '', 'inherit', 'closed', 'closed', '', '6-revision-v1', '', '', '2020-01-17 15:48:24', '2020-01-17 15:48:24', '', 6, 'http://localhost:8888/Avvy_Portfolio20/2020/01/17/6-revision-v1/', 0, 'revision', '', 0),
-(51, 1, '2020-01-17 15:54:03', '2020-01-17 15:54:03', '', 'Resume', '', 'publish', 'closed', 'closed', '', 'resume', '', '', '2020-02-18 18:45:59', '2020-02-18 18:45:59', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?page_id=51', 0, 'page', '', 0),
+(51, 1, '2020-01-17 15:54:03', '2020-01-17 15:54:03', '', 'Resume', '', 'publish', 'closed', 'closed', '', 'resume', '', '', '2020-06-15 13:35:21', '2020-06-15 13:35:21', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?page_id=51', 0, 'page', '', 0),
 (52, 1, '2020-01-17 15:54:03', '2020-01-17 15:54:03', '', 'Resume', '', 'inherit', 'closed', 'closed', '', '51-revision-v1', '', '', '2020-01-17 15:54:03', '2020-01-17 15:54:03', '', 51, 'http://localhost:8888/Avvy_Portfolio20/2020/01/17/51-revision-v1/', 0, 'revision', '', 0),
-(55, 1, '2020-01-17 15:58:17', '2020-01-17 15:58:17', ' ', '', '', 'publish', 'closed', 'closed', '', '55', '', '', '2020-01-17 15:58:17', '2020-01-17 15:58:17', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?p=55', 1, 'nav_menu_item', '', 0),
 (57, 1, '2020-01-20 10:44:46', '2020-01-20 10:44:46', '', 'Image from iOS-8', '', 'inherit', 'open', 'closed', '', 'image-from-ios-8', '', '', '2020-01-20 10:44:46', '2020-01-20 10:44:46', '', 18, 'http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/Image-from-iOS-8.jpg', 0, 'attachment', 'image/jpeg', 0),
 (58, 1, '2020-01-20 10:45:26', '2020-01-20 10:45:26', '', 'job', '', 'inherit', 'open', 'closed', '', 'image-from-ios-7', '', '', '2020-01-20 10:45:51', '2020-01-20 10:45:51', '', 18, 'http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/Image-from-iOS-7.jpg', 0, 'attachment', 'image/jpeg', 0),
 (59, 1, '2020-01-20 10:47:45', '2020-01-20 10:47:45', '', 'job', '', 'inherit', 'open', 'closed', '', 'image-from-ios-8-1', '', '', '2020-01-23 11:50:10', '2020-01-23 11:50:10', '', 18, 'http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/Image-from-iOS-8-1.jpg', 0, 'attachment', 'image/jpeg', 0),
@@ -5996,8 +7019,7 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (97, 1, '2020-01-20 16:57:54', '2020-01-20 16:57:54', '<!-- wp:cover {\"overlayColor\":\"very-dark-gray\"} -->\n<div class=\"wp-block-cover has-very-dark-gray-background-color has-background-dim\"><div class=\"wp-block-cover__inner-container\"><!-- wp:heading {\"align\":\"center\"} -->\n<h2 class=\"has-text-align-center\">Hire a very driven and ambitious Front-end Developer today.</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"align\":\"center\"} -->\n<p class=\"has-text-align-center\">Now that you know what I\'ve done and what I could do for you, feel free to reach out and start a conversation. I always enjoy speaking with passionate business owners about their needs.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:button {\"align\":\"center\"} -->\n<div class=\"wp-block-button aligncenter\"><a class=\"wp-block-button__link\" href=\"http://localhost:8888/Avvy_Portfolio20/contact/\">Contact me today</a></div>\n<!-- /wp:button --></div></div>\n<!-- /wp:cover -->', 'Resume', '', 'inherit', 'closed', 'closed', '', '51-revision-v1', '', '', '2020-01-20 16:57:54', '2020-01-20 16:57:54', '', 51, 'http://localhost:8888/Avvy_Portfolio20/2020/01/20/51-revision-v1/', 0, 'revision', '', 0),
 (98, 1, '2020-01-20 17:05:35', '2020-01-20 17:05:35', '<!-- wp:cover {\"overlayColor\":\"very-dark-gray\"} -->\n<div class=\"wp-block-cover has-very-dark-gray-background-color has-background-dim\"><div class=\"wp-block-cover__inner-container\"><!-- wp:paragraph {\"align\":\"center\",\"placeholder\":\"Write title…\",\"fontSize\":\"large\"} -->\n<p class=\"has-text-align-center has-large-font-size\">&nbsp;Reach me directly.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4><strong>Call</strong>   0765 555 792,   Mon-Fri: 9am - 5pm EST.</h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"align\":\"center\"} -->\n<p class=\"has-text-align-center\">or</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\"align\":\"center\",\"level\":4} -->\n<h4 class=\"has-text-align-center\"><strong>Mail</strong>    <em>radoslavatsankova@gmail.com</em></h4>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"align\":\"center\"} -->\n<p class=\"has-text-align-center\"></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:button {\"align\":\"center\"} -->\n<div class=\"wp-block-button aligncenter\"><a class=\"wp-block-button__link\" href=\"http://linkedin.com/in/radoslava-avvy-todorova-718a3815b\">LinkedIn</a></div>\n<!-- /wp:button -->\n\n<!-- wp:paragraph -->\n<p></p>\n<!-- /wp:paragraph --></div></div>\n<!-- /wp:cover -->\n\n<!-- wp:media-text {\"mediaId\":89,\"mediaType\":\"image\",\"mediaWidth\":46} -->\n<div class=\"wp-block-media-text alignwide\" style=\"grid-template-columns:46% auto\"><figure class=\"wp-block-media-text__media\"><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/Image-from-iOS-6-1-672x1024.jpg\" alt=\"\" class=\"wp-image-89\"/></figure><div class=\"wp-block-media-text__content\"><!-- wp:paragraph {\"placeholder\":\"Content…\",\"fontSize\":\"large\"} -->\n<p class=\"has-large-font-size\">Bragegatan, Glumslöv Landskrona, Sweden</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Du kan hitta mig i Glumslöv, som ligger mellan Malmö och Helsingborg.</p>\n<!-- /wp:paragraph --></div></div>\n<!-- /wp:media-text -->', 'Contact', '', 'inherit', 'closed', 'closed', '', '7-revision-v1', '', '', '2020-01-20 17:05:35', '2020-01-20 17:05:35', '', 7, 'http://localhost:8888/Avvy_Portfolio20/2020/01/20/7-revision-v1/', 0, 'revision', '', 0),
 (99, 1, '2020-01-20 17:17:55', '2020-01-20 17:17:55', '', 'Spanien', '', 'inherit', 'open', 'closed', '', 'img_1204', '', '', '2020-01-20 17:18:11', '2020-01-20 17:18:11', '', 0, 'http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_1204.jpg', 0, 'attachment', 'image/jpeg', 0),
-(101, 1, '2020-01-20 17:19:17', '2020-01-20 17:19:17', '', 'love', '', 'inherit', 'open', 'closed', '', 'love', '', '', '2020-01-20 17:19:17', '2020-01-20 17:19:17', '', 0, 'http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/love.jpg', 0, 'attachment', 'image/jpeg', 0),
-(103, 1, '2020-01-20 17:24:07', '2020-01-20 17:24:07', ' ', '', '', 'publish', 'closed', 'closed', '', '103', '', '', '2020-01-27 10:07:37', '2020-01-27 10:07:37', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?p=103', 1, 'nav_menu_item', '', 0);
+(101, 1, '2020-01-20 17:19:17', '2020-01-20 17:19:17', '', 'love', '', 'inherit', 'open', 'closed', '', 'love', '', '', '2020-01-20 17:19:17', '2020-01-20 17:19:17', '', 0, 'http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/love.jpg', 0, 'attachment', 'image/jpeg', 0);
 INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
 (104, 1, '2020-01-20 17:26:22', '2020-01-20 17:26:22', '<!-- wp:media-text {\"mediaId\":34,\"mediaType\":\"image\",\"mediaWidth\":32} -->\n<div class=\"wp-block-media-text alignwide\" style=\"grid-template-columns:32% auto\"><figure class=\"wp-block-media-text__media\"><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_0073-1-225x300.jpg\" alt=\"\" class=\"wp-image-34\"/></figure><div class=\"wp-block-media-text__content\"><!-- wp:paragraph {\"align\":\"center\",\"placeholder\":\"Content…\",\"fontSize\":\"large\"} -->\n<p class=\"has-text-align-center has-large-font-size\">Några roliga fakta om mig själv.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Jag är 35 år gammalt, har en 12 år son, mitt favoritnummer är 13 och min farorit del av dagen är morgonen. Jag är en väldigt serviceinriktad person och trivs som bäst när jag får jobba med människor.&nbsp;På fritiden älskar jag att umgås med familj och vänner, resa, läsa och att träna regelbundet. Folk i min närhet säger ofta att jag är bra på att sprida positiv och glad energi runt omkring mig, att jag är väldigt pålitlig och att jag altid har nära till ett skratt.&nbsp;</p>\n<!-- /wp:paragraph --></div></div>\n<!-- /wp:media-text -->\n\n<!-- wp:cover {\"overlayColor\":\"very-dark-gray\",\"align\":\"center\"} -->\n<div class=\"wp-block-cover aligncenter has-very-dark-gray-background-color has-background-dim\"><div class=\"wp-block-cover__inner-container\"><!-- wp:heading -->\n<h2>What I\'ve done &amp; what I can do</h2>\n<!-- /wp:heading -->\n\n<!-- wp:button {\"align\":\"center\"} -->\n<div class=\"wp-block-button aligncenter\"><a class=\"wp-block-button__link\" href=\" http://localhost:8888/Avvy_Portfolio20/resume/\">Resume</a></div>\n<!-- /wp:button -->\n\n<!-- wp:paragraph -->\n<p>Feel free to take a deeper look at what I\'ve accomplished over the last year and what I\'m able to do for you and mor that you can see . My resume goes over the standard items, but please understand that I don\'t embellish my capabilities (no good ever comes out of that).      </p>\n<!-- /wp:paragraph --></div></div>\n<!-- /wp:cover -->\n\n<!-- wp:media-text {\"mediaPosition\":\"right\",\"mediaId\":36,\"mediaType\":\"image\",\"mediaWidth\":34,\"verticalAlignment\":\"center\"} -->\n<div class=\"wp-block-media-text alignwide has-media-on-the-right is-vertically-aligned-center\" style=\"grid-template-columns:auto 34%\"><figure class=\"wp-block-media-text__media\"><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_0065.jpg\" alt=\"\" class=\"wp-image-36\"/></figure><div class=\"wp-block-media-text__content\"><!-- wp:gallery {\"ids\":[46,47,49]} -->\n<figure class=\"wp-block-gallery columns-3 is-cropped\"><ul class=\"blocks-gallery-grid\"><li class=\"blocks-gallery-item\"><figure><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_3778-768x1024.jpg\" alt=\"\" data-id=\"46\" data-full-url=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_3778-scaled.jpg\" data-link=\"http://localhost:8888/Avvy_Portfolio20/about/img_3778/\" class=\"wp-image-46\"/></figure></li><li class=\"blocks-gallery-item\"><figure><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_3286-768x1024.jpg\" alt=\"\" data-id=\"47\" data-full-url=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_3286-scaled.jpg\" data-link=\"http://localhost:8888/Avvy_Portfolio20/about/img_3286/\" class=\"wp-image-47\"/></figure></li><li class=\"blocks-gallery-item\"><figure><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_4189-768x1024.jpg\" alt=\"\" data-id=\"49\" data-full-url=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_4189-scaled.jpg\" data-link=\"http://localhost:8888/Avvy_Portfolio20/about/img_4189/\" class=\"wp-image-49\"/></figure></li></ul></figure>\n<!-- /wp:gallery -->\n\n<!-- wp:heading -->\n<h2>My family</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Ursprungligen kommer jag från Bulgarien, men jag flyttade därifrån när jag var 18 till Spanien där jag bodde och arbetade i 10 år tills jag flyttade till Sverige för ca. åtta år sedan.&nbsp;Nu jag bor med min sambo och son i Glumslöv, Lanskrona kommun.</p>\n<!-- /wp:paragraph --></div></div>\n<!-- /wp:media-text -->', 'About', '', 'inherit', 'closed', 'closed', '', '6-revision-v1', '', '', '2020-01-20 17:26:22', '2020-01-20 17:26:22', '', 6, 'http://localhost:8888/Avvy_Portfolio20/2020/01/20/6-revision-v1/', 0, 'revision', '', 0),
 (105, 1, '2020-01-20 17:29:33', '2020-01-20 17:29:33', '<!-- wp:media-text {\"mediaId\":59,\"mediaType\":\"image\",\"mediaWidth\":42,\"verticalAlignment\":\"center\"} -->\n<div class=\"wp-block-media-text alignwide is-vertically-aligned-center\" style=\"grid-template-columns:42% auto\"><figure class=\"wp-block-media-text__media\"><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/Image-from-iOS-8-1-1024x768.jpg\" alt=\"\" class=\"wp-image-59\"/></figure><div class=\"wp-block-media-text__content\"><!-- wp:heading -->\n<h2><strong> My passion and focus is Frontend development.</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p> Let\'s be honest and cut through the marketing fluff. You need a website that looks amazing and actually works, that\'s what I do. And if you want to learn more about working with me, pick up the phone and give me a call (or email). </p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p></p>\n<!-- /wp:paragraph --></div></div>\n<!-- /wp:media-text -->\n\n<!-- wp:media-text {\"mediaPosition\":\"right\",\"mediaId\":74,\"mediaType\":\"image\",\"mediaWidth\":46} -->\n<div class=\"wp-block-media-text alignwide has-media-on-the-right\" style=\"grid-template-columns:auto 46%\"><figure class=\"wp-block-media-text__media\"><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/my-job-1-1024x768.jpg\" alt=\"\" class=\"wp-image-74\"/></figure><div class=\"wp-block-media-text__content\"><!-- wp:heading -->\n<h2>My projects.</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Work with React and WordPress has become an amazing opportunity that I don\'t take for granted. Take a look at my latest projects that I’ve been busy working on. </p>\n<!-- /wp:paragraph -->\n\n<!-- wp:button {\"align\":\"center\"} -->\n<div class=\"wp-block-button aligncenter\"><a class=\"wp-block-button__link\" href=\"https://github.com/AvvyT\">My GitHub</a></div>\n<!-- /wp:button --></div></div>\n<!-- /wp:media-text -->', 'Home', '', 'inherit', 'closed', 'closed', '', '18-revision-v1', '', '', '2020-01-20 17:29:33', '2020-01-20 17:29:33', '', 18, 'http://localhost:8888/Avvy_Portfolio20/2020/01/20/18-revision-v1/', 0, 'revision', '', 0),
@@ -6071,7 +7093,7 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (187, 1, '2020-01-26 15:03:41', '2020-01-26 15:03:41', '<!-- wp:media-text {\"mediaId\":34,\"mediaType\":\"image\",\"mediaWidth\":32} -->\n<div class=\"wp-block-media-text alignwide\" style=\"grid-template-columns:32% auto\"><figure class=\"wp-block-media-text__media\"><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_0073-1-225x300.jpg\" alt=\"\" class=\"wp-image-34\"/></figure><div class=\"wp-block-media-text__content\"><!-- wp:paragraph {\"align\":\"center\",\"placeholder\":\"Content…\",\"fontSize\":\"large\"} -->\n<p class=\"has-text-align-center has-large-font-size\">Några roliga fakta om mig själv.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"align\":\"center\"} -->\n<p class=\"has-text-align-center\">Jag är 35 år gammalt, har en 12 år son, mitt favoritnummer är 13 och min farorit del av dagen är morgonen. Jag är en väldigt serviceinriktad person och trivs som bäst när jag får jobba med människor.&nbsp;På fritiden älskar jag att umgås med familj och vänner, resa, läsa och att träna regelbundet. Folk i min närhet säger ofta att jag är bra på att sprida positiv och glad energi runt omkring mig, att jag är väldigt pålitlig och att jag altid har nära till ett skratt.&nbsp;</p>\n<!-- /wp:paragraph --></div></div>\n<!-- /wp:media-text -->\n\n<!-- wp:cover {\"overlayColor\":\"very-dark-gray\",\"align\":\"center\"} -->\n<div class=\"wp-block-cover aligncenter has-very-dark-gray-background-color has-background-dim\"><div class=\"wp-block-cover__inner-container\"><!-- wp:heading {\"align\":\"center\"} -->\n<h2 class=\"has-text-align-center\">What I\'ve done &amp; what I can do</h2>\n<!-- /wp:heading -->\n\n<!-- wp:button {\"align\":\"center\"} -->\n<div class=\"wp-block-button aligncenter\"><a class=\"wp-block-button__link\" href=\" http://localhost:8888/Avvy_Portfolio20/resume/\">Resume</a></div>\n<!-- /wp:button -->\n\n<!-- wp:paragraph {\"align\":\"center\"} -->\n<p class=\"has-text-align-center\">Feel free to take a deeper look at what I\'ve accomplished over the last year and what I\'m able to do for you and mor that you can see . My resume goes over the standard items, but please understand that I don\'t embellish my capabilities (no good ever comes out of that).      </p>\n<!-- /wp:paragraph --></div></div>\n<!-- /wp:cover -->\n\n<!-- wp:media-text {\"mediaPosition\":\"right\",\"mediaId\":36,\"mediaType\":\"image\",\"mediaWidth\":34,\"verticalAlignment\":\"center\"} -->\n<div class=\"wp-block-media-text alignwide has-media-on-the-right is-vertically-aligned-center\" style=\"grid-template-columns:auto 34%\"><figure class=\"wp-block-media-text__media\"><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_0065.jpg\" alt=\"\" class=\"wp-image-36\"/></figure><div class=\"wp-block-media-text__content\"><!-- wp:gallery {\"ids\":[46,47,49]} -->\n<figure class=\"wp-block-gallery columns-3 is-cropped\"><ul class=\"blocks-gallery-grid\"><li class=\"blocks-gallery-item\"><figure><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_3778-768x1024.jpg\" alt=\"\" data-id=\"46\" data-full-url=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_3778-scaled.jpg\" data-link=\"http://localhost:8888/Avvy_Portfolio20/about/img_3778/\" class=\"wp-image-46\"/></figure></li><li class=\"blocks-gallery-item\"><figure><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_3286-768x1024.jpg\" alt=\"\" data-id=\"47\" data-full-url=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_3286-scaled.jpg\" data-link=\"http://localhost:8888/Avvy_Portfolio20/about/img_3286/\" class=\"wp-image-47\"/></figure></li><li class=\"blocks-gallery-item\"><figure><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_4189-768x1024.jpg\" alt=\"\" data-id=\"49\" data-full-url=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_4189-scaled.jpg\" data-link=\"http://localhost:8888/Avvy_Portfolio20/about/img_4189/\" class=\"wp-image-49\"/></figure></li></ul></figure>\n<!-- /wp:gallery -->\n\n<!-- wp:heading {\"align\":\"center\"} -->\n<h2 class=\"has-text-align-center\">My family</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"align\":\"center\"} -->\n<p class=\"has-text-align-center\">Ursprungligen kommer jag från Bulgarien, men jag flyttade därifrån när jag var 18 till Spanien där jag bodde och arbetade i 10 år tills jag flyttade till Sverige för ca. åtta år sedan.&nbsp;Nu jag bor med min sambo och son i Glumslöv, Lanskrona kommun.</p>\n<!-- /wp:paragraph --></div></div>\n<!-- /wp:media-text -->', 'About', '', 'inherit', 'closed', 'closed', '', '6-revision-v1', '', '', '2020-01-26 15:03:41', '2020-01-26 15:03:41', '', 6, 'http://localhost:8888/Avvy_Portfolio20/6-revision-v1/', 0, 'revision', '', 0),
 (188, 1, '2020-01-26 15:04:10', '2020-01-26 15:04:10', '<!-- wp:media-text {\"mediaId\":34,\"mediaType\":\"image\",\"mediaWidth\":32} -->\n<div class=\"wp-block-media-text alignwide\" style=\"grid-template-columns:32% auto\"><figure class=\"wp-block-media-text__media\"><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_0073-1-225x300.jpg\" alt=\"\" class=\"wp-image-34\"/></figure><div class=\"wp-block-media-text__content\"><!-- wp:paragraph {\"align\":\"center\",\"placeholder\":\"Content…\",\"fontSize\":\"large\"} -->\n<p class=\"has-text-align-center has-large-font-size\">Några roliga fakta om mig själv.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"align\":\"center\"} -->\n<p class=\"has-text-align-center\">Jag är 35 år gammalt, har en 12 år son, mitt favoritnummer är 13 och min farorit del av dagen är morgonen. Jag är en väldigt serviceinriktad person och trivs som bäst när jag får jobba med människor.&nbsp;På fritiden älskar jag att umgås med familj och vänner, resa, läsa och att träna regelbundet. Folk i min närhet säger ofta att jag är bra på att sprida positiv och glad energi runt omkring mig, att jag är väldigt pålitlig och att jag altid har nära till ett skratt.&nbsp;</p>\n<!-- /wp:paragraph --></div></div>\n<!-- /wp:media-text -->\n\n<!-- wp:cover {\"overlayColor\":\"very-dark-gray\",\"align\":\"center\"} -->\n<div class=\"wp-block-cover aligncenter has-very-dark-gray-background-color has-background-dim\"><div class=\"wp-block-cover__inner-container\"><!-- wp:heading {\"align\":\"center\"} -->\n<h2 class=\"has-text-align-center\">What I\'ve done &amp; what I can do</h2>\n<!-- /wp:heading -->\n\n<!-- wp:button {\"align\":\"center\"} -->\n<div class=\"wp-block-button aligncenter\"><a class=\"wp-block-button__link\" href=\" http://localhost:8888/Avvy_Portfolio20/resume/\">Resume</a></div>\n<!-- /wp:button -->\n\n<!-- wp:paragraph {\"align\":\"center\"} -->\n<p class=\"has-text-align-center\">Feel free to take a deeper look at what I\'ve accomplished over the last year and what I\'m able to do for you and mor that you can see . My resume goes over the standard items, but please understand that I don\'t embellish my capabilities (no good ever comes out of that).      </p>\n<!-- /wp:paragraph --></div></div>\n<!-- /wp:cover -->\n\n<!-- wp:media-text {\"mediaPosition\":\"right\",\"mediaId\":36,\"mediaType\":\"image\",\"mediaWidth\":34,\"verticalAlignment\":\"center\"} -->\n<div class=\"wp-block-media-text alignwide has-media-on-the-right is-vertically-aligned-center\" style=\"grid-template-columns:auto 34%\"><figure class=\"wp-block-media-text__media\"><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_0065.jpg\" alt=\"\" class=\"wp-image-36\"/></figure><div class=\"wp-block-media-text__content\"><!-- wp:gallery {\"ids\":[46,47,49]} -->\n<figure class=\"wp-block-gallery columns-3 is-cropped\"><ul class=\"blocks-gallery-grid\"><li class=\"blocks-gallery-item\"><figure><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_3778-768x1024.jpg\" alt=\"\" data-id=\"46\" data-full-url=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_3778-scaled.jpg\" data-link=\"http://localhost:8888/Avvy_Portfolio20/about/img_3778/\" class=\"wp-image-46\"/></figure></li><li class=\"blocks-gallery-item\"><figure><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_3286-768x1024.jpg\" alt=\"\" data-id=\"47\" data-full-url=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_3286-scaled.jpg\" data-link=\"http://localhost:8888/Avvy_Portfolio20/about/img_3286/\" class=\"wp-image-47\"/></figure></li><li class=\"blocks-gallery-item\"><figure><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_4189-768x1024.jpg\" alt=\"\" data-id=\"49\" data-full-url=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_4189-scaled.jpg\" data-link=\"http://localhost:8888/Avvy_Portfolio20/about/img_4189/\" class=\"wp-image-49\"/></figure></li></ul></figure>\n<!-- /wp:gallery -->\n\n<!-- wp:heading {\"align\":\"center\"} -->\n<h2 class=\"has-text-align-center\">My family</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"align\":\"center\"} -->\n<p class=\"has-text-align-center\">Ursprungligen kommer jag från Bulgarien, men jag flyttade därifrån när jag var 18 till Spanien där jag bodde och arbetade i 10 år tills jag flyttade till Sverige för ca. åtta år sedan.&nbsp;Nu jag bor med min sambo och son i Glumslöv, Lanskrona kommun.</p>\n<!-- /wp:paragraph --></div></div>\n<!-- /wp:media-text -->', 'About', '', 'inherit', 'closed', 'closed', '', '6-revision-v1', '', '', '2020-01-26 15:04:10', '2020-01-26 15:04:10', '', 6, 'http://localhost:8888/Avvy_Portfolio20/6-revision-v1/', 0, 'revision', '', 0),
 (189, 1, '2020-01-26 16:18:27', '2020-01-26 16:18:27', '<!-- wp:media-text {\"mediaId\":34,\"mediaType\":\"image\",\"mediaWidth\":32} -->\n<div class=\"wp-block-media-text alignwide\" style=\"grid-template-columns:32% auto\"><figure class=\"wp-block-media-text__media\"><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_0073-1-225x300.jpg\" alt=\"\" class=\"wp-image-34\"/></figure><div class=\"wp-block-media-text__content\"><!-- wp:paragraph {\"align\":\"center\",\"placeholder\":\"Content…\",\"fontSize\":\"large\"} -->\n<p class=\"has-text-align-center has-large-font-size\">Några roliga fakta om mig själv.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"align\":\"center\"} -->\n<p class=\"has-text-align-center\">Jag är 35 år gammalt, har en 12 år son, mitt favoritnummer är 13 och min farorit del av dagen är morgonen. Jag är en väldigt serviceinriktad person och trivs som bäst när jag får jobba med människor.&nbsp;På fritiden älskar jag att umgås med familj och vänner, resa, läsa och att träna regelbundet. Folk i min närhet säger ofta att jag är bra på att sprida positiv och glad energi runt omkring mig, att jag är väldigt pålitlig och att jag altid har nära till ett skratt.&nbsp;</p>\n<!-- /wp:paragraph --></div></div>\n<!-- /wp:media-text -->\n\n<!-- wp:cover {\"overlayColor\":\"very-dark-gray\",\"align\":\"center\"} -->\n<div class=\"wp-block-cover aligncenter has-very-dark-gray-background-color has-background-dim\"><div class=\"wp-block-cover__inner-container\"><!-- wp:heading {\"align\":\"center\"} -->\n<h2 class=\"has-text-align-center\">What I\'ve done &amp; what I can do</h2>\n<!-- /wp:heading -->\n\n<!-- wp:button {\"align\":\"center\"} -->\n<div class=\"wp-block-button aligncenter\"><a class=\"wp-block-button__link\" href=\" http://localhost:8888/Avvy_Portfolio20/resume/\">Resume</a></div>\n<!-- /wp:button -->\n\n<!-- wp:paragraph {\"align\":\"center\"} -->\n<p class=\"has-text-align-center\">Feel free to take a deeper look at what I\'ve accomplished over the last year and what I\'m able to do for you and mor that you can see . My resume goes over the standard items, but please understand that I don\'t embellish my capabilities (no good ever comes out of that).      </p>\n<!-- /wp:paragraph --></div></div>\n<!-- /wp:cover -->\n\n<!-- wp:media-text {\"mediaPosition\":\"right\",\"mediaId\":36,\"mediaType\":\"image\",\"mediaWidth\":34,\"verticalAlignment\":\"center\"} -->\n<div class=\"wp-block-media-text alignwide has-media-on-the-right is-vertically-aligned-center\" style=\"grid-template-columns:auto 34%\"><figure class=\"wp-block-media-text__media\"><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_0065.jpg\" alt=\"\" class=\"wp-image-36\"/></figure><div class=\"wp-block-media-text__content\"><!-- wp:gallery {\"ids\":[46,47,49]} -->\n<figure class=\"wp-block-gallery columns-3 is-cropped\"><ul class=\"blocks-gallery-grid\"><li class=\"blocks-gallery-item\"><figure><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_3778-768x1024.jpg\" alt=\"\" data-id=\"46\" data-full-url=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_3778-scaled.jpg\" data-link=\"http://localhost:8888/Avvy_Portfolio20/about/img_3778/\" class=\"wp-image-46\"/></figure></li><li class=\"blocks-gallery-item\"><figure><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_3286-768x1024.jpg\" alt=\"\" data-id=\"47\" data-full-url=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_3286-scaled.jpg\" data-link=\"http://localhost:8888/Avvy_Portfolio20/about/img_3286/\" class=\"wp-image-47\"/></figure></li><li class=\"blocks-gallery-item\"><figure><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_4189-768x1024.jpg\" alt=\"\" data-id=\"49\" data-full-url=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_4189-scaled.jpg\" data-link=\"http://localhost:8888/Avvy_Portfolio20/about/img_4189/\" class=\"wp-image-49\"/></figure></li></ul></figure>\n<!-- /wp:gallery -->\n\n<!-- wp:heading {\"align\":\"center\"} -->\n<h2 class=\"has-text-align-center\">My family</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"align\":\"center\"} -->\n<p class=\"has-text-align-center\">Ursprungligen kommer jag från Bulgarien, men jag flyttade därifrån när jag var 18 till Spanien där jag bodde och arbetade i 10 år tills jag flyttade till Sverige för ca. åtta år sedan.&nbsp;Nu jag bor med min sambo och son i Glumslöv, Lanskrona kommun.</p>\n<!-- /wp:paragraph --></div></div>\n<!-- /wp:media-text -->', 'About', '', 'inherit', 'closed', 'closed', '', '6-revision-v1', '', '', '2020-01-26 16:18:27', '2020-01-26 16:18:27', '', 6, 'http://localhost:8888/Avvy_Portfolio20/6-revision-v1/', 0, 'revision', '', 0),
-(190, 1, '2020-01-27 10:07:37', '2020-01-27 10:07:37', ' ', '', '', 'publish', 'closed', 'closed', '', '190', '', '', '2020-01-27 10:07:37', '2020-01-27 10:07:37', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?p=190', 3, 'nav_menu_item', '', 0),
+(190, 1, '2020-01-27 10:07:37', '2020-01-27 10:07:37', ' ', '', '', 'publish', 'closed', 'closed', '', '190', '', '', '2020-06-12 12:15:01', '2020-06-12 12:15:01', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?p=190', 2, 'nav_menu_item', '', 0),
 (191, 1, '2020-01-27 10:09:45', '2020-01-27 10:09:45', 'a:7:{s:8:\"location\";a:1:{i:0;a:1:{i:0;a:3:{s:5:\"param\";s:13:\"page_template\";s:8:\"operator\";s:2:\"==\";s:5:\"value\";s:15:\"page-resume.php\";}}}s:8:\"position\";s:6:\"normal\";s:5:\"style\";s:7:\"default\";s:15:\"label_placement\";s:3:\"top\";s:21:\"instruction_placement\";s:5:\"label\";s:14:\"hide_on_screen\";s:0:\"\";s:11:\"description\";s:0:\"\";}', 'Resumesida', 'resumesida', 'publish', 'closed', 'closed', '', 'group_5e2eb6a6141ac', '', '', '2020-01-30 14:43:12', '2020-01-30 14:43:12', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?post_type=acf-field-group&#038;p=191', 0, 'acf-field-group', '', 0),
 (200, 1, '2020-01-27 10:13:48', '2020-01-27 10:13:48', 'a:7:{s:4:\"type\";s:5:\"group\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:17:\"conditional_logic\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:6:\"layout\";s:5:\"block\";s:10:\"sub_fields\";a:0:{}}', 'Resume grå sektion', 'resume_gray_section', 'publish', 'closed', 'closed', '', 'field_5e2eb7d66e358', '', '', '2020-01-28 11:35:30', '2020-01-28 11:35:30', '', 191, 'http://localhost:8888/Avvy_Portfolio20/?post_type=acf-field&#038;p=200', 0, 'acf-field', '', 0),
 (201, 1, '2020-01-27 10:13:48', '2020-01-27 10:13:48', 'a:10:{s:4:\"type\";s:4:\"text\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:17:\"conditional_logic\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:13:\"default_value\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:7:\"prepend\";s:0:\"\";s:6:\"append\";s:0:\"\";s:9:\"maxlength\";s:0:\"\";}', 'Rubrik', 'resume_gray_section_heading', 'publish', 'closed', 'closed', '', 'field_5e2eb7d66e359', '', '', '2020-01-27 10:17:19', '2020-01-27 10:17:19', '', 200, 'http://localhost:8888/Avvy_Portfolio20/?post_type=acf-field&#038;p=201', 0, 'acf-field', '', 0),
@@ -6080,22 +7102,16 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (204, 1, '2020-01-27 10:13:48', '2020-01-27 10:13:48', 'a:10:{s:4:\"type\";s:8:\"textarea\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:17:\"conditional_logic\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:13:\"default_value\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:9:\"maxlength\";s:0:\"\";s:4:\"rows\";s:0:\"\";s:9:\"new_lines\";s:0:\"\";}', 'Innehåll', 'resume_gray_section_content', 'publish', 'closed', 'closed', '', 'field_5e2eb7d66e35c', '', '', '2020-01-27 10:17:19', '2020-01-27 10:17:19', '', 200, 'http://localhost:8888/Avvy_Portfolio20/?post_type=acf-field&#038;p=204', 3, 'acf-field', '', 0),
 (205, 1, '2020-01-27 10:20:27', '2020-01-27 10:20:27', '<!-- wp:cover {\"overlayColor\":\"very-dark-gray\"} -->\n<div class=\"wp-block-cover has-very-dark-gray-background-color has-background-dim\"><div class=\"wp-block-cover__inner-container\"><!-- wp:heading {\"align\":\"center\"} -->\n<h2 class=\"has-text-align-center\">Hire a very driven and ambitious Front-end Developer today.</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"align\":\"center\"} -->\n<p class=\"has-text-align-center\">Now that you know what I\'ve done and what I could do for you, feel free to reach out and start a conversation. I always enjoy speaking with passionate business owners about their needs.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:button {\"align\":\"center\"} -->\n<div class=\"wp-block-button aligncenter\"><a class=\"wp-block-button__link\" href=\"http://localhost:8888/Avvy_Portfolio20/contact/\">Contact me today</a></div>\n<!-- /wp:button --></div></div>\n<!-- /wp:cover -->', 'Resume', '', 'inherit', 'closed', 'closed', '', '51-revision-v1', '', '', '2020-01-27 10:20:27', '2020-01-27 10:20:27', '', 51, 'http://localhost:8888/Avvy_Portfolio20/51-revision-v1/', 0, 'revision', '', 0),
 (206, 1, '2020-01-27 10:26:56', '2020-01-27 10:26:56', '<!-- wp:cover {\"overlayColor\":\"very-dark-gray\"} -->\n<div class=\"wp-block-cover has-very-dark-gray-background-color has-background-dim\"><div class=\"wp-block-cover__inner-container\"><!-- wp:heading {\"align\":\"center\"} -->\n<h2 class=\"has-text-align-center\">Hire a very driven and ambitious Front-end Developer today.</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"align\":\"center\"} -->\n<p class=\"has-text-align-center\">Now that you know what I\'ve done and what I could do for you, feel free to reach out and start a conversation. I always enjoy speaking with passionate business owners about their needs.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:button {\"align\":\"center\"} -->\n<div class=\"wp-block-button aligncenter\"><a class=\"wp-block-button__link\" href=\"http://localhost:8888/Avvy_Portfolio20/contact/\">Contact me today</a></div>\n<!-- /wp:button --></div></div>\n<!-- /wp:cover -->', 'Resume', '', 'inherit', 'closed', 'closed', '', '51-revision-v1', '', '', '2020-01-27 10:26:56', '2020-01-27 10:26:56', '', 51, 'http://localhost:8888/Avvy_Portfolio20/51-revision-v1/', 0, 'revision', '', 0),
-(207, 1, '2020-01-27 12:41:43', '2020-01-27 12:41:43', '{\n    \"avvystheme::background_image\": {\n        \"value\": \"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_0145-scaled.jpg\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2020-01-27 12:41:43\"\n    },\n    \"avvystheme::background_preset\": {\n        \"value\": \"fill\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2020-01-27 12:39:54\"\n    },\n    \"avvystheme::background_position_x\": {\n        \"value\": \"right\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2020-01-27 12:39:54\"\n    },\n    \"avvystheme::background_position_y\": {\n        \"value\": \"bottom\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2020-01-27 12:41:43\"\n    },\n    \"avvystheme::background_size\": {\n        \"value\": \"cover\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2020-01-27 12:39:54\"\n    }\n}', '', '', 'trash', 'closed', 'closed', '', '9046f565-23e8-40bb-814d-70c4529d186a', '', '', '2020-01-27 12:41:43', '2020-01-27 12:41:43', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?p=207', 0, 'customize_changeset', '', 0),
-(208, 1, '2020-01-27 12:40:57', '2020-01-27 12:40:57', '', 'Glumslöv', '', 'inherit', 'open', 'closed', '', 'img_0145', '', '', '2020-01-27 12:41:18', '2020-01-27 12:41:18', '', 0, 'http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_0145.jpg', 0, 'attachment', 'image/jpeg', 0);
+(208, 1, '2020-01-27 12:40:57', '2020-01-27 12:40:57', '', 'Glumslöv', '', 'inherit', 'open', 'closed', '', 'img_0145', '', '', '2020-01-27 12:41:18', '2020-01-27 12:41:18', '', 0, 'http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_0145.jpg', 0, 'attachment', 'image/jpeg', 0),
+(212, 1, '2020-01-27 14:39:38', '2020-01-27 14:39:38', '<p class=\"p1\"><strong><span class=\"s1\"><a href=\"https://ronnowskaskolan.helsingborg.se/program/restaurang-livsmedel/\">Rönnowska skolan</a> in Helsingborg with 80% practice, 2016 - 2017.</span></strong></p>\r\n<p class=\"p1\">1 year education.</p>\r\nLearned a lot such as baking bread, wheat, pastry along with things such as cookies and cake.', 'BAKER & PASTRY MAKER', '', 'publish', 'closed', 'closed', '', 'professional-summary', '', '', '2020-02-19 18:47:46', '2020-02-19 18:47:46', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?post_type=resume&#038;p=212', 5, 'resume', '', 0),
+(213, 1, '2020-01-27 14:39:38', '2020-01-27 14:39:38', '', 'Professional Summary', '', 'inherit', 'closed', 'closed', '', '212-revision-v1', '', '', '2020-01-27 14:39:38', '2020-01-27 14:39:38', '', 212, 'http://localhost:8888/Avvy_Portfolio20/212-revision-v1/', 0, 'revision', '', 0);
 INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
-(209, 1, '2020-01-27 12:43:14', '2020-01-27 12:43:14', '{\n    \"avvystheme::background_image\": {\n        \"value\": \"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/love-scaled.jpg\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2020-01-27 12:43:14\"\n    },\n    \"avvystheme::background_position_y\": {\n        \"value\": \"bottom\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2020-01-27 12:43:14\"\n    }\n}', '', '', 'trash', 'closed', 'closed', '', '4f55425c-6997-42d5-ba85-5511649e36b1', '', '', '2020-01-27 12:43:14', '2020-01-27 12:43:14', '', 0, 'http://localhost:8888/Avvy_Portfolio20/4f55425c-6997-42d5-ba85-5511649e36b1/', 0, 'customize_changeset', '', 0),
-(210, 1, '2020-01-27 12:43:54', '2020-01-27 12:43:54', '{\n    \"avvystheme::background_position_x\": {\n        \"value\": \"center\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2020-01-27 12:43:54\"\n    },\n    \"avvystheme::background_position_y\": {\n        \"value\": \"center\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2020-01-27 12:43:54\"\n    }\n}', '', '', 'trash', 'closed', 'closed', '', 'b2ed4499-bb51-47d2-b3d1-824769a30dac', '', '', '2020-01-27 12:43:54', '2020-01-27 12:43:54', '', 0, 'http://localhost:8888/Avvy_Portfolio20/b2ed4499-bb51-47d2-b3d1-824769a30dac/', 0, 'customize_changeset', '', 0),
-(211, 1, '2020-01-27 12:44:41', '2020-01-27 12:44:41', '{\n    \"avvystheme::background_position_x\": {\n        \"value\": \"right\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2020-01-27 12:44:41\"\n    },\n    \"avvystheme::background_position_y\": {\n        \"value\": \"top\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2020-01-27 12:44:41\"\n    }\n}', '', '', 'trash', 'closed', 'closed', '', 'db5da513-f932-4560-940d-dd7c99933f3a', '', '', '2020-01-27 12:44:41', '2020-01-27 12:44:41', '', 0, 'http://localhost:8888/Avvy_Portfolio20/db5da513-f932-4560-940d-dd7c99933f3a/', 0, 'customize_changeset', '', 0),
-(212, 1, '2020-01-27 14:39:38', '2020-01-27 14:39:38', '<p class=\"p1\"><strong><span class=\"s1\"><a href=\"https://ronnowskaskolan.helsingborg.se/program/restaurang-livsmedel/\">Rönnowska skolan</a> in Helsingborg with 80% practice, 2016 - 2017.</span></strong></p>\r\n<p class=\"p1\">1 year education.</p>\r\nLearned a lot such as baking bread, wheat, pastry along with things such as cookies and cake.', 'BAKER & PASTRY MAKER', '', 'publish', 'closed', 'closed', '', 'professional-summary', '', '', '2020-02-19 18:47:46', '2020-02-19 18:47:46', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?post_type=resume&#038;p=212', 0, 'resume', '', 0),
-(213, 1, '2020-01-27 14:39:38', '2020-01-27 14:39:38', '', 'Professional Summary', '', 'inherit', 'closed', 'closed', '', '212-revision-v1', '', '', '2020-01-27 14:39:38', '2020-01-27 14:39:38', '', 212, 'http://localhost:8888/Avvy_Portfolio20/212-revision-v1/', 0, 'revision', '', 0),
 (214, 1, '2020-02-19 18:47:12', '2020-02-19 18:47:12', '<p class=\"p1\"><strong><span class=\"s1\"><a href=\"https://ronnowskaskolan.helsingborg.se/program/restaurang-livsmedel/\">Rönnowska skolan</a> in Helsingborg with 80% practice, 2016 - 2017.</span></strong></p>\n<p class=\"p1\">1 year education.</p>\nDär jag lärde mig massor, såsom att baka bröd/vete/wiener och inom konditoridelen är det allt från småkakor och kondisbitar till tårtor.\n\nLearned a lot such as baking bread, wheat, pastry along with thigns such as cookies, cake and', 'BAKER & PASTRY MAKER', '', 'inherit', 'closed', 'closed', '', '212-autosave-v1', '', '', '2020-02-19 18:47:12', '2020-02-19 18:47:12', '', 212, 'http://localhost:8888/Avvy_Portfolio20/212-autosave-v1/', 0, 'revision', '', 0),
 (215, 1, '2020-01-27 14:52:50', '2020-01-27 14:52:50', '<p class=\"p1\"><span class=\"s1\">Jag är en glad och arbetsam tjej som heter Radoslava(men kallas Avvy). Just nu jag läser till Front-end utvecklare på EC utbildning i Helsingborg som är snart till sin slut i slutet av Maj. Jag söker ett företag där jag kan fortsätta att utveckla mina färdigheter. Det kan vara ni, det intressanta företag som kan passa mig. </span></p>\r\n<p class=\"p1\"><span class=\"s1\">Jag är en väldigt serviceinriktad person och trivs som bäst när jag får jobba med människor. </span></p>\r\n<p class=\"p1\"><span class=\"s1\">Jag har arbetat till stor del som servitris, då hade jag mycket ansvar, både över mig själv och andra vilket passar mig bra.</span></p>\r\n<p class=\"p1\"><span class=\"s1\">Som person är jag väldigt ambitiös och har en stark vilja att utvecklas och röra mig framåt. Jag arbetar strukturerat och noggrant, är stresstålig och gillar att jobba i team. Jag tycker om språk och talar flytande Bulgariska(modersmål),</span><span class=\"s1\"> Svenska, Spanska, Rumänska och även hyfsad Engelska.</span></p>', 'Professional Summary', '', 'inherit', 'closed', 'closed', '', '212-revision-v1', '', '', '2020-01-27 14:52:50', '2020-01-27 14:52:50', '', 212, 'http://localhost:8888/Avvy_Portfolio20/212-revision-v1/', 0, 'revision', '', 0),
-(216, 1, '2020-01-27 17:18:24', '2020-01-27 17:18:24', '<strong><span class=\"s1\"><a href=\"https://www.google.com/search?q=b%C3%B6rjes%20konditori&amp;oq=b%C3%B6rjes+kon&amp;aqs=chrome.0.0j69i57j0l2j69i61l2.9430j0j4&amp;sourceid=chrome&amp;ie=UTF-8&amp;npsic=0&amp;rflfq=1&amp;rlha=0&amp;rllag=56400943,13346090,55003&amp;tbm=lcl&amp;rldimm=6756932183169276581&amp;lqi=ChFiw7ZyamVzIGtvbmRpdG9yaVoVCgAiEWLDtnJqZXMga29uZGl0b3Jp&amp;phdesc=G6s-D9HdPjA&amp;ved=2ahUKEwirgqrLo6TnAhVdxMQBHcPBBBcQvS4wAHoECAwQIA&amp;rldoc=1&amp;tbs=lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:9&amp;rlst=f#rlfi=hd:;si:6756932183169276581,l,ChFiw7ZyamVzIGtvbmRpdG9yaVoVCgAiEWLDtnJqZXMga29uZGl0b3Jp,y,G6s-D9HdPjA;mv:[[56.781713599999996,14.074227599999999],[56.0201728,12.6179531]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:9\">Börjes Konditori</a>, Helsingborg - part time employee, January 2017- present.</span></strong>\r\n\r\nStarted as a baker but have mostly worked in the store as a seller lately. I love to bake and meed the customers there.\r\n\r\n&nbsp;', 'BAKER', '', 'publish', 'closed', 'closed', '', 'employment-history', '', '', '2020-02-19 18:26:35', '2020-02-19 18:26:35', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?post_type=resume&#038;p=216', 0, 'resume', '', 0),
+(216, 1, '2020-01-27 17:18:24', '2020-01-27 17:18:24', '<strong><span class=\"s1\"><a href=\"https://www.google.com/search?q=b%C3%B6rjes%20konditori&amp;oq=b%C3%B6rjes+kon&amp;aqs=chrome.0.0j69i57j0l2j69i61l2.9430j0j4&amp;sourceid=chrome&amp;ie=UTF-8&amp;npsic=0&amp;rflfq=1&amp;rlha=0&amp;rllag=56400943,13346090,55003&amp;tbm=lcl&amp;rldimm=6756932183169276581&amp;lqi=ChFiw7ZyamVzIGtvbmRpdG9yaVoVCgAiEWLDtnJqZXMga29uZGl0b3Jp&amp;phdesc=G6s-D9HdPjA&amp;ved=2ahUKEwirgqrLo6TnAhVdxMQBHcPBBBcQvS4wAHoECAwQIA&amp;rldoc=1&amp;tbs=lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:9&amp;rlst=f#rlfi=hd:;si:6756932183169276581,l,ChFiw7ZyamVzIGtvbmRpdG9yaVoVCgAiEWLDtnJqZXMga29uZGl0b3Jp,y,G6s-D9HdPjA;mv:[[56.781713599999996,14.074227599999999],[56.0201728,12.6179531]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:9\">Börjes Konditori</a>, Helsingborg - part time employee, January 2017- present.</span></strong>\r\n\r\nStarted as a baker but have mostly worked in the store as a seller lately. I love to bake and meed the customers there.\r\n\r\n&nbsp;', 'BAKER', '', 'publish', 'closed', 'closed', '', 'employment-history', '', '', '2020-02-19 18:26:35', '2020-02-19 18:26:35', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?post_type=resume&#038;p=216', 2, 'resume', '', 0),
 (217, 1, '2020-01-27 17:18:24', '2020-01-27 17:18:24', '<h3>FRONT-END DEVELOPER</h3>\r\n<ul>\r\n 	<li><span class=\"s1\"><b> </b><strong>Praktik på <a href=\"https://www.crealevant.se/\">Crealevant AB,</a> i Helsingborg, September - December 2019.</strong></span></li>\r\n</ul>\r\n<p class=\"p1\"><span class=\"s1\">          Arbetade med Magento2-baserade webbshoppar.</span></p>\r\n\r\n<h3><span class=\"s1\">Bagare-Konditor</span></h3>\r\n<ul>\r\n 	<li><strong><span class=\"s1\"><a href=\"https://www.google.com/search?q=b%C3%B6rjes%20konditori&amp;oq=b%C3%B6rjes+kon&amp;aqs=chrome.0.0j69i57j0l2j69i61l2.9430j0j4&amp;sourceid=chrome&amp;ie=UTF-8&amp;npsic=0&amp;rflfq=1&amp;rlha=0&amp;rllag=56400943,13346090,55003&amp;tbm=lcl&amp;rldimm=6756932183169276581&amp;lqi=ChFiw7ZyamVzIGtvbmRpdG9yaVoVCgAiEWLDtnJqZXMga29uZGl0b3Jp&amp;phdesc=G6s-D9HdPjA&amp;ved=2ahUKEwirgqrLo6TnAhVdxMQBHcPBBBcQvS4wAHoECAwQIA&amp;rldoc=1&amp;tbs=lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:9&amp;rlst=f#rlfi=hd:;si:6756932183169276581,l,ChFiw7ZyamVzIGtvbmRpdG9yaVoVCgAiEWLDtnJqZXMga29uZGl0b3Jp,y,G6s-D9HdPjA;mv:[[56.781713599999996,14.074227599999999],[56.0201728,12.6179531]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:9\">Börjes Konditori</a>, Helsingborg - behovsanställd, January 2017- Precent.</span></strong></li>\r\n</ul>\r\n<p class=\"p1\"></p>\r\n<p class=\"p1\"></p>\r\n\r\n<h3></h3>\r\n&nbsp;', 'Employment History', '', 'inherit', 'closed', 'closed', '', '216-revision-v1', '', '', '2020-01-27 17:18:24', '2020-01-27 17:18:24', '', 216, 'http://localhost:8888/Avvy_Portfolio20/216-revision-v1/', 0, 'revision', '', 0),
 (218, 1, '2020-01-27 17:24:11', '2020-01-27 17:24:11', '<h3>FRONT-END DEVELOPER</h3>\r\n<ul>\r\n 	<li><span class=\"s1\"><b> </b><strong>Praktik på <a href=\"https://www.crealevant.se/\">Crealevant AB,</a> i Helsingborg, September - December 2019.</strong></span></li>\r\n</ul>\r\n<p class=\"p1\"><span class=\"s1\">          Arbetade med Magento2-baserade webbshoppar.</span></p>\r\n\r\n<h3><span class=\"s1\">Bagare-Konditor</span></h3>\r\n<ul>\r\n 	<li><strong><span class=\"s1\"><a href=\"https://www.google.com/search?q=b%C3%B6rjes%20konditori&amp;oq=b%C3%B6rjes+kon&amp;aqs=chrome.0.0j69i57j0l2j69i61l2.9430j0j4&amp;sourceid=chrome&amp;ie=UTF-8&amp;npsic=0&amp;rflfq=1&amp;rlha=0&amp;rllag=56400943,13346090,55003&amp;tbm=lcl&amp;rldimm=6756932183169276581&amp;lqi=ChFiw7ZyamVzIGtvbmRpdG9yaVoVCgAiEWLDtnJqZXMga29uZGl0b3Jp&amp;phdesc=G6s-D9HdPjA&amp;ved=2ahUKEwirgqrLo6TnAhVdxMQBHcPBBBcQvS4wAHoECAwQIA&amp;rldoc=1&amp;tbs=lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:9&amp;rlst=f#rlfi=hd:;si:6756932183169276581,l,ChFiw7ZyamVzIGtvbmRpdG9yaVoVCgAiEWLDtnJqZXMga29uZGl0b3Jp,y,G6s-D9HdPjA;mv:[[56.781713599999996,14.074227599999999],[56.0201728,12.6179531]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:9\">Börjes Konditori</a>, Helsingborg - behovsanställd, January 2017- Precent.</span></strong></li>\r\n</ul>\r\n<h3></h3>\r\n&nbsp;', 'Employment History', '', 'inherit', 'closed', 'closed', '', '216-revision-v1', '', '', '2020-01-27 17:24:11', '2020-01-27 17:24:11', '', 216, 'http://localhost:8888/Avvy_Portfolio20/216-revision-v1/', 0, 'revision', '', 0),
-(219, 1, '2020-01-27 17:28:47', '0000-00-00 00:00:00', ' ', '', '', 'draft', 'closed', 'closed', '', '', '', '', '2020-01-27 17:28:47', '0000-00-00 00:00:00', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?p=219', 1, 'nav_menu_item', '', 0),
-(220, 1, '2020-01-27 17:28:47', '0000-00-00 00:00:00', ' ', '', '', 'draft', 'closed', 'closed', '', '', '', '', '2020-01-27 17:28:47', '0000-00-00 00:00:00', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?p=220', 1, 'nav_menu_item', '', 0),
-(223, 1, '2020-01-27 19:27:26', '2020-01-27 19:27:26', '<span class=\"s1\"><strong>Internship at <a href=\"https://www.crealevant.se/\">Crealevant AB,</a> in Helsingborg, </strong></span><span class=\"s1\"><strong>Sweden</strong></span>\r\n\r\n<span class=\"s1\"><strong> September - December 2019.</strong></span>\r\n\r\nWorked with developing web shops with Magento2.', 'FRONT-END DEVELOPER', '', 'publish', 'closed', 'closed', '', 'crealevant-ab', '', '', '2020-02-19 18:21:50', '2020-02-19 18:21:50', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?post_type=resume&#038;p=223', 0, 'resume', '', 0),
+(223, 1, '2020-01-27 19:27:26', '2020-01-27 19:27:26', '<span class=\"s1\"><strong>Internship at <a href=\"https://www.crealevant.se/\">Crealevant AB,</a> in Helsingborg, </strong></span><span class=\"s1\"><strong>Sweden</strong></span>\r\n\r\n<span class=\"s1\"><strong> September - December 2019.</strong></span>\r\n\r\nWorked with developing web shops with Magento2.', 'FRONT-END DEVELOPER', '', 'publish', 'closed', 'closed', '', 'crealevant-ab', '', '', '2020-02-19 18:21:50', '2020-02-19 18:21:50', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?post_type=resume&#038;p=223', 1, 'resume', '', 0),
 (224, 1, '2020-01-27 19:27:26', '2020-01-27 19:27:26', 'Text', 'Crealevant AB', '', 'inherit', 'closed', 'closed', '', '223-revision-v1', '', '', '2020-01-27 19:27:26', '2020-01-27 19:27:26', '', 223, 'http://localhost:8888/Avvy_Portfolio20/223-revision-v1/', 0, 'revision', '', 0),
 (225, 1, '2020-01-27 19:31:18', '2020-01-27 19:31:18', '<strong><a href=\"http://www.ecutbildning.se/utbildningar/frontend-utvecklare/\">EC Utbildning</a> in Helsingborg, </strong>\r\n\r\n<strong>September 2018 - May 2020 Present.</strong>\r\n\r\nProfessional school 2 years.\r\n\r\nLearned to create complete web solutions from scratch. A big part of the education has been focusing on React.js, HTML5, CSS3, CMS and version control in GitHub. I also learned to work with design, user experience and backend with nodejs.', 'FRONT-END DEVELOPER', '', 'publish', 'closed', 'closed', '', 'ec-utbildning', '', '', '2020-02-19 18:40:32', '2020-02-19 18:40:32', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?post_type=resume&#038;p=225', 0, 'resume', '', 0),
 (226, 1, '2020-01-27 19:31:18', '2020-01-27 19:31:18', 'Text', 'EC Utbildning', '', 'inherit', 'closed', 'closed', '', '225-revision-v1', '', '', '2020-01-27 19:31:18', '2020-01-27 19:31:18', '', 225, 'http://localhost:8888/Avvy_Portfolio20/225-revision-v1/', 0, 'revision', '', 0),
@@ -6117,9 +7133,9 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (242, 1, '2020-02-19 18:25:36', '2020-02-19 18:25:36', '<strong><span class=\"s1\"><a href=\"https://www.google.com/search?q=b%C3%B6rjes%20konditori&amp;oq=b%C3%B6rjes+kon&amp;aqs=chrome.0.0j69i57j0l2j69i61l2.9430j0j4&amp;sourceid=chrome&amp;ie=UTF-8&amp;npsic=0&amp;rflfq=1&amp;rlha=0&amp;rllag=56400943,13346090,55003&amp;tbm=lcl&amp;rldimm=6756932183169276581&amp;lqi=ChFiw7ZyamVzIGtvbmRpdG9yaVoVCgAiEWLDtnJqZXMga29uZGl0b3Jp&amp;phdesc=G6s-D9HdPjA&amp;ved=2ahUKEwirgqrLo6TnAhVdxMQBHcPBBBcQvS4wAHoECAwQIA&amp;rldoc=1&amp;tbs=lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:9&amp;rlst=f#rlfi=hd:;si:6756932183169276581,l,ChFiw7ZyamVzIGtvbmRpdG9yaVoVCgAiEWLDtnJqZXMga29uZGl0b3Jp,y,G6s-D9HdPjA;mv:[[56.781713599999996,14.074227599999999],[56.0201728,12.6179531]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:9\">Börjes Konditori</a>, Helsingborg - part time employee, January 2017- present.</span></strong>\n\nJag startade som bagare-konditor men, nu jobbar jag tom i affären med kassan. Jag älskar baka samt träffa kunder.\n\nStarted as a baker but have but have mostly . I love to bake and meed the customers there.\n\n&nbsp;', 'BAKER', '', 'inherit', 'closed', 'closed', '', '216-autosave-v1', '', '', '2020-02-19 18:25:36', '2020-02-19 18:25:36', '', 216, 'http://localhost:8888/Avvy_Portfolio20/216-autosave-v1/', 0, 'revision', '', 0),
 (243, 1, '2020-01-28 13:31:57', '2020-01-28 13:31:57', '<strong><span class=\"s1\"><a href=\"https://www.google.com/search?q=b%C3%B6rjes%20konditori&amp;oq=b%C3%B6rjes+kon&amp;aqs=chrome.0.0j69i57j0l2j69i61l2.9430j0j4&amp;sourceid=chrome&amp;ie=UTF-8&amp;npsic=0&amp;rflfq=1&amp;rlha=0&amp;rllag=56400943,13346090,55003&amp;tbm=lcl&amp;rldimm=6756932183169276581&amp;lqi=ChFiw7ZyamVzIGtvbmRpdG9yaVoVCgAiEWLDtnJqZXMga29uZGl0b3Jp&amp;phdesc=G6s-D9HdPjA&amp;ved=2ahUKEwirgqrLo6TnAhVdxMQBHcPBBBcQvS4wAHoECAwQIA&amp;rldoc=1&amp;tbs=lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:9&amp;rlst=f#rlfi=hd:;si:6756932183169276581,l,ChFiw7ZyamVzIGtvbmRpdG9yaVoVCgAiEWLDtnJqZXMga29uZGl0b3Jp,y,G6s-D9HdPjA;mv:[[56.781713599999996,14.074227599999999],[56.0201728,12.6179531]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:9\">Börjes Konditori</a>, Helsingborg - behovsanställd, January 2017- Precent.</span></strong>\r\n\r\nJag startade som bagare-konditor men, nu jobbar jag tom i affären med kassan. Jag älskar baka samt träffa kunder.\r\n<h3></h3>\r\n&nbsp;', 'Bagare-Konditor', '', 'inherit', 'closed', 'closed', '', '216-revision-v1', '', '', '2020-01-28 13:31:57', '2020-01-28 13:31:57', '', 216, 'http://localhost:8888/Avvy_Portfolio20/216-revision-v1/', 0, 'revision', '', 0),
 (244, 1, '2020-01-30 11:28:25', '2020-01-30 11:28:25', '<p class=\"p1\"><strong><span class=\"s1\"><a href=\"https://ronnowskaskolan.helsingborg.se/program/restaurang-livsmedel/\">Rönnowska skolan</a> i Helsingborg med 80% praktik, 2016 - 2017.</span></strong></p>\r\n<p class=\"p1\">Vuxensutbildning 1år.</p>\r\nDär jag lärde mig massor, såsom att baka bröd/vete/wiener och inom konditoridelen är det allt från småkakor och kondisbitar till tårtor.', 'Bagare-Konditor', '', 'inherit', 'closed', 'closed', '', '212-revision-v1', '', '', '2020-01-30 11:28:25', '2020-01-30 11:28:25', '', 212, 'http://localhost:8888/Avvy_Portfolio20/212-revision-v1/', 0, 'revision', '', 0),
-(245, 1, '2020-01-30 11:48:32', '2020-01-30 11:48:32', '<strong>Languages Swedish, English &amp; Bulgarian.</strong>\r\n\r\n&nbsp;\r\n\r\n<strong><a href=\"https://www.facebook.com/pages/%D0%9E%D0%A3-%D0%A5%D1%80%D0%B8%D1%81%D1%82%D0%BE-%D0%A1%D0%BC%D0%B8%D1%80%D0%BD%D0%B5%D0%BD%D1%81%D0%BA%D0%B8-%D0%B3%D1%80%D0%A7%D0%B5%D1%80%D0%B2%D0%B5%D0%BD-%D0%B1%D1%80%D1%8F%D0%B3/291425467634100\">ОУ \'\'Христо Смирненски\'\'</a></strong> in Bulgaria, 1990 - 1998.\r\n\r\n<strong><a href=\"https://www.landskrona.se/vux/kurser--utbildningar/svenska/\">Swedish</a> </strong> Komvux in Landskrona, Sweden, 2012.\r\n\r\n<strong><a href=\"https://www.landskrona.se/vux/kurser--utbildningar/engelska/\">English</a></strong>  in Landskrona, Sweden, 2015.\r\n\r\n&nbsp;', 'ELEMENTARY SCHOOL', '', 'publish', 'closed', 'closed', '', 'languages-sv-eng', '', '', '2020-02-19 18:33:23', '2020-02-19 18:33:23', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?post_type=resume&#038;p=245', 0, 'resume', '', 0),
+(245, 1, '2020-01-30 11:48:32', '2020-01-30 11:48:32', '<strong>Languages Swedish, English &amp; Bulgarian.</strong>\r\n\r\n&nbsp;\r\n\r\n<strong><a href=\"https://www.facebook.com/pages/%D0%9E%D0%A3-%D0%A5%D1%80%D0%B8%D1%81%D1%82%D0%BE-%D0%A1%D0%BC%D0%B8%D1%80%D0%BD%D0%B5%D0%BD%D1%81%D0%BA%D0%B8-%D0%B3%D1%80%D0%A7%D0%B5%D1%80%D0%B2%D0%B5%D0%BD-%D0%B1%D1%80%D1%8F%D0%B3/291425467634100\">ОУ \'\'Христо Смирненски\'\'</a></strong> in Bulgaria, 1990 - 1998.\r\n\r\n<strong><a href=\"https://www.landskrona.se/vux/kurser--utbildningar/svenska/\">Swedish</a> </strong> Komvux in Landskrona, Sweden, 2012.\r\n\r\n<strong><a href=\"https://www.landskrona.se/vux/kurser--utbildningar/engelska/\">English</a></strong>  in Landskrona, Sweden, 2015.\r\n\r\n&nbsp;', 'ELEMENTARY SCHOOL', '', 'publish', 'closed', 'closed', '', 'languages-sv-eng', '', '', '2020-02-19 18:33:23', '2020-02-19 18:33:23', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?post_type=resume&#038;p=245', 9, 'resume', '', 0),
 (246, 1, '2020-01-30 11:48:32', '2020-01-30 11:48:32', '<strong>Grundläggande kunskaper.</strong>\r\n\r\n&nbsp;\r\n<ul>\r\n 	<li><a href=\"https://www.landskrona.se/sfi---svenska-for-invandrare/\">S</a><a href=\"https://www.landskrona.se/sfi---svenska-for-invandrare/\">FI</a> - Svenska för invandrare i Landskrona, Sweden, 2012.</li>\r\n 	<li><a href=\"https://www.landskrona.se/vux/kurser--utbildningar/engelska/\">Engelska</a>  i Landskrona, Sweden, 2015.</li>\r\n</ul>\r\n&nbsp;', 'Languages SV & Eng', '', 'inherit', 'closed', 'closed', '', '245-revision-v1', '', '', '2020-01-30 11:48:32', '2020-01-30 11:48:32', '', 245, 'http://localhost:8888/Avvy_Portfolio20/245-revision-v1/', 0, 'revision', '', 0),
-(247, 1, '2020-01-30 12:07:04', '2020-01-30 12:07:04', '<span class=\"s1\"><strong>Chef and Waitress.</strong></span>\r\n<p class=\"p1\"><span class=\"s1\"><a href=\"https://pght-ugagarin-cherven-bryag.business.site/\"><span class=\"hero__title-content CoIOBe nbOMh\" data-field=\"headline\">ПГХТ “Юрий Гагарин”</span></a> - Chef and Waitress</span><span class=\"s1\"> in Bulgaria, </span><span class=\"s1\">1998 - 2001.</span></p>\r\n<strong><a href=\"https://www.hermods.se/utbildningar-tjanster/gymnasial-vuxenutbildning/svenska-som-andrasprak-3/\">Swedish</a> </strong>at Hermods distance, Sweden, 2014.', 'HIGH SCHOOL', '', 'publish', 'closed', 'closed', '', 'kock-servitris-sv', '', '', '2020-02-19 18:30:52', '2020-02-19 18:30:52', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?post_type=resume&#038;p=247', 0, 'resume', '', 0),
+(247, 1, '2020-01-30 12:07:04', '2020-01-30 12:07:04', '<span class=\"s1\"><strong>Chef and Waitress.</strong></span>\r\n<p class=\"p1\"><span class=\"s1\"><a href=\"https://pght-ugagarin-cherven-bryag.business.site/\"><span class=\"hero__title-content CoIOBe nbOMh\" data-field=\"headline\">ПГХТ “Юрий Гагарин”</span></a> - Chef and Waitress</span><span class=\"s1\"> in Bulgaria, </span><span class=\"s1\">1998 - 2001.</span></p>\r\n<strong><a href=\"https://www.hermods.se/utbildningar-tjanster/gymnasial-vuxenutbildning/svenska-som-andrasprak-3/\">Swedish</a> </strong>at Hermods distance, Sweden, 2014.', 'HIGH SCHOOL', '', 'publish', 'closed', 'closed', '', 'kock-servitris-sv', '', '', '2020-02-19 18:30:52', '2020-02-19 18:30:52', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?post_type=resume&#038;p=247', 8, 'resume', '', 0),
 (248, 1, '2020-01-30 12:07:04', '2020-01-30 12:07:04', '<strong>High school.</strong>\r\n\r\n&nbsp;\r\n<ul>\r\n 	<li>\r\n<p class=\"p1\"><span class=\"s1\"><a href=\"http://schools.guide-bulgaria.com/a/2529/yuriy_gagarin_high_school.htm\">Yuriy Gagarin</a> - Kock och servitris i</span><span class=\"s1\"> Bulgarien, </span><span class=\"s1\">1998 - 2001.</span></p>\r\n</li>\r\n 	<li><a href=\"https://www.landskrona.se/vux/kurser--utbildningar/svenska/\">Svenska språk</a> i  Komvux i Landskrona, Sweden, 2014.</li>\r\n</ul>', 'Kock - servitris & Sv', '', 'inherit', 'closed', 'closed', '', '247-revision-v1', '', '', '2020-01-30 12:07:04', '2020-01-30 12:07:04', '', 247, 'http://localhost:8888/Avvy_Portfolio20/247-revision-v1/', 0, 'revision', '', 0),
 (249, 1, '2020-02-19 18:33:17', '2020-02-19 18:33:17', '<strong>Languages Swedish, English &amp; Bulgarian.</strong>\n\n&nbsp;\n\n<strong><a href=\"https://www.facebook.com/pages/%D0%9E%D0%A3-%D0%A5%D1%80%D0%B8%D1%81%D1%82%D0%BE-%D0%A1%D0%BC%D0%B8%D1%80%D0%BD%D0%B5%D0%BD%D1%81%D0%BA%D0%B8-%D0%B3%D1%80%D0%A7%D0%B5%D1%80%D0%B2%D0%B5%D0%BD-%D0%B1%D1%80%D1%8F%D0%B3/291425467634100\">ОУ \'\'Христо Смирненски\'\'</a></strong> in Bulgaria, 1990 - 1998.\n\n<strong><a href=\"https://www.landskrona.se/vux/kurser--utbildningar/svenska/\">Swedish</a> </strong> Komvux in Landskrona, Sweden, 2012.\n\n<strong><a href=\"https://www.landskrona.se/vux/kurser--utbildningar/engelska/\">E</a></strong>  in Landskrona, Sweden, 2015.\n\n&nbsp;', 'ELEMENTARY SCHOOL', '', 'inherit', 'closed', 'closed', '', '245-autosave-v1', '', '', '2020-02-19 18:33:17', '2020-02-19 18:33:17', '', 245, 'http://localhost:8888/Avvy_Portfolio20/245-autosave-v1/', 0, 'revision', '', 0),
 (250, 1, '2020-01-30 12:32:14', '2020-01-30 12:32:14', '<strong>Languages Swedish, English &amp; Bulgarian.</strong>\r\n<ul>\r\n 	<li><a href=\"https://www.facebook.com/pages/%D0%9E%D0%A3-%D0%A5%D1%80%D0%B8%D1%81%D1%82%D0%BE-%D0%A1%D0%BC%D0%B8%D1%80%D0%BD%D0%B5%D0%BD%D1%81%D0%BA%D0%B8-%D0%B3%D1%80%D0%A7%D0%B5%D1%80%D0%B2%D0%B5%D0%BD-%D0%B1%D1%80%D1%8F%D0%B3/291425467634100\">ОУ \'\'Христо Смирненски\'\'</a> i Bulgaria, 1991 - 1999.</li>\r\n 	<li><a href=\"https://www.landskrona.se/sfi---svenska-for-invandrare/\">S</a><a href=\"https://www.landskrona.se/sfi---svenska-for-invandrare/\">FI</a> - Svenska för invandrare i Landskrona, Sweden, 2012.</li>\r\n 	<li><a href=\"https://www.landskrona.se/vux/kurser--utbildningar/engelska/\">Engelska</a>  i Landskrona, Sweden, 2015.</li>\r\n</ul>\r\n&nbsp;', 'Secondary School', '', 'inherit', 'closed', 'closed', '', '245-revision-v1', '', '', '2020-01-30 12:32:14', '2020-01-30 12:32:14', '', 245, 'http://localhost:8888/Avvy_Portfolio20/245-revision-v1/', 0, 'revision', '', 0),
@@ -6133,27 +7149,27 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (258, 1, '2020-01-30 13:00:31', '2020-01-30 13:00:31', '<span class=\"s1\"><strong>Kock och servitris.</strong></span>\r\n\r\n&nbsp;\r\n<p class=\"p1\"><span class=\"s1\"><a href=\"https://pght-ugagarin-cherven-bryag.business.site/\"><span class=\"hero__title-content CoIOBe nbOMh\" data-field=\"headline\">ПГХТ “Юрий Гагарин”</span></a> - Kock och servitris i</span><span class=\"s1\"> Bulgarien, </span><span class=\"s1\">1998 - 2001.</span></p>\r\n<a href=\"https://www.hermods.se/utbildningar-tjanster/gymnasial-vuxenutbildning/svenska-som-andrasprak-3/\">Swedish</a> with Hermods distans, Sweden, 2014.', 'High school', '', 'inherit', 'closed', 'closed', '', '247-revision-v1', '', '', '2020-01-30 13:00:31', '2020-01-30 13:00:31', '', 247, 'http://localhost:8888/Avvy_Portfolio20/247-revision-v1/', 0, 'revision', '', 0),
 (259, 1, '2020-01-30 13:00:55', '2020-01-30 13:00:55', '<strong>Languages Swedish, English &amp; Bulgarian.</strong>\r\n\r\n&nbsp;\r\n\r\n<a href=\"https://www.facebook.com/pages/%D0%9E%D0%A3-%D0%A5%D1%80%D0%B8%D1%81%D1%82%D0%BE-%D0%A1%D0%BC%D0%B8%D1%80%D0%BD%D0%B5%D0%BD%D1%81%D0%BA%D0%B8-%D0%B3%D1%80%D0%A7%D0%B5%D1%80%D0%B2%D0%B5%D0%BD-%D0%B1%D1%80%D1%8F%D0%B3/291425467634100\">ОУ \'\'Христо Смирненски\'\'</a> i Bulgaria, 1990 - 1998.\r\n\r\n<a href=\"https://www.landskrona.se/sfi---svenska-for-invandrare/\">S</a><a href=\"https://www.landskrona.se/sfi---svenska-for-invandrare/\">FI</a> - Svenska för invandrare i Landskrona, Sweden, 2012.\r\n\r\n<a href=\"https://www.landskrona.se/vux/kurser--utbildningar/engelska/\">Engelska</a>  i Landskrona, Sweden, 2015.\r\n\r\n&nbsp;', 'Secondary School', '', 'inherit', 'closed', 'closed', '', '245-revision-v1', '', '', '2020-01-30 13:00:55', '2020-01-30 13:00:55', '', 245, 'http://localhost:8888/Avvy_Portfolio20/245-revision-v1/', 0, 'revision', '', 0),
 (260, 1, '2020-01-30 13:05:47', '2020-01-30 13:05:47', '<strong>Languages Swedish, English &amp; Bulgarian.</strong>\r\n\r\n&nbsp;\r\n\r\n<a href=\"https://www.facebook.com/pages/%D0%9E%D0%A3-%D0%A5%D1%80%D0%B8%D1%81%D1%82%D0%BE-%D0%A1%D0%BC%D0%B8%D1%80%D0%BD%D0%B5%D0%BD%D1%81%D0%BA%D0%B8-%D0%B3%D1%80%D0%A7%D0%B5%D1%80%D0%B2%D0%B5%D0%BD-%D0%B1%D1%80%D1%8F%D0%B3/291425467634100\">ОУ \'\'Христо Смирненски\'\'</a> i Bulgaria, 1990 - 1998.\r\n\r\n<a href=\"https://www.landskrona.se/vux/kurser--utbildningar/svenska/\">Swedish</a>  Komvux i Landskrona, Sweden, 2012.\r\n\r\n<a href=\"https://www.landskrona.se/vux/kurser--utbildningar/engelska/\">Engelska</a>  i Landskrona, Sweden, 2015.\r\n\r\n&nbsp;', 'Secondary School', '', 'inherit', 'closed', 'closed', '', '245-revision-v1', '', '', '2020-01-30 13:05:47', '2020-01-30 13:05:47', '', 245, 'http://localhost:8888/Avvy_Portfolio20/245-revision-v1/', 0, 'revision', '', 0),
-(262, 1, '2020-01-30 13:29:16', '2020-01-30 13:29:16', '<p class=\"p1\"><strong><span class=\"s1\"><a href=\"https://www.sydsvenskan.se/2017-12-19/tidningsbararna-styckas-upp-i-tre-verksamheter\">Tidningsbärarna</a>, now named <a href=\"https://nimdistribution.se/\">Nim distribution</a> </span></strong></p>\r\n<p class=\"p1\"><strong><span class=\"s1\">in Landskrona &amp; Helsingborg, </span></strong><strong><span class=\"s1\">Sweden 2012 - 2018.</span></strong></p>\r\nNight shift. Newspaper distribution with car in different districts in Landskrona and Helsingborg.', 'NEWS PAPER DISTRIBUTOR', '', 'publish', 'closed', 'closed', '', 'tidningsbud', '', '', '2020-02-19 18:19:10', '2020-02-19 18:19:10', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?post_type=resume&#038;p=262', 0, 'resume', '', 0),
+(262, 1, '2020-01-30 13:29:16', '2020-01-30 13:29:16', '<p class=\"p1\"><strong><span class=\"s1\"><a href=\"https://www.sydsvenskan.se/2017-12-19/tidningsbararna-styckas-upp-i-tre-verksamheter\">Tidningsbärarna</a>, now named <a href=\"https://nimdistribution.se/\">Nim distribution</a> </span></strong></p>\r\n<p class=\"p1\"><strong><span class=\"s1\">in Landskrona &amp; Helsingborg, </span></strong><strong><span class=\"s1\">Sweden 2012 - 2018.</span></strong></p>\r\nNight shift. Newspaper distribution with car in different districts in Landskrona and Helsingborg.', 'NEWS PAPER DISTRIBUTOR', '', 'publish', 'closed', 'closed', '', 'tidningsbud', '', '', '2020-02-19 18:19:10', '2020-02-19 18:19:10', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?post_type=resume&#038;p=262', 3, 'resume', '', 0),
 (263, 1, '2020-01-30 13:29:16', '2020-01-30 13:29:16', '<p class=\"p1\"><strong><span class=\"s1\"><a href=\"https://www.sydsvenskan.se/2017-12-19/tidningsbararna-styckas-upp-i-tre-verksamheter\">Tidningsbärarna</a> ,som nu heter <a href=\"https://nimdistribution.se/\">Nim distribution</a> i Landskrona &amp; Helsingborg, 2012 - 2018.</span></strong></p>\r\nNatt, bil distribution i olika byn distrikt i Landskrona kommun samt Helsingborgskommun.', 'Tidningsbud', '', 'inherit', 'closed', 'closed', '', '262-revision-v1', '', '', '2020-01-30 13:29:16', '2020-01-30 13:29:16', '', 262, 'http://localhost:8888/Avvy_Portfolio20/262-revision-v1/', 0, 'revision', '', 0),
 (264, 1, '2020-01-30 13:31:17', '2020-01-30 13:31:17', '<p class=\"p1\"><strong><span class=\"s1\"><a href=\"https://www.sydsvenskan.se/2017-12-19/tidningsbararna-styckas-upp-i-tre-verksamheter\">Tidningsbärarna</a>, som nu heter <a href=\"https://nimdistribution.se/\">Nim distribution</a> i Landskrona &amp; Helsingborg, 2012 - 2018.</span></strong></p>\r\nNatt, bil distribution i olika byn distrikt i Landskrona kommun samt Helsingborgskommun.', 'Tidningsbud', '', 'inherit', 'closed', 'closed', '', '262-revision-v1', '', '', '2020-01-30 13:31:17', '2020-01-30 13:31:17', '', 262, 'http://localhost:8888/Avvy_Portfolio20/262-revision-v1/', 0, 'revision', '', 0),
-(265, 1, '2020-01-30 13:42:24', '2020-01-30 13:42:24', '<p class=\"p1\"><strong><span class=\"s1\"><a href=\"https://www.facebook.com/CafeteriaBellagio/\">Bellagio sport Bar</a> –  Casino / internet café in </span><span class=\"s1\">Mojacar,<span class=\"Apple-converted-space\"> </span>Almeria, Spain 2009 - 2011.</span></strong></p>\r\nResponsible for local casino with café.\r\n\r\n<strong>Café waitress in Almeria, Spain 2002 - 2011.</strong>', 'WAITRESS WITH STAFF RESPONSIBILITY', '', 'publish', 'closed', 'closed', '', 'servitor-och-ansvarig', '', '', '2020-02-18 19:00:03', '2020-02-18 19:00:03', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?post_type=resume&#038;p=265', 0, 'resume', '', 0),
+(265, 1, '2020-01-30 13:42:24', '2020-01-30 13:42:24', '<p class=\"p1\"><strong><span class=\"s1\"><a href=\"https://www.facebook.com/CafeteriaBellagio/\">Bellagio sport Bar</a> –  Casino / internet café in </span><span class=\"s1\">Mojacar,<span class=\"Apple-converted-space\"> </span>Almeria, Spain 2009 - 2011.</span></strong></p>\r\nResponsible for local casino with café.\r\n\r\n<strong>Café waitress in Almeria, Spain 2002 - 2011.</strong>', 'WAITRESS WITH STAFF RESPONSIBILITY', '', 'publish', 'closed', 'closed', '', 'servitor-och-ansvarig', '', '', '2020-02-18 19:00:03', '2020-02-18 19:00:03', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?post_type=resume&#038;p=265', 4, 'resume', '', 0),
 (266, 1, '2020-01-30 13:42:24', '2020-01-30 13:42:24', '<p class=\"p1\"><strong><span class=\"s1\"><a href=\"https://www.facebook.com/CafeteriaBellagio/\">Bellagio sport Bar</a> –  area wifi och kasino i </span><span class=\"s1\">Mojacar,<span class=\"Apple-converted-space\">  </span>Almeria- Spanien 2009 - 2011.</span></strong></p>\r\n<p class=\"p1\"><span class=\"s1\">Kasino ansvarig därmed cafe med frukost och bakverk avdelningen.</span></p>\r\n<strong>Cafe servitör Almeria, Spanien 2002 - 2011.</strong>', 'Servitör och ansvarig', '', 'inherit', 'closed', 'closed', '', '265-revision-v1', '', '', '2020-01-30 13:42:24', '2020-01-30 13:42:24', '', 265, 'http://localhost:8888/Avvy_Portfolio20/265-revision-v1/', 0, 'revision', '', 0),
 (267, 1, '2020-01-30 13:43:43', '2020-01-30 13:43:43', '<p class=\"p1\"><strong><span class=\"s1\"><a href=\"https://www.sydsvenskan.se/2017-12-19/tidningsbararna-styckas-upp-i-tre-verksamheter\">Tidningsbärarna</a>, som nu heter <a href=\"https://nimdistribution.se/\">Nim distribution</a> i Landskrona &amp; Helsingborg, Sweden 2012 - 2018.</span></strong></p>\r\nNatt, bil distribution i olika byn distrikt i Landskrona kommun samt Helsingborgskommun.', 'Tidningsbud', '', 'inherit', 'closed', 'closed', '', '262-revision-v1', '', '', '2020-01-30 13:43:43', '2020-01-30 13:43:43', '', 262, 'http://localhost:8888/Avvy_Portfolio20/262-revision-v1/', 0, 'revision', '', 0),
 (268, 1, '2020-01-30 13:45:24', '2020-01-30 13:45:24', '<span class=\"s1\"><strong>Praktik på <a href=\"https://www.crealevant.se/\">Crealevant AB,</a> i Helsingborg, Sweden, September - December 2019.</strong></span>\r\n\r\n<span class=\"s1\"> Arbetade med Magento2-baserade webbshoppar.</span>', 'FRONT-END DEVELOPER', '', 'inherit', 'closed', 'closed', '', '223-revision-v1', '', '', '2020-01-30 13:45:24', '2020-01-30 13:45:24', '', 223, 'http://localhost:8888/Avvy_Portfolio20/223-revision-v1/', 0, 'revision', '', 0),
-(269, 1, '2020-01-30 14:24:41', '2020-01-30 14:24:41', '&nbsp;\r\n\r\nHTML5 / CSS3\r\n\r\nJavaScript / React.js\r\n\r\nWordPress / PHP\r\n\r\nMagento2 / PHP\r\n\r\nVersion Control (GIT)\r\n\r\nResponsive Layout and Design\r\n\r\nAgile Methodology', 'COMFORTABLE WITH', '', 'publish', 'closed', 'closed', '', 'daglig-komfort', '', '', '2020-02-19 18:50:33', '2020-02-19 18:50:33', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?post_type=resume&#038;p=269', 0, 'resume', '', 0),
+(269, 1, '2020-01-30 14:24:41', '2020-01-30 14:24:41', '&nbsp;\r\n\r\nHTML5 / CSS3\r\n\r\nJavaScript / React.js\r\n\r\nWordPress / PHP\r\n\r\nMagento2 / PHP\r\n\r\nVersion Control (GIT)\r\n\r\nResponsive Layout and Design\r\n\r\nAgile Methodology', 'COMFORTABLE WITH', '', 'publish', 'closed', 'closed', '', 'daglig-komfort', '', '', '2020-02-19 18:50:33', '2020-02-19 18:50:33', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?post_type=resume&#038;p=269', 7, 'resume', '', 0),
 (270, 1, '2020-01-30 14:24:41', '2020-01-30 14:24:41', '&nbsp;\r\n<ul>\r\n 	<li>HTML5 / CSS3</li>\r\n 	<li>JavaScript / React.js</li>\r\n 	<li>WordPress / PHP</li>\r\n 	<li>Magento2 / PHP</li>\r\n 	<li>Version Control (GIT)</li>\r\n 	<li>Responsive Layout and Design</li>\r\n 	<li>Agile Methodology</li>\r\n</ul>', 'DAGLIG KOMFORT', '', 'inherit', 'closed', 'closed', '', '269-revision-v1', '', '', '2020-01-30 14:24:41', '2020-01-30 14:24:41', '', 269, 'http://localhost:8888/Avvy_Portfolio20/269-revision-v1/', 0, 'revision', '', 0),
 (271, 1, '2020-01-30 14:29:34', '2020-01-30 14:29:34', '&nbsp;\r\n\r\nHTML5 / CSS3\r\n\r\nJavaScript / React.js\r\n\r\nWordPress / PHP\r\n\r\nMagento2 / PHP\r\n\r\nVersion Control (GIT)\r\n\r\nResponsive Layout and Design\r\n\r\nAgile Methodology', 'DAGLIG KOMFORT', '', 'inherit', 'closed', 'closed', '', '269-revision-v1', '', '', '2020-01-30 14:29:34', '2020-01-30 14:29:34', '', 269, 'http://localhost:8888/Avvy_Portfolio20/269-revision-v1/', 0, 'revision', '', 0),
 (272, 1, '2020-01-30 14:30:16', '2020-01-30 14:30:16', 'HTML5 / CSS3\r\n\r\nJavaScript / React.js\r\n\r\nWordPress / PHP\r\n\r\nMagento2 / PHP\r\n\r\nVersion Control (GIT)\r\n\r\nResponsive Layout and Design\r\n\r\nAgile Methodology', 'DAGLIG KOMFORT', '', 'inherit', 'closed', 'closed', '', '269-revision-v1', '', '', '2020-01-30 14:30:16', '2020-01-30 14:30:16', '', 269, 'http://localhost:8888/Avvy_Portfolio20/269-revision-v1/', 0, 'revision', '', 0),
 (273, 1, '2020-01-30 14:30:37', '2020-01-30 14:30:37', '&nbsp;\r\n\r\nHTML5 / CSS3\r\n\r\nJavaScript / React.js\r\n\r\nWordPress / PHP\r\n\r\nMagento2 / PHP\r\n\r\nVersion Control (GIT)\r\n\r\nResponsive Layout and Design\r\n\r\nAgile Methodology', 'DAGLIG KOMFORT', '', 'inherit', 'closed', 'closed', '', '269-revision-v1', '', '', '2020-01-30 14:30:37', '2020-01-30 14:30:37', '', 269, 'http://localhost:8888/Avvy_Portfolio20/269-revision-v1/', 0, 'revision', '', 0),
-(274, 1, '2020-01-30 14:35:54', '2020-01-30 14:35:54', '&nbsp;\r\n\r\nRequireJS\r\n\r\nAJAX\r\n\r\nNode.js (limited)\r\n\r\n<span class=\"s2\">Ux design (limited)</span>\r\n\r\nLess\r\n\r\nBootstrap (limited)\r\n\r\njQuery\r\n\r\n&nbsp;', 'EXPERIENCE', '', 'publish', 'closed', 'closed', '', 'experience', '', '', '2020-02-19 18:51:32', '2020-02-19 18:51:32', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?post_type=resume&#038;p=274', 0, 'resume', '', 0),
-(275, 1, '2020-01-30 14:35:54', '2020-01-30 14:35:54', '&nbsp;\r\n\r\nRequireJS\r\n\r\nAJAX\r\n\r\nNode.js (limited)\r\n\r\nSass\r\n\r\nBootstrap (limited)\r\n\r\njQuery\r\n\r\n&nbsp;', 'EXPERIENCE', '', 'inherit', 'closed', 'closed', '', '274-revision-v1', '', '', '2020-01-30 14:35:54', '2020-01-30 14:35:54', '', 274, 'http://localhost:8888/Avvy_Portfolio20/274-revision-v1/', 0, 'revision', '', 0);
-INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
+(274, 1, '2020-01-30 14:35:54', '2020-01-30 14:35:54', '&nbsp;\r\n\r\nRequireJS\r\n\r\nAJAX\r\n\r\nNode.js (limited)\r\n\r\n<span class=\"s2\">Ux design (limited)</span>\r\n\r\nLess\r\n\r\nBootstrap (limited)\r\n\r\njQuery\r\n\r\n&nbsp;', 'EXPERIENCE', '', 'publish', 'closed', 'closed', '', 'experience', '', '', '2020-02-19 18:51:32', '2020-02-19 18:51:32', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?post_type=resume&#038;p=274', 6, 'resume', '', 0),
+(275, 1, '2020-01-30 14:35:54', '2020-01-30 14:35:54', '&nbsp;\r\n\r\nRequireJS\r\n\r\nAJAX\r\n\r\nNode.js (limited)\r\n\r\nSass\r\n\r\nBootstrap (limited)\r\n\r\njQuery\r\n\r\n&nbsp;', 'EXPERIENCE', '', 'inherit', 'closed', 'closed', '', '274-revision-v1', '', '', '2020-01-30 14:35:54', '2020-01-30 14:35:54', '', 274, 'http://localhost:8888/Avvy_Portfolio20/274-revision-v1/', 0, 'revision', '', 0),
 (276, 1, '2020-01-30 14:43:12', '2020-01-30 14:43:12', 'a:7:{s:4:\"type\";s:5:\"group\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:17:\"conditional_logic\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:6:\"layout\";s:5:\"block\";s:10:\"sub_fields\";a:0:{}}', 'Resume mörkgrå sektion 2', 'resume_dark_gray_section_two', 'publish', 'closed', 'closed', '', 'field_5e32eb2b59072', '', '', '2020-01-30 14:43:12', '2020-01-30 14:43:12', '', 191, 'http://localhost:8888/Avvy_Portfolio20/?post_type=acf-field&p=276', 2, 'acf-field', '', 0),
 (277, 1, '2020-01-30 14:43:12', '2020-01-30 14:43:12', 'a:10:{s:4:\"type\";s:4:\"text\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:17:\"conditional_logic\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:13:\"default_value\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:7:\"prepend\";s:0:\"\";s:6:\"append\";s:0:\"\";s:9:\"maxlength\";s:0:\"\";}', 'Rubrik', 'resume_dark_gray_section_heading', 'publish', 'closed', 'closed', '', 'field_5e32eb2b59073', '', '', '2020-01-30 14:43:12', '2020-01-30 14:43:12', '', 276, 'http://localhost:8888/Avvy_Portfolio20/?post_type=acf-field&p=277', 0, 'acf-field', '', 0),
 (278, 1, '2020-01-30 14:43:12', '2020-01-30 14:43:12', 'a:10:{s:4:\"type\";s:4:\"text\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:17:\"conditional_logic\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:13:\"default_value\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:7:\"prepend\";s:0:\"\";s:6:\"append\";s:0:\"\";s:9:\"maxlength\";s:0:\"\";}', 'Knapptext', 'resume_dark_gray_section_button_text', 'publish', 'closed', 'closed', '', 'field_5e32eb2b59074', '', '', '2020-01-30 14:43:12', '2020-01-30 14:43:12', '', 276, 'http://localhost:8888/Avvy_Portfolio20/?post_type=acf-field&p=278', 1, 'acf-field', '', 0),
 (279, 1, '2020-01-30 14:43:12', '2020-01-30 14:43:12', 'a:10:{s:4:\"type\";s:4:\"text\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:17:\"conditional_logic\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:13:\"default_value\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:7:\"prepend\";s:0:\"\";s:6:\"append\";s:0:\"\";s:9:\"maxlength\";s:0:\"\";}', 'Knapplänk', 'resume_dark_gray_section_button_url', 'publish', 'closed', 'closed', '', 'field_5e32eb2b59075', '', '', '2020-01-30 14:43:12', '2020-01-30 14:43:12', '', 276, 'http://localhost:8888/Avvy_Portfolio20/?post_type=acf-field&p=279', 2, 'acf-field', '', 0),
 (280, 1, '2020-01-30 14:43:12', '2020-01-30 14:43:12', 'a:10:{s:4:\"type\";s:8:\"textarea\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:17:\"conditional_logic\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:13:\"default_value\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:9:\"maxlength\";s:0:\"\";s:4:\"rows\";s:0:\"\";s:9:\"new_lines\";s:0:\"\";}', 'Innehåll', 'resume_dark_gray_section_content', 'publish', 'closed', 'closed', '', 'field_5e32eb2b59076', '', '', '2020-01-30 14:43:12', '2020-01-30 14:43:12', '', 276, 'http://localhost:8888/Avvy_Portfolio20/?post_type=acf-field&p=280', 3, 'acf-field', '', 0),
-(281, 1, '2020-01-30 14:45:01', '2020-01-30 14:45:01', '', 'Resume', '', 'inherit', 'closed', 'closed', '', '51-revision-v1', '', '', '2020-01-30 14:45:01', '2020-01-30 14:45:01', '', 51, 'http://localhost:8888/Avvy_Portfolio20/51-revision-v1/', 0, 'revision', '', 0),
+(281, 1, '2020-01-30 14:45:01', '2020-01-30 14:45:01', '', 'Resume', '', 'inherit', 'closed', 'closed', '', '51-revision-v1', '', '', '2020-01-30 14:45:01', '2020-01-30 14:45:01', '', 51, 'http://localhost:8888/Avvy_Portfolio20/51-revision-v1/', 0, 'revision', '', 0);
+INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
 (282, 1, '2020-01-30 14:46:18', '2020-01-30 14:46:18', '&nbsp;\r\n\r\nRequireJS\r\n\r\nAJAX\r\n\r\nNode.js (limited)\r\n\r\n<span class=\"s2\">Ux design (limited)</span>\r\n\r\nSass\r\n\r\nBootstrap (limited)\r\n\r\njQuery\r\n\r\n&nbsp;', 'EXPERIENCE', '', 'inherit', 'closed', 'closed', '', '274-revision-v1', '', '', '2020-01-30 14:46:18', '2020-01-30 14:46:18', '', 274, 'http://localhost:8888/Avvy_Portfolio20/274-revision-v1/', 0, 'revision', '', 0),
 (283, 1, '2020-01-30 14:53:28', '2020-01-30 14:53:28', '', 'Resume', '', 'inherit', 'closed', 'closed', '', '51-revision-v1', '', '', '2020-01-30 14:53:28', '2020-01-30 14:53:28', '', 51, 'http://localhost:8888/Avvy_Portfolio20/51-revision-v1/', 0, 'revision', '', 0),
 (284, 1, '2020-01-30 14:55:12', '2020-01-30 14:55:12', '', 'Resume', '', 'inherit', 'closed', 'closed', '', '51-revision-v1', '', '', '2020-01-30 14:55:12', '2020-01-30 14:55:12', '', 51, 'http://localhost:8888/Avvy_Portfolio20/51-revision-v1/', 0, 'revision', '', 0),
@@ -6202,14 +7218,12 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (330, 1, '2020-02-04 07:14:08', '2020-02-04 07:14:08', '', 'login-sida', '', 'inherit', 'open', 'closed', '', 'login-sida-2', '', '', '2020-02-04 07:14:08', '2020-02-04 07:14:08', '', 18, 'http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/02/login-sida.png', 0, 'attachment', 'image/png', 0),
 (331, 1, '2020-02-04 07:14:48', '2020-02-04 07:14:48', '', 'game', '', 'inherit', 'open', 'closed', '', 'game', '', '', '2020-02-04 07:14:48', '2020-02-04 07:14:48', '', 18, 'http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/02/game.png', 0, 'attachment', 'image/png', 0),
 (332, 1, '2020-02-04 07:20:37', '2020-02-04 07:20:37', '<!-- wp:media-text {\"mediaId\":59,\"mediaType\":\"image\",\"mediaWidth\":42,\"verticalAlignment\":\"center\"} -->\n<div class=\"wp-block-media-text alignwide is-vertically-aligned-center\" style=\"grid-template-columns:42% auto\"><figure class=\"wp-block-media-text__media\"><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/Image-from-iOS-8-1-1024x768.jpg\" alt=\"\" class=\"wp-image-59\"/></figure><div class=\"wp-block-media-text__content\"><!-- wp:heading {\"align\":\"center\"} -->\n<h2 class=\"has-text-align-center\"><strong> My passion and focus is Frontend development.</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"align\":\"center\"} -->\n<p class=\"has-text-align-center\"> Let\'s be honest and cut through the marketing fluff. You need a website that looks amazing and actually works, that\'s what I do. And if you want to learn more about working with me, pick up the phone and give me a call (or email). </p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p></p>\n<!-- /wp:paragraph --></div></div>\n<!-- /wp:media-text -->\n\n<!-- wp:media-text {\"mediaPosition\":\"right\",\"mediaId\":74,\"mediaType\":\"image\",\"mediaWidth\":46} -->\n<div class=\"wp-block-media-text alignwide has-media-on-the-right\" style=\"grid-template-columns:auto 46%\"><figure class=\"wp-block-media-text__media\"><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/my-job-1-1024x768.jpg\" alt=\"\" class=\"wp-image-74\"/></figure><div class=\"wp-block-media-text__content\"><!-- wp:heading {\"align\":\"center\"} -->\n<h2 class=\"has-text-align-center\">My projects.</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"align\":\"center\"} -->\n<p class=\"has-text-align-center\">Work with React and WordPress has become an amazing opportunity that I don\'t take for granted. Take a look at my latest projects that I’ve been busy working on. </p>\n<!-- /wp:paragraph -->\n\n<!-- wp:button {\"align\":\"center\"} -->\n<div class=\"wp-block-button aligncenter\"><a class=\"wp-block-button__link\" href=\"https://github.com/AvvyT\">My GitHub</a></div>\n<!-- /wp:button --></div></div>\n<!-- /wp:media-text -->', 'Home', '', 'inherit', 'closed', 'closed', '', '18-revision-v1', '', '', '2020-02-04 07:20:37', '2020-02-04 07:20:37', '', 18, 'http://localhost:8888/Avvy_Portfolio20/18-revision-v1/', 0, 'revision', '', 0),
-(334, 1, '2020-02-06 21:33:14', '2020-02-06 21:33:14', '{\n    \"avvystheme::background_position_x\": {\n        \"value\": \"center\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2020-02-06 21:33:14\"\n    },\n    \"avvystheme::background_position_y\": {\n        \"value\": \"center\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2020-02-06 21:33:14\"\n    }\n}', '', '', 'trash', 'closed', 'closed', '', '4a2f9b48-c009-463e-b0c9-8fd9ca697cc6', '', '', '2020-02-06 21:33:14', '2020-02-06 21:33:14', '', 0, 'http://localhost:8888/Avvy_Portfolio20/4a2f9b48-c009-463e-b0c9-8fd9ca697cc6/', 0, 'customize_changeset', '', 0),
 (335, 1, '2020-02-10 18:31:37', '2020-02-10 18:31:37', '', 'Home', '', 'inherit', 'closed', 'closed', '', '18-revision-v1', '', '', '2020-02-10 18:31:37', '2020-02-10 18:31:37', '', 18, 'http://localhost:8888/Avvy_Portfolio20/18-revision-v1/', 0, 'revision', '', 0),
 (337, 1, '2020-02-10 18:45:09', '2020-02-10 18:45:09', '<!-- wp:media-text {\"mediaId\":59,\"mediaType\":\"image\",\"mediaWidth\":42,\"verticalAlignment\":\"center\"} -->\n<div class=\"wp-block-media-text alignwide is-vertically-aligned-center\" style=\"grid-template-columns:42% auto\"><figure class=\"wp-block-media-text__media\"><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/Image-from-iOS-8-1-1024x768.jpg\" alt=\"\" class=\"wp-image-59\"/></figure><div class=\"wp-block-media-text__content\"><!-- wp:heading {\"align\":\"center\"} -->\n<h2 class=\"has-text-align-center\"><strong> My passion and focus is Frontend development.</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"align\":\"center\"} -->\n<p class=\"has-text-align-center\"> Let\'s be honest and cut through the marketing fluff. You need a website that looks amazing and actually works, that\'s what I do. And if you want to learn more about working with me, pick up the phone and give me a call (or email). </p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p></p>\n<!-- /wp:paragraph --></div></div>\n<!-- /wp:media-text -->', 'Home', '', 'inherit', 'closed', 'closed', '', '18-revision-v1', '', '', '2020-02-10 18:45:09', '2020-02-10 18:45:09', '', 18, 'http://localhost:8888/Avvy_Portfolio20/18-revision-v1/', 0, 'revision', '', 0),
 (338, 1, '2020-02-10 18:45:10', '2020-02-10 18:45:10', '<!-- wp:media-text {\"mediaId\":59,\"mediaType\":\"image\",\"mediaWidth\":42,\"verticalAlignment\":\"center\"} -->\n<div class=\"wp-block-media-text alignwide is-vertically-aligned-center\" style=\"grid-template-columns:42% auto\"><figure class=\"wp-block-media-text__media\"><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/Image-from-iOS-8-1-1024x768.jpg\" alt=\"\" class=\"wp-image-59\"/></figure><div class=\"wp-block-media-text__content\"><!-- wp:heading {\"align\":\"center\"} -->\n<h2 class=\"has-text-align-center\"><strong> My passion and focus is Frontend development.</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"align\":\"center\"} -->\n<p class=\"has-text-align-center\"> Let\'s be honest and cut through the marketing fluff. You need a website that looks amazing and actually works, that\'s what I do. And if you want to learn more about working with me, pick up the phone and give me a call (or email). </p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p></p>\n<!-- /wp:paragraph --></div></div>\n<!-- /wp:media-text -->', 'Home', '', 'inherit', 'closed', 'closed', '', '18-revision-v1', '', '', '2020-02-10 18:45:10', '2020-02-10 18:45:10', '', 18, 'http://localhost:8888/Avvy_Portfolio20/18-revision-v1/', 0, 'revision', '', 0),
 (339, 1, '2020-02-10 18:46:43', '2020-02-10 18:46:43', '<!-- wp:media-text {\"mediaId\":59,\"mediaType\":\"image\",\"mediaWidth\":42,\"verticalAlignment\":\"center\"} -->\n<div class=\"wp-block-media-text alignwide is-vertically-aligned-center\" style=\"grid-template-columns:42% auto\"><figure class=\"wp-block-media-text__media\"><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/Image-from-iOS-8-1-1024x768.jpg\" alt=\"\" class=\"wp-image-59\"/></figure><div class=\"wp-block-media-text__content\"><!-- wp:heading {\"align\":\"center\"} -->\n<h2 class=\"has-text-align-center\"><strong> My passion and focus is Frontend development.</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"align\":\"center\"} -->\n<p class=\"has-text-align-center\"> Let\'s be honest and cut through the marketing fluff. You need a website that looks amazing and actually works, that\'s what I do. And if you want to learn more about working with me, pick up the phone and give me a call (or email). </p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p></p>\n<!-- /wp:paragraph --></div></div>\n<!-- /wp:media-text -->', 'Home', '', 'inherit', 'closed', 'closed', '', '18-revision-v1', '', '', '2020-02-10 18:46:43', '2020-02-10 18:46:43', '', 18, 'http://localhost:8888/Avvy_Portfolio20/18-revision-v1/', 0, 'revision', '', 0),
 (340, 1, '2020-02-10 18:47:35', '2020-02-10 18:47:35', '<!-- wp:media-text {\"mediaId\":59,\"mediaType\":\"image\",\"mediaWidth\":42,\"verticalAlignment\":\"center\"} -->\n<div class=\"wp-block-media-text alignwide is-vertically-aligned-center\" style=\"grid-template-columns:42% auto\"><figure class=\"wp-block-media-text__media\"><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/Image-from-iOS-8-1-1024x768.jpg\" alt=\"\" class=\"wp-image-59\"/></figure><div class=\"wp-block-media-text__content\"><!-- wp:heading {\"align\":\"center\"} -->\n<h2 class=\"has-text-align-center\"><strong> My passion and focus is Frontend development.</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"align\":\"center\"} -->\n<p class=\"has-text-align-center\"> Let\'s be honest and cut through the marketing fluff. You need a website that looks amazing and actually works, that\'s what I do. And if you want to learn more about working with me, pick up the phone and give me a call (or email). </p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p></p>\n<!-- /wp:paragraph --></div></div>\n<!-- /wp:media-text -->', 'Home', '', 'inherit', 'closed', 'closed', '', '18-revision-v1', '', '', '2020-02-10 18:47:35', '2020-02-10 18:47:35', '', 18, 'http://localhost:8888/Avvy_Portfolio20/18-revision-v1/', 0, 'revision', '', 0),
-(341, 1, '2020-02-10 18:52:09', '2020-02-10 18:52:09', '<!-- wp:media-text {\"mediaId\":59,\"mediaType\":\"image\",\"mediaWidth\":42,\"verticalAlignment\":\"center\"} -->\n<div class=\"wp-block-media-text alignwide is-vertically-aligned-center\" style=\"grid-template-columns:42% auto\"><figure class=\"wp-block-media-text__media\"><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/Image-from-iOS-8-1-1024x768.jpg\" alt=\"\" class=\"wp-image-59\"/></figure><div class=\"wp-block-media-text__content\"><!-- wp:heading {\"align\":\"center\"} -->\n<h2 class=\"has-text-align-center\"><strong> My passion and focus is Frontend development.</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"align\":\"center\"} -->\n<p class=\"has-text-align-center\"> Let\'s be honest and cut through the marketing fluff. You need a website that looks amazing and actually works, that\'s what I do. And if you want to learn more about working with me, pick up the phone and give me a call (or email). </p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p></p>\n<!-- /wp:paragraph --></div></div>\n<!-- /wp:media-text -->', 'Home', '', 'inherit', 'closed', 'closed', '', '18-revision-v1', '', '', '2020-02-10 18:52:09', '2020-02-10 18:52:09', '', 18, 'http://localhost:8888/Avvy_Portfolio20/18-revision-v1/', 0, 'revision', '', 0);
-INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
+(341, 1, '2020-02-10 18:52:09', '2020-02-10 18:52:09', '<!-- wp:media-text {\"mediaId\":59,\"mediaType\":\"image\",\"mediaWidth\":42,\"verticalAlignment\":\"center\"} -->\n<div class=\"wp-block-media-text alignwide is-vertically-aligned-center\" style=\"grid-template-columns:42% auto\"><figure class=\"wp-block-media-text__media\"><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/Image-from-iOS-8-1-1024x768.jpg\" alt=\"\" class=\"wp-image-59\"/></figure><div class=\"wp-block-media-text__content\"><!-- wp:heading {\"align\":\"center\"} -->\n<h2 class=\"has-text-align-center\"><strong> My passion and focus is Frontend development.</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"align\":\"center\"} -->\n<p class=\"has-text-align-center\"> Let\'s be honest and cut through the marketing fluff. You need a website that looks amazing and actually works, that\'s what I do. And if you want to learn more about working with me, pick up the phone and give me a call (or email). </p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p></p>\n<!-- /wp:paragraph --></div></div>\n<!-- /wp:media-text -->', 'Home', '', 'inherit', 'closed', 'closed', '', '18-revision-v1', '', '', '2020-02-10 18:52:09', '2020-02-10 18:52:09', '', 18, 'http://localhost:8888/Avvy_Portfolio20/18-revision-v1/', 0, 'revision', '', 0),
 (342, 1, '2020-02-10 18:55:58', '2020-02-10 18:55:58', '<!-- wp:media-text {\"mediaId\":59,\"mediaType\":\"image\",\"mediaWidth\":42,\"verticalAlignment\":\"center\"} -->\n<div class=\"wp-block-media-text alignwide is-vertically-aligned-center\" style=\"grid-template-columns:42% auto\"><figure class=\"wp-block-media-text__media\"><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/Image-from-iOS-8-1-1024x768.jpg\" alt=\"\" class=\"wp-image-59\"/></figure><div class=\"wp-block-media-text__content\"><!-- wp:heading {\"align\":\"center\"} -->\n<h2 class=\"has-text-align-center\"><strong> My passion and focus is Frontend development.</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"align\":\"center\"} -->\n<p class=\"has-text-align-center\"> Let\'s be honest and cut through the marketing fluff. You need a website that looks amazing and actually works, that\'s what I do. And if you want to learn more about working with me, pick up the phone and give me a call (or email). </p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p></p>\n<!-- /wp:paragraph --></div></div>\n<!-- /wp:media-text -->', 'Home', '', 'inherit', 'closed', 'closed', '', '18-revision-v1', '', '', '2020-02-10 18:55:58', '2020-02-10 18:55:58', '', 18, 'http://localhost:8888/Avvy_Portfolio20/18-revision-v1/', 0, 'revision', '', 0),
 (344, 1, '2020-02-10 18:58:59', '2020-02-10 18:58:59', '', 'About', '', 'inherit', 'closed', 'closed', '', '6-revision-v1', '', '', '2020-02-10 18:58:59', '2020-02-10 18:58:59', '', 6, 'http://localhost:8888/Avvy_Portfolio20/6-revision-v1/', 0, 'revision', '', 0),
 (345, 1, '2020-02-10 18:59:00', '2020-02-10 18:59:00', '', 'About', '', 'inherit', 'closed', 'closed', '', '6-revision-v1', '', '', '2020-02-10 18:59:00', '2020-02-10 18:59:00', '', 6, 'http://localhost:8888/Avvy_Portfolio20/6-revision-v1/', 0, 'revision', '', 0),
@@ -6220,7 +7234,8 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (350, 1, '2020-02-10 19:17:23', '2020-02-10 19:17:23', '', 'About', '', 'inherit', 'closed', 'closed', '', '6-revision-v1', '', '', '2020-02-10 19:17:23', '2020-02-10 19:17:23', '', 6, 'http://localhost:8888/Avvy_Portfolio20/6-revision-v1/', 0, 'revision', '', 0),
 (351, 1, '2020-02-10 19:33:47', '2020-02-10 19:33:47', '', 'About', '', 'inherit', 'closed', 'closed', '', '6-revision-v1', '', '', '2020-02-10 19:33:47', '2020-02-10 19:33:47', '', 6, 'http://localhost:8888/Avvy_Portfolio20/6-revision-v1/', 0, 'revision', '', 0),
 (352, 1, '2020-02-10 19:34:17', '2020-02-10 19:34:17', '', 'About', '', 'inherit', 'closed', 'closed', '', '6-revision-v1', '', '', '2020-02-10 19:34:17', '2020-02-10 19:34:17', '', 6, 'http://localhost:8888/Avvy_Portfolio20/6-revision-v1/', 0, 'revision', '', 0),
-(353, 1, '2020-02-10 19:35:20', '2020-02-10 19:35:20', '', 'About', '', 'inherit', 'closed', 'closed', '', '6-revision-v1', '', '', '2020-02-10 19:35:20', '2020-02-10 19:35:20', '', 6, 'http://localhost:8888/Avvy_Portfolio20/6-revision-v1/', 0, 'revision', '', 0),
+(353, 1, '2020-02-10 19:35:20', '2020-02-10 19:35:20', '', 'About', '', 'inherit', 'closed', 'closed', '', '6-revision-v1', '', '', '2020-02-10 19:35:20', '2020-02-10 19:35:20', '', 6, 'http://localhost:8888/Avvy_Portfolio20/6-revision-v1/', 0, 'revision', '', 0);
+INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
 (354, 1, '2020-02-10 19:37:47', '2020-02-10 19:37:47', '', 'Resume', '', 'inherit', 'closed', 'closed', '', '51-revision-v1', '', '', '2020-02-10 19:37:47', '2020-02-10 19:37:47', '', 51, 'http://localhost:8888/Avvy_Portfolio20/51-revision-v1/', 0, 'revision', '', 0),
 (355, 1, '2020-02-10 19:38:37', '2020-02-10 19:38:37', '', 'Resume', '', 'inherit', 'closed', 'closed', '', '51-revision-v1', '', '', '2020-02-10 19:38:37', '2020-02-10 19:38:37', '', 51, 'http://localhost:8888/Avvy_Portfolio20/51-revision-v1/', 0, 'revision', '', 0),
 (356, 1, '2020-02-10 19:52:28', '2020-02-10 19:52:28', '', 'Resume', '', 'inherit', 'closed', 'closed', '', '51-revision-v1', '', '', '2020-02-10 19:52:28', '2020-02-10 19:52:28', '', 51, 'http://localhost:8888/Avvy_Portfolio20/51-revision-v1/', 0, 'revision', '', 0),
@@ -6236,8 +7251,6 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (366, 1, '2020-02-18 18:51:34', '2020-02-18 18:51:34', '<p class=\"p1\"><strong><span class=\"s1\"><a href=\"https://www.facebook.com/CafeteriaBellagio/\">Bellagio sport Bar</a> –  Casino / internet café in </span><span class=\"s1\">Mojacar,<span class=\"Apple-converted-space\">  </span>Almeria- Spain 2009 - 2011.</span></strong></p>\r\nResponsible for local casino with café.\r\n\r\n<strong>Café waitress in Almeria, Spain 2002 - 2011.</strong>', 'WAITRESS WITH STAFF RESPONSIBILITY', '', 'inherit', 'closed', 'closed', '', '265-revision-v1', '', '', '2020-02-18 18:51:34', '2020-02-18 18:51:34', '', 265, 'http://localhost:8888/Avvy_Portfolio20/265-revision-v1/', 0, 'revision', '', 0),
 (367, 1, '2020-02-18 18:52:16', '2020-02-18 18:52:16', '<p class=\"p1\"><strong><span class=\"s1\"><a href=\"https://www.facebook.com/CafeteriaBellagio/\">Bellagio sport Bar</a> –  Casino / internet café in </span><span class=\"s1\">Mojacar,<span class=\"Apple-converted-space\">  </span>Almeria - Spain 2009 - 2011.</span></strong></p>\r\nResponsible for local casino with café.\r\n\r\n<strong>Café waitress in Almeria, Spain 2002 - 2011.</strong>', 'WAITRESS WITH STAFF RESPONSIBILITY', '', 'inherit', 'closed', 'closed', '', '265-revision-v1', '', '', '2020-02-18 18:52:16', '2020-02-18 18:52:16', '', 265, 'http://localhost:8888/Avvy_Portfolio20/265-revision-v1/', 0, 'revision', '', 0),
 (368, 1, '2020-02-18 19:00:03', '2020-02-18 19:00:03', '<p class=\"p1\"><strong><span class=\"s1\"><a href=\"https://www.facebook.com/CafeteriaBellagio/\">Bellagio sport Bar</a> –  Casino / internet café in </span><span class=\"s1\">Mojacar,<span class=\"Apple-converted-space\"> </span>Almeria, Spain 2009 - 2011.</span></strong></p>\r\nResponsible for local casino with café.\r\n\r\n<strong>Café waitress in Almeria, Spain 2002 - 2011.</strong>', 'WAITRESS WITH STAFF RESPONSIBILITY', '', 'inherit', 'closed', 'closed', '', '265-revision-v1', '', '', '2020-02-18 19:00:03', '2020-02-18 19:00:03', '', 265, 'http://localhost:8888/Avvy_Portfolio20/265-revision-v1/', 0, 'revision', '', 0),
-(369, 1, '2020-02-19 10:43:41', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'open', 'open', '', '', '', '', '2020-02-19 10:43:41', '0000-00-00 00:00:00', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?p=369', 0, 'post', '', 0),
-(370, 1, '2020-02-19 10:45:51', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'closed', 'closed', '', '', '', '', '2020-02-19 10:45:51', '0000-00-00 00:00:00', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?post_type=resume&p=370', 0, 'resume', '', 0),
 (371, 1, '2020-02-19 18:18:23', '2020-02-19 18:18:23', '<p class=\"p1\"><strong><span class=\"s1\"><a href=\"https://www.sydsvenskan.se/2017-12-19/tidningsbararna-styckas-upp-i-tre-verksamheter\">Tidningsbärarna</a>, now named <a href=\"https://nimdistribution.se/\">Nim distribution</a> in Landskrona &amp; Helsingborg, Sweden 2012 - 2018.</span></strong></p>\nNatt, bil distribution i olika byn distrikt i Landskrona kommun samt Helsingborgskommun.\n\nNight shift. Newspaper distribution with car in different districts in Land', 'NEWS PAPER DISTRIBUTOR', '', 'inherit', 'closed', 'closed', '', '262-autosave-v1', '', '', '2020-02-19 18:18:23', '2020-02-19 18:18:23', '', 262, 'http://localhost:8888/Avvy_Portfolio20/262-autosave-v1/', 0, 'revision', '', 0),
 (372, 1, '2020-02-19 18:19:10', '2020-02-19 18:19:10', '<p class=\"p1\"><strong><span class=\"s1\"><a href=\"https://www.sydsvenskan.se/2017-12-19/tidningsbararna-styckas-upp-i-tre-verksamheter\">Tidningsbärarna</a>, now named <a href=\"https://nimdistribution.se/\">Nim distribution</a> </span></strong></p>\r\n<p class=\"p1\"><strong><span class=\"s1\">in Landskrona &amp; Helsingborg, </span></strong><strong><span class=\"s1\">Sweden 2012 - 2018.</span></strong></p>\r\nNight shift. Newspaper distribution with car in different districts in Landskrona and Helsingborg.', 'NEWS PAPER DISTRIBUTOR', '', 'inherit', 'closed', 'closed', '', '262-revision-v1', '', '', '2020-02-19 18:19:10', '2020-02-19 18:19:10', '', 262, 'http://localhost:8888/Avvy_Portfolio20/262-revision-v1/', 0, 'revision', '', 0),
 (373, 1, '2020-02-19 18:20:33', '2020-02-19 18:20:33', '<span class=\"s1\"><strong>Internship at <a href=\"https://www.crealevant.se/\">Crealevant AB,</a> in Helsingborg, Sweden, September - December 2019.</strong></span>\r\n\r\nWorked with developing web shops with Magento2.', 'FRONT-END DEVELOPER', '', 'inherit', 'closed', 'closed', '', '223-revision-v1', '', '', '2020-02-19 18:20:33', '2020-02-19 18:20:33', '', 223, 'http://localhost:8888/Avvy_Portfolio20/223-revision-v1/', 0, 'revision', '', 0),
@@ -6256,12 +7269,45 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (386, 1, '2020-02-19 18:50:33', '2020-02-19 18:50:33', '&nbsp;\r\n\r\nHTML5 / CSS3\r\n\r\nJavaScript / React.js\r\n\r\nWordPress / PHP\r\n\r\nMagento2 / PHP\r\n\r\nVersion Control (GIT)\r\n\r\nResponsive Layout and Design\r\n\r\nAgile Methodology', 'COMFORTABLE WITH', '', 'inherit', 'closed', 'closed', '', '269-revision-v1', '', '', '2020-02-19 18:50:33', '2020-02-19 18:50:33', '', 269, 'http://localhost:8888/Avvy_Portfolio20/269-revision-v1/', 0, 'revision', '', 0),
 (387, 1, '2020-02-19 18:51:32', '2020-02-19 18:51:32', '&nbsp;\r\n\r\nRequireJS\r\n\r\nAJAX\r\n\r\nNode.js (limited)\r\n\r\n<span class=\"s2\">Ux design (limited)</span>\r\n\r\nLess\r\n\r\nBootstrap (limited)\r\n\r\njQuery\r\n\r\n&nbsp;', 'EXPERIENCE', '', 'inherit', 'closed', 'closed', '', '274-revision-v1', '', '', '2020-02-19 18:51:32', '2020-02-19 18:51:32', '', 274, 'http://localhost:8888/Avvy_Portfolio20/274-revision-v1/', 0, 'revision', '', 0),
 (388, 1, '2020-02-19 18:52:54', '2020-02-19 18:52:54', '', 'Contact', '', 'inherit', 'closed', 'closed', '', '7-revision-v1', '', '', '2020-02-19 18:52:54', '2020-02-19 18:52:54', '', 7, 'http://localhost:8888/Avvy_Portfolio20/7-revision-v1/', 0, 'revision', '', 0),
-(389, 1, '2020-02-19 18:54:14', '2020-02-19 18:54:14', '', 'Contact', '', 'inherit', 'closed', 'closed', '', '7-revision-v1', '', '', '2020-02-19 18:54:14', '2020-02-19 18:54:14', '', 7, 'http://localhost:8888/Avvy_Portfolio20/7-revision-v1/', 0, 'revision', '', 0);
+(389, 1, '2020-02-19 18:54:14', '2020-02-19 18:54:14', '', 'Contact', '', 'inherit', 'closed', 'closed', '', '7-revision-v1', '', '', '2020-02-19 18:54:14', '2020-02-19 18:54:14', '', 7, 'http://localhost:8888/Avvy_Portfolio20/7-revision-v1/', 0, 'revision', '', 0),
+(390, 1, '2020-06-11 09:16:24', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'open', 'open', '', '', '', '', '2020-06-11 09:16:24', '0000-00-00 00:00:00', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?p=390', 0, 'post', '', 0),
+(391, 1, '2020-06-11 09:48:55', '2020-06-11 09:48:55', '{\n    \"avvystheme::background_image\": {\n        \"value\": \"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/IMG_1499-scaled.jpg\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2020-06-11 09:47:03\"\n    },\n    \"avvystheme::background_preset\": {\n        \"value\": \"fill\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2020-06-11 09:48:55\"\n    },\n    \"avvystheme::background_position_x\": {\n        \"value\": \"center\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2020-06-11 09:47:03\"\n    },\n    \"avvystheme::background_position_y\": {\n        \"value\": \"center\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2020-06-11 09:48:55\"\n    },\n    \"avvystheme::background_size\": {\n        \"value\": \"cover\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2020-06-11 09:48:55\"\n    },\n    \"avvystheme::background_repeat\": {\n        \"value\": \"no-repeat\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2020-06-11 09:47:03\"\n    },\n    \"avvystheme::background_attachment\": {\n        \"value\": \"fixed\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2020-06-11 09:47:03\"\n    }\n}', '', '', 'trash', 'closed', 'closed', '', '9e27ed65-d084-4c3f-ad9d-a3bcd3f38886', '', '', '2020-06-11 09:48:55', '2020-06-11 09:48:55', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?p=391', 0, 'customize_changeset', '', 0),
+(392, 1, '2020-06-11 09:50:13', '2020-06-11 09:50:13', '{\n    \"avvystheme::background_preset\": {\n        \"value\": \"fill\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2020-06-11 09:50:13\"\n    },\n    \"avvystheme::background_position_x\": {\n        \"value\": \"center\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2020-06-11 09:50:13\"\n    },\n    \"avvystheme::background_position_y\": {\n        \"value\": \"center\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2020-06-11 09:50:13\"\n    },\n    \"avvystheme::background_size\": {\n        \"value\": \"cover\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2020-06-11 09:50:13\"\n    }\n}', '', '', 'trash', 'closed', 'closed', '', '9555e759-0f3b-458d-8e4a-b7d7e45df5ff', '', '', '2020-06-11 09:50:13', '2020-06-11 09:50:13', '', 0, 'http://localhost:8888/Avvy_Portfolio20/9555e759-0f3b-458d-8e4a-b7d7e45df5ff/', 0, 'customize_changeset', '', 0),
+(393, 1, '2020-06-11 10:54:00', '2020-06-11 10:54:00', '{\n    \"avvystheme::background_position_x\": {\n        \"value\": \"center\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2020-06-11 10:54:00\"\n    },\n    \"avvystheme::background_position_y\": {\n        \"value\": \"top\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2020-06-11 10:54:00\"\n    }\n}', '', '', 'trash', 'closed', 'closed', '', '05a90867-c783-451a-a48b-7b1fe0a0e993', '', '', '2020-06-11 10:54:00', '2020-06-11 10:54:00', '', 0, 'http://localhost:8888/Avvy_Portfolio20/05a90867-c783-451a-a48b-7b1fe0a0e993/', 0, 'customize_changeset', '', 0),
+(394, 1, '2020-06-11 10:55:28', '0000-00-00 00:00:00', '{\n    \"avvystheme::background_position_x\": {\n        \"value\": \"right\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2020-06-11 10:55:28\"\n    },\n    \"avvystheme::background_position_y\": {\n        \"value\": \"center\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2020-06-11 10:55:28\"\n    }\n}', '', '', 'auto-draft', 'closed', 'closed', '', '13087bce-6b02-40c4-8624-b02b6d3c03d9', '', '', '2020-06-11 10:55:28', '0000-00-00 00:00:00', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?p=394', 0, 'customize_changeset', '', 0),
+(395, 1, '2020-06-11 12:33:52', '2020-06-11 12:33:52', ' ', '', '', 'publish', 'closed', 'closed', '', '395', '', '', '2020-06-12 12:14:46', '2020-06-12 12:14:46', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?p=395', 2, 'nav_menu_item', '', 0),
+(396, 1, '2020-06-15 09:12:14', '2020-06-15 09:12:14', '', 'avvy_work', '', 'inherit', 'open', 'closed', '', 'avvy_work', '', '', '2020-06-15 09:12:14', '2020-06-15 09:12:14', '', 0, 'http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/06/avvy_work.jpg', 0, 'attachment', 'image/jpeg', 0),
+(397, 1, '2020-06-15 09:12:25', '2020-06-15 09:12:25', '', 'avvy_work', '', 'inherit', 'open', 'closed', '', 'avvy_work-2', '', '', '2020-06-15 09:39:15', '2020-06-15 09:39:15', '', 18, 'http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/06/avvy_work-1.jpg', 0, 'attachment', 'image/jpeg', 0),
+(398, 1, '2020-06-15 09:27:38', '2020-06-15 09:27:38', '', 'avvy_work1', '', 'inherit', 'open', 'closed', '', 'avvy_work1', '', '', '2020-06-15 09:27:38', '2020-06-15 09:27:38', '', 0, 'http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/06/avvy_work1.jpg', 0, 'attachment', 'image/jpeg', 0),
+(399, 1, '2020-06-15 09:37:56', '2020-06-15 09:37:56', '', 'avvy2', '', 'inherit', 'open', 'closed', '', 'avvy2', '', '', '2020-06-15 09:40:01', '2020-06-15 09:40:01', '', 18, 'http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/06/avvy2.jpg', 0, 'attachment', 'image/jpeg', 0),
+(400, 1, '2020-06-15 09:38:03', '2020-06-15 09:38:03', '', 'avvy1', '', 'inherit', 'open', 'closed', '', 'avvy1', '', '', '2020-06-15 09:38:03', '2020-06-15 09:38:03', '', 0, 'http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/06/avvy1.jpg', 0, 'attachment', 'image/jpeg', 0),
+(401, 1, '2020-06-15 09:39:15', '2020-06-15 09:39:15', '<!-- wp:media-text {\"mediaId\":59,\"mediaType\":\"image\",\"mediaWidth\":42,\"verticalAlignment\":\"center\"} -->\n<div class=\"wp-block-media-text alignwide is-vertically-aligned-center\" style=\"grid-template-columns:42% auto\"><figure class=\"wp-block-media-text__media\"><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/Image-from-iOS-8-1-1024x768.jpg\" alt=\"\" class=\"wp-image-59\"/></figure><div class=\"wp-block-media-text__content\"><!-- wp:heading {\"align\":\"center\"} -->\n<h2 class=\"has-text-align-center\"><strong> My passion and focus is Frontend development.</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"align\":\"center\"} -->\n<p class=\"has-text-align-center\"> Let\'s be honest and cut through the marketing fluff. You need a website that looks amazing and actually works, that\'s what I do. And if you want to learn more about working with me, pick up the phone and give me a call (or email). </p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p></p>\n<!-- /wp:paragraph --></div></div>\n<!-- /wp:media-text -->', 'Portfolio', '', 'inherit', 'closed', 'closed', '', '18-revision-v1', '', '', '2020-06-15 09:39:15', '2020-06-15 09:39:15', '', 18, 'http://localhost:8888/Avvy_Portfolio20/18-revision-v1/', 0, 'revision', '', 0),
+(402, 1, '2020-06-15 09:40:01', '2020-06-15 09:40:01', '<!-- wp:media-text {\"mediaId\":59,\"mediaType\":\"image\",\"mediaWidth\":42,\"verticalAlignment\":\"center\"} -->\n<div class=\"wp-block-media-text alignwide is-vertically-aligned-center\" style=\"grid-template-columns:42% auto\"><figure class=\"wp-block-media-text__media\"><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/Image-from-iOS-8-1-1024x768.jpg\" alt=\"\" class=\"wp-image-59\"/></figure><div class=\"wp-block-media-text__content\"><!-- wp:heading {\"align\":\"center\"} -->\n<h2 class=\"has-text-align-center\"><strong> My passion and focus is Frontend development.</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"align\":\"center\"} -->\n<p class=\"has-text-align-center\"> Let\'s be honest and cut through the marketing fluff. You need a website that looks amazing and actually works, that\'s what I do. And if you want to learn more about working with me, pick up the phone and give me a call (or email). </p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p></p>\n<!-- /wp:paragraph --></div></div>\n<!-- /wp:media-text -->', 'Portfolio', '', 'inherit', 'closed', 'closed', '', '18-revision-v1', '', '', '2020-06-15 09:40:01', '2020-06-15 09:40:01', '', 18, 'http://localhost:8888/Avvy_Portfolio20/18-revision-v1/', 0, 'revision', '', 0),
+(403, 1, '2020-06-15 09:42:34', '2020-06-15 09:42:34', '', 'bram-naus-n8Qb1ZAkK88-unsplash', '', 'inherit', 'open', 'closed', '', 'bram-naus-n8qb1zakk88-unsplash', '', '', '2020-06-15 09:42:34', '2020-06-15 09:42:34', '', 0, 'http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/06/bram-naus-n8Qb1ZAkK88-unsplash.jpg', 0, 'attachment', 'image/jpeg', 0),
+(404, 1, '2020-06-15 09:56:17', '0000-00-00 00:00:00', '{\n    \"avvystheme::background_image\": {\n        \"value\": \"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/06/avvy_work1-scaled.jpg\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2020-06-15 09:56:17\"\n    }\n}', '', '', 'auto-draft', 'closed', 'closed', '', 'ef881587-0a75-48f5-9621-43c2d6f10c53', '', '', '2020-06-15 09:56:17', '0000-00-00 00:00:00', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?p=404', 0, 'customize_changeset', '', 0),
+(405, 1, '2020-06-15 09:59:03', '2020-06-15 09:59:03', '', 'marcus-lenk-Q_1KUf9qgSY-unsplash', '', 'inherit', 'open', 'closed', '', 'marcus-lenk-q_1kuf9qgsy-unsplash', '', '', '2020-06-15 09:59:03', '2020-06-15 09:59:03', '', 0, 'http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/06/marcus-lenk-Q_1KUf9qgSY-unsplash.jpg', 0, 'attachment', 'image/jpeg', 0),
+(406, 1, '2020-06-15 09:59:51', '2020-06-15 09:59:51', '{\n    \"avvystheme::background_image\": {\n        \"value\": \"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/06/marcus-lenk-Q_1KUf9qgSY-unsplash-scaled.jpg\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2020-06-15 09:59:51\"\n    },\n    \"avvystheme::background_position_x\": {\n        \"value\": \"right\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2020-06-15 09:59:51\"\n    },\n    \"avvystheme::background_position_y\": {\n        \"value\": \"center\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2020-06-15 09:59:51\"\n    }\n}', '', '', 'trash', 'closed', 'closed', '', 'a2e46c4c-2260-49c5-abbe-3a9ec55c0532', '', '', '2020-06-15 09:59:51', '2020-06-15 09:59:51', '', 0, 'http://localhost:8888/Avvy_Portfolio20/a2e46c4c-2260-49c5-abbe-3a9ec55c0532/', 0, 'customize_changeset', '', 0),
+(407, 1, '2020-06-15 12:18:46', '0000-00-00 00:00:00', '{\n    \"avvystheme::background_color\": {\n        \"value\": \"#3d3d3d\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2020-06-15 12:18:46\"\n    }\n}', '', '', 'auto-draft', 'closed', 'closed', '', '90881957-1111-4b43-8013-1df4cffee1fb', '', '', '2020-06-15 12:18:46', '0000-00-00 00:00:00', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?p=407', 0, 'customize_changeset', '', 0),
+(408, 1, '2020-06-15 12:23:33', '2020-06-15 12:23:33', '', 'nils-lindner-drba0TzbCGA-unsplash', '', 'inherit', 'open', 'closed', '', 'nils-lindner-drba0tzbcga-unsplash', '', '', '2020-06-15 12:23:33', '2020-06-15 12:23:33', '', 0, 'http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/06/nils-lindner-drba0TzbCGA-unsplash.jpg', 0, 'attachment', 'image/jpeg', 0),
+(409, 1, '2020-06-15 12:24:24', '2020-06-15 12:24:24', '{\n    \"avvystheme::background_image\": {\n        \"value\": \"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/06/nils-lindner-drba0TzbCGA-unsplash-scaled.jpg\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2020-06-15 12:24:24\"\n    },\n    \"avvystheme::background_position_x\": {\n        \"value\": \"left\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2020-06-15 12:24:24\"\n    },\n    \"avvystheme::background_position_y\": {\n        \"value\": \"bottom\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1,\n        \"date_modified_gmt\": \"2020-06-15 12:24:24\"\n    }\n}', '', '', 'trash', 'closed', 'closed', '', 'dfb5e93a-9d88-43db-bbdf-5e3e426c0fae', '', '', '2020-06-15 12:24:24', '2020-06-15 12:24:24', '', 0, 'http://localhost:8888/Avvy_Portfolio20/dfb5e93a-9d88-43db-bbdf-5e3e426c0fae/', 0, 'customize_changeset', '', 0),
+(410, 1, '2020-06-15 13:14:51', '2020-06-15 13:14:51', '<!-- wp:media-text {\"mediaId\":59,\"mediaType\":\"image\",\"mediaWidth\":42,\"verticalAlignment\":\"center\"} -->\n<div class=\"wp-block-media-text alignwide is-vertically-aligned-center\" style=\"grid-template-columns:42% auto\"><figure class=\"wp-block-media-text__media\"><img src=\"http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/01/Image-from-iOS-8-1-1024x768.jpg\" alt=\"\" class=\"wp-image-59\"/></figure><div class=\"wp-block-media-text__content\"><!-- wp:heading {\"align\":\"center\"} -->\n<h2 class=\"has-text-align-center\"><strong> My passion and focus is Frontend development.</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"align\":\"center\"} -->\n<p class=\"has-text-align-center\"> Let\'s be honest and cut through the marketing fluff. You need a website that looks amazing and actually works, that\'s what I do. And if you want to learn more about working with me, pick up the phone and give me a call (or email). </p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p></p>\n<!-- /wp:paragraph --></div></div>\n<!-- /wp:media-text -->', 'Portfolio', '', 'inherit', 'closed', 'closed', '', '18-revision-v1', '', '', '2020-06-15 13:14:51', '2020-06-15 13:14:51', '', 18, 'http://localhost:8888/Avvy_Portfolio20/18-revision-v1/', 0, 'revision', '', 0),
+(411, 1, '2020-06-15 13:18:09', '2020-06-15 13:18:09', '', 'About', '', 'inherit', 'closed', 'closed', '', '6-revision-v1', '', '', '2020-06-15 13:18:09', '2020-06-15 13:18:09', '', 6, 'http://localhost:8888/Avvy_Portfolio20/6-revision-v1/', 0, 'revision', '', 0),
+(412, 1, '2020-06-15 13:21:19', '2020-06-15 13:21:19', '', 'Resume', '', 'inherit', 'closed', 'closed', '', '51-revision-v1', '', '', '2020-06-15 13:21:19', '2020-06-15 13:21:19', '', 51, 'http://localhost:8888/Avvy_Portfolio20/51-revision-v1/', 0, 'revision', '', 0),
+(413, 1, '2020-06-15 13:21:44', '2020-06-15 13:21:44', '', 'Resume', '', 'inherit', 'closed', 'closed', '', '51-revision-v1', '', '', '2020-06-15 13:21:44', '2020-06-15 13:21:44', '', 51, 'http://localhost:8888/Avvy_Portfolio20/51-revision-v1/', 0, 'revision', '', 0),
+(414, 1, '2020-06-15 13:22:29', '2020-06-15 13:22:29', '', 'Resume', '', 'inherit', 'closed', 'closed', '', '51-revision-v1', '', '', '2020-06-15 13:22:29', '2020-06-15 13:22:29', '', 51, 'http://localhost:8888/Avvy_Portfolio20/51-revision-v1/', 0, 'revision', '', 0),
+(415, 1, '2020-06-15 13:29:02', '2020-06-15 13:29:02', '', 'About', '', 'inherit', 'closed', 'closed', '', '6-revision-v1', '', '', '2020-06-15 13:29:02', '2020-06-15 13:29:02', '', 6, 'http://localhost:8888/Avvy_Portfolio20/6-revision-v1/', 0, 'revision', '', 0),
+(416, 1, '2020-06-15 13:32:21', '2020-06-15 13:32:21', '', 'About', '', 'inherit', 'closed', 'closed', '', '6-revision-v1', '', '', '2020-06-15 13:32:21', '2020-06-15 13:32:21', '', 6, 'http://localhost:8888/Avvy_Portfolio20/6-revision-v1/', 0, 'revision', '', 0),
+(417, 1, '2020-06-15 13:33:06', '2020-06-15 13:33:06', '', 'About', '', 'inherit', 'closed', 'closed', '', '6-revision-v1', '', '', '2020-06-15 13:33:06', '2020-06-15 13:33:06', '', 6, 'http://localhost:8888/Avvy_Portfolio20/6-revision-v1/', 0, 'revision', '', 0),
+(418, 1, '2020-06-15 13:35:21', '2020-06-15 13:35:21', '', 'Resume', '', 'inherit', 'closed', 'closed', '', '51-revision-v1', '', '', '2020-06-15 13:35:21', '2020-06-15 13:35:21', '', 51, 'http://localhost:8888/Avvy_Portfolio20/51-revision-v1/', 0, 'revision', '', 0),
+(419, 1, '2020-06-15 13:48:19', '2020-06-15 13:48:19', '<span class=\"s1\"><strong>Internship at <a href=\"https://frontwalker.se/malmo/\">Frontwalker Malmö AB,</a> in Malmö, </strong></span><span class=\"s1\"><strong>Sweden</strong></span>\r\n\r\n<span class=\"s1\"><strong> Mars - May 2020.</strong></span>\r\n\r\nWorked with developing websites using Wordpress.', 'FRONT-END DEVELOPER', '', 'publish', 'closed', 'closed', '', 'frontend-developer', '', '', '2020-06-15 13:50:36', '2020-06-15 13:50:36', '', 0, 'http://localhost:8888/Avvy_Portfolio20/?post_type=resume&#038;p=419', 0, 'resume', '', 0),
+(420, 1, '2020-06-15 13:48:19', '2020-06-15 13:48:19', '<span class=\"s1\"><strong>Internship at <a href=\"https://frontwalker.se/malmo/\">,Frontwalker Malmö AB</a> in Malmö, </strong></span><span class=\"s1\"><strong>Sweden</strong></span>\r\n\r\n<span class=\"s1\"><strong> Mars - May 2020.</strong></span>\r\n\r\nWorked with developing websites in Wordpress.', 'Frontend Developer', '', 'inherit', 'closed', 'closed', '', '419-revision-v1', '', '', '2020-06-15 13:48:19', '2020-06-15 13:48:19', '', 419, 'http://localhost:8888/Avvy_Portfolio20/419-revision-v1/', 0, 'revision', '', 0),
+(421, 1, '2020-06-15 13:49:34', '2020-06-15 13:49:34', '<span class=\"s1\"><strong>Internship at <a href=\"https://frontwalker.se/malmo/\">,Frontwalker Malmö AB</a> in Malmö, </strong></span><span class=\"s1\"><strong>Sweden</strong></span>\r\n\r\n<span class=\"s1\"><strong> Mars - May 2020.</strong></span>\r\n\r\nWorked with developing websites using Wordpress.', 'FRONT-END DEVELOPER', '', 'inherit', 'closed', 'closed', '', '419-revision-v1', '', '', '2020-06-15 13:49:34', '2020-06-15 13:49:34', '', 419, 'http://localhost:8888/Avvy_Portfolio20/419-revision-v1/', 0, 'revision', '', 0),
+(422, 1, '2020-06-15 13:50:36', '2020-06-15 13:50:36', '<span class=\"s1\"><strong>Internship at <a href=\"https://frontwalker.se/malmo/\">Frontwalker Malmö AB,</a> in Malmö, </strong></span><span class=\"s1\"><strong>Sweden</strong></span>\r\n\r\n<span class=\"s1\"><strong> Mars - May 2020.</strong></span>\r\n\r\nWorked with developing websites using Wordpress.', 'FRONT-END DEVELOPER', '', 'inherit', 'closed', 'closed', '', '419-revision-v1', '', '', '2020-06-15 13:50:36', '2020-06-15 13:50:36', '', 419, 'http://localhost:8888/Avvy_Portfolio20/419-revision-v1/', 0, 'revision', '', 0);
 
 -- --------------------------------------------------------
 
 --
--- Tabellstruktur `wp_termmeta`
+-- Table structure for table `wp_termmeta`
 --
 
 CREATE TABLE `wp_termmeta` (
@@ -6274,7 +7320,7 @@ CREATE TABLE `wp_termmeta` (
 -- --------------------------------------------------------
 
 --
--- Tabellstruktur `wp_terms`
+-- Table structure for table `wp_terms`
 --
 
 CREATE TABLE `wp_terms` (
@@ -6285,7 +7331,7 @@ CREATE TABLE `wp_terms` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
--- Dumpning av Data i tabell `wp_terms`
+-- Dumping data for table `wp_terms`
 --
 
 INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
@@ -6298,7 +7344,7 @@ INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
 -- --------------------------------------------------------
 
 --
--- Tabellstruktur `wp_term_relationships`
+-- Table structure for table `wp_term_relationships`
 --
 
 CREATE TABLE `wp_term_relationships` (
@@ -6308,7 +7354,7 @@ CREATE TABLE `wp_term_relationships` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
--- Dumpning av Data i tabell `wp_term_relationships`
+-- Dumping data for table `wp_term_relationships`
 --
 
 INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_order`) VALUES
@@ -6317,8 +7363,6 @@ INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_orde
 (12, 2, 0),
 (22, 3, 0),
 (23, 3, 0),
-(55, 3, 0),
-(103, 2, 0),
 (190, 2, 0),
 (212, 5, 0),
 (216, 1, 0),
@@ -6329,12 +7373,14 @@ INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_orde
 (262, 1, 0),
 (265, 1, 0),
 (269, 6, 0),
-(274, 6, 0);
+(274, 6, 0),
+(395, 3, 0),
+(419, 1, 0);
 
 -- --------------------------------------------------------
 
 --
--- Tabellstruktur `wp_term_taxonomy`
+-- Table structure for table `wp_term_taxonomy`
 --
 
 CREATE TABLE `wp_term_taxonomy` (
@@ -6347,12 +7393,12 @@ CREATE TABLE `wp_term_taxonomy` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
--- Dumpning av Data i tabell `wp_term_taxonomy`
+-- Dumping data for table `wp_term_taxonomy`
 --
 
 INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `description`, `parent`, `count`) VALUES
-(1, 1, 'category', '', 0, 5),
-(2, 2, 'nav_menu', '', 0, 4),
+(1, 1, 'category', '', 0, 6),
+(2, 2, 'nav_menu', '', 0, 3),
 (3, 3, 'nav_menu', '', 0, 3),
 (5, 5, 'category', '', 0, 4),
 (6, 6, 'category', '', 0, 2);
@@ -6360,7 +7406,7 @@ INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `desc
 -- --------------------------------------------------------
 
 --
--- Tabellstruktur `wp_usermeta`
+-- Table structure for table `wp_usermeta`
 --
 
 CREATE TABLE `wp_usermeta` (
@@ -6371,7 +7417,7 @@ CREATE TABLE `wp_usermeta` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
--- Dumpning av Data i tabell `wp_usermeta`
+-- Dumping data for table `wp_usermeta`
 --
 
 INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALUES
@@ -6390,7 +7436,7 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (13, 1, 'wp_user_level', '10'),
 (14, 1, 'dismissed_wp_pointers', ''),
 (15, 1, 'show_welcome_panel', '1'),
-(17, 1, 'wp_dashboard_quick_press_last_post_id', '369'),
+(17, 1, 'wp_dashboard_quick_press_last_post_id', '390'),
 (18, 1, 'nav_menu_recently_edited', '2'),
 (19, 1, 'managenav-menuscolumnshidden', 'a:5:{i:0;s:11:\"link-target\";i:1;s:11:\"css-classes\";i:2;s:3:\"xfn\";i:3;s:11:\"description\";i:4;s:15:\"title-attribute\";}'),
 (20, 1, 'metaboxhidden_nav-menus', 'a:1:{i:0;s:12:\"add-post_tag\";}'),
@@ -6405,13 +7451,12 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (29, 1, 'metaboxhidden_acf-field-group', 'a:1:{i:0;s:7:\"slugdiv\";}'),
 (30, 1, 'closedpostboxes_resume', 'a:1:{i:0;s:23:\"acf-group_5e2889e2caec3\";}'),
 (31, 1, 'metaboxhidden_resume', 'a:1:{i:0;s:7:\"slugdiv\";}'),
-(32, 1, 'edit_resume_per_page', '20'),
-(35, 1, 'session_tokens', 'a:1:{s:64:\"c546a6c7d54c3eeb4c95b331d56eead938ccc8aae863c24bdea554345b630bda\";a:4:{s:10:\"expiration\";i:1582308974;s:2:\"ip\";s:3:\"::1\";s:2:\"ua\";s:120:\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36\";s:5:\"login\";i:1582136174;}}');
+(32, 1, 'edit_resume_per_page', '20');
 
 -- --------------------------------------------------------
 
 --
--- Tabellstruktur `wp_users`
+-- Table structure for table `wp_users`
 --
 
 CREATE TABLE `wp_users` (
@@ -6428,18 +7473,18 @@ CREATE TABLE `wp_users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --
--- Dumpning av Data i tabell `wp_users`
+-- Dumping data for table `wp_users`
 --
 
 INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
-(1, 'admin', '$P$BzwErVNGFIyvsu2ZAUZAR0Q1HilUH8.', 'admin', 'radoslavatsankova@gmail.com', '', '2020-01-15 12:22:19', '', 0, 'admin');
+(1, 'admin', '$P$BLQrvyGURPXN1o4v5TQxN3MDkOnstV1', 'admin', 'radoslavatsankova@gmail.com', '', '2020-01-15 12:22:19', '', 0, 'admin');
 
 --
--- Index för dumpade tabeller
+-- Indexes for dumped tables
 --
 
 --
--- Index för tabell `wp_commentmeta`
+-- Indexes for table `wp_commentmeta`
 --
 ALTER TABLE `wp_commentmeta`
   ADD PRIMARY KEY (`meta_id`),
@@ -6447,7 +7492,7 @@ ALTER TABLE `wp_commentmeta`
   ADD KEY `meta_key` (`meta_key`(191));
 
 --
--- Index för tabell `wp_comments`
+-- Indexes for table `wp_comments`
 --
 ALTER TABLE `wp_comments`
   ADD PRIMARY KEY (`comment_ID`),
@@ -6458,14 +7503,14 @@ ALTER TABLE `wp_comments`
   ADD KEY `comment_author_email` (`comment_author_email`(10));
 
 --
--- Index för tabell `wp_links`
+-- Indexes for table `wp_links`
 --
 ALTER TABLE `wp_links`
   ADD PRIMARY KEY (`link_id`),
   ADD KEY `link_visible` (`link_visible`);
 
 --
--- Index för tabell `wp_options`
+-- Indexes for table `wp_options`
 --
 ALTER TABLE `wp_options`
   ADD PRIMARY KEY (`option_id`),
@@ -6473,7 +7518,7 @@ ALTER TABLE `wp_options`
   ADD KEY `autoload` (`autoload`);
 
 --
--- Index för tabell `wp_postmeta`
+-- Indexes for table `wp_postmeta`
 --
 ALTER TABLE `wp_postmeta`
   ADD PRIMARY KEY (`meta_id`),
@@ -6481,7 +7526,7 @@ ALTER TABLE `wp_postmeta`
   ADD KEY `meta_key` (`meta_key`(191));
 
 --
--- Index för tabell `wp_posts`
+-- Indexes for table `wp_posts`
 --
 ALTER TABLE `wp_posts`
   ADD PRIMARY KEY (`ID`),
@@ -6491,7 +7536,7 @@ ALTER TABLE `wp_posts`
   ADD KEY `post_author` (`post_author`);
 
 --
--- Index för tabell `wp_termmeta`
+-- Indexes for table `wp_termmeta`
 --
 ALTER TABLE `wp_termmeta`
   ADD PRIMARY KEY (`meta_id`),
@@ -6499,7 +7544,7 @@ ALTER TABLE `wp_termmeta`
   ADD KEY `meta_key` (`meta_key`(191));
 
 --
--- Index för tabell `wp_terms`
+-- Indexes for table `wp_terms`
 --
 ALTER TABLE `wp_terms`
   ADD PRIMARY KEY (`term_id`),
@@ -6507,14 +7552,14 @@ ALTER TABLE `wp_terms`
   ADD KEY `name` (`name`(191));
 
 --
--- Index för tabell `wp_term_relationships`
+-- Indexes for table `wp_term_relationships`
 --
 ALTER TABLE `wp_term_relationships`
   ADD PRIMARY KEY (`object_id`,`term_taxonomy_id`),
   ADD KEY `term_taxonomy_id` (`term_taxonomy_id`);
 
 --
--- Index för tabell `wp_term_taxonomy`
+-- Indexes for table `wp_term_taxonomy`
 --
 ALTER TABLE `wp_term_taxonomy`
   ADD PRIMARY KEY (`term_taxonomy_id`),
@@ -6522,7 +7567,7 @@ ALTER TABLE `wp_term_taxonomy`
   ADD KEY `taxonomy` (`taxonomy`);
 
 --
--- Index för tabell `wp_usermeta`
+-- Indexes for table `wp_usermeta`
 --
 ALTER TABLE `wp_usermeta`
   ADD PRIMARY KEY (`umeta_id`),
@@ -6530,7 +7575,7 @@ ALTER TABLE `wp_usermeta`
   ADD KEY `meta_key` (`meta_key`(191));
 
 --
--- Index för tabell `wp_users`
+-- Indexes for table `wp_users`
 --
 ALTER TABLE `wp_users`
   ADD PRIMARY KEY (`ID`),
@@ -6539,71 +7584,71 @@ ALTER TABLE `wp_users`
   ADD KEY `user_email` (`user_email`);
 
 --
--- AUTO_INCREMENT för dumpade tabeller
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT för tabell `wp_commentmeta`
+-- AUTO_INCREMENT for table `wp_commentmeta`
 --
 ALTER TABLE `wp_commentmeta`
   MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT för tabell `wp_comments`
+-- AUTO_INCREMENT for table `wp_comments`
 --
 ALTER TABLE `wp_comments`
   MODIFY `comment_ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT för tabell `wp_links`
+-- AUTO_INCREMENT for table `wp_links`
 --
 ALTER TABLE `wp_links`
   MODIFY `link_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT för tabell `wp_options`
+-- AUTO_INCREMENT for table `wp_options`
 --
 ALTER TABLE `wp_options`
-  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=675;
+  MODIFY `option_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=765;
 
 --
--- AUTO_INCREMENT för tabell `wp_postmeta`
+-- AUTO_INCREMENT for table `wp_postmeta`
 --
 ALTER TABLE `wp_postmeta`
-  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5734;
+  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6798;
 
 --
--- AUTO_INCREMENT för tabell `wp_posts`
+-- AUTO_INCREMENT for table `wp_posts`
 --
 ALTER TABLE `wp_posts`
-  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=390;
+  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=423;
 
 --
--- AUTO_INCREMENT för tabell `wp_termmeta`
+-- AUTO_INCREMENT for table `wp_termmeta`
 --
 ALTER TABLE `wp_termmeta`
   MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT för tabell `wp_terms`
+-- AUTO_INCREMENT for table `wp_terms`
 --
 ALTER TABLE `wp_terms`
   MODIFY `term_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT för tabell `wp_term_taxonomy`
+-- AUTO_INCREMENT for table `wp_term_taxonomy`
 --
 ALTER TABLE `wp_term_taxonomy`
   MODIFY `term_taxonomy_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT för tabell `wp_usermeta`
+-- AUTO_INCREMENT for table `wp_usermeta`
 --
 ALTER TABLE `wp_usermeta`
   MODIFY `umeta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 
 --
--- AUTO_INCREMENT för tabell `wp_users`
+-- AUTO_INCREMENT for table `wp_users`
 --
 ALTER TABLE `wp_users`
   MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
