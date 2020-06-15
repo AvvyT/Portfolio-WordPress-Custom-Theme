@@ -13,6 +13,10 @@
     }
     .contact-img {
         margin: 0;
+        width: -webkit-fill-available;
+    }
+    .font-nova-text {
+        font-size: x-large;
     }
 }
 
@@ -94,17 +98,27 @@
     .block-page-media-text {
         padding: 10vh 6vw;
     }
+    .font-sans-serif-text {
+        font-size: 1em;
+    }
 }
 
 /** EXTRA Small (phones, 750px or smaller) **/
 
 @media only screen and (max-width: 750px) {
-    html {
-        margin: 0 !important;
-    }
+
     .box-header-heading {
         margin-top: 60%;
         text-align: center;
+    }
+    .style {
+        flex-direction: column;
+    }
+    .namn {
+        margin: 11px 0 0 0px;
+    }
+    .container-header {
+        position: relative;
     }
     .font-pro {
         font-size: 9vw;
@@ -128,6 +142,9 @@
         flex-direction: column;
         text-align: center;
     }
+    #menu-footer-navigation>li>a, .link, .menu-avvys-menu-container, .logo {
+        margin: 0;
+    }
     .box-content {
         margin-bottom: 3%;
     }
@@ -140,6 +157,13 @@
         letter-spacing: .04em;
         font-size: 16px;
         line-height: 1.5em;
+    }
+    .font-sans-serif-text {
+        font-size: 1em;
+    }
+    .font-title {
+        font-size: 1.5em;
+        font-weight: 200;
     }
     .block-footer-content-heading {
         font-size: 6vw;
@@ -154,6 +178,21 @@
     .downArrow {
       display: none;
     }
+    .custom-background {
+        background-image: none !important;
+        background-color: #f0f0f0;
+    }
+    .box-header {
+        background-image:url(http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/06/bram-naus-n8Qb1ZAkK88-unsplash-scaled.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: #f0f0f0;
+    }
+    .font-pro {
+        color: #121212;
+        margin-left: 0;
+    }
+
 }
 
 /** XXSmall (phones, 375px or smaller) **/
@@ -177,8 +216,17 @@
         background-image: none !important;
         background-color: #f0f0f0;
     }
+    .box-header {
+        background-image:url(http://localhost:8888/Avvy_Portfolio20/wp-content/uploads/2020/06/bram-naus-n8Qb1ZAkK88-unsplash-scaled.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: #f0f0f0;
+    }
     .font-pro {
         color: #121212;
         margin-left: 0;
+    }
+    #menu-footer-navigation>li>a, .link, .menu-avvys-menu-container, .logo {
+        margin: 0;
     }
 }

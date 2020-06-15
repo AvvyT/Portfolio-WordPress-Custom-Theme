@@ -1,16 +1,23 @@
 .menu-item-type-post_type>a, #menu-footer-navigation>li>a, link {
     cursor: pointer;
     display: inline-flex;
-    margin-right: 25px;
+    margin-right: 35px;
     color: #fff;
     padding: .618em 0;
-    font-size: 1.2em;
+    font-size: 1.5em;
     letter-spacing: .16em;
 }
 
- .link {
+
+
+.link {
     max-width: 60px;
     margin-right: 25px;
+}
+
+.home-page {
+    cursor: pointer;
+    list-style-type: none;
 }
 
 #menu-avvys-menu>li>a:hover, #menu-footer-navigation>li>a:hover {

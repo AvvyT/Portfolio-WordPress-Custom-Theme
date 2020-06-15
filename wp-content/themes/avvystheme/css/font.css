@@ -17,9 +17,9 @@
 .font-sans-serif-text {
     font-family: 'Lucida Sans Regular', sans-serif;
     font-style: normal;
-    letter-spacing: .04em;
-    font-size: large;
     line-height: 1.5em;
+    font-size: 1.5em;
+    letter-spacing: .1em;
 }
 
 .font-pro {

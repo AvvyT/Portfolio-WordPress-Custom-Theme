@@ -16,12 +16,44 @@ body {
 
 /**  Header style  **/
 
+.style {
+    display: flex;
+}
+
+#menu-avvys-menu, .logo, .home-page {
+    display: inline-flex;
+}
+
+.logo {
+    flex: 1;
+    padding: 20px 20px;
+    line-height: 1em;
+    margin: 0 0 0 14%;
+}
+
+#letter {
+    margin: 19px 0 0 -30px;
+}
+
+#butterfly {
+    margin: -12px 4px 0 0;
+}
+
+.namn {
+    margin: 7px 0 0 -4px;
+    line-height: 2em;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 100;
+    font-size: 1.5em;
+    letter-spacing: .12em;
+}
+
 #menu-avvys-menu {
     padding: 10px 10px;
     line-height: 1em;
     list-style-type: none;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .box-header-heading {
@@ -102,14 +134,11 @@ body {
 /* Contact pages style */
 
 .img-element {
-    max-width: -webkit-fill-available;
-    -webkit-box-shadow: 10px 10px 26px -18px rgba(150, 150, 150, 0.81);
-    -moz-box-shadow: 10px 10px 26px -18px rgba(150, 150, 150, 0.81);
-    box-shadow: 10px 10px 26px -18px rgba(150, 150, 150, 0.81);
+    padding: 0 8vw;
+    width: -webkit-fill-available;
 }
 
 .contact-img {
-    text-align: center;
-    flex-grow: 4;
-    margin-right: 5%;
+    width: -webkit-fill-available;
+    flex-grow: 1;
 }
